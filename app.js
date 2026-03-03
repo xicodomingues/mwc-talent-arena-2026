@@ -595,18 +595,14 @@ function renderTimeline() {
     html += `</div>`; // tl-body
     html += `</div></div>`; // tl-grid, tl-wrapper
 
-    // Legend (clickable to hide/show stages)
+    // Legend (clickable to hide/show stages — hidden ones stay in place with strikethrough)
     html += `<div class="tl-legend">`;
-    for (const stage of stagesPresent) {
+    for (const stage of stagesAllTl) {
       const c = STAGE_COLORS[stage] || "#888";
-      html += `<span class="tl-legend-item" onclick="toggleCalStage('${esc(stage)}')" title="Click to hide"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${c};margin-right:4px;vertical-align:middle"></span>${esc(stage)}</span>`;
-    }
-    const hiddenTl = stagesAllTl.filter(st => calHiddenStages.has(st));
-    if (hiddenTl.length && showHidden) {
-      for (const stage of hiddenTl) {
-        const c = STAGE_COLORS[stage] || "#888";
-        html += `<span class="tl-legend-item tl-legend-hidden" onclick="toggleCalStage('${esc(stage)}')" title="Click to restore"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${c};margin-right:4px;vertical-align:middle"></span>${esc(stage)}</span>`;
-      }
+      const isHiddenStage = calHiddenStages.has(stage) || isStageFullyHidden(stage, dayIndices);
+      const cls = isHiddenStage ? " tl-legend-hidden" : "";
+      const tip = isHiddenStage ? "Click to restore" : "Click to hide";
+      html += `<span class="tl-legend-item${cls}" onclick="toggleCalStage('${esc(stage)}')" title="${tip}"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${c};margin-right:4px;vertical-align:middle"></span>${esc(stage)}</span>`;
     }
     html += `</div>`;
   }
