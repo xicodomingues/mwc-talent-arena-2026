@@ -252,7 +252,6 @@ function applyFilters() {
     filteredIndices.push(i);
   }
 
-  document.getElementById("stats").textContent = "";
   render();
 }
 
