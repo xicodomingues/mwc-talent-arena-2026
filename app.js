@@ -772,4 +772,8 @@ fetch("sessions.json")
     init();
     // Refresh every 5 minutes to update the now line
     setInterval(() => { scrollToNow = true; render(); }, 5 * 60 * 1000);
+    // Also refresh the now line when the user returns to the page
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden) render();
+    });
   });
