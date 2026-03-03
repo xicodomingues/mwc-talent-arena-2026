@@ -1,0 +1,20 @@
+/* ── Responsive ── */
+@media(max-width:767px){
+  .topbar-inner{height:auto;flex-wrap:wrap;gap:0.35rem;padding:0.4rem 0.6rem}
+  .view-label{display:none}
+  .view-icons button{padding:0 0.5rem}
+  .topbar-search{width:100%;order:10}
+  .topbar-search:focus-within{width:100%}
+  .filter-trigger-label{display:none}
+  .day-indicator{height:32px;font-size:0.75rem;padding:0 0.5rem;margin-right:0.2rem}
+  .topbar-action,.filter-trigger{height:32px;min-width:32px;padding:0 0.4rem;font-size:0.7rem}
+  .view-icons button{height:32px;font-size:0.7rem}
+  .filter-panel.open{flex-direction:column;gap:0.5rem}
+  .filter-group{gap:0.3rem}
+  .filter-chip{font-size:0.68rem;padding:0.2rem 0.45rem}
+}
+@media(min-width:768px){
+  .list-cards{grid-template-columns:repeat(auto-fill,minmax(340px,1fr))}
+  .modal-backdrop{align-items:center}
+  .modal{max-width:560px;border-radius:var(--radius);max-height:80vh}
+}
