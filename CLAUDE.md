@@ -93,7 +93,9 @@ Global mutable state variables:
 
 - **List view** (`renderList`): Groups sessions by day + time slot. Uses `cardHTML()` for each card.
 - **Calendar view** (`renderCalendar` / `calendarDayHTML`): Vertical grid with stages as columns. Pixel-per-minute layout (`ppm = 3`). Sticky header. Now-line. Drag-to-scroll.
-- **Timeline view** (`renderTimeline`): Horizontal Gantt chart with stages as rows. `ppm = 5`, `rowH = 40`. Clickable legend to toggle stages.
+- **Timeline view** (`renderTimeline`): Horizontal Gantt chart with stages as rows. `ppm = 5`, `rowH = 44`. Clickable legend to toggle stages. Sticky stage labels on the left.
+
+**Important: Calendar and Timeline must maintain feature parity.** Both views share the same stage hiding/showing behavior (`calHiddenStages`), the same "show hidden" toggle (grayed-out columns/rows), the same now-line and past/ongoing logic, and the same starred/hidden session display. When adding or modifying a feature in one view, always replicate it in the other.
 
 ### "Now" Indicator & Past/Ongoing Logic
 
