@@ -445,9 +445,8 @@ function calendarDayHTML(day, indices) {
 
     const isHidden = hiddenSessions.has(idx);
     const isHighlighted = highlightedSessions.has(idx);
-    const midM = (startM + endM) / 2;
-    const isPast = _nowDay == day && _nowM >= midM;
-    const isOngoing = _nowDay == day && startM <= _nowM && _nowM < midM;
+    const isPast = _nowDay == day && _nowM >= endM;
+    const isOngoing = _nowDay == day && startM <= _nowM && _nowM < endM;
     html += `<div class="cal-ev${isHidden ? " hidden-session" : ""}${isHighlighted ? " highlighted-session" : ""}${isPast ? " cal-past" : ""}${isOngoing ? " cal-ongoing" : ""}" onclick="showModal(${idx})" style="top:${y}px;left:${left}px;width:${w}px;height:${h}px;background:color-mix(in srgb,${c} 15%,transparent);border-left:3px solid ${c}" title="${esc(s.time + ' | ' + s.stage + '\n' + s.title)}">`;
     html += `<b>${esc(s.title)}</b>`;
     if (co) html += `<div class="ev-spk">${esc(co)}</div>`;
@@ -554,9 +553,8 @@ function renderTimeline() {
       const h = rowH - 4;
       const isHidden = hiddenSessions.has(idx);
       const isHighlighted = highlightedSessions.has(idx);
-      const midM = (startM + endM) / 2;
-      const isPast = nowDay == day && nowM >= midM;
-      const isOngoing = nowDay == day && startM <= nowM && nowM < midM;
+      const isPast = nowDay == day && nowM >= endM;
+      const isOngoing = nowDay == day && startM <= nowM && nowM < endM;
       html += `<div class="tl-ev${isHidden ? " hidden-session" : ""}${isHighlighted ? " highlighted-session" : ""}${isPast ? " tl-past" : ""}${isOngoing ? " tl-ongoing" : ""}" onclick="showModal(${idx})" style="top:${y}px;left:${x}px;width:${w}px;height:${h}px;background:color-mix(in srgb,${c} 25%,transparent)" title="${esc(s.time + ' | ' + s.title)}"><span class="tl-ev-dot" style="background:${c}"></span><span class="tl-ev-text">${esc(s.title)}</span></div>`;
     }
 

@@ -97,8 +97,8 @@ Global mutable state variables:
 
 ### "Now" Indicator & Past/Ongoing Logic
 
-- Events are grayed out (`cal-past`, `tl-past`) when the current time is past the event's **midpoint** (`midM = (startM + endM) / 2`).
-- Events get `cal-ongoing` / `tl-ongoing` when the current time is between `startM` and `midM`.
+- Events are grayed out (`cal-past`, `tl-past`) when the current time is past the event's **end time** (`endM`).
+- Events get `cal-ongoing` / `tl-ongoing` when the current time is between `startM` and `endM`.
 - A red now-line is drawn at the current time position.
 - The view auto-refreshes every 5 minutes and when the page regains visibility.
 
