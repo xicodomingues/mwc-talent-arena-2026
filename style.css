@@ -174,16 +174,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 .modal{background:var(--surface2);border-radius:var(--radius) var(--radius) 0 0;padding:1.25rem;width:100%;max-height:85dvh;overflow-y:auto;position:relative}
 .modal-x{position:absolute;top:0.6rem;right:0.75rem;background:none;border:none;color:var(--text3);font-size:1.3rem;cursor:pointer;width:36px;height:36px;display:flex;align-items:center;justify-content:center;border-radius:var(--radius-sm);transition:all 0.15s}
 .modal-x:hover{color:#fff;background:var(--surface3)}
-.modal-actions{display:flex;gap:0.5rem;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid #333}
-.modal-action-btn{display:inline-flex;align-items:center;gap:0.35rem;padding:0.4rem 0.75rem;border-radius:var(--radius-sm);border:1px solid #444;background:var(--surface3);color:var(--text2);font-size:0.78rem;cursor:pointer;transition:all 0.15s}
-.modal-action-btn:hover{border-color:#666;color:var(--text)}
-.modal-action-btn svg{width:14px;height:14px;flex-shrink:0}
-.modal-action-btn.star-active{background:color-mix(in srgb,var(--accent) 18%,transparent);color:var(--accent);border-color:var(--accent)}
-.modal-action-btn.star-active:hover{filter:brightness(1.2)}
-.modal-action-btn.hide-active{background:color-mix(in srgb,#E74C3C 15%,transparent);color:#E74C3C;border-color:#E74C3C}
-.modal-action-btn.hide-active:hover{filter:brightness(1.2)}
-.modal-action-btn.act-star:hover{color:var(--accent);border-color:var(--accent)}
-.modal-action-btn.act-hide:hover{color:#E74C3C;border-color:#E74C3C}
+.modal-actions{position:absolute;top:0.6rem;right:3rem;display:flex;gap:0.3rem}
+.modal-actions .card-action{width:32px;height:32px;border:1px solid #444}
+.modal-actions .card-action svg{width:15px;height:15px}
 .modal-stage{font-size:0.75rem;font-weight:700;padding:0.2rem 0.65rem;border-radius:999px;display:inline-block;margin-bottom:0.5rem}
 .modal-title{font-size:1.15rem;font-weight:700;color:#fff;margin-bottom:0.35rem;padding-right:2.5rem}
 .modal-time{font-size:0.85rem;color:var(--accent2);margin-bottom:0.75rem}
