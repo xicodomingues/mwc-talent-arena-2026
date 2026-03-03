@@ -1,0 +1,11 @@
+# Intermediate data files
+mwc_raw_sessions.json
+mwc_parsed.json
+mwc_sessions_clean.json
+mwc_api_map.json
+
+# Claude Code
+.claude/
+
+# Design drafts
+topbar-concepts.html
