@@ -252,11 +252,7 @@ function applyFilters() {
     filteredIndices.push(i);
   }
 
-  const hidCount = hiddenSessions.size;
-  const visibleCount = filteredIndices.filter(i => !hiddenSessions.has(i)).length;
-  let statsText = visibleCount + " of " + SESSIONS.length + " sessions";
-  if (showHidden && hidCount) statsText += " (" + hidCount + " hidden shown)";
-  document.getElementById("stats").textContent = statsText;
+  document.getElementById("stats").textContent = "";
   render();
 }
 
