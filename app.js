@@ -66,6 +66,11 @@ function saveHidden() {
   localStorage.setItem(LS_KEY, JSON.stringify([...hiddenSessions]));
   updateHiddenCount();
 }
+function isStageFullyHidden(stage, indices) {
+  if (showHidden) return false;
+  const stageIndices = indices.filter(i => SESSIONS[i].stage === stage);
+  return stageIndices.length > 0 && stageIndices.every(i => hiddenSessions.has(i));
+}
 function toggleHide(idx, evt) {
   if (evt) evt.stopPropagation();
   if (hiddenSessions.has(idx)) hiddenSessions.delete(idx); else hiddenSessions.add(idx);
@@ -368,7 +373,7 @@ function calendarDayHTML(day, indices) {
   for (const st of STAGE_ORDER) {
     if (indices.some(i => SESSIONS[i].stage === st)) {
       stagesAll.push(st);
-      if (!calHiddenStages.has(st)) stagesPresent.push(st);
+      if (!calHiddenStages.has(st) && !isStageFullyHidden(st, indices)) stagesPresent.push(st);
     }
   }
 
@@ -507,7 +512,7 @@ function renderTimeline() {
     for (const st of STAGE_ORDER) {
       if (dayIndices.some(i => SESSIONS[i].stage === st)) {
         stagesAllTl.push(st);
-        if (!calHiddenStages.has(st)) stagesPresent.push(st);
+        if (!calHiddenStages.has(st) && !isStageFullyHidden(st, dayIndices)) stagesPresent.push(st);
       }
     }
     let minT = 1440, maxT = 0;
