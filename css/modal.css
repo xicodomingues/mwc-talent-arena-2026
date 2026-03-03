@@ -1,0 +1,18 @@
+/* ── Modal ── */
+.modal-backdrop{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.65);z-index:200;justify-content:center;align-items:flex-end}
+.modal-backdrop.open{display:flex}
+.modal{background:var(--surface2);border-radius:var(--radius) var(--radius) 0 0;padding:1.25rem;width:100%;max-height:85dvh;overflow-y:auto;position:relative}
+.modal-x{position:absolute;top:0.6rem;right:0.75rem;background:none;border:none;color:var(--text3);font-size:1.3rem;cursor:pointer;width:36px;height:36px;display:flex;align-items:center;justify-content:center;border-radius:var(--radius-sm);transition:all 0.15s}
+.modal-x:hover{color:#fff;background:var(--surface3)}
+.modal-actions{position:absolute;top:0.6rem;right:3rem;display:flex;gap:0.3rem}
+.modal-actions .card-action{width:32px;height:32px;border:1px solid #444}
+.modal-actions .card-action svg{width:15px;height:15px}
+.modal-stage{font-size:0.75rem;font-weight:700;padding:0.2rem 0.65rem;border-radius:999px;display:inline-block;margin-bottom:0.5rem}
+.modal-title{font-size:1.15rem;font-weight:700;color:#fff;margin-bottom:0.35rem;padding-right:2.5rem}
+.modal-time{font-size:0.85rem;color:var(--accent2);margin-bottom:0.75rem}
+.modal-speakers{margin-bottom:0.75rem;line-height:1.7}
+.modal-speaker-name{font-weight:600;color:#fff}
+.modal-speaker-role{color:var(--text2);font-size:0.85rem}
+.modal-desc{font-size:0.88rem;color:var(--text2);line-height:1.6;margin-bottom:0.75rem}
+.modal-meta{display:flex;gap:0.5rem;flex-wrap:wrap}
+.modal-meta span{font-size:0.75rem;padding:0.2rem 0.5rem;border-radius:999px;background:var(--surface3);color:var(--text2)}
