@@ -985,9 +985,25 @@ function scrollToNowSlot() {
 
 const _origRender = render;
 render = function() {
+  // Save scroll positions of wrappers before innerHTML replacement destroys them
+  const savedCal = Array.from(document.querySelectorAll('.cal-wrapper')).map(w => ({ scrollLeft: w.scrollLeft, scrollTop: w.scrollTop }));
+  const savedTl = Array.from(document.querySelectorAll('.tl-wrapper')).map(w => ({ scrollLeft: w.scrollLeft, scrollTop: w.scrollTop }));
+
   _origRender();
+
   if (scrollToNow && currentView === "list") scrollToNowSlot();
   if (currentView === "timeline") initDragScroll();
+
+  // Restore scroll positions when not scrolling to now (e.g. hide/star toggle)
+  if (!scrollToNow) {
+    document.querySelectorAll('.cal-wrapper').forEach((w, i) => {
+      if (savedCal[i]) { w.scrollLeft = savedCal[i].scrollLeft; w.scrollTop = savedCal[i].scrollTop; }
+    });
+    document.querySelectorAll('.tl-wrapper').forEach((w, i) => {
+      if (savedTl[i]) { w.scrollLeft = savedTl[i].scrollLeft; w.scrollTop = savedTl[i].scrollTop; }
+    });
+  }
+
   scrollToNow = false;
 };
 
