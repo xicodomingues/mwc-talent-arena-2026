@@ -474,7 +474,7 @@ function calendarDayHTML(day, indices) {
     const midM = (startM + endM) / 2;
     const isPast = _isEventMonth && (_nowDay > day || (_nowDay == day && _nowM >= midM));
     const isOngoing = _isEventMonth && _nowDay == day && startM <= _nowM && _nowM < midM;
-    html += `<div class="cal-ev${isHidden ? " hidden-session" : ""}${isStageHidden ? " ev-stage-hidden" : ""}${isHighlighted ? " highlighted-session" : ""}${isDimmed ? " star-dimmed" : ""}${isPast ? " ev-past" : ""}${isOngoing ? " ev-ongoing" : ""}" onclick="showModal(${idx})" style="top:${y}px;left:${left}px;width:${w}px;height:${h}px;background:color-mix(in srgb,${c} 15%,transparent);border-left:3px solid ${c};--card-color:${c}" title="${esc(s.time + ' | ' + s.stage + '\n' + s.title)}">`;
+    html += `<div class="cal-ev${isHidden ? " hidden-session" : ""}${isStageHidden ? " ev-stage-hidden" : ""}${isHighlighted ? " highlighted-session" : ""}${isDimmed ? " star-dimmed" : ""}${isPast ? " ev-past" : ""}${isOngoing ? " ev-ongoing" : ""}" onclick="showModal(${idx})" style="top:${y}px;left:${left}px;width:${w}px;height:${h}px;background:color-mix(in srgb,${c} 18%,var(--surface2));border-left:3px solid ${c};--card-color:${c}" title="${esc(s.time + ' | ' + s.stage + '\n' + s.title)}">`;
     html += `<b>${esc(s.title)}</b>`;
     if (co) html += `<div class="ev-spk">${esc(co)}</div>`;
     html += `</div>`;
@@ -599,7 +599,7 @@ function renderTimeline() {
         const midM = (startM + endM) / 2;
         const isPast = isEventMonth && (nowDay > day || (nowDay == day && nowM >= midM));
         const isOngoing = isEventMonth && nowDay == day && startM <= nowM && nowM < midM;
-        html += `<div class="tl-ev${isHidden ? " hidden-session" : ""}${isStageHidden ? " ev-stage-hidden" : ""}${isHighlighted ? " highlighted-session" : ""}${isDimmed ? " star-dimmed" : ""}${isPast ? " ev-past" : ""}${isOngoing ? " ev-ongoing" : ""}" onclick="showModal(${idx})" style="top:2px;left:${x}px;width:${w}px;height:${rowH - 4}px;background:color-mix(in srgb,${c2} 20%,var(--surface2));border-left:3px solid ${c2}" title="${esc(s.time + ' | ' + s.stage + '\n' + s.title)}"><span class="tl-ev-text">${esc(s.title)}</span></div>`;
+        html += `<div class="tl-ev${isHidden ? " hidden-session" : ""}${isStageHidden ? " ev-stage-hidden" : ""}${isHighlighted ? " highlighted-session" : ""}${isDimmed ? " star-dimmed" : ""}${isPast ? " ev-past" : ""}${isOngoing ? " ev-ongoing" : ""}" onclick="showModal(${idx})" style="top:2px;left:${x}px;width:${w}px;height:${rowH - 4}px;background:color-mix(in srgb,${c2} 18%,var(--surface2));border-left:3px solid ${c2};--card-color:${c2}" title="${esc(s.time + ' | ' + s.stage + '\n' + s.title)}"><span class="tl-ev-text">${esc(s.title)}</span></div>`;
       }
       html += `</div>`; // tl-row-events
       html += `</div>`; // tl-row
