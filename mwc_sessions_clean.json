@@ -1,0 +1,4771 @@
+[
+  {
+    "day": 3,
+    "time": "09:30-10:00",
+    "stage": "XPRO stage",
+    "title": "It’s not just another bot: it’s an inspirational agent for the shopping of the future",
+    "speakers": [
+      {
+        "name": "Omar Elias Rodriguez Nazar",
+        "role": "Technical Architect at Vueling"
+      }
+    ],
+    "description": "The next generation of shopping will go beyond web and apps: it will live in an interoperable agentic ecosystem. We introduce Vueling’s Inspirational Agent, an agentic architecture with MCPs and MCPApps, integrable into owned channels or external environments. We explain context design, coordination, and tool-calling over core systems, ensuring observability, security, governance, and controlled costs—laying the foundation today for the agentic world of tomorrow.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Vueling"
+    ],
+    "company": "Vueling",
+    "short": "AI Shopping Agent"
+  },
+  {
+    "day": 3,
+    "time": "09:30-10:00",
+    "stage": "Visionary Stage",
+    "title": "New Quantum Materials for Quantum 2.0",
+    "speakers": [
+      {
+        "name": "Pablo Jarillo-Herrero",
+        "role": "Cecil and Ida Green Professor of Physics"
+      }
+    ],
+    "description": "The birth of Quantum Physics in the early 20th century gave rise to all modern technology. This first “Quantum Revolution” made use of the most basic concepts in quantum physics. In the coming decades, a second quantum revolution (Quantum 2.0), using much more advanced quantum physics, will dramatically change the way we do science and technology, with dramatic implications for the economy and national security. In his talk, Prof. Jarillo-Herrero will discuss a new generation of quantum materials with the potential to revolutionize quantum simulations, quantum sensing, and AI applications",
+    "tags": [
+      "Future Trends"
+    ],
+    "lang": "English",
+    "companies": [
+      "MIT"
+    ],
+    "company": "MIT",
+    "short": "Next-Generation Quantum Materials"
+  },
+  {
+    "day": 3,
+    "time": "09:30-10:30",
+    "stage": "Meetup area",
+    "title": "Talent, AI, and Productivity in Software Engineering",
+    "speakers": [
+      {
+        "name": "Luis Delgado Schwarzmann Jimenez",
+        "role": "Managing Director at CaixaBank Tech"
+      }
+    ],
+    "description": "Luis Delgado Schwarzmann Jimenez – Managing Director at CaixaBank Tech",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "CaixaBank Tech"
+    ],
+    "company": "CaixaBank Tech",
+    "short": "How AI Boosts Developer Productivity"
+  },
+  {
+    "day": 3,
+    "time": "09:30-10:30",
+    "stage": "Hotspot Talks",
+    "title": "Onboarding Claude Code: from babysitting to autonomous agents",
+    "speakers": [
+      {
+        "name": "Kate Marshalkina",
+        "role": "Staff Software Engineer at Datavant"
+      }
+    ],
+    "description": "A 90-day onboarding playbook for an AI coding agent in real-world repos: complex domain logic, legacy migrations, low test coverage, outdated docs. From day-one setup – where you review every line – through guardrails and context management, to autonomous agents that can own your repo while you tackle the problems no one’s solved yet.",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "English",
+    "companies": [
+      "Datavant"
+    ],
+    "company": "Datavant",
+    "short": "Claude Code: From Basics to Autonomous Agents"
+  },
+  {
+    "day": 3,
+    "time": "09:30-10:30",
+    "stage": "Plug-in Talks",
+    "title": "Closing the Velocity Gap: Syncing AI and Innovation with Healthcare Adoption",
+    "speakers": [
+      {
+        "name": "Nicole Arbiv",
+        "role": "Strategic Programs Leader at Roche (Moderator)"
+      },
+      {
+        "name": "Alex Morcillo",
+        "role": "Senior Manager IT Products Architecture at Roche"
+      },
+      {
+        "name": "Laura Vidal Borrell",
+        "role": "Global Director Portfolio and Product Management at Roche"
+      }
+    ],
+    "description": "AI and digital technologies are advancing at unprecedented speed, yet healthcare adoption often lags due to regulatory, cultural, and operational constraints. This talk explores the “velocity gap” between innovation and real-world impact, drawing on experience from Roche to share practical insights on governance, cross-functional collaboration, and execution strategies that turn AI into sustainable value for patients and healthcare professionals",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "Roche"
+    ],
+    "company": "Roche",
+    "short": "AI Innovation Adoption in Healthcare Systems"
+  },
+  {
+    "day": 3,
+    "time": "09:30-10:30",
+    "stage": "XPRO Talks",
+    "title": "Data, Governance, and Technology as Key Ingredients",
+    "speakers": [
+      {
+        "name": "Guillermo Prieto",
+        "role": "Director of Information Technologies"
+      },
+      {
+        "name": "Albert Del Baño",
+        "role": "Head of IT Operations"
+      },
+      {
+        "name": "Adriana López-Doriga Guerra",
+        "role": "Data Architect atNennisiwok"
+      }
+    ],
+    "description": "Damm drives a Data and AI strategy based on the IAmm Hub, created to accelerate projects and generate value. Its key pillars are Data Governance, essential for ensuring quality and security, and a flexible, robust technology platform. The talk will showcase the current status, key learnings, and challenges in scaling a reliable and adaptable ecosystem.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "CaixaBank Tech",
+      "Nennisiwok"
+    ],
+    "company": "CaixaBank Tech",
+    "short": "Data Governance and Tech Infrastructure"
+  },
+  {
+    "day": 3,
+    "time": "09:30-11:00",
+    "stage": "Focus Lab",
+    "title": "Creating a Real Product with AI: Professional Vibe Coding for Developers",
+    "speakers": [
+      {
+        "name": "Miguel Ángel Duran (MiduDev)",
+        "role": "Software Engineer and Programming Content Creator"
+      }
+    ],
+    "description": "In this workshop we will build a functional product from scratch, using artificial intelligence tools as real engineering accelerators.This is not about asking a model for code and copying it. It’s about designing, deciding, and building better. During the session we will work with tools such as Stitch to structure and rapidly prototype the experience, Claude Code and Open Code to iterate on architecture and business logic, and Antigravity to explore agent-assisted workflows. We will also see how to run models directly in the browser using ONNX, integrating AI capabilities into the product itself without relying exclusively on the backend. Throughout the process we will cover: Defining architecture with AI support without delegating technical judgment Validating and refactoring model-generated code Designing AI-powered user experiences Integrating models in the frontend and understanding their real limitations What changes in the role of the senior developer when code generation is almost instantaneous? AI does not replace the developer. It multiplies them — but only if they know how to use it. This workshop is aimed at experienced developers who want to understand how to integrate AI into their professional workflow, improve their delivery capacity, and redefine their value in the era of intelligent assistants.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "MiduDev"
+    ],
+    "company": "MiduDev",
+    "short": "Professional Vibe Coding with AI"
+  },
+  {
+    "day": 3,
+    "time": "09:30-11:00",
+    "stage": "Frontier lab",
+    "title": "Talent and Disability: Breaking Barriers and Driving Inclusion in the AI Era",
+    "speakers": [
+      {
+        "name": "Sílvia Sousa Cristòfol",
+        "role": "Strategy and Transformation Director at SEIDOR / Directora d’Estratègia i Transformació a SEIDOR"
+      },
+      {
+        "name": "Javier Pascual Gurpegui",
+        "role": "People, Organization and e-Administration Manager at Ajuntament de Barcelona / Gerent de Persones, Organització i Administració Electrònica a l’Ajuntament de Barcelona"
+      },
+      {
+        "name": "Ernest Pla Martínez",
+        "role": "Global VP of Talent & Organization at Grifols / Vicepresident Global de Talent i Organització a Grifols"
+      },
+      {
+        "name": "Albert Campabadal",
+        "role": "President at Grupo SIFU / President a Grupo SIFU"
+      },
+      {
+        "name": "Sandra Alonso",
+        "role": "Program Leader at Eurofirms Foundation / Responsable de Programa a Eurofirms Foundation"
+      }
+    ],
+    "description": "Join this inspiring and co-creative session where we will bring together people with disabilities, talent teams, and experts from various organizations to explore how to drive inclusion and break down barriers to employment. In a hands-on session, with inspiring testimonies and collaborative activities, we will design solutions to enhance inclusion and amplify abilities through technology. Come help humanize the future!",
+    "tags": [],
+    "lang": "Spanish",
+    "companies": [
+      "SEIDOR / Directora d’Estratègia i Transformació a SEIDOR",
+      "Ajuntament de Barcelona / Gerent de Persones, Organització i Administració Electrònica a l’Ajuntament de Barcelona",
+      "Grifols / Vicepresident Global de Talent i Organització a Grifols",
+      "Grupo SIFU / President a Grupo SIFU",
+      "Eurofirms Foundation / Responsable de Programa a Eurofirms Foundation"
+    ],
+    "company": "SEIDOR / Directora d’Estratègia i Transformació a SEIDOR",
+    "short": "Disability Inclusion in AI-Era Workforce"
+  },
+  {
+    "day": 3,
+    "time": "09:30-11:00",
+    "stage": "XPRO Lab",
+    "title": "Build Your First AI Model in Under 60 Minutes – From Zero to Deployed",
+    "speakers": [
+      {
+        "name": "Louis Moreau",
+        "role": "Head of Developer Relations at Edge Impulse"
+      },
+      {
+        "name": "Jim Bruges",
+        "role": "Senior Developer Relations Engineer at Edge Impulse"
+      },
+      {
+        "name": "Marc Pous",
+        "role": "Developer Relations Staff Engineer at Edge Impulse"
+      }
+    ],
+    "description": "Join us for a hands-on workshop where you’ll learn how to train and deploy your first Machine Learning model using Edge Impulse. Designed for beginners and experienced developers, the session covers data collection, model training, and deployment on edge devices. You’ll build an end-to-end real-time Object Detection application running directly on hardware. No prior ML experience required—just bring your laptop and curiosity!",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "English",
+    "companies": [
+      "Edge Impulse"
+    ],
+    "company": "SEIDOR",
+    "short": "Build and Deploy AI Model in 60 Minutes"
+  },
+  {
+    "day": 3,
+    "time": "09:45-10:15",
+    "stage": "Robotics",
+    "title": "Building complex code-defined AI agents that execute robotic actions",
+    "speakers": [
+      {
+        "name": "Enric Domingo",
+        "role": "Principal Data & AI Engineer at ERNI"
+      }
+    ],
+    "description": "In this session, we will break open the black box of language model–based agents (LLMs) to understand how they are built and connected. We will also explore how these agents can go beyond simply answering questions with text, performing real-world actions that are automatically executed by a robotic arm.",
+    "tags": [
+      "ROBOTICS"
+    ],
+    "lang": "Catalan",
+    "companies": [
+      "ERNI"
+    ],
+    "company": "ERNI",
+    "short": "Code-Defined AI Agents for Robotics"
+  },
+  {
+    "day": 3,
+    "time": "10:00-10:30",
+    "stage": "Visionary Stage",
+    "title": "Quantum Sensors: The Technology That Measures the Impossible",
+    "speakers": [
+      {
+        "name": "José Luis Crespo",
+        "role": "Physicist, science communicator and creator of the podcast \"Quantum Fracture\""
+      }
+    ],
+    "description": "When people talk about quantum technology, almost all the attention goes to quantum computers, presented as the great revolution of the future. But they are not the only one, nor necessarily the most influential. This talk focuses on a silent revolution already underway: quantum sensors. Through atomic clocks and SQUIDs, it combines scientific explanation with real-world anecdotes to show how quantum physics has moved from theory to measuring the impossible.",
+    "tags": [
+      "Future Trends"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Quantum Fracture"
+    ],
+    "company": "Quantum Fracture",
+    "short": "Quantum Sensors: Measuring Impossibilities"
+  },
+  {
+    "day": 3,
+    "time": "10:00-10:30",
+    "stage": "XPRO stage",
+    "title": "Another bot? No: an architecture",
+    "speakers": [
+      {
+        "name": "Manuel José Mora",
+        "role": "AI Expert at Banco de España"
+      }
+    ],
+    "description": "As demand for chatbots grows, creating isolated assistants becomes unsustainable. Our solution is an agent‑based architecture with a single entry point, MIA, which autonomously determines what each user can access based on their profile. By orchestrating specialized agents, MIA ensures scalability, consistency, and a more controlled, efficient user experience.",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Banco de España"
+    ],
+    "company": "Banco de España",
+    "short": "Beyond Bots: AI Architecture Design"
+  },
+  {
+    "day": 3,
+    "time": "10:00-11:00",
+    "stage": "Skills Hub",
+    "title": "Immersive Interview Experience: Live a Real Interview",
+    "speakers": [],
+    "description": "The job interview is a demanding process that requires preparation and strategy. Through a hands-on, “training mode” experience, participants can practice, improve their pitch, and gain confidence to perform at their best in a real interview. In this workshop, you will find the most realistic simulator to help you avoid mistakes in an actual job interview.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Spanish",
+    "companies": [],
+    "company": "",
+    "short": "Live Interview Experience"
+  },
+  {
+    "day": 3,
+    "time": "10:30-11:00",
+    "stage": "Visionary Stage",
+    "title": "Learning at the Speed of AI: Upskilling and the Future of Learning",
+    "speakers": [
+      {
+        "name": "Timothy Serewicz",
+        "role": "Vice President of Education at The Linux Foundation"
+      }
+    ],
+    "description": "The evolving role of upskilling in a landscape where traditional knowledge providers (universities, training companies) coexist with self-service models, pre-packaged courses, and AI-powered learning assistants.",
+    "tags": [
+      "Cloud Computing"
+    ],
+    "lang": "English",
+    "companies": [
+      "The Linux Foundation"
+    ],
+    "company": "The Linux Foundation",
+    "short": "Upskilling at the Speed of AI"
+  },
+  {
+    "day": 3,
+    "time": "10:30-11:00",
+    "stage": "XPRO stage",
+    "title": "From Measurement to Intelligence: Server-Side Strategy in the Cookieless Era",
+    "speakers": [
+      {
+        "name": "Anna Buron",
+        "role": "Senior Product Owner - Data & Analytics at MediaMarkt"
+      }
+    ],
+    "description": "How can you personalize at scale without compromising customer trust? MediaMarkt will show how their server-side strategy allows them to control, protect, and activate first-party data to drive AI, secure personalization, and relevant real-time experiences. A hands-on session to understand what it truly means to be data-driven today, shift your mindset, and leave with a clear vision for designing strategies ready for the digital future.",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "MediaMarkt"
+    ],
+    "company": "MediaMarkt",
+    "short": "Server-Side Strategy in Cookieless Era"
+  },
+  {
+    "day": 3,
+    "time": "10:30-11:30",
+    "stage": "Meetup area",
+    "title": "Shape Your Future: Explore Sage’s Graduate Programme",
+    "speakers": [
+      {
+        "name": "Julie Boulanger",
+        "role": "Learning Experience Specialist at Sage"
+      },
+      {
+        "name": "Blanca Miguel Casanovas",
+        "role": "UX Designer at Sage"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Sage"
+    ],
+    "company": "Sage",
+    "short": "Sage Graduate Programme"
+  },
+  {
+    "day": 3,
+    "time": "10:30-11:00",
+    "stage": "Gaming",
+    "title": "Do’s & Don’ts for your Indie game",
+    "speakers": [
+      {
+        "name": "Virgilio Cortez",
+        "role": "Founder at Hyper Three Studios"
+      }
+    ],
+    "description": "Lessons learned from our latest title:Tiny Lands 2.",
+    "tags": [
+      "GAMING"
+    ],
+    "lang": "English",
+    "companies": [
+      "Hyper Three Studios"
+    ],
+    "company": "Hyper Three Studios",
+    "short": "Indie Game Tips"
+  },
+  {
+    "day": 3,
+    "time": "10:30-11:30",
+    "stage": "XPRO Talks",
+    "title": "The AI-Ready Workforce: Who Thrives, Who Survives?",
+    "speakers": [
+      {
+        "name": "Marcela Mogilska",
+        "role": "Founder & Managing Director at Radia (moderator)"
+      },
+      {
+        "name": "Rosario Sierra",
+        "role": "Talent Solutions Leader at LinkedIn Iberia"
+      },
+      {
+        "name": "Irene Rodríguez Puig",
+        "role": "Chief People Officer at Paack"
+      },
+      {
+        "name": "Iulia Crai",
+        "role": "Head of Talent Acquisition at Superhuman"
+      },
+      {
+        "name": "Andreea Lungulescu",
+        "role": "The Principal Recruiter / Talent Crunch – Berlin Founder"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Management"
+    ],
+    "lang": "English",
+    "companies": [
+      "Radia",
+      "LinkedIn Iberia",
+      "Paack",
+      "Superhuman",
+      "Talent Crunch"
+    ],
+    "company": "LinkedIn",
+    "short": "Building an AI-Ready Workforce"
+  },
+  {
+    "day": 3,
+    "time": "10:30-11:30",
+    "stage": "Hotspot Talks",
+    "title": "How the age of AI and Cloud reshapes prototyping skills",
+    "speakers": [
+      {
+        "name": "José A. Rodríguez Serrano",
+        "role": "Senior Lecturer & Head of Department at Esade"
+      }
+    ],
+    "description": "Compared to a few years ago, developing applications is cheaper and more “commoditized”. We have programming languages with strong ecosystems of libraries, normalized the use of cloud, converged to sharing AI algoritms as a service, and exploited generative AI to save coding time. This changes how companies develop products and reshapes skills like prototyping. This talk reviews implications and examples at the technical and organizational levels.",
+    "tags": [
+      "Cloud Computing"
+    ],
+    "lang": "English",
+    "companies": [
+      "Esade"
+    ],
+    "company": "Esade",
+    "short": "AI and Cloud Reshape Prototyping"
+  },
+  {
+    "day": 3,
+    "time": "10:30-11:30",
+    "stage": "Plug-in Talks",
+    "title": "Women influencing and leading the forefront of tech",
+    "speakers": [],
+    "description": "As part of Talent Arena, this session brings together three women awarded the DonaTIC Awards, recognized for driving digital talent and paving the way in the STEM ecosystem: Marta Portalés (MWCapital), Alba Cervera Lierta (BSC), and Estel Blay (Associació Hypatia Mars), moderated by Marjorie Grassler (MWCapital). It’s an inspirational conversation that highlights real role models who make an impact and create opportunities for others to succeed. The panel explores how to build a STEM career while navigating data, decisions, and reasonable doubts. The speakers will share the driving forces behind their progress: influences, alliances, and key moments, and how this legacy has translated into innovation, leadership, and new ways of working. The session closes with two simple yet powerful questions: what can you do with this tomorrow? And, above all, who do you want to influence and help grow from now on?",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Catalan",
+    "companies": [],
+    "company": "",
+    "short": "Women Leaders Shaping Tech Future"
+  },
+  {
+    "day": 3,
+    "time": "11:00-11:30",
+    "stage": "XPRO stage",
+    "title": "From Idea to Product: Rethinking How We Build in the Age of AI",
+    "speakers": [
+      {
+        "name": "Emil Sjölander",
+        "role": "Director, Software Engineering at Figma"
+      }
+    ],
+    "description": "Technology has fundamentally changed almost every part of how we work today. Yet many companies haven’t updated their ways of working. So just how should companies, leaders, and individuals reorganize for this new world?",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "English",
+    "companies": [
+      "Figma"
+    ],
+    "company": "Figma",
+    "short": "Building Products in the AI Age"
+  },
+  {
+    "day": 3,
+    "time": "11:00-11:30",
+    "stage": "Visionary Stage",
+    "title": "What If AI Fails?: A Method for Useful and Human-Centered AI",
+    "speakers": [
+      {
+        "name": "Cristina Vázquez Pelegrí",
+        "role": "Director of AI Governance – CAIO at Caixabank"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Caixabank"
+    ],
+    "company": "Caixabank",
+    "short": "Human-Centered AI: Building for Failure"
+  },
+  {
+    "day": 3,
+    "time": "11:15-11:45",
+    "stage": "Robotics",
+    "title": "UAB-Cruïlla Chair Robotic Prototypes",
+    "speakers": [
+      {
+        "name": "Adrian Gonzalez",
+        "role": "Founder at Lopako"
+      }
+    ],
+    "description": "In the context of the Chair UAB-Cruïlla, it’s talent program is presenting you 2 robotic prototypes, developed within the context of AI in the Music & Arts field. These projects have been developed and will be presented by the students themselves. They are both creating a strat-up. In addition to helping the students to level up their TRL, the Chair provided a real-life scenario to validate their MPV.",
+    "tags": [
+      "ROBOTICS"
+    ],
+    "lang": "English",
+    "companies": [
+      "Lopako"
+    ],
+    "company": "Lopako",
+    "short": "UAB-Cruïlla Robotic Prototypes"
+  },
+  {
+    "day": 3,
+    "time": "11:15-12:45",
+    "stage": "Focus Lab",
+    "title": "Authorship, Identity, and Fan Culture in the AI Era",
+    "speakers": [
+      {
+        "name": "Casandra Vicente",
+        "role": "Entrepreneur & Ex-Google, ESIC Lecturer - ESIC University"
+      }
+    ],
+    "description": "This workshop offers digital leaders and creative professionals an ethical, clear, and practical framework to interpret authorship, ownership, and visual identity in the era of generative AI. We examine who can claim rights over AI-generated content, how AI is transforming current creative processes, and how users generate fan-made images and products inspired by brands and cultural icons. We also address how artists and companies can protect their visual identity without stifling new forms of community-driven creativity. Attendees will gain strategic criteria to manage risks, rights, and cultural integrity.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "ESIC University"
+    ],
+    "company": "ESIC University",
+    "short": "Authorship and Identity in AI Culture"
+  },
+  {
+    "day": 3,
+    "time": "11:15-12:45",
+    "stage": "Frontier lab",
+    "title": "Giving AI Agents Superpowers: Connecting Them to the Real World with MCP",
+    "speakers": [
+      {
+        "name": "Darragh Hoare",
+        "role": "Graduate AI Engineer at Sage"
+      },
+      {
+        "name": "Lara Ozdamar",
+        "role": "Graduate AI Engineer at Sage"
+      },
+      {
+        "name": "Daniel Seara",
+        "role": "Software Engineer Team Leader at Sage"
+      },
+      {
+        "name": "Adria Avellaneda",
+        "role": "Software Engineer Team Lead at Sage"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Cloud Computing"
+    ],
+    "lang": "English",
+    "companies": [
+      "Sage"
+    ],
+    "company": "Sage",
+    "short": "Empowering AI Agents with Real-World MCP"
+  },
+  {
+    "day": 3,
+    "time": "11:15-12:45",
+    "stage": "XPRO Lab",
+    "title": "The Red Team: The Telco AI Prompt Engineering Challenge – WIn Prizes!",
+    "speakers": [
+      {
+        "name": "John David Kim",
+        "role": "AI Industry Lead, GSMA APACHead of North East Asia & DX Acceleration Forum at GSMA"
+      },
+      {
+        "name": "Louis Powell",
+        "role": "Director of AI Initiatives at GSMA"
+      },
+      {
+        "name": "Michael Hwang",
+        "role": "Co-Founder and Chief Strategy Officer at Datumo"
+      },
+      {
+        "name": "Jerry Jae Yeol Kim",
+        "role": "Research Fellow in Future Tech & Strategy at LG Uplus | Vice Exec Chair at 6G Forum at LG U+"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "GSMA",
+      "Datumo",
+      "LG Uplus | Vice Exec Chair at 6G Forum at LG U+"
+    ],
+    "company": "GSMA",
+    "short": "Telco AI Prompt Engineering Challenge"
+  },
+  {
+    "day": 3,
+    "time": "11:30-12:30",
+    "stage": "Visionary Stage",
+    "title": "Fireside Chat: Tim Berners-Lee",
+    "speakers": [
+      {
+        "name": "Tim-Berners Lee",
+        "role": "World Wide Web (WEB) Inventor and Winner of the ACM Turing Prize"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "W3C"
+    ],
+    "company": "W3C",
+    "short": "Fireside Chat with Tim Berners-Lee"
+  },
+  {
+    "day": 3,
+    "time": "11:30-12:30",
+    "stage": "Meetup area",
+    "title": "The community that changed your life (or the one you’re still looking for)",
+    "speakers": [
+      {
+        "name": "Isabel Rodríguez Olivar",
+        "role": "Business Development at Next Digital"
+      },
+      {
+        "name": "Laura Vignali",
+        "role": "Event Lead at Next Digital"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Next Digital"
+    ],
+    "company": "Next Digital",
+    "short": "Community That Changed You"
+  },
+  {
+    "day": 3,
+    "time": "11:30-12:30",
+    "stage": "Plug-in Talks",
+    "title": "Hard-Earned Truths About Shipping GenAI on the Factory Floor",
+    "speakers": [
+      {
+        "name": "Juan Aguila",
+        "role": "Head of AI for HP Industrial"
+      }
+    ],
+    "description": "In this talk I’ll share the hard-earned truths from applying GenAI in production for manufacturing at HP: where it actually delivers value, where it breaks (data, integration, latency, reliability, safety/compliance, culture and adoption), and what we changed in our approach to make it usable for operators and engineers.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "English",
+    "companies": [
+      "HP"
+    ],
+    "company": "HP",
+    "short": "GenAI Deployment in Manufacturing"
+  },
+  {
+    "day": 3,
+    "time": "11:30-12:30",
+    "stage": "XPRO Talks",
+    "title": "Python on Android – How to combine the uncombinable?",
+    "speakers": [],
+    "description": "Follow me on three ways how to integrate a python hardware security module library into your Android app. I) localhost and Termux (🦅🪹) II) translate™️ Python to Kotlin. (😱😱) III) Chaquopy (👀) After scaring the audience with the first two options, I will present the easiest: Chaquopy. Expect an eccentric mix of Python and Kotlin, all to make the most secure Android App possible.",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "English",
+    "companies": [],
+    "company": "",
+    "short": "Running Python on Android Devices"
+  },
+  {
+    "day": 3,
+    "time": "11:30-12:30",
+    "stage": "Hotspot Talks",
+    "title": "PLAI – Data and AI Democratization at Sanofi",
+    "speakers": [],
+    "description": "Meet PLAI, Sanofi’s decision intelligence platform that turns complex data into snackable, real time insights across R&D, Clinical Ops, M&S, Quality, Finance and GTM. With AI Agents—including Super Agent—PLAI helps teams anticipate, simulate what ifs, and act with confidence. Discover how human + AI collaboration is cutting noise, speeding decisions, and opening a new era of intelligent operations.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [],
+    "company": "Sanofi",
+    "short": "Democratizing Data and AI at Scale"
+  },
+  {
+    "day": 3,
+    "time": "11:30-12:30",
+    "stage": "Barcelona",
+    "title": "Women Talent in the Tech Sector",
+    "speakers": [],
+    "description": "The tech sector offers opportunities for women talent to grow. This discussion focuses on programs that open doors to new careers, communities that connect women with role models and real support, and companies driving transformative initiatives. Through experiences and best practices, it will show how to inspire vocations, strengthen careers, and foster a more diverse and future-ready tech sector.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Catalan",
+    "companies": [],
+    "company": "",
+    "short": "Women Talent in Technology"
+  },
+  {
+    "day": 3,
+    "time": "11:30-12:30",
+    "stage": "Skills Hub",
+    "title": "Decode Yourself: Discover Your DISC Style and Improve How You Work",
+    "speakers": [],
+    "description": "The DISC model identifies four behavioral styles that influence how we make decisions, communicate, and face challenges. Understanding them improves teamwork, professional effectiveness, and interpersonal relationships, helping individuals gain better self-awareness and respond appropriately in any situation. A workshop designed to help participants decode themselves through DISC.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Spanish",
+    "companies": [],
+    "company": "",
+    "short": "DISC Personality Discovery"
+  },
+  {
+    "day": 3,
+    "time": "12:00-12:30",
+    "stage": "Gaming",
+    "title": "Everyday objects as game mechanics",
+    "speakers": [
+      {
+        "name": "Carlos Martinez",
+        "role": "CEO at Dust Games"
+      }
+    ],
+    "description": "Some of the most memorable game mechanics are inspired by the simplest things around us.",
+    "tags": [
+      "GAMING"
+    ],
+    "lang": "English",
+    "companies": [
+      "Dust Games"
+    ],
+    "company": "Dust Games",
+    "short": "Game Mechanics from Everyday Objects"
+  },
+  {
+    "day": 3,
+    "time": "12:30-13:00",
+    "stage": "Visionary Stage",
+    "title": "From Data to Impact: How AI @Roche Is Rewriting Healthcare",
+    "speakers": [
+      {
+        "name": "Erez Kestenband",
+        "role": "Global Head Architecture and Software at Roche"
+      }
+    ],
+    "description": "AI is no longer a future promise in healthcare, it’s driving transformation today. At Roche, AI is being embedded across the healthcare value chain, turning complex data into actionable clinical and operational impact. This keynote shares real-world use cases, lessons learned, and the organizational mindset needed to scale AI from experimentation to measurable outcomes.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "Roche"
+    ],
+    "company": "Roche",
+    "short": "AI Impact in Healthcare at Roche"
+  },
+  {
+    "day": 3,
+    "time": "12:30-13:00",
+    "stage": "XPRO stage",
+    "title": "Engineering in the Age of AI – Why Fundamentals Matter More Than Ever",
+    "speakers": [
+      {
+        "name": "Sergi Falcon",
+        "role": "Software Engineer at Porsche Digital"
+      }
+    ],
+    "description": "Artificial Intelligence is reshaping how software is built and learned. While AI boosts productivity, it also brings risks like shallow understanding and over-reliance. In this session, Porsche Digital engineers share how to use AI as a co-pilot, where it adds value, and why strong fundamentals remain essential.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "Porsche Digital"
+    ],
+    "company": "Porsche Digital",
+    "short": "AI Engineering Fundamentals"
+  },
+  {
+    "day": 3,
+    "time": "12:30-13:30",
+    "stage": "Meetup area",
+    "title": "DonesTIC Community: inspiration, connections, and community in a single gathering",
+    "speakers": [
+      {
+        "name": "Tara Chklovski",
+        "role": "Founder & CEO of Technovation"
+      }
+    ],
+    "description": "Tara Chklovski – Founder & CEO of Technovation",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Catalan",
+    "companies": [
+      "Technovation"
+    ],
+    "company": "Technovation",
+    "short": "DonesTIC Community Connections"
+  },
+  {
+    "day": 3,
+    "time": "12:30-13:30",
+    "stage": "Hotspot Talks",
+    "title": "A holistic view of artificial intelligence",
+    "speakers": [
+      {
+        "name": "Antonio Serrano Acitores",
+        "role": "Universidad Rey Juan Carlos – Coordinador de Digitalización, Innovación y Comunicación"
+      },
+      {
+        "name": "Elena González-Blanco García",
+        "role": "Microsoft – Head of AI for Digital Natives in EMEA"
+      },
+      {
+        "name": "Cristina Casado Cañeque",
+        "role": "Fundación Formación y Futuro – Deputy Executive Director (Moderadora)"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "Universidad Rey Juan Carlos",
+      "Microsoft",
+      "Fundación Formación y Futuro"
+    ],
+    "company": "Microsoft",
+    "short": "Holistic Perspective on AI"
+  },
+  {
+    "day": 3,
+    "time": "12:30-13:30",
+    "stage": "Plug-in Talks",
+    "title": "Managing full infrastructure with GitOps and Crossplane",
+    "speakers": [
+      {
+        "name": "Pere  Alcoberro Turu",
+        "role": "Head of Platform Engineering of BMP Claims and Retail at Allianz"
+      }
+    ],
+    "description": "Allianz Technology aims to unify its Platform Engineering model to reduce complexity and enhance developer experience globally. Addressing fragmented tooling and complex pipelines, the strategy proposes a hierarchical architecture using GitOps, Argo CD, and Crossplane. It focuses on a multi-tenant Internal Developer Platform with clear responsibilities, reusable APIs, centralized governance, and secure automation for faster, safer delivery.",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "English",
+    "companies": [
+      "Allianz"
+    ],
+    "company": "Allianz",
+    "short": "GitOps and Crossplane Infrastructure"
+  },
+  {
+    "day": 3,
+    "time": "12:30-13:30",
+    "stage": "XPRO Talks",
+    "title": "The Final Frontier with the Digital Twin",
+    "speakers": [
+      {
+        "name": "Marta Gascón Corella",
+        "role": "Senior Manager Business Analytics Area at NTT Data"
+      }
+    ],
+    "description": "The Final Frontier with the Digital Twin. Have We Reached the Limit of Current Technology?",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "NTT Data"
+    ],
+    "company": "NTT Data",
+    "short": "Digital Twin Technology"
+  },
+  {
+    "day": 3,
+    "time": "12:30-13:30",
+    "stage": "Barcelona",
+    "title": "Discover In-Demand Profiles and Connect with Companies",
+    "speakers": [
+      {
+        "name": "Rosaura Alastruey (moderator)",
+        "role": "Networking Facilitator at Rosaura Alastruey and Barcelona Activa"
+      },
+      {
+        "name": "Maria Barragan",
+        "role": "Organizational Change Management at SIRT"
+      },
+      {
+        "name": "Emili Bonilla Ardévol",
+        "role": "Partner at Propelling Tech"
+      },
+      {
+        "name": "Emma Urbina",
+        "role": "CEO and Co-founder at Jotavirtual"
+      },
+      {
+        "name": "Isabel Comas Segarra",
+        "role": "Coordinator of Career Services and Guidance Programs at Barcelona Activa"
+      }
+    ],
+    "description": "With the participation of companies, discover which digital profiles are most in demand, which skills are key, and which trends dominate the sector. The session includes guided networking, allowing you to make direct contacts with companies. An experience to guide you, help you learn, and boost your digital career.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Catalan",
+    "companies": [
+      "Rosaura Alastruey and Barcelona Activa",
+      "SIRT",
+      "Propelling Tech",
+      "Jotavirtual",
+      "Barcelona Activa"
+    ],
+    "company": "Rosaura Alastruey and Barcelona Activa",
+    "short": "Connecting Talent with Employers"
+  },
+  {
+    "day": 3,
+    "time": "12:45-13:15",
+    "stage": "Robotics",
+    "title": "The New Era of Social Robotics: Turning Vision into Real-World Impact",
+    "speakers": [
+      {
+        "name": "Jordi Cabau",
+        "role": "CTO at Group Saltó"
+      }
+    ],
+    "description": "Robotics is no longer a promise of the future, it’s a real-world driver of change. In this talk, Group Saltó’s CTO shares how we design and deploy applied robotic solutions, presenting the biggest active project in social robotics for the elderly. Explore the challenges and emerging horizons shaping the next generation of robotics.",
+    "tags": [
+      "ROBOTICS"
+    ],
+    "lang": "English",
+    "companies": [
+      "Group Saltó"
+    ],
+    "company": "Group Saltó",
+    "short": "Social Robotics in Real World"
+  },
+  {
+    "day": 3,
+    "time": "13:00-13:30",
+    "stage": "XPRO stage",
+    "title": "Europe’s moment to rise and finish the digital single market",
+    "speakers": [
+      {
+        "name": "Marietje Schaake",
+        "role": "Non-resident Fellow at Stanford's Cyber Policy Center and at the Institute for Human-Centered AI"
+      }
+    ],
+    "description": "Technology is a critical tool in the toolbox of geopolitical actors. Some companies are global players in their own right. Tech should be understood through a lense of power. Power to enjoy self-determination and sovereignty, power to innovate and grow, and power to defend or attack. The challenges of European tech dependencies can be shaped into a spectacular opportunity.",
+    "tags": [
+      "Cybersecurity"
+    ],
+    "lang": "English",
+    "companies": [
+      "Stanford's Cyber Policy Center and at the Institute for Human-Centered AI"
+    ],
+    "company": "Stanford's Cyber Policy Center and at the Institute for Human-Centered AI",
+    "short": "EU Digital Single Market"
+  },
+  {
+    "day": 3,
+    "time": "13:00-13:30",
+    "stage": "Visionary Stage",
+    "title": "From Brew to Breakthrough: Accelerating Innovation with AI",
+    "speakers": [
+      {
+        "name": "Laura Gil",
+        "role": "Chief Data and Digital Officer at Damm"
+      }
+    ],
+    "description": "For over 150 years, Damm has driven innovation, and today AI accelerates the entire process from concept to prototype. The session will show how AI transforms ideation, design, testing, and validation, with practical examples of tools that reduce time‑to‑market and blend tradition with cutting‑edge technology",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "Damm"
+    ],
+    "company": "Damm",
+    "short": "Accelerating Innovation with AI"
+  },
+  {
+    "day": 3,
+    "time": "13:00-14:30",
+    "stage": "XPRO Lab",
+    "title": "Quickstart eBPF: Boosting Metrics and Security in Kubernetes",
+    "speakers": [
+      {
+        "name": "Timothy Serewicz",
+        "role": "Vice President of Education at The Linux Foundation"
+      }
+    ],
+    "description": "Dive into the power of eBPF with this hands-on quickstart workshop, designed to equip you with essential skills for enhancing observability and protection in Kubernetes environments. You’ll learn how eBPF enables kernel-level metrics collection, allowing real-time insights into pod performance, network traffic, and resource usage. Explore eBPF’s security applications, including runtime threat detection, access control enforcement, and anomaly monitoring.The workshop exercise will be conducted using Ubuntu 24.04. Students may use a local VM or a cloud instance as desired. If using a cloud instance, please test that you can access your cloud instance via PuTTY (Windows) or a terminal (Linux/Mac) before the session.",
+    "tags": [
+      "Cloud Computing"
+    ],
+    "lang": "English",
+    "companies": [
+      "The Linux Foundation"
+    ],
+    "company": "The Linux Foundation",
+    "short": "eBPF for Kubernetes Metrics"
+  },
+  {
+    "day": 3,
+    "time": "13:00-14:30",
+    "stage": "Focus Lab",
+    "title": "Beyond AI: the skills that make you employable by 42 Barcelona",
+    "speakers": [
+      {
+        "name": "Cristina Fernández",
+        "role": "UX and Educational Innovation at 42 Barcelona Fundación Telefónica"
+      }
+    ],
+    "description": "The future of work is already here. AI, digitalization, and cybersecurity are transforming the job market. In this interactive workshop, we’ll explore the most in-demand skills for 2025 and 2030 according to the World Economic Forum and put them to the test in real time. Is learning to code still relevant in the age of AI? Join the 42 Barcelona team and discover how to boost your talent and stand out in the tech revolution.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Spanish",
+    "companies": [],
+    "company": "42 Barcelona",
+    "short": "Essential Skills Beyond AI Knowledge"
+  },
+  {
+    "day": 3,
+    "time": "13:00-14:30",
+    "stage": "Frontier lab",
+    "title": "More than a Hack – Final Pitching",
+    "speakers": [
+      {
+        "name": "Albert Mundet",
+        "role": "General Director at Barça Innovation Hub"
+      }
+    ],
+    "description": "Barça Innovation Hub, Metrica Sports, and MWCapital have launched “More than a Hack”, a pioneering competition that brings together generative artificial intelligence and real sports data to transform football analytics and tactical decision-making. During this session, the five finalist teams will take the spotlight to present their innovative solutions in front of a distinguished jury of industry experts and general audience.",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "English",
+    "companies": [
+      "Barça Innovation Hub"
+    ],
+    "company": "Barça Innovation Hub",
+    "short": "Hackathon Final Pitching Session"
+  },
+  {
+    "day": 3,
+    "time": "13:00-14:00",
+    "stage": "Skills Hub",
+    "title": "Back to Your Future: get ready for the tech market",
+    "speakers": [
+      {
+        "name": "Javier Martínez",
+        "role": "Leader – Claire Joster Technology en Claire Joster"
+      },
+      {
+        "name": "José María Flores",
+        "role": "Regional Leader – Madrid en Claire Joster"
+      },
+      {
+        "name": "Jordi Llahí",
+        "role": "Sales and Marketing Leader en Claire Joster"
+      },
+      {
+        "name": "Jordi Valls",
+        "role": "Senior Consultant 360 en Claire Joster"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Claire Joster"
+    ],
+    "company": "Claire Joster",
+    "short": "Tech Job Market Preparation"
+  },
+  {
+    "day": 3,
+    "time": "13:30-14:00",
+    "stage": "XPRO stage",
+    "title": "Model Context Protocol: the standard bridge between generative AI and the world",
+    "speakers": [
+      {
+        "name": "Carlos Milán Figueredo",
+        "role": "Principal Solutions Architect at AWS"
+      }
+    ],
+    "description": "Aware of how data quality, function calling and agents have expanded the potential of generative AI, Anthropic released the Model Context Protocol (MCP), a model-agnostic open source framework that standardizes context exchange and actions between generative AI models and any software, such as cloud providers, databases, applications, filesystems, SaaS, frameworks… What does MCP enable today? What does it mean for the business? What does it mean for architects and developers? What are the security best practices? Let’s dive deep into the potential it brings to the industry.",
+    "tags": [
+      "Cloud Computing"
+    ],
+    "lang": "English",
+    "companies": [
+      "AWS"
+    ],
+    "company": "AWS",
+    "short": "Model Context Protocol Standard"
+  },
+  {
+    "day": 3,
+    "time": "13:30-14:30",
+    "stage": "Visionary Stage",
+    "title": "Fireside Chat: Kate Darling",
+    "speakers": [
+      {
+        "name": "Kate Darling",
+        "role": "Researcher at the Boston Dynamics AI Institute & MIT Media Lab"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "ROBOTICS"
+    ],
+    "lang": "English",
+    "companies": [],
+    "company": "MIT Media Lab",
+    "short": "Fireside Chat with Kate Darling"
+  },
+  {
+    "day": 3,
+    "time": "13:30-14:30",
+    "stage": "Meetup area",
+    "title": "Connect to Elevate: Volunteering Tech Skills for Impact",
+    "speakers": [
+      {
+        "name": "Anna Baella",
+        "role": "CodeWomen+ ESC at Open Cultural Center"
+      },
+      {
+        "name": "Ly-Ly Janusz",
+        "role": "Education & Community Manager at Open Cultural Center"
+      },
+      {
+        "name": "Marta Kjorven",
+        "role": "Fundraising Officer at Open Cultural Center"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Management"
+    ],
+    "lang": "English",
+    "companies": [
+      "Open Cultural Center"
+    ],
+    "company": "Open Cultural Center",
+    "short": "Tech Volunteering for Social Impact"
+  },
+  {
+    "day": 3,
+    "time": "13:30-14:00",
+    "stage": "Gaming",
+    "title": "Why Players Don’t Quit: designing engaging difficulty",
+    "speakers": [
+      {
+        "name": "Victor Espin",
+        "role": "Co-Founder & Game Designer at 43 Studios"
+      }
+    ],
+    "description": "Designing engaging difficulty. Many difficult games fail because they confuse difficulty with frustration. In this talk, we will explore how Hell of an Office builds tension, precision, and repetition without breaking player motivation.",
+    "tags": [
+      "GAMING"
+    ],
+    "lang": "English",
+    "companies": [],
+    "company": "43 Studios",
+    "short": "Engaging Game Difficulty"
+  },
+  {
+    "day": 3,
+    "time": "13:30-14:30",
+    "stage": "Barcelona",
+    "title": "Managing Transformation: How AI Reshapes Health Organizations & Physicians",
+    "speakers": [
+      {
+        "name": "Khalid Bouziane",
+        "role": "Senior Data Scientist – ASHO"
+      },
+      {
+        "name": "Cristina Morgan",
+        "role": "Ferrer – Innovation and CX Lead"
+      },
+      {
+        "name": "Ruth Gumbau",
+        "role": "Journalist at Barcelona Health Hub (Moderator)This roundtable explores how AI is transforming healthcare organizations, reshaping clinical workflows, and redefining the role of physicians. Experts will discuss practical adoption, cultural and organizational change, ethics, and how professionals can lead this transition to deliver more efficient, personalized, and patient-centered care."
+      },
+      {
+        "name": "Jordi Guitart",
+        "role": "M47 AI COMPANY – VP of Artificial Intelligence Health & Pharma"
+      },
+      {
+        "name": "Ruth Gumbau",
+        "role": "Journalist at Barcelona Health Hub (Moderator)"
+      }
+    ],
+    "description": "This roundtable explores how AI is transforming healthcare organizations, reshaping clinical workflows, and redefining the role of physicians. Experts will discuss practical adoption, cultural and organizational change, ethics, and how professionals can lead this transition to deliver more efficient, personalized, and patient-centered care.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "ASHO",
+      "Ferrer",
+      "Barcelona Health Hub",
+      "M47 AI"
+    ],
+    "company": "Ferrer",
+    "short": "AI Transformation in Healthcare"
+  },
+  {
+    "day": 3,
+    "time": "13:30-14:30",
+    "stage": "Hotspot Talks",
+    "title": "AI Transfer: From Lab to the Global Market",
+    "speakers": [
+      {
+        "name": "Jordi Berenguer",
+        "role": "Universitat Politècnica de Catalunya – BarcelonaTech (UPC) – Vice-rector for Transfer, Innovation and Entrepreneurship"
+      },
+      {
+        "name": "Karina Gibert i Oliveres",
+        "role": "Universitat Politècnica de Catalunya – BarcelonaTech -Dean of the Official College of Computer Engineering of Catalonia and member of the Team Board of IDEAI-UPC (Intelligent Data Science and Artificial Intelligence Research Center)"
+      },
+      {
+        "name": "Carla Gomez Cano",
+        "role": "Co-founder of Theker Robotics, with a Bachelor’s degree in Industrial Electronic Engineering (EEBE-UPC) at Theker Robotics"
+      },
+      {
+        "name": "Aina Giral Balletbò",
+        "role": "People Business partner at Giesecke + Devrient (G+D)"
+      }
+    ],
+    "description": "3. (moderadora) M. José Jiménez Jiménez – Vice-rector for Teaching and Students – Universitat Politècnica de Catalunya – BarcelonaTech (UPC) – Universitat Politècnica de Catalunya",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "Catalan",
+    "companies": [
+      "Universitat Politècnica de Catalunya",
+      "the Official College of Computer Engineering of Catalonia and member of the Team Board of IDEAI-UPC",
+      "Theker Robotics",
+      "Giesecke + Devrient"
+    ],
+    "company": "Universitat Politècnica de Catalunya",
+    "short": "From AI Research to Market"
+  },
+  {
+    "day": 3,
+    "time": "13:30-14:30",
+    "stage": "Plug-in Talks",
+    "title": "The Evolution of the Developer’s Role in the Era of Agentic AI",
+    "speakers": [],
+    "description": "The emergence of Agentic AI is transforming software development and expanding the impact of the developer’s role. In this conversation between engineers, we will analyze how workflows are changing, which skills are becoming essential, and how to prepare for a reality in which humans and agents work together. A must-attend event for those who want to anticipate the future of development.",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "Spanish",
+    "companies": [],
+    "company": "",
+    "short": "Developer Role in AI Era"
+  },
+  {
+    "day": 3,
+    "time": "13:30-14:30",
+    "stage": "XPRO Talks",
+    "title": "From Data Stack Challenges to AI-Ready Scale: Lessons Learned with ClickHouse",
+    "speakers": [],
+    "description": "We’ll dive into measurable outcomes achieved across both technical performance and business impact, and close with a forward-looking discussion on current AI and agent-driven initiatives. What’s top of mind as teams prepare their data infrastructure for the next wave of intelligent applications? Join us for practical insights, candid lessons learned, and real-world results.",
+    "tags": [
+      "Cloud Computing"
+    ],
+    "lang": "English",
+    "companies": [],
+    "company": "",
+    "short": "Scaling AI with ClickHouse"
+  },
+  {
+    "day": 3,
+    "time": "14:00-14:30",
+    "stage": "XPRO stage",
+    "title": "How to Overcome Big Challenges",
+    "speakers": [
+      {
+        "name": "Sara García Alonso",
+        "role": "Reserve Astronaut & Scientist, Spanish National Cancer Research Center"
+      }
+    ],
+    "description": "In this talk, Sara García Alonso shares how curiosity, courage, and perseverance can turn great challenges into opportunities for growth. Drawing from her experience as an oncology researcher and astronaut-in-training, she encourages reflection on the importance of taking risks, learning along the way, and never giving up. A presentation on personal leadership, resilience, and pushing beyond limits.",
+    "tags": [
+      "Future Trends"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "CNIO"
+    ],
+    "company": "CNIO",
+    "short": "Overcoming Major Challenges"
+  },
+  {
+    "day": 3,
+    "time": "15:00-16:00",
+    "stage": "Visionary Stage",
+    "title": "How AI will change the future of chess",
+    "speakers": [
+      {
+        "name": "Anna Cramling",
+        "role": "Chess Master and Content Creator"
+      }
+    ],
+    "description": "For decades, chess players have been terrified about the rise of computers and AI in the chess world. Many have believed that it will end the sport, because if computers are better than humans anyways, what is the point of having humans compete against eachother? This problem was famously raised in 1997 when the reigning world champion Garry Kasaprov lost to deepblue in a chess match. Today, that might seem like nothing unusual, but back then it symbolized that machines could excel at complex strategic tasks once thought to be uniquely human. Although many still fear what the future of a sport characterized by human intelligence holds in a world of computers, it is crucial to understand how computers and AI are going to, and already have, revolutionized chess. In many ways, the understanding of this centuries old game, is reaching levels we never thought it could reach. Levels, that would not be possible to reach, without computers. To talk more about this, we have Joost VandeVondole here, who can explain further, how Stockfish completely revolutionized the chess world.",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "English",
+    "companies": [
+      "Independent"
+    ],
+    "company": "Independent",
+    "short": "AI Transforming Chess Future"
+  },
+  {
+    "day": 3,
+    "time": "15:00-15:15",
+    "stage": "XPRO stage",
+    "title": "From Code to Capability: Unlocking New App Experiences with APIs",
+    "speakers": [
+      {
+        "name": "Toyeeb Rehman",
+        "role": "Lead Developer at GSMA"
+      }
+    ],
+    "description": "Developers already know how to build great apps but what if your apps could verify users instantly, prevent fraud by default, and adapt to real-world network conditions without added complexity? This session introduces Open Gateway and how standardised APIs unlock authentication, security, and network intelligence. Discover what’s newly possible, why it matters, and how it applies across fintech, gaming, AI, and mobility.",
+    "tags": [
+      "Future Trends"
+    ],
+    "lang": "English",
+    "companies": [
+      "GSMA"
+    ],
+    "company": "GSMA",
+    "short": "APIs Unlocking App Capabilities"
+  },
+  {
+    "day": 3,
+    "time": "15:00-16:00",
+    "stage": "Meetup area",
+    "title": "AI at the Edge: Meetup with Qualcomm, Edge Impulse & Arduino",
+    "speakers": [
+      {
+        "name": "Louis Moreau",
+        "role": "Head of Developer Relations at Edge Impulse"
+      },
+      {
+        "name": "Jim Bruges",
+        "role": "Senior Developer Relations Engineer at Edge Impulse"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "Edge Impulse"
+    ],
+    "company": "Edge Impulse",
+    "short": "Edge AI with Qualcomm and Arduino"
+  },
+  {
+    "day": 3,
+    "time": "15:00-15:30",
+    "stage": "Robotics",
+    "title": "Robot Autonomy In An Unstructured World",
+    "speakers": [
+      {
+        "name": "Calvin Chung",
+        "role": "3 Morgan at FieldAI"
+      }
+    ],
+    "description": "Field Foundation Models (FFMs) are opening new possibilities for real-world autonomy. FFMs are uniquely designed to build context and experience to anticipate probable outcomes. Rather than requiring vast amounts of data to prepare for every scenario the robot could encounter, FieldAI FFM embraces the uncertainty of unknown environments to make safer and faster decisions with much greater efficiency without maps, GPS or pre-programmed paths.",
+    "tags": [
+      "ROBOTICS"
+    ],
+    "lang": "English",
+    "companies": [
+      "FieldAI"
+    ],
+    "company": "FieldAI",
+    "short": "Autonomous Robots in Complex Spaces"
+  },
+  {
+    "day": 3,
+    "time": "15:00-16:30",
+    "stage": "Focus Lab",
+    "title": "Boosting productivity with AI: A hands-on workshop",
+    "speakers": [
+      {
+        "name": "Antonio Serrano Acitores",
+        "role": "Universidad Rey Juan Carlos – Coordinator of Digitalization, Innovation, and Communication"
+      },
+      {
+        "name": "Xavier Jofre Mestre",
+        "role": "Fundación Formación y Futuro – Strategy Consultant"
+      },
+      {
+        "name": "Matilde Martínez Casanovas",
+        "role": "IGEMA Business School – Managing Director"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "Universidad Rey Juan Carlos",
+      "Fundación Formación y Futuro",
+      "IGEMA Business School"
+    ],
+    "company": "Universidad Rey Juan Carlos",
+    "short": "AI Productivity Workshop"
+  },
+  {
+    "day": 3,
+    "time": "15:00-16:30",
+    "stage": "Frontier lab",
+    "title": "Hack Your Brain: Designing Bias-Free Technology",
+    "speakers": [
+      {
+        "name": "Margot Matesanz",
+        "role": "Engineer and Designer at El Garbell SCCL"
+      }
+    ],
+    "description": "Designing quality technology goes far beyond code. This is the core idea of the FemFrame project. In this workshop, you’ll discover why a gender perspective is not an extra, but a key tool to prevent biases, errors, and digital products that don’t work. Through practical exercises and real cases, we’ll explore how the brain makes decisions, how biases are generated, and how they directly impact algorithms, data, software, and digital design. A workshop to hack your way of thinking and create better, fairer, and more efficient technology.",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "Catalan",
+    "companies": [
+      "El Garbell SCCL"
+    ],
+    "company": "El Garbell SCCL",
+    "short": "Designing Bias-Free Technology"
+  },
+  {
+    "day": 3,
+    "time": "15:00-16:45",
+    "stage": "XPRO Lab",
+    "title": "The Quantum Threat: Transitioning to Post-Quantum Security",
+    "speakers": [],
+    "description": "Quantum computing is becoming a structural threat to today’s cryptographic backbone. Shor’s algorithm breaks the public-key schemes that secure the web, communications, and cloud. Even before large-scale quantum machines arrive, “harvest now, decrypt later” makes the risk immediate. In this session, we connect the dots from cryptographic fundamentals to the real impact of quantum progress, then walk through the practical shift to post-quantum cryptography: NIST-standardized algorithms, hybrid migration patterns, and what integration looks like in telecom and cloud environments. We also introduce fully homomorphic encryption (FHE), enabling computation directly on encrypted data and closing the long-standing “data-in-use” security gap. We’ll wrap up with a live technical demonstration of encrypted data processing using FHE.",
+    "tags": [
+      "Cybersecurity"
+    ],
+    "lang": "",
+    "companies": [],
+    "company": "",
+    "short": "Post-Quantum Security Transition"
+  },
+  {
+    "day": 3,
+    "time": "15:00-16:00",
+    "stage": "Skills Hub",
+    "title": "Hack Your CV: Key Tips to Optimize Your CV and Beat AI Filters",
+    "speakers": [],
+    "description": "In today’s recruitment processes, many résumés are automatically filtered before reaching human hands. Understanding how these systems work is key to improving job opportunities. This workshop provides practical tools and strategies to adapt your CV to AI filters, aiming especially to empower unemployed individuals, people with diverse profiles, or those in vulnerable situations.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Spanish",
+    "companies": [],
+    "company": "",
+    "short": "CV Optimization for AI Filters"
+  },
+  {
+    "day": 3,
+    "time": "15:15-15:30",
+    "stage": "XPRO stage",
+    "title": "Authentication for the AI Era: Build Passwordless Security in 5 Minutes",
+    "speakers": [
+      {
+        "name": "Vasile Granaci",
+        "role": "Chief Revenue Officer at Glide Identity"
+      }
+    ],
+    "description": "Build stronger authentication without adding friction. Discover a faster, more secure way to verify users beyond SMS codes, using mobile network capabilities to confirm device ownership and reduce fraud risks like SIM swap. Learn how to deliver a seamless, production-ready phone verification flow that works with your existing systems improving security, boosting conversion, and creating a smoother user experience in seconds.",
+    "tags": [
+      "Future Trends"
+    ],
+    "lang": "English",
+    "companies": [
+      "Glide Identity"
+    ],
+    "company": "Glide Identity",
+    "short": "Passwordless Auth in 5min"
+  },
+  {
+    "day": 3,
+    "time": "15:30-15:45",
+    "stage": "XPRO stage",
+    "title": "Build Better Apps with Scalable Network Capabilities: Accelerating API Adoption",
+    "speakers": [
+      {
+        "name": "Pushpendra Singh",
+        "role": "Global Director, Messaging and API Partnerships at Meta"
+      }
+    ],
+    "description": "SMS authentication is slow, fragile, and increasingly vulnerable to fraud. In this session, Meta reveals how developers can move beyond one-time codes with API-driven Silent Authentication verifying users securely in the background with no codes required. Learn how it works at the network level, when to replace SMS, and how to integrate a faster, more secure, production-ready login flow that improves security and boosts conversion.",
+    "tags": [
+      "Future Trends"
+    ],
+    "lang": "English",
+    "companies": [
+      "Meta"
+    ],
+    "company": "Meta",
+    "short": "Scalable Network APIs for Apps"
+  },
+  {
+    "day": 3,
+    "time": "15:30-16:30",
+    "stage": "Hotspot Talks",
+    "title": "Between Diapers and Deploys: Mothers Compiling the Future of Tech",
+    "speakers": [],
+    "description": "A panel discussion exploring how mothers navigate caregiving and a fast-moving cloud career. We’ll discuss the impact of maternity on professional growth, impostor syndrome, work–life balance challenges, and the need for visible female role models. Our goal: show that motherhood and tech can coexist and inspire a more inclusive future.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Spanish",
+    "companies": [],
+    "company": "",
+    "short": "Women Engineers in Tech"
+  },
+  {
+    "day": 3,
+    "time": "15:30-16:30",
+    "stage": "Plug-in Talks",
+    "title": "CANDELA: The Magic of Creating",
+    "speakers": [
+      {
+        "name": "Fernando Vilariño Freire (moderator)",
+        "role": "Director at Chair UAB-Cruïlla"
+      }
+    ],
+    "description": "What if magic wasn’t fantasy, but technology? We’ve always dreamed of transforming the world with simple gestures. In this presentation, you’ll discover how that ancient desire becomes reality. CANDELA translates gestures into light, sound, and image in real time, removing technical barriers and returning creative control to people. A new way to tell stories and create without limits. by Maria Badji, supported by Cátedra UAB-Cruïlla.",
+    "tags": [],
+    "lang": "Spanish",
+    "companies": [
+      "Chair UAB-Cruïlla"
+    ],
+    "company": "Chair UAB-Cruïlla",
+    "short": "CANDELA Creative Platform"
+  },
+  {
+    "day": 3,
+    "time": "15:30-16:30",
+    "stage": "XPRO Talks",
+    "title": "How AI is Redefining the Software Lifecycle",
+    "speakers": [],
+    "description": "Generative artificial intelligence is transforming software development, from copilots that assist teams to agents capable of executing complex tasks. In this context, AI Engineering emerges, integrating software, data, QA, and MLOps to build reliable and scalable systems. In this roundtable, we will explore real-world experiences and challenges to understand how AI is redefining productivity across the software lifecycle.",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "Spanish",
+    "companies": [],
+    "company": "",
+    "short": "AI Redefining Software Development"
+  },
+  {
+    "day": 3,
+    "time": "15:30-16:30",
+    "stage": "Barcelona",
+    "title": "Certified Training to Boost Talent: Partnership Between IT Academy and UPC",
+    "speakers": [
+      {
+        "name": "Martí Rodríguez (moderator)",
+        "role": "Head of Technological Talent and Innovation at IT Academy-Barcelona Activa"
+      },
+      {
+        "name": "Gerard Campanera",
+        "role": "Executive Director, Polytechnic Foundation of Catalonia at UPC"
+      },
+      {
+        "name": "Sara Díaz Roig",
+        "role": "Executive Director of Strategic Sectors and Talent at Barcelona Activa"
+      },
+      {
+        "name": "Ana Ferrández",
+        "role": "Data Analytics Alumni at Barcelona Activa_IT Academy"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Catalan",
+    "companies": [
+      "IT Academy-Barcelona Activa",
+      "UPC",
+      "Barcelona Activa",
+      "Barcelona Activa_IT Academy"
+    ],
+    "company": "IT Academy-Barcelona Activa",
+    "short": "IT Academy Certification Program"
+  },
+  {
+    "day": 3,
+    "time": "15:45-16:00",
+    "stage": "XPRO stage",
+    "title": "Level up your apps: From Agent Protocols to Real-World API Innovation",
+    "speakers": [
+      {
+        "name": "Lauri Alho",
+        "role": "Head of Ecosystem Development at Nokia"
+      }
+    ],
+    "description": "Join this developer-focused session to explore how Network APIs are evolving toward autonomous, AI-driven connectivity. Discover how Agent Protocols and network-aware AI dynamically optimise performance, enable real-time decision-making, and unlock on-demand monetisation. Through live demos and real-world use cases, gain practical implementation insights you can apply immediately to build scalable, high-performing SuperApps.",
+    "tags": [
+      "Future Trends"
+    ],
+    "lang": "English",
+    "companies": [
+      "Nokia"
+    ],
+    "company": "Nokia",
+    "short": "Agent Protocols and API Innovation"
+  },
+  {
+    "day": 3,
+    "time": "15:45-16:15",
+    "stage": "Gaming",
+    "title": "Chaos, Spectacle & Systems: Crafting the Sound of GodsTV",
+    "speakers": [
+      {
+        "name": "Enrique Lis Mesquida",
+        "role": "Sound designer at Melbot Studios"
+      }
+    ],
+    "description": "After introducing GODSTV, we will go through the design of its dynamic music system within a roguelite structure, exploring how adaptive techno-driven scoring responds to systemic gameplay. We’ll also dive into the creative freedom the game’s bizarre universe enables for sound design, and how audio and music help frame the experience as a live TV spectacle rather than a traditional game session. Luis Quevedo, jourinalist and presenter (Moderator)",
+    "tags": [
+      "GAMING"
+    ],
+    "lang": "English",
+    "companies": [
+      "Melbot Studios"
+    ],
+    "company": "Melbot Studios",
+    "short": "Audio Design for Entertainment"
+  },
+  {
+    "day": 3,
+    "time": "16:00-17:00",
+    "stage": "Visionary Stage",
+    "title": "87-minutes game. How AI is boosting the Barça’s edge",
+    "speakers": [
+      {
+        "name": "Albert Mundet",
+        "role": "General Manager of Barça Innovation Hub"
+      }
+    ],
+    "description": "In an increasingly competitive sports industry, technology is no longer an accessory — it’s what amplifies what makes you unique. FC Barcelona showcase how AI is sharpening its competitive edge across performance, medical science, fan engagement, and commercial innovation. Leading clubs and institutions from around the world confirmed the same thesis: technology doesn’t replace identity, it amplifies it. For a 126-year-old club with 144,000 member-owners, AI means building smarter from within and buying better from outside. That’s Tech Your Edge.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "FC Barcelona"
+    ],
+    "company": "FC Barcelona",
+    "short": "AI Boosting Barça"
+  },
+  {
+    "day": 3,
+    "time": "16:00-16:45",
+    "stage": "XPRO stage",
+    "title": "Open Gateway Hackathon: Live Finals",
+    "speakers": [
+      {
+        "name": "Lauri Alho",
+        "role": "Head of Ecosystem Development at Nokia"
+      }
+    ],
+    "description": "Experience the excitement of the Open Gateway Hackathon Live Finals, where the top teams showcase groundbreaking solutions built using advanced telecom network APIs powered by Nokia’s Network as Code platform. Watch live demos, hear rapid-fire pitches, and see innovation tested on real networks. It’s interactive and decided by you—cast your vote and help crown the next wave of telecom-powered innovation.",
+    "tags": [
+      "Future Trends"
+    ],
+    "lang": "English",
+    "companies": [
+      "Nokia"
+    ],
+    "company": "Nokia",
+    "short": "Open Gateway Hackathon Finals"
+  },
+  {
+    "day": 3,
+    "time": "16:00-17:00",
+    "stage": "Meetup area",
+    "title": "In-house algorithm development: experience and lessons learned",
+    "speakers": [
+      {
+        "name": "Guillermo Prieto",
+        "role": "Director of Information Technologies at Damm"
+      },
+      {
+        "name": "Daniel Roncel",
+        "role": "Data Scientist at Nennisiwok"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "English",
+    "companies": [
+      "Damm",
+      "Nennisiwok"
+    ],
+    "company": "Damm",
+    "short": "Algorithm Development Best Practices"
+  },
+  {
+    "day": 3,
+    "time": "16:15-17:15",
+    "stage": "Skills Hub",
+    "title": "CTO Leadership Lab: Communicate, Attract, and Retain Tech Talent",
+    "speakers": [
+      {
+        "name": "Sandra Alonso",
+        "role": "Program Leader at Eurofirms"
+      },
+      {
+        "name": "Marisa Martínez",
+        "role": "Diversity & Inclusion Consultant at Eurofirms"
+      },
+      {
+        "name": "Mireia López",
+        "role": "Diversity & Inclusion Consultant at Eurofirms"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Eurofirms"
+    ],
+    "company": "Eurofirms",
+    "short": "CTO Leadership Development"
+  },
+  {
+    "day": 3,
+    "time": "16:30-17:00",
+    "stage": "Robotics",
+    "title": "How to train your robot",
+    "speakers": [
+      {
+        "name": "Jesus Angel Bravo Duque",
+        "role": "Founder & CEO en Bravo Robots"
+      }
+    ],
+    "description": "The Generative AI revolution has also reached robotics. World and VLC (Vision, Language, Action) models applied to new robotic systems equipped with powerful computing systems allow non-deterministic tasks to be solved. It is time to train robots. This workshop will discuss the latest developments in embedded AI and how the robotics industry is responding.",
+    "tags": [
+      "ROBOTICS"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Bravo Robots"
+    ],
+    "company": "Bravo Robots",
+    "short": "Robot Training Techniques"
+  },
+  {
+    "day": 3,
+    "time": "16:30-17:30",
+    "stage": "Hotspot Talks",
+    "title": "Leading in a World That Doesn’t Wait",
+    "speakers": [
+      {
+        "name": "José Carlos Ruíz",
+        "role": "Specialist in Critical Thinking and Humanistic Leadership en PhD Professor of Philosophy at the University of Córdoba"
+      }
+    ],
+    "description": "Over 45 minutes, Pablo González Ruiz de la Torre and José Carlos Ruiz will engage in a calm and reflective conversation on humanistic leadership, addressing the intellectual, existential, and social dimensions of teams, and emphasizing the need to nurture identity and legacy as anchors in times of uncertainty.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "PhD Professor of Philosophy at the University of Córdoba"
+    ],
+    "company": "PhD Professor of Philosophy at the University of Córdoba",
+    "short": "Leading in Fast World"
+  },
+  {
+    "day": 3,
+    "time": "16:30-17:30",
+    "stage": "XPRO Talks",
+    "title": "How Public Institutions Shape Real Opportunities",
+    "speakers": [
+      {
+        "name": "Alex Lobaco Poyatos",
+        "role": "Consorci per a la Formació Contínua de Catalunya – Subdirector de Programes en Consorci per a la Formació Contínua de Catalunya"
+      },
+      {
+        "name": "Miquel Carrion Molina",
+        "role": "Servei Públic d’ocupació de Catalunya – Subdirector d’Ocupació Juvenil i Qualificació Professional en Servei Públic d’ocupació de Catalunya"
+      },
+      {
+        "name": "Gaizka Cañellas Ayerdi",
+        "role": "Ironhack – Head of Business Development – B2G Director (Moderador)"
+      },
+      {
+        "name": "Fernando Garrido Ferradanes",
+        "role": "EOI – Director de B2G"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Management"
+    ],
+    "lang": "English",
+    "companies": [
+      "Consorci per a la Formació Contínua de Catalunya",
+      "SOC Catalunya",
+      "Ironhack",
+      "EOI"
+    ],
+    "company": "Ironhack",
+    "short": "Public Institutions Creating Opportunities"
+  },
+  {
+    "day": 3,
+    "time": "16:30-17:30",
+    "stage": "Barcelona",
+    "title": "Adversarial Development: Treat Your AI Assistant as Untrusted",
+    "speakers": [
+      {
+        "name": "Fernando Rodriguez",
+        "role": "Co-Founder & Chief Learning Officer (CLO) at Keep Coding"
+      }
+    ],
+    "description": "AI coding assistants write code at unprecedented speed—but speed without verification becomes technical debt. This talk introduces Adversarial Development, a quality framework inspired by GANs, SRE, and defense-in-depth. Treat AI as an adversarial generator and yourself as the discriminator using layered verification: prompt constraints, linting, runtime and visual checks. A practical playbook to ship faster without regressions or broken features",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "Keep Coding"
+    ],
+    "company": "Keep Coding",
+    "short": "Adversarial Development Practices"
+  },
+  {
+    "day": 3,
+    "time": "16:30-17:30",
+    "stage": "Plug-in Talks",
+    "title": "AI with Human Values: The Challenge of Ethical and Cultural Alignment",
+    "speakers": [
+      {
+        "name": "Paul Van Branteghem (moderador)",
+        "role": "AI Advisor at SEDIA"
+      },
+      {
+        "name": "María Grandury",
+        "role": "ML research engineer at SomosNLP"
+      },
+      {
+        "name": "Javier Aula-Blasco",
+        "role": "Head of Trustworthiness & Evaluation, AI Institute at BSC-CNS"
+      },
+      {
+        "name": "Elena González-Blanco García",
+        "role": "Head of AI for Digital Natives at Microsoft"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "SEDIA",
+      "SomosNLP",
+      "BSC-CNS",
+      "Microsoft"
+    ],
+    "company": "SEDIA",
+    "short": "Ethical AI and Human Values"
+  },
+  {
+    "day": 3,
+    "time": "16:45-17:00",
+    "stage": "XPRO stage",
+    "title": "Secure Your MCP Servers with OAuth, JWT, SPIFFE and More",
+    "speakers": [
+      {
+        "name": "Lin Sun",
+        "role": "Head of Open Source at Solo.io"
+      }
+    ],
+    "description": "You’ve built an MCP server, but how do you secure it without rewriting everything? In this demo-led session, discover a smarter way to add authentication and authorisation without modifying or redeploying your servers. See how an MCP gateway can apply OAuth, JWT, and other identity systems at scale, and watch an AI agent securely interact with MCP tools showing how to simplify security across multiple servers.",
+    "tags": [
+      "Future Trends"
+    ],
+    "lang": "English",
+    "companies": [
+      "Solo.io"
+    ],
+    "company": "Solo.io",
+    "short": "Securing MCP Servers"
+  },
+  {
+    "day": 3,
+    "time": "16:45-18:15",
+    "stage": "Focus Lab",
+    "title": "Stop prompting, start building real solutions with AI",
+    "speakers": [
+      {
+        "name": "Yann Klein",
+        "role": "Software & Data Engineer at Le Wagon"
+      }
+    ],
+    "description": "Move beyond simple prompting to unlock AI’s true potential by designing automated systems. This workshop guides you from manual chatting to building robust solutions, covering: – AI workflows: automate repetitive tasks, turning hours of work into seconds – Agentic AI: watch AI agents go beyond simple responses to take real-world action – Vibe coding: create functional tools using plain English descriptions, regardless of your coding experience",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "English",
+    "companies": [
+      "Le Wagon"
+    ],
+    "company": "Le Wagon",
+    "short": "Building Real Solutions with AI"
+  },
+  {
+    "day": 3,
+    "time": "16:45-18:15",
+    "stage": "Frontier lab",
+    "title": "Prototype to Product: Scaling Edge AI Across use cases",
+    "speakers": [
+      {
+        "name": "Morris Novello",
+        "role": "Head of Developer Marketing at Qualcomm"
+      }
+    ],
+    "description": "Learn how to scale Edge AI applications across Qualcomm® developer kits and evaluation kits (EVKs) in this hands‑on workshop. Using keyword spotting as a practical example, you’ll see how the same ML pipeline can move from prototyping to deployment across multiple system‑on‑chips (SoCs). Explore how to select the right hardware, deploy models consistently, and build voice‑enabled experiences that run locally at the edge.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "Qualcomm"
+    ],
+    "company": "Qualcomm",
+    "short": "Scaling Edge AI in Production"
+  },
+  {
+    "day": 3,
+    "time": "16:45-18:15",
+    "stage": "XPRO Lab",
+    "title": "Building AI Agents with Spring AI",
+    "speakers": [
+      {
+        "name": "Sergi Almar",
+        "role": "Organizer at Spring IO"
+      }
+    ],
+    "description": "Building agents that actually work, ones that plan, reason, use tools, ask clarifying questions, and collaborate with other agents, requires more than just calling an LLM in a loop. It requires understanding agentic patterns and the protocols that connect them. In this workshop, we’ll build progressively more capable AI agents using Spring AI. We’ll start from the fundamentals, interacting with LLMs, crafting prompts, and working with structured output. From there, we’ll explore Retrieval Augmented Generation (RAG) for grounding responses in your own data, and tool calling for giving models the ability to take action in the real world. With these foundations in place, we’ll move into agentic territory, looking at workflow patterns and then building autonomous agents with recursive advisors and composable skills. Finally, we’ll cover the emerging agent protocol landscape: MCP for connecting agents to external tools and services, and A2A for enabling agents to discover and collaborate with each other. You’ll leave with working code and a clear understanding of how to build production-ready agents with Spring AI.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "Spring IO"
+    ],
+    "company": "Spring IO",
+    "short": "Spring AI Agent Development"
+  },
+  {
+    "day": 3,
+    "time": "17:00-17:20",
+    "stage": "XPRO stage",
+    "title": "Network Abstraction: Powering Programmable Networks for the Agentic AI Era",
+    "speakers": [
+      {
+        "name": "Sridhar Gollapudi",
+        "role": "Global Telco Market Lead at Google"
+      },
+      {
+        "name": "Malcolm Deck",
+        "role": "Software Engineering Manager at Google"
+      },
+      {
+        "name": "Micah Baker",
+        "role": "Senior Product Manager at Google"
+      },
+      {
+        "name": "Alexandru Ciinaru",
+        "role": "Product Manager Network APIs at Orange"
+      },
+      {
+        "name": "Chetan Narang",
+        "role": "Head of Strategy and Innovation at Colt"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Future Trends"
+    ],
+    "lang": "English",
+    "companies": [
+      "Google",
+      "Orange",
+      "Colt"
+    ],
+    "company": "Google",
+    "short": "Programmable Networks for AI"
+  },
+  {
+    "day": 3,
+    "time": "17:00-18:00",
+    "stage": "Meetup area",
+    "title": "The new era of talent access: Smarter searches, faster answers",
+    "speakers": [
+      {
+        "name": "Javier Redondo",
+        "role": "Head of Global Accounts at Malt"
+      }
+    ],
+    "description": "Javier Carrión – Global Strategic Account Executive at Malt",
+    "tags": [],
+    "lang": "",
+    "companies": [
+      "Malt"
+    ],
+    "company": "Malt",
+    "short": "Talent Search in Modern Era"
+  },
+  {
+    "day": 3,
+    "time": "17:15-17:45",
+    "stage": "Gaming",
+    "title": "Designing in the Dark: challenges of building a game without vision",
+    "speakers": [
+      {
+        "name": "Aleix Muñoz",
+        "role": "Programmer & Producer en Wheel of games"
+      }
+    ],
+    "description": "What happens when you remove one of the most important elements in games: vision? In this session, Aleix and Xavi from Wheel of Games will explore the creative and technical challenges of developing a game designed to be played in darkness. From game design decisions to programming constraints, they will share the real difficulties of building mechanics, feedback systems, and player guidance without relying on visual clarity.",
+    "tags": [
+      "GAMING"
+    ],
+    "lang": "English",
+    "companies": [
+      "Wheel of games"
+    ],
+    "company": "Wheel of games",
+    "short": "Accessible Game Design"
+  },
+  {
+    "day": 3,
+    "time": "17:20-17:35",
+    "stage": "XPRO stage",
+    "title": "From Zero to Network-Aware AI in 15 Minutes: Building with CAMARA MCP",
+    "speakers": [
+      {
+        "name": "Nick Venezia",
+        "role": "Founder of Centillion"
+      }
+    ],
+    "description": "In this live, hands-on session, discover how to connect AI tools like Claude, ChatGPT, and Cursor to CAMARA network APIs and start building real applications in minutes. Watch as network capabilities are explored and turned into working code using AI-assisted development. This practical demo goes beyond theory showing you how to quickly create secure, network-aware apps using the tools you already use and trust.",
+    "tags": [
+      "Future Trends"
+    ],
+    "lang": "English",
+    "companies": [
+      "Centillion"
+    ],
+    "company": "Centillion",
+    "short": "CAMARA MCP Network-Aware AI"
+  },
+  {
+    "day": 3,
+    "time": "17:30-18:30",
+    "stage": "Hotspot Talks",
+    "title": "The New Travel Project: A value chain driving a new travel experience",
+    "speakers": [
+      {
+        "name": "Enric Riera",
+        "role": "Chief Customer Officer at World2Meet"
+      },
+      {
+        "name": "Stefano Ceccarello",
+        "role": "Chief Digital & Experience Officer at World2Meet"
+      },
+      {
+        "name": "Joan Barceló",
+        "role": "CIO at W2M"
+      }
+    ],
+    "description": "The New Travel Project drives innovation to improve travel in all its aspects and for all its stakeholders. In the Talent Arena roundtable, World2Meet experts will showcase how this cross-cutting vision impacts distribution, technology, marketing, and digital experience, highlighting the importance of talent and collaboration to design the future of the tourism sector.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "English",
+    "companies": [
+      "World2Meet",
+      "W2M"
+    ],
+    "company": "World2Meet",
+    "short": "Innovative Travel Experiences"
+  },
+  {
+    "day": 3,
+    "time": "17:30-18:30",
+    "stage": "Plug-in Talks",
+    "title": "Talent isn’t retained, it’s cared for: context, community, and the future of work",
+    "speakers": [
+      {
+        "name": "Iratxe Kaltzakorta",
+        "role": "Asociación Agile Spain - Presidenta"
+      }
+    ],
+    "description": "For years, we have tried to solve the so-called “talent shortage” with processes, control, and quick fixes. This talk offers a new perspective. Drawing on their experience leading Spain’s leading agile community and creating shared learning spaces, Iratxe Kaltzakorta and María Morales explore why the real challenge isn’t attracting or retaining talent, but creating environments where people want to stay, grow, and thrive.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Agile Spain"
+    ],
+    "company": "Agile Spain",
+    "short": "Caring for Talent"
+  },
+  {
+    "day": 3,
+    "time": "17:30-18:30",
+    "stage": "XPRO Talks",
+    "title": "Conversational Capital: The Hidden Asset Powering Agentic AI Experiences",
+    "speakers": [
+      {
+        "name": "Hans van Dam",
+        "role": "Founder & CEO: Conversation Design Institute & Senior Industry Research Fellow, RMIT University"
+      }
+    ],
+    "description": "As AI becomes agentic, conversations stop being interfaces and start becoming decision-making environments. In this talk, Hans van Dam introduces Conversational Capital: the trust, goodwill, and willingness to engage that accumulates—or collapses—through every interaction a brand has with people. Drawing on over a decade of field experience training 15,000+ professionals and working with more than 200 enterprise brands, Hans shows why most AI programs stall despite impressive technology—and how Agentic Experience Design (AXD) unlocks Conversational Capital by balancing agency and empathy at scale. This session offers a practical lens for leaders building AI systems that don’t just automate faster, but compound trust over time.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "Conversation Design Institute"
+    ],
+    "company": "Conversation Design Institute",
+    "short": "Conversational AI Experiences"
+  },
+  {
+    "day": 3,
+    "time": "17:30-18:30",
+    "stage": "Barcelona",
+    "title": "Open Data Ecosystem in Spain: From Theory to Practice with Datos.gob",
+    "speakers": [
+      {
+        "name": "Daniel Ortega",
+        "role": "Head of Data Area at Red.es"
+      }
+    ],
+    "description": "Open data has become an essential tool to drive transparency, innovation, and the development of new digital services. In this workshop, we will explore how open data has evolved, the relevant standards and technical regulations, as well as the main challenges for its adoption and future use. The session will conclude with a hands-on AI workshop applied to Datos.gob, focusing on the use of the Model Context Protocol (MCP).",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Red.es"
+    ],
+    "company": "Red.es",
+    "short": "Open Data Ecosystem in Spain"
+  },
+  {
+    "day": 3,
+    "time": "17:30-18:30",
+    "stage": "Skills Hub",
+    "title": "Hack Your Interview: Face Interviews with Confidence and Authenticity",
+    "speakers": [],
+    "description": "In a tech sector where cognitive diversity drives innovation, approaching interviews with authenticity is key. Neurodiversity adds value to the recruitment process. This workshop provides practical tools for managing interviews and communication with confidence, helping neurodivergent and diverse individuals showcase their talent, strengthen self-awareness, and enter the tech sector with greater assurance.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Spanish",
+    "companies": [],
+    "company": "",
+    "short": "Interview Confidence Hacks"
+  },
+  {
+    "day": 3,
+    "time": "17:35-18:00",
+    "stage": "XPRO stage",
+    "title": "Hackathon Awards: Meet the Winner!",
+    "speakers": [
+      {
+        "name": "Hackathon Awards",
+        "role": ""
+      }
+    ],
+    "description": "Find out who will be crowned the Open Gateway Hackathon 2026 winner! Real code, real APIs, real innovation.",
+    "tags": [
+      "Future Trends"
+    ],
+    "lang": "English",
+    "companies": [],
+    "company": "",
+    "short": "Hackathon Awards Ceremony"
+  },
+  {
+    "day": 3,
+    "time": "18:00-18:30",
+    "stage": "Visionary Stage",
+    "title": "Real Time Powerful Visuals for Live Music",
+    "speakers": [
+      {
+        "name": "VJ PRIZMA",
+        "role": ""
+      }
+    ],
+    "description": "This capsule will focus on the different types and tools for creating high-impact visuals for the music industry. This session will connect with party session, demonstrating the use of the tools live and in person.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [],
+    "company": "VJ PRIZMA",
+    "short": "Real-Time Music Visualization"
+  },
+  {
+    "day": 3,
+    "time": "18:00-18:30",
+    "stage": "XPRO stage",
+    "title": "DSM-firmenich powered by AI",
+    "speakers": [
+      {
+        "name": "Alicia Saez",
+        "role": "Global Digital Innovation Leader at DSM Firmenich"
+      }
+    ],
+    "description": "dsm‑firmenich powered by AI explores how we combine science, creativity and technology to transform the future of scent, taste and health. We’ll share how AI accelerates innovation, enhances experiences, and empowers our teams globally, inviting talent to help shape what the world tastes, smells and feels like",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "DSM Firmenich"
+    ],
+    "company": "DSM Firmenich",
+    "short": "DSM-firmenich AI Solutions"
+  },
+  {
+    "day": 3,
+    "time": "18:00-19:00",
+    "stage": "Meetup area",
+    "title": "Gamified Networking for introverts & communities Beers",
+    "speakers": [
+      {
+        "name": "Julieta Zalduendo",
+        "role": "CEO & Founder at GenAI Community"
+      },
+      {
+        "name": "Anna Lino",
+        "role": "Head of Community & Events at GenAI Community"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "GenAI Community"
+    ],
+    "company": "GenAI Community",
+    "short": "Gamified Networking Events"
+  },
+  {
+    "day": 3,
+    "time": "18:30-20:30",
+    "stage": "Visionary Stage",
+    "title": "Talent Arena Party by Estrella Damm",
+    "speakers": [
+      {
+        "name": "DJ BULMA BEAT",
+        "role": ""
+      }
+    ],
+    "description": "In this DJ set featuring a variety of contemporary music by DJ Bulma BEAT (Apolo, Jamboree, Opium) and the Beyond Collapse VJ team will generate real-time visuals that will be displayed on screen. Additionally, a camera system will allow viewers to see the behind-the -scenes action of each JV in real time, as well as a camera connected to an AI-powered visual modification system so the audience can interact with the effects in real time and see themselves on the main screen.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [],
+    "company": "Estrella Damm",
+    "short": "Talent Arena Networking Party"
+  },
+  {
+    "day": 4,
+    "time": "09:30-10:00",
+    "stage": "Visionary Stage",
+    "title": "Design a Career You Love in Times of Ultra-Competitiveness",
+    "speakers": [
+      {
+        "name": "Adri Carvajal",
+        "role": "Entrepreneur and content creator"
+      }
+    ],
+    "description": "At a time when artificial intelligence is completely redefining the labor market, this talk explores how to design an authentic, sustainable, and competitive career within an increasingly demanding technological environment. We will explore practical frameworks for making professional decisions with judgment, vision, and a keen sense for opportunities. The session is structured around three pillars: identifying your own talents as the foundation for a real competitive advantage, pursuing curiosity as a driver of continuous professional reinvention, and strengthening execution skills in contexts of maximum uncertainty. The talk combines personal storytelling with data and studies that provide context and rigor. Attendees will leave with a practical framework and exercises to make better career decisions and navigate the future of work with greater clarity. This session explores how to rethink your professional career during this critical window of opportunity—not only to survive in an ultra-competitive labor market but to truly enjoy your career in the years ahead.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Independent"
+    ],
+    "company": "Independent",
+    "short": "Career Design Workshop"
+  },
+  {
+    "day": 4,
+    "time": "09:30-10:00",
+    "stage": "XPRO stage",
+    "title": "Confessions of a Vibecoding Engineer",
+    "speakers": [
+      {
+        "name": "Nicolás Grenié",
+        "role": "Developer Advocate - Former Typeform at Typeform"
+      }
+    ],
+    "description": "AI is changing how we build software. What took weeks now happens in hours. Teams are discovering a new way of working that feels more like jamming than sprinting: “vibecoding”. Over the past year, I built dozens of AI-powered projects, some viral, some failures, all full of lessons. This talk shares stories, how AI reshapes engineering roles and workflows, and how to experiment and build at the speed of imagination.",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "English",
+    "companies": [
+      "Typeform"
+    ],
+    "company": "Typeform",
+    "short": "Vibecoding Confessions"
+  },
+  {
+    "day": 4,
+    "time": "09:30-10:30",
+    "stage": "Meetup area",
+    "title": "How to train your own AI Telco LLM",
+    "speakers": [
+      {
+        "name": "Farbod Tavakkoli",
+        "role": "Data Scientist at AT&T"
+      },
+      {
+        "name": "Gregory Diamos",
+        "role": "ScalarLM Architect at Relational.ai"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "AT&T",
+      "Relational.ai"
+    ],
+    "company": "AT&T",
+    "short": "Training Telco LLM Models"
+  },
+  {
+    "day": 4,
+    "time": "09:30-10:30",
+    "stage": "Hotspot Talks",
+    "title": "How Nestlé drives innovation through XR across the value chain",
+    "speakers": [],
+    "description": "In this roundtable, we will explore how Nestlé leverages immersive technologies—such as augmented, virtual, and mixed reality—to create impact across multiple areas of the business. We will share how we identify and assess emerging technologies, how we turn them into scalable solutions integrated into our global catalogs, and how we collaborate with different teams to take an idea from early exploration to adoption in markets.",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "English",
+    "companies": [],
+    "company": "Nestlé",
+    "short": "XR Innovation at Nestlé"
+  },
+  {
+    "day": 4,
+    "time": "09:30-10:30",
+    "stage": "Plug-in Talks",
+    "title": "Innovation in Action: Reinventing and Accelerating Innovation process with GenAI",
+    "speakers": [
+      {
+        "name": "Daniel González",
+        "role": "Worldline – Test Manager"
+      },
+      {
+        "name": "Jose Maria Lopez Granados",
+        "role": "Worldline – Head of Business Development & Innovation"
+      },
+      {
+        "name": "Santi Ristol Jorba",
+        "role": "Worldline – Head of Digital Competence Centre"
+      },
+      {
+        "name": "Joan Vicent Orenga Serisuelo",
+        "role": "Worldline – Digital Competence Centre Technical Director"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "English",
+    "companies": [
+      "Worldline"
+    ],
+    "company": "Worldline",
+    "short": "GenAI Innovation Process"
+  },
+  {
+    "day": 4,
+    "time": "09:30-10:30",
+    "stage": "Barcelona",
+    "title": "HR Exchange: Inspirational Keynote",
+    "speakers": [
+      {
+        "name": "Tiago Santos",
+        "role": "VP of Community and Growth at Sesame HR"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Sesame HR"
+    ],
+    "company": "Sesame HR",
+    "short": "Inspirational HR Keynote"
+  },
+  {
+    "day": 4,
+    "time": "09:30-10:30",
+    "stage": "XPRO Talks",
+    "title": "The future of the Edge AI and Physical AI",
+    "speakers": [
+      {
+        "name": "Marc Pous Marín (moderator)",
+        "role": "Developer Relations at Edge Impulse"
+      },
+      {
+        "name": "Leonardo Cavagnis",
+        "role": "Snr Firmware Engineer & Developer Advocate at Arduino"
+      },
+      {
+        "name": "Louis Moreau",
+        "role": "Head of Developer Relations at Edge Impulse"
+      },
+      {
+        "name": "Rajan Mistry",
+        "role": "Evangelist Lead at Qualcomm"
+      },
+      {
+        "name": "Julian Caro Linares",
+        "role": "Developer Relations at Arduino"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "ROBOTICS"
+    ],
+    "lang": "English",
+    "companies": [
+      "Edge Impulse",
+      "Arduino",
+      "Qualcomm"
+    ],
+    "company": "Edge Impulse",
+    "short": "Edge AI and Physical AI Future"
+  },
+  {
+    "day": 4,
+    "time": "09:30-11:00",
+    "stage": "Focus Lab",
+    "title": "Build your first neural network with PyTorch",
+    "speakers": [
+      {
+        "name": "Alexia Salavrakos",
+        "role": "Senior Scientist at Quandela"
+      }
+    ],
+    "description": "In this workshop, we will first review the structure if neural networks, their history, as well as some important properties like the backpropagation algorithm. Then, we will learn how to use the python package PyTorch to implement a simple neural network and apply it to a toy dataset.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "Quandela"
+    ],
+    "company": "Quandela",
+    "short": "PyTorch Neural Network Tutorial"
+  },
+  {
+    "day": 4,
+    "time": "09:30-11:00",
+    "stage": "XPRO Lab",
+    "title": "How to build an AI Agent for Energy Saving in 5G Networks using NVIDIA Blueprint",
+    "speakers": [
+      {
+        "name": "Amparo Canaveras",
+        "role": "Sr. Solutions Architect Generative AI"
+      }
+    ],
+    "description": "The Intent Driven Energy Saving Blueprint for 5G Networks demonstrates how Agentic AI can translate operator intent, expressed in natural language, into safe and explainable energy saving actions within a simulated 5G RAN environment. In this workshop, you will learn how to build a simple, explainable, and fully reproducible intent driven energy saving workflow for 5G networks using Agentic AI, synthetic KPI data, and a RAN simulator.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "AWS"
+    ],
+    "company": "AWS",
+    "short": "5G Energy Efficiency with AI"
+  },
+  {
+    "day": 4,
+    "time": "09:30-11:00",
+    "stage": "Frontier lab",
+    "title": "From fRusTrait-ion to Async Mastery: Become a Rust Trait Hero in One Hour",
+    "speakers": [
+      {
+        "name": "Lawrece Freeman",
+        "role": "Founder / Instructor at Fledgio"
+      }
+    ],
+    "description": "Ever felt the fRust-ration of Rust traits? This 60-minute session dives into the unsung heroes of Rust concurrency: Send and Sync. We’ll go beyond the surface and unpack what these traits really mean, how the compiler reasons about them, and what’s actually happening under the hood when your code crosses thread boundaries.",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "English",
+    "companies": [
+      "Fledgio"
+    ],
+    "company": "Fledgio",
+    "short": "Rust Traits and Async Mastery"
+  },
+  {
+    "day": 4,
+    "time": "09:45-10:15",
+    "stage": "Robotics",
+    "title": "Leading without rescuing: mentoring for autonomous tech teams",
+    "speakers": [
+      {
+        "name": "Javi Hernández Braña",
+        "role": "Leadership Services Lead at ERNI"
+      }
+    ],
+    "description": "Many leaders think they mentor, but actually tutor—directing, solving, and protecting. This creates dependency and limits growth. In fast-changing tech environments, teams need autonomy and accountability. This talk explores shifting to a mentoring mindset that challenges, empowers, and leads adults as adults—not as children with job titles.",
+    "tags": [
+      "ROBOTICS"
+    ],
+    "lang": "English",
+    "companies": [
+      "ERNI"
+    ],
+    "company": "ERNI",
+    "short": "Autonomous Team Mentoring"
+  },
+  {
+    "day": 4,
+    "time": "10:00-10:30",
+    "stage": "XPRO stage",
+    "title": "From Prototype to Product: Operationalizing Generative Personalization at Scale",
+    "speakers": [
+      {
+        "name": "Francesco Fabbri",
+        "role": "Research Scientist at Spotify"
+      }
+    ],
+    "description": "Generative AI is reshaping personalization by making user experiences more expressive, intent-driven, and increasingly defined in natural language. Outputs become open-ended, contextual, and fine-grained, which disrupts much of the evaluation infrastructure that large-scale personalization has historically relied on. In these settings, “ground truth” is often underspecified, and quality depends on criteria like relevance, coherence, and user alignment rather than exact-match correctness. Yet human review and user studies do not scale. This talk explores LLM-as-a-Judge as a practical evaluation layer for generative and agentic systems. Drawing on recent research and public case studies, including published work from Spotify, we discuss how LLM-based judges can approximate human judgments, connect offline evaluation with human perception, and support meaningful assessment in low-feedback and cold-start settings. We then move from evaluation to optimization. When the judge signal is reliable, it can serve as an alignment signal for post-training and as a driver for automatic prompt and context optimization, enabling systematic comparisons, regression detection, and faster iteration cycles toward production-ready behavior.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "Spotify"
+    ],
+    "company": "Spotify",
+    "short": "Personalization at Scale"
+  },
+  {
+    "day": 4,
+    "time": "10:00-10:30",
+    "stage": "Visionary Stage",
+    "title": "Sewing AI: Innovation in Web Application Development with AI",
+    "speakers": [
+      {
+        "name": "Alberto Valiña Lema",
+        "role": "Principal Engineer at Inditex"
+      }
+    ],
+    "description": "Discover how Sewing AI is revolutionizing web application development atInditex. This innovative platform leverages artificial intelligence to simplify and accelerate the creation of interactive prototypes, enabling teams to transform ideas into digital products quickly and efficiently. Sewing AI focuses on delivering visual results with the expertise of a UX specialist, while maintaining technical quality through a production-ready philosophy.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Inditex"
+    ],
+    "company": "Inditex",
+    "short": "AI Web Application Development"
+  },
+  {
+    "day": 4,
+    "time": "10:00-11:00",
+    "stage": "Skills Hub",
+    "title": "Back to Your Future: get ready for the tech market",
+    "speakers": [
+      {
+        "name": "Javier Martínez",
+        "role": "Leader – Claire Joster Technology en Claire Joster"
+      },
+      {
+        "name": "José María Flores",
+        "role": "Regional Leader – Madrid en Claire Joster"
+      },
+      {
+        "name": "Jordi Llahí",
+        "role": "Sales and Marketing Leader en Claire Joster"
+      },
+      {
+        "name": "Jordi Valls",
+        "role": "Senior Consultant 360 en Claire Joster"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Claire Joster"
+    ],
+    "company": "Claire Joster",
+    "short": "Tech Job Market Preparation"
+  },
+  {
+    "day": 4,
+    "time": "10:30-11:00",
+    "stage": "Visionary Stage",
+    "title": "Creative Coding to demystify Technology",
+    "speakers": [
+      {
+        "name": "Tim Roedenbroker",
+        "role": "Founder of TRCC"
+      }
+    ],
+    "description": "How coding empowers innovators to make sense of and design for a world in constant change.",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "English",
+    "companies": [
+      "TRCC"
+    ],
+    "company": "TRCC",
+    "short": "Creative Coding for Learning"
+  },
+  {
+    "day": 4,
+    "time": "10:30-11:00",
+    "stage": "Gaming",
+    "title": "Final Magamers",
+    "speakers": [
+      {
+        "name": "Magas",
+        "role": ""
+      }
+    ],
+    "description": "Live broadcast space from the Gaming Zone at the Talent Arena, where casters Jackalsito and Katarsis will guide the audience through the on-site Grand Final of Magamers 2026, the women’s League of Legends tournament promoted by EL ESPAÑOL, Magas, Vandal, and Crónica Global, and integrated into the amateur competitive ecosystem of Circuito Tormenta. Across three slots, the audience will be welcomed, the finalist teams will be introduced, and the different matches will be presented, providing context, key insights for each matchup, and live connections with the on-screen broadcast to experience the final from the inside.",
+    "tags": [
+      "GAMING"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Magamers"
+    ],
+    "company": "Magamers",
+    "short": "Magamers Final Ceremony"
+  },
+  {
+    "day": 4,
+    "time": "10:30-11:30",
+    "stage": "XPRO Talks",
+    "title": "Turning Silos into Synergy Through InnerSource",
+    "speakers": [
+      {
+        "name": "Ana Gamito",
+        "role": "Open Source Program Manager - AXA Group"
+      }
+    ],
+    "description": "InnerSource applies open source development principles inside an organization, enabling teams to collaborate across silos, share reusable components, and accelerate innovation. In this session, we’ll explore what InnerSource is, why it matters, and how it transforms the way companies build software. You’ll learn practical steps to start an InnerSource initiative, overcome common challenges, and foster a culture of transparency and shared ownership.",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "English",
+    "companies": [
+      "AXA Group"
+    ],
+    "company": "AXA Group",
+    "short": "InnerSource Collaboration"
+  },
+  {
+    "day": 4,
+    "time": "10:30-11:30",
+    "stage": "Plug-in Talks",
+    "title": "Beyond the Code: Skills That Drive Innovation",
+    "speakers": [
+      {
+        "name": "Ainoa Irurre, Europe Talent Attraction Vice President  at Schneider Electric",
+        "role": ""
+      },
+      {
+        "name": "Laura Sancho, Director IT Iberia & Project Management Officer at Schneider Electric",
+        "role": ""
+      },
+      {
+        "name": "Yolanda Triviño, CEO Institute for Futures Futures at Institute for Futures Futures",
+        "role": ""
+      },
+      {
+        "name": "Joana Barbany, Technology Business Development Director at Michael Page",
+        "role": ""
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Management"
+    ],
+    "lang": "English",
+    "companies": [
+      "Schneider Electric",
+      "Institute for Futures Futures",
+      "Michael Page"
+    ],
+    "company": "Schneider Electric",
+    "short": "Innovation-Driving Skills"
+  },
+  {
+    "day": 4,
+    "time": "10:30-11:30",
+    "stage": "Barcelona",
+    "title": "Challenge Next Arena project presentations",
+    "speakers": [],
+    "description": "The objective of the challenge is to rethink Talent Arena for 2027. Imagine and design how this event should evolve in order to remain relevant, inspiring, and transformative. As part of the NextArena Challenge, several student teams will present the projects they have developed to define how Talent Arena can evolve to become the leading global forum for digital talent. Proposals should address different strategic areas, combining creativity and innovation with analysis and a forward-looking vision, while taking into account the objectives outlined above. Participants are expected to design an experience that connects with new generations, delivers value to senior professionals, drives innovation, and leaves a lasting impact on the European digital ecosystem. In this context, the challenge aims to open its strategy to innovative ideas and differentiated proposals for the 2027 edition, using the previously described elements as a reference and aligning with the strategic and future-oriented vision that is being defined.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "English",
+    "companies": [],
+    "company": "",
+    "short": "Next Arena Challenge Projects"
+  },
+  {
+    "day": 4,
+    "time": "10:35-11:05",
+    "stage": "Hotspot Talks",
+    "title": "NEXT HR – Talent Magnetism: Employer Branding & Talent Acquisition",
+    "speakers": [],
+    "description": "Attracting digital talent is no longer just about offering competitive salaries or posting job openings. This panel explores how organizations can become talent magnets through an authentic Employee Value Proposition (EVP) aligned with their culture and values. Using real-world examples, it will cover what tech professionals are looking for today and how to stand out through purpose, projects, leadership, and employer branding built from within.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Spanish",
+    "companies": [],
+    "company": "",
+    "short": "Talent Magnetism and Branding"
+  },
+  {
+    "day": 4,
+    "time": "11:00-11:30",
+    "stage": "XPRO stage",
+    "title": "Are agents the evolution of microservices?",
+    "speakers": [
+      {
+        "name": "Marcia Villalba Monné",
+        "role": "Serverless Developer & Educator"
+      }
+    ],
+    "description": "Microservices changed how we build software, but AI agents are changing what software can do. In this talk, we will explore how agents can become the new cognitive microservices, capable of reasoning and acting within distributed systems. You’ll see demos with AWS serverless services that will help you understand how this new intelligent layer is transforming modern architecture.",
+    "tags": [
+      "Cloud Computing"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "AWS"
+    ],
+    "company": "AWS",
+    "short": "Agents vs Microservices Evolution"
+  },
+  {
+    "day": 4,
+    "time": "11:00-11:30",
+    "stage": "Visionary Stage",
+    "title": "From “promstitution” to impact. How developers stay essential in the age of AI",
+    "speakers": [
+      {
+        "name": "David Pereira",
+        "role": "Global Head of Data & AI at Seidor"
+      }
+    ],
+    "description": "In a world where anyone can automate software generation with AI, code no longer makes the difference. When intelligent agents are within everyone’s reach, the real value lies in knowing what to do with them. In this session, we will analyze why delegating everything to AI is not the solution, discuss human agency, and share tips on what makes developers stand out so they can remain relevant and deliver greater value where AI cannot.",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Seidor"
+    ],
+    "company": "Seidor",
+    "short": "Devs Staying Essential"
+  },
+  {
+    "day": 4,
+    "time": "11:05-11:30",
+    "stage": "Hotspot Talks",
+    "title": "NEXT HR – Market Intelligence for HR: HR Market Radar",
+    "speakers": [
+      {
+        "name": "Jordi Arcas",
+        "role": "CEO at TalentUp.io"
+      }
+    ],
+    "description": "Market data has become a key factor in guiding digital talent management. This session will examine how the use of objective data and its interpretation enables informed decision-making in areas such as compensation, critical skills, talent location, and workforce planning, integrating a practical view of the current market while anticipating its future impact.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "TalentUp.io"
+    ],
+    "company": "TalentUp.io",
+    "short": "HR Market Intelligence Radar"
+  },
+  {
+    "day": 4,
+    "time": "11:15-11:45",
+    "stage": "Robotics",
+    "title": "AI @ PAL Robots",
+    "speakers": [
+      {
+        "name": "Sergi de las Muelas",
+        "role": "Robotics Engineer at PAL Robotics"
+      }
+    ],
+    "description": "This presentation explores how artificial intelligence is driving the development of humanoid robotics. We will examine the most widely used techniques and see how they are integrated into these systems, demonstrating how they enable robots to be more adaptive, safe, and collaborative. The session will also reflect on the potential of these technologies to improve daily life, assist with complex tasks, and expand human capabilities.",
+    "tags": [
+      "ROBOTICS"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "PAL Robotics"
+    ],
+    "company": "PAL Robotics",
+    "short": "AI in PAL Robotics"
+  },
+  {
+    "day": 4,
+    "time": "11:15-12:45",
+    "stage": "Focus Lab",
+    "title": "AI Models for Marketing & Growth Strategy​",
+    "speakers": [
+      {
+        "name": "Armando Salvador",
+        "role": "EAE Business School - Master in Marketing & Growth Hacking Director"
+      }
+    ],
+    "description": "In this hands-on session, we will demonstrate how to use AI models to design and execute real marketing and growth strategies, regardless of experience level. Through clear examples and applied use cases, participants will learn how to select models, structure prompts, and build workflows that help attract, convert, and optimize business decisions. Applied AI you can start using from day one.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "EAE Business School"
+    ],
+    "company": "EAE Business School",
+    "short": "AI Models for Marketing Growth"
+  },
+  {
+    "day": 4,
+    "time": "11:15-12:45",
+    "stage": "XPRO Lab",
+    "title": "Computer Vision with Arduino UNO Q: From Edge AI to VLMs",
+    "speakers": [],
+    "description": "Join an interactive, hands-on workshop to explore Computer Vision on the edge using Edge Impulse and Arduino UNO Q. Learn how to collect data and train an object detection model to filter events in real time, then cascade to a Vision Language Model. No prior ML experience required. You’ll build an end-to-end cascaded AI application in the edge, balancing power efficiency and accuracy on real hardware. Bring your laptop and your curiosity!",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [],
+    "company": "Arduino",
+    "short": "Arduino Computer Vision Project"
+  },
+  {
+    "day": 4,
+    "time": "11:15-12:45",
+    "stage": "Frontier lab",
+    "title": "How to train your robot",
+    "speakers": [
+      {
+        "name": "Asier Arranz",
+        "role": "Senior Staff Developer Advocate atNVIDIA"
+      },
+      {
+        "name": "Jesús Ángel Bravo Duque",
+        "role": "Founder & CEO atBravo Robots"
+      },
+      {
+        "name": "Johnny Nuñez",
+        "role": "Developer Advocate at NVIDIA"
+      },
+      {
+        "name": "Luis Bravo",
+        "role": "Engineer at Bravo Robots"
+      }
+    ],
+    "description": "In this workshop, attendees will learn how to use the Lerobot framework and apply it to train a Lerobot SO-101 Arm. Official github: https://github.com/huggingface/lerobot/issues Buy the robot here: https://tienda.camptecnologico.com/producto/so-arm101-diy-kit-orange/",
+    "tags": [
+      "ROBOTICS"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "NVIDIA",
+      "Bravo Robots"
+    ],
+    "company": "NVIDIA",
+    "short": "Robot Training Techniques"
+  },
+  {
+    "day": 4,
+    "time": "11:30-12:00",
+    "stage": "Visionary Stage",
+    "title": "From Adoption to Impact: How Adoption Accelerates AI & Cloud Transformation in Enterprise Teams",
+    "speakers": [
+      {
+        "name": "Tammy Okwara",
+        "role": "Cloud Solutions Architect at Microsoft & Founder at Purplebook"
+      }
+    ],
+    "description": "Enterprises invest heavily in AI and cloud, yet struggle to realize value due to adoption gaps, not technology. This talk shares practical frameworks from enterprise and SaaS programs to improve onboarding, role-based training, and success metrics that accelerate adoption, reduce time-to-value, and drive sustained business impact.",
+    "tags": [
+      "Cloud Computing"
+    ],
+    "lang": "English",
+    "companies": [
+      "Microsoft & Founder at Purplebook"
+    ],
+    "company": "Microsoft & Founder at Purplebook",
+    "short": "AI and Cloud Transformation"
+  },
+  {
+    "day": 4,
+    "time": "11:30-12:00",
+    "stage": "XPRO stage",
+    "title": "What Does It Take to Build a Real-Time Data Platform?",
+    "speakers": [
+      {
+        "name": "Melvyn Peignon",
+        "role": "Principal Product Manager at Clickhouse"
+      }
+    ],
+    "description": "Modern AI systems—from recommendation engines to autonomous LLM agents—depend on fast, reliable access to fresh data. Feature retrieval, contextual enrichment, analytics, and observability all require sub-second responses, even at terabyte or petabyte scale, to deliver truly interactive experiences. In this session, we’ll explore how ClickHouse enables real-time analytics at scale and how it fits into end-to-end AI architectures.",
+    "tags": [
+      "Cloud Computing"
+    ],
+    "lang": "English",
+    "companies": [
+      "Clickhouse"
+    ],
+    "company": "Clickhouse",
+    "short": "Real-Time Data Platform"
+  },
+  {
+    "day": 4,
+    "time": "11:30-12:30",
+    "stage": "Meetup area",
+    "title": "Building an AI Agent and Simulating 6G with NVIDIA",
+    "speakers": [
+      {
+        "name": "Amparo Canaveras",
+        "role": "Sr. Solutions Architect Generative AI at NVIDIA"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "NVIDIA"
+    ],
+    "company": "NVIDIA",
+    "short": "6G Simulation with NVIDIA AI"
+  },
+  {
+    "day": 4,
+    "time": "11:30-12:30",
+    "stage": "Plug-in Talks",
+    "title": "A More Accessible and Democratic Open-Source AI",
+    "speakers": [
+      {
+        "name": "Ángela Gasch (Moderator)",
+        "role": "AI Consultant at SEDIA"
+      },
+      {
+        "name": "Rebeca Sarai Gonzalez Guerra",
+        "role": "Lead Data Scientist & AI Architect at Hiberus"
+      },
+      {
+        "name": "Adriana Fernández",
+        "role": "Head of the Telco Cloud & AI Innovation Team at OpenNebula"
+      },
+      {
+        "name": "Alejandra González-García",
+        "role": "Member of the Coordination Committee at Decidim"
+      }
+    ],
+    "description": "Panel discussion with organizations that develop, use, and advocate for open-source AI. We will discuss, from a technical and practical perspective, why open source is essential for accessible and transparent AI. A direct conversation about technology and how open source is shaping the future of AI.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "SEDIA",
+      "Hiberus",
+      "OpenNebula",
+      "Decidim"
+    ],
+    "company": "SEDIA",
+    "short": "Open-Source AI Accessibility"
+  },
+  {
+    "day": 4,
+    "time": "11:30-12:30",
+    "stage": "Barcelona",
+    "title": "Challenge Next Arena project presentations",
+    "speakers": [],
+    "description": "The objective of the challenge is to rethink Talent Arena for 2027. Imagine and design how this event should evolve in order to remain relevant, inspiring, and transformative. As part of the NextArena Challenge, several student teams will present the projects they have developed to define how Talent Arena can evolve to become the leading global forum for digital talent. Proposals should address different strategic areas, combining creativity and innovation with analysis and a forward-looking vision, while taking into account the objectives outlined above. Participants are expected to design an experience that connects with new generations, delivers value to senior professionals, drives innovation, and leaves a lasting impact on the European digital ecosystem. In this context, the challenge aims to open its strategy to innovative ideas and differentiated proposals for the 2027 edition, using the previously described elements as a reference and aligning with the strategic and future-oriented vision that is being defined.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "English",
+    "companies": [],
+    "company": "",
+    "short": "Next Arena Challenge Projects"
+  },
+  {
+    "day": 4,
+    "time": "11:30-12:00",
+    "stage": "Hotspot Talks",
+    "title": "NEXT HR –  Smart Hiring: AI-driven automation in tech talent recruitment",
+    "speakers": [],
+    "description": "Artificial intelligence is transforming digital talent recruitment processes. This session will explore the opportunities and challenges these tools present for HR teams, as well as their ethical and effective application. It will also examine the balance between technological efficiency, candidate experience, and human judgment, focusing on AI-augmented, people-centered decision-making.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Spanish",
+    "companies": [],
+    "company": "",
+    "short": "AI-Driven Smart Hiring"
+  },
+  {
+    "day": 4,
+    "time": "11:30-12:30",
+    "stage": "XPRO Talks",
+    "title": "Scaling Science at large facilities: ALBA and BSC",
+    "speakers": [
+      {
+        "name": "Oscar Matilla",
+        "role": "Computing Division Head at ALBA Synchrotron"
+      }
+    ],
+    "description": "The Barcelona Supercomputing Center (BSC) and the ALBA Synchrotron are two major research hubs located in Barcelona. ALBA, a particle accelerator for experimental science, produces huge volumes of ultra-high-resolution data. BSC, the Spain’s national supercomputing center, hosts the MareNostrum and multiple research groups. This talk will examine the essential role of computing in driving the frontier of scientific discovery.",
+    "tags": [
+      "Cloud Computing"
+    ],
+    "lang": "English",
+    "companies": [
+      "ALBA Synchrotron"
+    ],
+    "company": "ALBA Synchrotron",
+    "short": "Scaling Scientific Research"
+  },
+  {
+    "day": 4,
+    "time": "11:30-12:30",
+    "stage": "Skills Hub",
+    "title": "Immersive Interview Experience: Live a Real Interview",
+    "speakers": [],
+    "description": "The job interview is a demanding process that requires preparation and strategy. Through a hands-on, “training mode” experience, participants can practice, improve their pitch, and gain confidence to perform at their best in a real interview. In this workshop, you will find the most realistic simulator to help you avoid mistakes in an actual job interview.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Spanish",
+    "companies": [],
+    "company": "",
+    "short": "Live Interview Experience"
+  },
+  {
+    "day": 4,
+    "time": "12:00-12:30",
+    "stage": "Visionary Stage",
+    "title": "The Future of Enterprise AI Governance",
+    "speakers": [
+      {
+        "name": "Oliver Patel",
+        "role": "Head of Enterprise Artificial Intelligence Governance at AstraZeneca"
+      }
+    ],
+    "description": "AI is now democratized, reshaping every role and organization. As it becomes embedded in work, how do we keep it trustworthy, compliant, and safe? Enterprise AI Governance is critical, yet most organizations are just beginning. Oliver Patel, who leads AI governance at AstraZeneca and authored Fundamentals of AI Governance, shares how regulations are evolving, why AI literacy is essential, and how agentic AI changes the game.",
+    "tags": [
+      "Cybersecurity"
+    ],
+    "lang": "English",
+    "companies": [
+      "AstraZeneca"
+    ],
+    "company": "AstraZeneca",
+    "short": "Enterprise AI Governance"
+  },
+  {
+    "day": 4,
+    "time": "12:00-13:00",
+    "stage": "XPRO stage",
+    "title": "20,000 Blunders in Tech Leadership",
+    "speakers": [],
+    "description": "The odyssey of the technical leader begins with a brilliant engineer who, after being called to cross the “technical career chasm,” must abandon their identity as a “chef in the kitchen” focused on code in order to learn how to achieve results through the hands of others. In this “choose your own adventure” labyrinth, our hero faces monsters such as technical debt, which they must learn to translate into the financial language of spreadsheets in order to fight it strategically. Through the trials of the “You Build It, You Run It” philosophy and the demolition of organizational silos, they discover that their true strength lies in automation and shared product ownership. By invoking sacred tools such as “Priority Buckets” and OKRs to align their tribe with business objectives, and by applying the balm of blameless postmortems to transform mistakes into systemic learning, the leader returns transformed into the glue that binds technical talent with strategic vision. Ultimately, the journey reveals that their mission is not only to plant technological “baby trees” for the future, but also to safeguard their own mental health and that of their team at the lonely summit of leadership. In this presentation, Àlex Rodríguez Bacardit and colleagues will discuss the complex path to technological leadership and share some of their greatest successes and failures.",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "Spanish",
+    "companies": [],
+    "company": "",
+    "short": "Tech Leadership Lessons"
+  },
+  {
+    "day": 4,
+    "time": "12:00-12:30",
+    "stage": "Gaming",
+    "title": "Final Magamers",
+    "speakers": [
+      {
+        "name": "Magas",
+        "role": ""
+      }
+    ],
+    "description": "Live broadcast space from the Gaming Zone at the Talent Arena, where casters Jackalsito and Katarsis will guide the audience through the on-site Grand Final of Magamers 2026, the women’s League of Legends tournament promoted by EL ESPAÑOL, Magas, Vandal, and Crónica Global, and integrated into the amateur competitive ecosystem of Circuito Tormenta. Across three slots, the audience will be welcomed, the finalist teams will be introduced, and the different matches will be presented, providing context, key insights for each matchup, and live connections with the on-screen broadcast to experience the final from the inside.",
+    "tags": [
+      "GAMING"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Magamers"
+    ],
+    "company": "Magamers",
+    "short": "Magamers Final Ceremony"
+  },
+  {
+    "day": 4,
+    "time": "12:00-12:20",
+    "stage": "Hotspot Talks",
+    "title": "NEXT HR – Rethinking Access to Digital Talent",
+    "speakers": [
+      {
+        "name": "Héctor Mata",
+        "role": "Founder & CEO at Shakers"
+      }
+    ],
+    "description": "Access to digital talent is evolving due to imbalances between profiles, increasing demand for specialization, and the prioritization of experienced profiles over the development of early-stage talent. This session will address new ways to identify and activate talent beyond traditional hiring, from early potential detection to flexible collaboration models, and their strategic implications for HR.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "English",
+    "companies": [
+      "Shakers"
+    ],
+    "company": "Shakers",
+    "short": "Digital Talent Access"
+  },
+  {
+    "day": 4,
+    "time": "12:20-13:00",
+    "stage": "Hotspot Talks",
+    "title": "NEXT HR – Grow to Stay: Developing Digital Talent to Improve Retention",
+    "speakers": [],
+    "description": "Retaining digital talent is one of the main challenges facing HR teams today. Drawing on real-world experiences, this session will explore how professional development, upskilling, and continuous learning serve as key levers to strengthen engagement and retention. The focus will be on practical approaches that connect skills development with talent motivations and organizational needs.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Spanish",
+    "companies": [],
+    "company": "",
+    "short": "Digital Talent Development"
+  },
+  {
+    "day": 4,
+    "time": "12:30-13:00",
+    "stage": "Visionary Stage",
+    "title": "The Power of Sharing: How Open Source Quietly Runs the World",
+    "speakers": [
+      {
+        "name": "Arnau Oncins Rodriguez",
+        "role": "Enterprise Architect at Allianz"
+      }
+    ],
+    "description": "In this session, we will show how advocating OSS/Inner Source adoption at Allianz Technology. Using DORA + BaFin regulations as catalyst, OpenSource adoption can turn compliance into a competitive advantage. With a data-driven approach, implementing an Open Source Program Office (OSPO) drives immediate ROI (44-60% cost savings, 25-40% faster delivery).",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "English",
+    "companies": [
+      "Allianz"
+    ],
+    "company": "Allianz",
+    "short": "Open Source Power"
+  },
+  {
+    "day": 4,
+    "time": "12:30-13:30",
+    "stage": "Meetup area",
+    "title": "Tapas & Observability: Connect, Chat, Enjoy",
+    "speakers": [
+      {
+        "name": "Nacho Cougil",
+        "role": "Principal Software Engineer at Dynatrace"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "Dynatrace"
+    ],
+    "company": "Dynatrace",
+    "short": "Observability and Networking"
+  },
+  {
+    "day": 4,
+    "time": "12:30-13:30",
+    "stage": "Plug-in Talks",
+    "title": "Management and leadership: STEM intergeneracional",
+    "speakers": [
+      {
+        "name": "Amaia Zarranz",
+        "role": "Technical Solution – Caixabank Tech"
+      },
+      {
+        "name": "Maria Engracia Guillamon Bagan",
+        "role": "Directora Cibersecurity Prevent&Detect – Caixabank"
+      },
+      {
+        "name": "Claudia Platel",
+        "role": "Product Manager Analítica i venta digital – Caixabank"
+      },
+      {
+        "name": "Lourdes Mercadal",
+        "role": "Directora Development – CaixaBank Tech"
+      }
+    ],
+    "description": "",
+    "tags": [],
+    "lang": "English",
+    "companies": [
+      "CaixaBank Tech",
+      "CaixaBank"
+    ],
+    "company": "CaixaBank",
+    "short": "Intergenerational STEM Leadership"
+  },
+  {
+    "day": 4,
+    "time": "12:30-13:30",
+    "stage": "XPRO Talks",
+    "title": "From Zero to Hero: Cybersecurity Certification with Cisco and Barcelona Activa",
+    "speakers": [
+      {
+        "name": "Humbert Ruiz (Moderator)",
+        "role": "Director of Digital Talent atBarcelona Activa"
+      },
+      {
+        "name": "Xavier Massa",
+        "role": "Director, Public Sector Spain atCISCO"
+      },
+      {
+        "name": "Maria Barragan",
+        "role": "SIRT, Organizational Change Management"
+      },
+      {
+        "name": "Paola Arrabal Agüera",
+        "role": "Office of the Director and Institutional Relations atInstituto Nacional de Ciberseguridad"
+      }
+    ],
+    "description": "Presentation of the Cybersecurity track of the IT Academy. This roundtable will explain the public-private collaboration that makes this training possible, designed byBarcelona Activa, with the participation ofCISCO, which provides students access to its Cisco Networking Academy, and SIRT, a leading cybersecurity company that facilitates official student certification. The event will also feature the presence ofINCIBE.",
+    "tags": [
+      "Cybersecurity"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Barcelona Activa",
+      "Cisco",
+      "SIRT",
+      "INCIBE"
+    ],
+    "company": "Cisco",
+    "short": "Cybersecurity Certification"
+  },
+  {
+    "day": 4,
+    "time": "12:45-13:15",
+    "stage": "Robotics",
+    "title": "PUCRA: University Students Competing in High-Level Robotics",
+    "speakers": [
+      {
+        "name": "Elena Villalba Aguilera",
+        "role": "ERC Team Leader atPUCRA"
+      },
+      {
+        "name": "Santiago Pallarès Ocampo",
+        "role": "President of PUCRA"
+      },
+      {
+        "name": "Marc Redolad Ramos",
+        "role": "Treasurer of PUCRA"
+      }
+    ],
+    "description": "PUCRA is a university association formed by engineering students who design and build robots for national and international competitions. This session presents the team’s experience in the VEX robotics competition, the SENER competition and the return to the European Rover Challenge (ERC) competition, explaining the rules, technical challenges, and current project status.",
+    "tags": [
+      "ROBOTICS"
+    ],
+    "lang": "English",
+    "companies": [
+      "PUCRA"
+    ],
+    "company": "PUCRA",
+    "short": "Student Robotics Competition"
+  },
+  {
+    "day": 4,
+    "time": "13:00-13:30",
+    "stage": "Visionary Stage",
+    "title": "Invisible Technology",
+    "speakers": [
+      {
+        "name": "Edgar Pons",
+        "role": "CEO at NutriBrain"
+      }
+    ],
+    "description": "Twenty years ago, technology was noisy: beeping modems, loading times, instruction manuals. Today, the goal is “Zero UI”: technology that is everywhere, but invisible. What does it take to achieve that invisibility? It requires projecting 30,000 invisible points of light onto your face, synchronizing atomic clocks in orbit, and embedding microscopic physical machines inside a chip. In this session, we will examine the technical miracles that users take for granted, and how technology performs magic in our everyday lives.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "NutriBrain"
+    ],
+    "company": "NutriBrain",
+    "short": "Invisible Technology Discussion"
+  },
+  {
+    "day": 4,
+    "time": "13:00-13:30",
+    "stage": "XPRO stage",
+    "title": "AI Lift-off: Escaping Prototype Gravity to Reach Production Orbit",
+    "speakers": [
+      {
+        "name": "Nereida Agüera",
+        "role": "Solutions Architect at Databricks"
+      }
+    ],
+    "description": "Most AI-powered prototypes never make it to production, but why? In this session, we’ll explore the hidden forces that stall AI projects, from fragile data foundations and lack of unified governance to prioritizing the never-ending chase of the ‘best’ model over rigorous evaluation and actionable data intelligence. Learn how enterprises are overcoming these hurdles to turn experiments into production-ready AI that delivers real impact – no spacesuits required!",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "English",
+    "companies": [
+      "Databricks"
+    ],
+    "company": "Databricks",
+    "short": "AI from Prototype to Production"
+  },
+  {
+    "day": 4,
+    "time": "13:00-13:25",
+    "stage": "Hotspot Talks",
+    "title": "NEXT HR – Data-Driven People: Analytics per decisions de talent",
+    "speakers": [
+      {
+        "name": "Pol Luengo",
+        "role": "Global Leadership and Talent Analytics at Unilever"
+      }
+    ],
+    "description": "Decisions on how to manage and develop talent are no longer linear, and HR analytics has become a key factor in strengthening them. Using real-world examples, this session will show how People Analytics can improve retention, performance, the identification of development needs, and workforce planning, connecting people data with actionable business decisions for everyday HR operations.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Unilever"
+    ],
+    "company": "Unilever",
+    "short": "People Analytics for Talent"
+  },
+  {
+    "day": 4,
+    "time": "13:00-14:30",
+    "stage": "Focus Lab",
+    "title": "AI in Supply Chain/Operations: How to Deliver More Value in an Unstable World",
+    "speakers": [
+      {
+        "name": "Miquel Serracanta",
+        "role": "Master in Supply Chain Director, EAE Business School"
+      }
+    ],
+    "description": "Practical workshop for undergraduate/graduate students, active professionals, and anyone looking to start a career in Operations/Supply Chain (including Purchasing, Procurement, Production, Logistics, Transportation, Demand & Supply Planning, Customer Service). Through individual exercises and small team challenges, you will discover how to turn AI into a real competitive advantage: you will identify high-impact opportunities, learn to prioritize them with strategic judgment, and transform them into measurable business results as well as a direct accelerator for your own career, working on prompting through practical exercises applied to real situations. We will close the workshop by creating a 30-day individual plan to enhance your current and future employability based on the AI experiences, in an increasingly uncertain and unstable global context. Important: Bring your laptop with your preferred AI agent installed/connected.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "EAE Business School"
+    ],
+    "company": "EAE Business School",
+    "short": "AI in Supply Chain Operations"
+  },
+  {
+    "day": 4,
+    "time": "13:00-14:30",
+    "stage": "Frontier lab",
+    "title": "Build Your Own AI Agent – From Theory to Practice",
+    "speakers": [],
+    "description": "In this workshop, you will discover the theoretical foundations behind AI agents and learn, step by step, how to develop and customize them. You will experience a hands-on, interactive session, working with real examples to fine-tune your agents’ performance. No prior experience is needed—just curiosity, a willingness to learn, and a desire to explore new ways of working with artificial intelligence.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "Spanish",
+    "companies": [],
+    "company": "",
+    "short": "Building AI Agents Practically"
+  },
+  {
+    "day": 4,
+    "time": "13:00-14:30",
+    "stage": "XPRO Lab",
+    "title": "How to Simulate 6G in the Cloud with Highly-Realistic Channel Models",
+    "speakers": [
+      {
+        "name": "CC Chong",
+        "role": "Sr. Director and Head of Aerial Product Management"
+      }
+    ],
+    "description": "Wireless network digital twins are key to AI-native 6G networks, which will be born first in simulation. Legacy stochastic models face fundamental challenges in physical accuracy and ISAC needs. NVIDIA Aerial Omniverse Digital Twin (AODT) employs GPU raytracing for physics-accurate 6G modeling. In this session, we will show how to integrate AODT into simulation workflows, enabling cloud-based AI-for-RAN validation and realistic network deployment",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "Keysight Technologies"
+    ],
+    "company": "Keysight Technologies",
+    "short": "6G Cloud Simulation Models"
+  },
+  {
+    "day": 4,
+    "time": "13:00-14:00",
+    "stage": "Skills Hub",
+    "title": "Hack Your CV: Key Tips to Optimize Your CV and Beat AI Filters",
+    "speakers": [],
+    "description": "In today’s recruitment processes, many résumés are automatically filtered before reaching human hands. Understanding how these systems work is key to improving job opportunities. This workshop provides practical tools and strategies to adapt your CV to AI filters, aiming especially to empower unemployed individuals, people with diverse profiles, or those in vulnerable situations.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Spanish",
+    "companies": [],
+    "company": "",
+    "short": "CV Optimization for AI Filters"
+  },
+  {
+    "day": 4,
+    "time": "13:25-13:30",
+    "stage": "Hotspot Talks",
+    "title": "NEXT HR – Closing",
+    "speakers": [
+      {
+        "name": "Nacho Borrás",
+        "role": "Head of People at Mobile World Capital Barcelona"
+      }
+    ],
+    "description": "Coming Soon NEXT HR",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Mobile World Capital Barcelona"
+    ],
+    "company": "Mobile World Capital Barcelona",
+    "short": "NEXT HR Closing Session"
+  },
+  {
+    "day": 4,
+    "time": "13:30-14:00",
+    "stage": "XPRO stage",
+    "title": "AI That Ships: Powering the Next Wave of AI PCs with Generative AI at the Edge",
+    "speakers": [
+      {
+        "name": "Jordina Torrents Barrena",
+        "role": "Senior AI Manager and Principal AI Architect at HP"
+      }
+    ],
+    "description": "Building AI demos is easy; shipping AI products is hard. This talk shows how HP is unleashing GenAI on next-gen AI PCs, delivering powerful, secure, private, and energy-efficient on-device intelligence. Explore multimodal models optimized via fine-tuning, quantization, hybrid CPU/GPU/NPU orchestration, beyond transformer-based architectures like state-space models, and advanced assessment frameworks shaping next-gen AI experiences.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "HP"
+    ],
+    "company": "HP",
+    "short": "AI PCs with Edge Computing"
+  },
+  {
+    "day": 4,
+    "time": "13:30-14:00",
+    "stage": "Visionary Stage",
+    "title": "AI Across the Pharmaceutical Value Chain",
+    "speakers": [
+      {
+        "name": "Xabier Morales Ferez",
+        "role": "Data Scientist R&D Lead"
+      }
+    ],
+    "description": "The pharmaceutical industry is at a turning point, with long, costly drug development cycles. At Sanofi Digital R&D, AI is transforming the full value chain — from molecular design and advanced imaging to clinical trials and digital biomarkers. By accelerating decisions and improving outcomes, AI is reimagining how medicines are discovered and developed.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "Sanofi"
+    ],
+    "company": "Sanofi",
+    "short": "AI in Pharmaceutical Industry"
+  },
+  {
+    "day": 4,
+    "time": "13:30-14:30",
+    "stage": "Meetup area",
+    "title": "Rust Iberia Meetup: Building an Agent from Scratch Using Rust and Open‑Source Tools",
+    "speakers": [
+      {
+        "name": "Lawrence Freeman",
+        "role": "Founder/Instructor at Fledgio"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "English",
+    "companies": [
+      "Fledgio"
+    ],
+    "company": "Fledgio",
+    "short": "Rust Agent Development"
+  },
+  {
+    "day": 4,
+    "time": "13:30-14:00",
+    "stage": "Gaming",
+    "title": "Final Magamers",
+    "speakers": [
+      {
+        "name": "Magas",
+        "role": ""
+      }
+    ],
+    "description": "Live broadcast space from the Gaming Zone at the Talent Arena, where casters Jackalsito and Katarsis will guide the audience through the on-site Grand Final of Magamers 2026, the women’s League of Legends tournament promoted by EL ESPAÑOL, Magas, Vandal, and Crónica Global, and integrated into the amateur competitive ecosystem of Circuito Tormenta. Across three slots, the audience will be welcomed, the finalist teams will be introduced, and the different matches will be presented, providing context, key insights for each matchup, and live connections with the on-screen broadcast to experience the final from the inside.",
+    "tags": [
+      "GAMING"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Magamers"
+    ],
+    "company": "Magamers",
+    "short": "Magamers Final Ceremony"
+  },
+  {
+    "day": 4,
+    "time": "13:30-14:30",
+    "stage": "XPRO Talks",
+    "title": "Live Coding: Create your first Voice Agent",
+    "speakers": [
+      {
+        "name": "Ismael Ordaz Reyes",
+        "role": "SLNG.ai - Co-founder & CTO"
+      }
+    ],
+    "description": "In this live-coding session, we’ll build a simple voice agent step by step: handling audio, reasoning with an LLM, and calling tools in real time (fetching web data, reading from PDFs, triggering actions). No slides—just code. You’ll leave with a clear mental model of how voice agents work and how to extend them beyond scripted conversations.",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "English",
+    "companies": [
+      "SLNG.ai"
+    ],
+    "company": "SLNG.ai",
+    "short": "Voice Agent Development"
+  },
+  {
+    "day": 4,
+    "time": "13:30-14:30",
+    "stage": "Hotspot Talks",
+    "title": "AI with Purpose: Ethics that Transform Talent Management",
+    "speakers": [
+      {
+        "name": "Anna Golsa",
+        "role": "CEO of Eurofirms"
+      }
+    ],
+    "description": "Eurofirms Group and Telefónica Tech share a success story of purpose-driven innovation: how generative AI, designed around values, is transforming talent selection with fairer, scalable and more human processes, where technology supports and human decision-making remains in control. In addition, you will discover the tech trends that will redefine the relationship between talent and technology in the coming years.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "English",
+    "companies": [
+      "Eurofirms"
+    ],
+    "company": "Eurofirms",
+    "short": "Ethical AI in Talent Management"
+  },
+  {
+    "day": 4,
+    "time": "13:30-14:30",
+    "stage": "Plug-in Talks",
+    "title": "Building the AI Generation. Empowering Research Talent",
+    "speakers": [],
+    "description": "TheBuilding the AI Generationinitiative, part ofGeneración Dand promoted byRed.estogether withCSIC,Barcelona Supercomputing Center,CNIOandCNIC, has enabled the recruitment of 374 researchers in artificial intelligence and digitalization applied to multiple scientific fields. In this panel, representatives and researchers from CSIC and CNIC will discuss the evolution of the program and present some of the most relevant research projects currently under development.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "Spanish",
+    "companies": [],
+    "company": "",
+    "short": "AI and Research Talent"
+  },
+  {
+    "day": 4,
+    "time": "13:30-14:30",
+    "stage": "Barcelona",
+    "title": "Responsible and Secure AI: Protect Your Organization in the Era of Generative AI",
+    "speakers": [
+      {
+        "name": "Nadya Lozada Oliveros",
+        "role": "Project Manager / Cloud Architect at GFT (Moderator)"
+      },
+      {
+        "name": "Miguel Fernández Garrido",
+        "role": "Co-Head of the Cybersecurity CoE at GFT Spain"
+      },
+      {
+        "name": "Eduardo Gonzalez Lainez",
+        "role": "Information Security Director at Banc Sabadell"
+      },
+      {
+        "name": "Alex Jiménez de Alier",
+        "role": "Head of Cyber Prevention at Boehringer Ingelheim"
+      }
+    ],
+    "description": "Generative AI is transforming organizations, enabling efficiency, automation and new ways of building software. However, major risks remain, including data leakage, model attacks, hallucinations, AI lifecycle security, regulatory compliance and ethical challenges. In this roundtable, experts from GFT and industry leaders share practical guidance on responsible implementation, security by design and safe use of generative AI in production.",
+    "tags": [
+      "Cybersecurity"
+    ],
+    "lang": "English",
+    "companies": [
+      "GFT",
+      "GFT Spain",
+      "Banc Sabadell",
+      "Boehringer Ingelheim"
+    ],
+    "company": "GFT",
+    "short": "Responsible AI Security"
+  },
+  {
+    "day": 4,
+    "time": "14:00-14:30",
+    "stage": "Visionary Stage",
+    "title": "The anticulture of urgency: How to avoid the immediate-response syndrome",
+    "speakers": [
+      {
+        "name": "Jose Carlos del Sol",
+        "role": "Scrum Master at Wordline"
+      }
+    ],
+    "description": "Many IT teams live in a constant sense of urgency: messages in Teams that demand immediate responses, emails that can’t wait, emergency meetings. But is it really all that urgent? This talk will address how the pressure of immediacy affects productivity and team mental health, and present strategies for slowing down without losing efficiency. We will look at some techniques and how to apply them in our day-to-day work.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "English",
+    "companies": [
+      "Wordline"
+    ],
+    "company": "Wordline",
+    "short": "Managing Workplace Urgency"
+  },
+  {
+    "day": 4,
+    "time": "14:00-14:30",
+    "stage": "XPRO stage",
+    "title": "Leading a Technical Revolution through Platform Engineering",
+    "speakers": [
+      {
+        "name": "Anastasia Kondratrieva",
+        "role": "Platform Area Lead and Cloud Security Advocate at Tymit"
+      }
+    ],
+    "description": "Technical revolutions rarely start with big launches or visible announcements. More often, they begin deep within an organization — where architectures are defined, processes are automated, and decisions are made that few notice but ultimately shape the company’s speed, security, and capacity to grow. In this talk, Anastasia Kondratieva shares what it really means to lead that kind of transformation through Platform Engineering, combining strategy with hands-on technical execution. Through real examples —evolving infrastructure, designing internal platforms, making governance and automation decisions— she explores how the often invisible work of platform teams can become a tangible driver of organizational change. The session also looks at how to align technology with culture and maintain coherence as an organization scales and evolves, showing that a well-executed technical revolution is not built on chaos but on clarity — on decisions that scale, automations that endure, and platforms that propel the entire company forward. Key takeaways: How architectural and technical decisions can drive organizational transformation. Platform Engineering as both a technical and strategic engine of change. Real examples of platform design, automation, and governance. How to align technology, culture, and growth. Scaling without losing control: balancing autonomy, security, and sustainability.",
+    "tags": [
+      "Cloud Computing"
+    ],
+    "lang": "English",
+    "companies": [
+      "Tymit"
+    ],
+    "company": "Tymit",
+    "short": "Platform Engineering Leadership"
+  },
+  {
+    "day": 4,
+    "time": "15:00-15:30",
+    "stage": "Visionary Stage",
+    "title": "How to Survive an AI That’s Trying to Replace You",
+    "speakers": [
+      {
+        "name": "Brais Moure",
+        "role": "Software Engineer and Educator at MoureDev"
+      }
+    ],
+    "description": "Brais Moure deconstructs the myth of the “dying programmer” to focus on the shift from writing code to designing solutions. Discover why engineering fundamentals are more critical than ever and how to leverage automation without losing technical control. Key Takeaways: The evolving value of the modern developer. Navigating the risks of automated coding. Scaling your career with technical rigor.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "MoureDev"
+    ],
+    "company": "MoureDev",
+    "short": "Surviving AI Replacement"
+  },
+  {
+    "day": 4,
+    "time": "15:00-15:30",
+    "stage": "XPRO stage",
+    "title": "AI Observability: Making AI Adoption Safe, Reliable, and Measurable",
+    "speakers": [
+      {
+        "name": "Isidre Royo Bonnin",
+        "role": "Senior Product Manager at Dynatrace"
+      }
+    ],
+    "description": "This session unpacks the real challenges organizations face when adopting AI—from governance and transparency to performance, reliability, and cost. We’ll break down why traditional monitoring falls short in AI-driven environments and how AI observability becomes essential for trust, reliability, and scale. Finally, we’ll show how Dynatrace delivers end‑to‑end visibility across the entire AI lifecycle—from development and testing to production.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "Dynatrace"
+    ],
+    "company": "Dynatrace",
+    "short": "AI Observability and Safety"
+  },
+  {
+    "day": 4,
+    "time": "15:00-16:00",
+    "stage": "Meetup area",
+    "title": "Meetup with Eurofirms",
+    "speakers": [
+      {
+        "name": "Jaume Dulsat",
+        "role": "Country Leader Spain at Eurofirms Group"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Management"
+    ],
+    "lang": "English",
+    "companies": [
+      "Eurofirms Group"
+    ],
+    "company": "Eurofirms Group",
+    "short": "Eurofirms Networking Meetup"
+  },
+  {
+    "day": 4,
+    "time": "15:00-15:30",
+    "stage": "Robotics",
+    "title": "What I Would Tell Myself 8 Years Ago Before Founding an Indie Studio",
+    "speakers": [
+      {
+        "name": "Beatriz Osorio Abraham",
+        "role": "Co-founder at Patrones y Escondites S.L."
+      }
+    ],
+    "description": "Eight years ago, we founded an indie studio convinced that making good games was the hardest part. Over time, we realized that wasn’t exactly the case. In this session, I will share what we’ve learned along the way: the small decisions that made unexpected differences, the conversations we took too long to have, and the mistakes we made in the games we released. We will talk about teams, contracts, publishers, marketing, and something as unglamorous as cash flow and reach. Not from theory or absolute certainty, but from our own experience, with its successes and its missteps. This is not a talk about what must be done. It’s an open reflection on what we wish we had understood more clearly when we were starting out. Because making a game is a creative challenge. Sustaining a studio over time is something you learn, often through trial and error.",
+    "tags": [
+      "GAMING"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Patrones y Escondites S.L"
+    ],
+    "company": "Patrones y Escondites S.L",
+    "short": "Indie Studio Lessons Learned"
+  },
+  {
+    "day": 4,
+    "time": "15:00-16:30",
+    "stage": "Frontier lab",
+    "title": "Testing APIs Like a Boss with BDD",
+    "speakers": [
+      {
+        "name": "Javier Ramos Panduro",
+        "role": "Solutions Architect at Next Digital"
+      }
+    ],
+    "description": "A hands-on workshop on API testing in Python using TDD and BDD to build robust, maintainable software. We’ll cover key concepts and apply them with pytest, pytest-bdd, and a dockerized environment, writing tests before code, defining natural-language scenarios, and automating validation. For developers with basic Python and FastAPI knowledge.",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Next Digital"
+    ],
+    "company": "Next Digital",
+    "short": "API Testing with BDD"
+  },
+  {
+    "day": 4,
+    "time": "15:00-16:30",
+    "stage": "XPRO Lab",
+    "title": "Sovereign AI & FinOps: Turning Cloud Control into Competitive Advantage",
+    "speakers": [
+      {
+        "name": "Oriol Jofra",
+        "role": "CEO at Digital Maker"
+      }
+    ],
+    "description": "As AI costs rise, organizations must innovate without losing financial control. This workshop explores how FinOps enables Sovereign AI by combining financial governance with data residency. Through real-world cases, we demonstrate how to reduce cloud waste and re-architect for efficiency. Join us to learn how to align innovation, profitability, and sovereignty to build resilient, future-ready digital ecosystems.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "Digital Maker"
+    ],
+    "company": "Digital Maker",
+    "short": "Sovereign AI and FinOps"
+  },
+  {
+    "day": 4,
+    "time": "15:00-18:15",
+    "stage": "Focus Lab",
+    "title": "Building and Training Open Telco AI Models at Scale",
+    "speakers": [
+      {
+        "name": "Farbod Tavakkoli",
+        "role": "Data Scientist at AT&T"
+      }
+    ],
+    "description": "This masterclass establishes a technical framework for building and training telecom-native AI systems at scale. It details the end-to-end infrastructure required to transition from general-purpose models to domain-specific architectures using ScalarLM. Attendees will see a live demonstration of multi-node training on open Telco AI assets and explore methods for achieving state-of-the-art performance on industry benchmarks.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "AT&T"
+    ],
+    "company": "AT&T",
+    "short": "Telco AI Models at Scale"
+  },
+  {
+    "day": 4,
+    "time": "15:00-16:00",
+    "stage": "Skills Hub",
+    "title": "CTO Leadership Lab: Communicate, Attract, and Retain Tech Talent",
+    "speakers": [
+      {
+        "name": "Sandra Alonso",
+        "role": "Program Leader at Eurofirms"
+      },
+      {
+        "name": "Marisa Martínez",
+        "role": "Diversity & Inclusion Consultant at Eurofirms"
+      },
+      {
+        "name": "Mireia López",
+        "role": "Diversity & Inclusion Consultant at Eurofirms"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Eurofirms"
+    ],
+    "company": "Eurofirms",
+    "short": "CTO Leadership Development"
+  },
+  {
+    "day": 4,
+    "time": "15:30-16:00",
+    "stage": "Visionary Stage",
+    "title": "From Devices to Digital: Building Healthcare Workflows that Matter",
+    "speakers": [
+      {
+        "name": "Ernest Buil",
+        "role": "Innovation IT Manager at BBraun"
+      }
+    ],
+    "description": "Healthcare is moving beyond devices to integrated digital solutions. This session explores how combining medical technology with software, cloud, and data can simplify hospital workflows, reduce friction for clinicians, and improve patient care—turning technology into a true enabler of efficiency and impact.",
+    "tags": [
+      "Cloud Computing"
+    ],
+    "lang": "English",
+    "companies": [
+      "BBraun"
+    ],
+    "company": "BBraun",
+    "short": "Digital Healthcare Workflows"
+  },
+  {
+    "day": 4,
+    "time": "15:30-16:00",
+    "stage": "XPRO stage",
+    "title": "Now and Next",
+    "speakers": [
+      {
+        "name": "Mara Stefan",
+        "role": "Global Insights and Thought Leadership at Harvard Business Review"
+      }
+    ],
+    "description": "“Now and Next” frames how organizations and professionals balance today’s urgent needs with a future shaped by AI. With major skill shifts ahead and limited training, AI’s impact depends on investing in people through reskilling, redesigned work, and human‑centered cultures. The “Now” is running today’s business; the “Next” demands leadership to ensure AI augments human capability and drives inclusive growth.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "English",
+    "companies": [
+      "Harvard Business Review"
+    ],
+    "company": "Harvard Business Review",
+    "short": "Present and Future Discussion"
+  },
+  {
+    "day": 4,
+    "time": "15:30-16:30",
+    "stage": "Plug-in Talks",
+    "title": "Rebuild AI: Generative AI for Business (Live Demos)",
+    "speakers": [
+      {
+        "name": "Eduard Rosicart",
+        "role": "Director of Postgraduate Studies in Entrepreneurship and Startup Creation"
+      }
+    ],
+    "description": "Generative AI is no longer a trend—it’s competitive infrastructure. In this session, with live demonstrations, we will see how to integrate AI into real business processes to multiply productivity, accelerate decision-making, and create functional solutions without coding. Real cases. Immediate impact. Applicable from day one.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "Catalan",
+    "companies": [
+      "EAE Business School"
+    ],
+    "company": "EAE Business School",
+    "short": "Generative AI for Business"
+  },
+  {
+    "day": 4,
+    "time": "15:30-16:30",
+    "stage": "Barcelona",
+    "title": "Without talent there is no technology: Catalonia’s digital future",
+    "speakers": [],
+    "description": "The roundtable will focus on the shortage of digital talent in Catalonia, currently the main barrier to the growth and competitiveness of the ICT sector. We will address this challenge from a cross-cutting perspective: that of the technology sector, through the experience of 3Cat, and that of public policy, with the participation of the Secretariat for Digital Policies and the Secretariat for Equality and Feminism.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "English",
+    "companies": [],
+    "company": "",
+    "short": "Catalonia Digital Future"
+  },
+  {
+    "day": 4,
+    "time": "15:30-16:30",
+    "stage": "Hotspot Talks",
+    "title": "AI and central banking",
+    "speakers": [],
+    "description": "The panel examines how AI is redefining the future of central banking, from enhancing data-driven decision-making to strengthening financial stability frameworks. As AI is increasingly applied to economic forecasting and supervisory analysis, central banks face both unprecedented opportunities and new governance challenges. The discussion will explore emerging use cases.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "Spanish",
+    "companies": [],
+    "company": "",
+    "short": "AI in Central Banking"
+  },
+  {
+    "day": 4,
+    "time": "15:45-16:15",
+    "stage": "Gaming",
+    "title": "How to Live 150 Years Through Gaming Biotech",
+    "speakers": [
+      {
+        "name": "Karim Casado",
+        "role": "SOMNI GAME STUDIOSCEO & Co-Founder & Lead Game Designer"
+      }
+    ],
+    "description": "Can a Gaming studio help people live 150 years with a biological age of 30? Can a game do it?How do you build a video game studio like a biotech startup? In this talk, we will address these questions from the very beginning of the idea, the experience, and the decisions we had to make. How it emerged, how it evolved, and how we financed a studio with an unusual mission in the industry: using gaming to directly impact human health and longevity. Today we know that up to 80% of our life expectancy and quality of life depends on modifiable habits such as movement, strength, rest, or nutrition. However, most solutions fail due to lack of adherence. The problem is not information, it is behavior. Based on that premise, we structured the studio as a startup: strategic funding, clear narrative, complementary team, and impact metrics, while trying to maintain art and storytelling as differentiating elements. It is not just about creating a game, but about designing systems that help people live 150 years with a biological age of 30.",
+    "tags": [
+      "GAMING"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Somni Game Studios"
+    ],
+    "company": "Somni Game Studios",
+    "short": "Biotech Gaming Innovation"
+  },
+  {
+    "day": 4,
+    "time": "16:00-16:30",
+    "stage": "XPRO stage",
+    "title": "Cybersecurity during the product and AI development process",
+    "speakers": [
+      {
+        "name": "Albert Sampietro Ventosa",
+        "role": "VP Engineering for Accounting products at SAGE"
+      }
+    ],
+    "description": "In the context of a big software product company (11.000 employees), this presentation describes how the SDLC is evolving to add security-by-design principles for modern product development with of AI for internal and external usage. Key areas include: secure coding practices, the role of the security architects and DevSecOps automation. Special focus on AI-specific risks: data poisoning, prompt injection, model theft, and training data privacy. Emphasizes building security culture in software engineering teams.",
+    "tags": [
+      "Cybersecurity"
+    ],
+    "lang": "English",
+    "companies": [
+      "SAGE"
+    ],
+    "company": "SAGE",
+    "short": "Secure Product Development"
+  },
+  {
+    "day": 4,
+    "time": "16:00-16:30",
+    "stage": "Visionary Stage",
+    "title": "The AI ROI Trap",
+    "speakers": [
+      {
+        "name": "Michael Cleavinger",
+        "role": "VP Global Data Science and Advanced Analytics at Pepsico"
+      }
+    ],
+    "description": "Most organizations measure AI ROI through efficiency—hours saved or tasks automated—but these rarely reflect real business impact. This session reframes ROI around velocity, decision flow, reliability, and impact. We’ll discuss why demos impress but don’t scale, how generative and agentic AI fit long-term progress, and why deployment requires balancing innovation risk and reward.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "Pepsico"
+    ],
+    "company": "Pepsico",
+    "short": "Understanding AI ROI"
+  },
+  {
+    "day": 4,
+    "time": "16:00-17:00",
+    "stage": "Meetup area",
+    "title": "Vueling Meet up",
+    "speakers": [
+      {
+        "name": "Jordi Pujol",
+        "role": "Head of Artifical Intelligence at Vueling"
+      }
+    ],
+    "description": "Coming Soon",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "Vueling"
+    ],
+    "company": "Vueling",
+    "short": "Vueling Networking Meetup"
+  },
+  {
+    "day": 4,
+    "time": "16:15-17:15",
+    "stage": "Skills Hub",
+    "title": "Hack Your Interview: Face Interviews with Confidence and Authenticity",
+    "speakers": [],
+    "description": "In a tech sector where cognitive diversity drives innovation, approaching interviews with authenticity is key. Neurodiversity adds value to the recruitment process. This workshop provides practical tools for managing interviews and communication with confidence, helping neurodivergent and diverse individuals showcase their talent, strengthen self-awareness, and enter the tech sector with greater assurance.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Spanish",
+    "companies": [],
+    "company": "",
+    "short": "Interview Confidence Hacks"
+  },
+  {
+    "day": 4,
+    "time": "16:30-17:00",
+    "stage": "Visionary Stage",
+    "title": "Profitable, Pragmatic, and Still Standing: Building a €130M Revenue Fintech by Being Contrarian",
+    "speakers": [
+      {
+        "name": "Francesc Pla Prats",
+        "role": "CTO at SeQura"
+      }
+    ],
+    "description": "Monolith when everyone screamed microservices. Profitable when startups were supposed to burn. Small teams when scale demanded process. For years, being contrarian wasn’t just working at seQura, it was our advantage. Then we hit 100 engineers and the rebellions that saved us started killing us. This is the story of what we got right by ignoring best practices, what we got catastrophically wrong, and the harder lesson: it’s not about being a rebel or a conformist. It’s about knowing which rules to break and which ones will break you.",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "English",
+    "companies": [
+      "SeQura"
+    ],
+    "company": "SeQura",
+    "short": "Building Profitable Fintech"
+  },
+  {
+    "day": 4,
+    "time": "16:30-17:00",
+    "stage": "XPRO stage",
+    "title": "Improving patients’ life through artificial intelligence in pharma",
+    "speakers": [
+      {
+        "name": "Alexander Holbach",
+        "role": "Head of Clinical Data Management at Bayer"
+      }
+    ],
+    "description": "Patients often face disconnection from their expectations and the reality of their clinical experience. Artificial intelligence (AI) offers promising solutions focused on optimizing drug discovery and streamlining clinical trials. AI can help us to bridge the gap, leading to more patient-centric healthcare.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "Bayer"
+    ],
+    "company": "Bayer",
+    "short": "AI in Pharma for Patients"
+  },
+  {
+    "day": 4,
+    "time": "16:30-17:00",
+    "stage": "Robotics",
+    "title": "How to train your robot",
+    "speakers": [
+      {
+        "name": "Jesus Angel Bravo Duque",
+        "role": "Founder & CEO at Bravo Robots"
+      }
+    ],
+    "description": "The Generative AI revolution has also reached robotics. World and VLC (Vision, Language, Action) models applied to new robotic systems equipped with powerful computing systems allow non-deterministic tasks to be solved. It is time to train robots. This workshop will discuss the latest developments in embedded AI and how the robotics industry is responding.",
+    "tags": [
+      "ROBOTICS"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Bravo Robots"
+    ],
+    "company": "Bravo Robots",
+    "short": "Robot Training Techniques"
+  },
+  {
+    "day": 4,
+    "time": "16:30-17:30",
+    "stage": "Hotspot Talks",
+    "title": "From digital to agentic (a realistic approximation)",
+    "speakers": [
+      {
+        "name": "Lluc Guarro",
+        "role": "Digital & AI Business Director at Roca Salvatella"
+      }
+    ],
+    "description": "This isn’t a talk about tech promises; it’s about real-world execution. For leaders ready to move beyond basic digitization, we will break down the 10 strategic steps essential for efficient AI deployment. We will explore what the shift toward “agentic” workflows actually looks like through practical examples that bridge the gap between ambition and measurable impact. You will discover how to align business goals with human talent, avoiding the common traps that stall adoption. If you want a clear mental framework to make better decisions, prioritize investment, and lead your team with realism, this session provides the roadmap you can apply the next day.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "Roca Salvatella"
+    ],
+    "company": "Roca Salvatella",
+    "short": "Digital to Agentic Transition"
+  },
+  {
+    "day": 4,
+    "time": "16:30-17:30",
+    "stage": "Plug-in Talks",
+    "title": "Exponential Leadership: Managing High-Performance IT Teams in the GenAI Era.",
+    "speakers": [
+      {
+        "name": "Carlos Vizoso Raya",
+        "role": "Chief Technology Officer & Digital Innovation Director at ESIC University"
+      }
+    ],
+    "description": "AI is redefining IT leadership. Discover how to adapt roles, foster Human-AI collaboration, and lead cultural transformation. We will explore strategies to optimize productivity, turn AI into a competitive advantage, and ensure your IT team stays at the forefront of innovation. Prepare your team for the future!",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "ESIC University"
+    ],
+    "company": "ESIC University",
+    "short": "Exponential Leadership Growth"
+  },
+  {
+    "day": 4,
+    "time": "16:30-17:30",
+    "stage": "XPRO Talks",
+    "title": "Our AI Agents Are Finally In Production — And Now What?",
+    "speakers": [
+      {
+        "name": "Jorge Hidalgo",
+        "role": "Associate Director - Software & Platform Engineering at Codemotion"
+      }
+    ],
+    "description": "Agentic AIs are driving organizations to reinvent the way they work but scaling from a few agents to thousands is not a simple endeavor. From the strong foundations of platform engineering principles to model gateways. From AI agent pipelines to continuous evaluation of agents. From agent to agent interactions to tool integrations. The “Swiss army knife” of AI-intensive platforms to cover what “I wish I had known six months ago.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "Codemotion"
+    ],
+    "company": "Codemotion",
+    "short": "AI Agents in Production"
+  },
+  {
+    "day": 4,
+    "time": "16:30-17:30",
+    "stage": "Barcelona",
+    "title": "Talent, Innovation, and Opportunities in Emerging Tech Ecosystems",
+    "speakers": [
+      {
+        "name": "Carlos Jaime Llorens",
+        "role": "XarxaTec – General Manager (Moderator)"
+      },
+      {
+        "name": "José Bort Mondragón",
+        "role": "XarxaTec – President"
+      },
+      {
+        "name": "Ana Belén Arzo Cabrera",
+        "role": "Diputación de Castellón – Head of Economic Promotion and International Relations Service"
+      },
+      {
+        "name": "Vicente Pallarés Renau",
+        "role": "Diputación de Castellón – Deputy"
+      },
+      {
+        "name": "Nerea Safont Horma",
+        "role": "Technical Support Technician"
+      }
+    ],
+    "description": "Explore how technological and industrial ecosystems drive innovation, attract talent, and create new professional opportunities. The talk covers both established and emerging sectors such as Aerospace, Cybersecurity, and Cryptocurrencies, highlighting how they generate thousands of direct jobs and foster innovative projects, distributed leadership, and future trends in professional development.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "XarxaTec",
+      "Diputación de Castellón"
+    ],
+    "company": "XarxaTec",
+    "short": "Tech Ecosystems and Innovation"
+  },
+  {
+    "day": 4,
+    "time": "16:45-18:15",
+    "stage": "Frontier lab",
+    "title": "Integrating Accessibility in Video Games by Por Talento Digital",
+    "speakers": [
+      {
+        "name": "Cristian Suárez Henríquez",
+        "role": "Accessibility Technician, Accessible Technologies Department"
+      },
+      {
+        "name": "Gemma Guiu",
+        "role": "Deia School. Student, Degree in Video Game Design and Development"
+      },
+      {
+        "name": "Oriol Vicente",
+        "role": "Deia School. Student, Degree in Video Game Design and Development"
+      }
+    ],
+    "description": "Raise awareness of the basic accessibility measures in video games through the Ga11y Accessible Video Games project, in collaboration withXtalento DigitalandDeia.",
+    "tags": [
+      "GAMING"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Por Talento Digital",
+      "Deia School"
+    ],
+    "company": "Por Talento Digital",
+    "short": "Accessible Game Design"
+  },
+  {
+    "day": 4,
+    "time": "16:45-18:15",
+    "stage": "XPRO Lab",
+    "title": "When Floats Lie: Quantization, Performance, and Why Rust Keeps AI from Corroding",
+    "speakers": [
+      {
+        "name": "Lawrence Freeman",
+        "role": "Founder/Instructor at Fledgio"
+      },
+      {
+        "name": "Ernest Kissiedu",
+        "role": "Global Rust Community Coordinator at Rust"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "Fledgio",
+      "Rust"
+    ],
+    "company": "Fledgio",
+    "short": "Rust Quantization Performance"
+  },
+  {
+    "day": 4,
+    "time": "17:00-17:30",
+    "stage": "XPRO stage",
+    "title": "How Playgami Powers the Next Generation of Games",
+    "speakers": [
+      {
+        "name": "Hugo Pibernat",
+        "role": "CTO, Playgami at Scopely"
+      }
+    ],
+    "description": "Playgami, Scopely’s technology platform for game operations, has powered some of the world’s most successful mobile games for over a decade. Despite its 12-year history, it still feels modern, adaptable, and ahead of the industry curve. The session explores the software development principles and architectural choices behind its long-term evolution, resilience, and speed, and how close collaboration with internal studios and product teams shaped its roadmap and driven adoption across Scopely.",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "English",
+    "companies": [
+      "Scopely"
+    ],
+    "company": "Scopely",
+    "short": "Playgami Gaming Platform"
+  },
+  {
+    "day": 4,
+    "time": "17:00-17:30",
+    "stage": "Visionary Stage",
+    "title": "Leadership When Machines Also Decide",
+    "speakers": [
+      {
+        "name": "Oiane Etxebarria Tobias",
+        "role": "Lecturer on the Master's Degree in Marketing, Digital and E-commerce Barcelona at EAE Business School"
+      }
+    ],
+    "description": "Artificial intelligence not only accelerates processes—it is redefining how decisions are made in organizations. Systems that analyze, recommend, and execute now share the space of human judgment. In this context, leadership means designing robust decision-making frameworks, governing judgment, and taking responsibility in hybrid environments. We will explore which competencies will make the difference and why value will lie in strategic judgment.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "EAE Business School"
+    ],
+    "company": "EAE Business School",
+    "short": "Leadership in AI Decision-Making"
+  },
+  {
+    "day": 4,
+    "time": "17:00-18:00",
+    "stage": "Meetup area",
+    "title": "Sharing to Grow: How Mentorship Multiplies Talent and Diversity",
+    "speakers": [
+      {
+        "name": "Elena Guidi",
+        "role": "Senior Software Engineer, Thoughtworks at Commit Conf"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Commit Conf"
+    ],
+    "company": "Commit Conf",
+    "short": "Mentorship and Diversity Growth"
+  },
+  {
+    "day": 4,
+    "time": "17:30-18:00",
+    "stage": "XPRO stage",
+    "title": "From Disruption to Adoption, The Secure GPT Journey",
+    "speakers": [
+      {
+        "name": "Francisco Herrero",
+        "role": "Software Engineer Lead at AXA"
+      }
+    ],
+    "description": "Discover AXA’s transformative journey with Secure GPT: a robust GenAI platform for enterprise safety, scalability, and innovation. Secure GPT offers a user-friendly web interface and a secure API gateway, enabling seamless GenAI use in daily work. Learn how iterative adoption, federated collaboration, and continuous upskilling are driving Secure GPT’s evolution—empowering AXA employees worldwide to innovate securely and efficiently.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "AXA"
+    ],
+    "company": "AXA",
+    "short": "Secure GPT Implementation"
+  },
+  {
+    "day": 4,
+    "time": "17:30-18:00",
+    "stage": "Visionary Stage",
+    "title": "Magamers Award Ceremony",
+    "speakers": [
+      {
+        "name": "MAGAMERS 2026",
+        "role": ""
+      }
+    ],
+    "description": "Closing ceremony of the Magamers by Santander 2026 women’s tournament, where the best moments of the competition will be revisited and female talent in esports will be highlighted. The event will be hosted by Pablo Grandío (Vandal and Quincemil) and will feature contributions from Cruz Sánchez de Lara, Óscar “Fosky” Compadre, and José Sánchez Montero (FNAC), who will reflect on the role of women in the video game industry. The ceremony will conclude with the presentation of trophies and prize checks to the champion and runner-up teams, followed by the official closing of the tournament.",
+    "tags": [
+      "GAMING"
+    ],
+    "lang": "English",
+    "companies": [],
+    "company": "Magamers",
+    "short": "Magamers Awards Celebration"
+  },
+  {
+    "day": 4,
+    "time": "17:30-18:30",
+    "stage": "Hotspot Talks",
+    "title": "10 lessons I would have said to the me of 25 years ago",
+    "speakers": [
+      {
+        "name": "Jordi Urbea",
+        "role": "CEO at Ogilvy Spain"
+      }
+    ],
+    "description": "We live in a time of unprecedented transformation. Artificial Intelligence is redefining the rules of the game, and in this environment, adaptability and strategic vision are more crucial than ever. Throughout my career, I have learned that success is not only measured in results, but in the ability to inspire, innovate and lead in uncertainty. I want to share with you 10 principles that I consider fundamental to thriving in this dynamic environment. These reflections, based on my personal experience, will provide you with practical guidance for meeting challenges, embracing innovation and achieving sustainable success. Together, we will explore how to transform disruption into opportunity and build a more prosperous future for all.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "English",
+    "companies": [
+      "Ogilvy Spain"
+    ],
+    "company": "Ogilvy Spain",
+    "short": "Career Lessons Over 25 Years"
+  },
+  {
+    "day": 4,
+    "time": "17:30-18:30",
+    "stage": "Plug-in Talks",
+    "title": "Closing of the ALIA Challenge: Humans in the Loop Hackathon Awards",
+    "speakers": [
+      {
+        "name": "Montserrat Guardia Güell (moderator)",
+        "role": "Chief People & Culture Officer / President of the Board of Trustee’s of UPC"
+      },
+      {
+        "name": "María Jesús Martín",
+        "role": "Head of the Division for Governance and Planning of Artificial Intelligence / State Secretariat for Digitization and Artificial Intelligence"
+      },
+      {
+        "name": "Paul Van Branteghem",
+        "role": "AI Advisor at SEDIA"
+      },
+      {
+        "name": "Cristian Canton",
+        "role": "Director asociado at BSC-CNS"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "UPC",
+      "SEDIA",
+      "BSC-CNS"
+    ],
+    "company": "BSC-CNS",
+    "short": "ALIA Challenge Awards Closing"
+  },
+  {
+    "day": 4,
+    "time": "17:30-18:30",
+    "stage": "XPRO Talks",
+    "title": "We are Superhuman",
+    "speakers": [
+      {
+        "name": "Laia Ferrao (Moderator)",
+        "role": "Senior Manager, M&A Change and Communications atdsm-firmenich"
+      },
+      {
+        "name": "Jordi Montserrat",
+        "role": "Director, GSC CX Process & Solutions at dsm-firmenich"
+      },
+      {
+        "name": "Marc Barbeta",
+        "role": "Manager, Collaboration Chapter Lead at dsm-firmenich"
+      },
+      {
+        "name": "David Grau",
+        "role": "Manager, D&T Workplace & Collaboration Engineering at dsm-firmenich"
+      }
+    ],
+    "description": "dsm‑firmenich’s We Are Superhuman campaign empowers every employee to amplify their potential with AI. By embedding accessible tools, learning, and a culture of experimentation, we boost productivity, spark innovation, and enable teams to work smarter and create with superhuman impact.",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "English",
+    "companies": [
+      "dsm-firmenich"
+    ],
+    "company": "dsm-firmenich",
+    "short": "Superhuman Potential Discussion"
+  },
+  {
+    "day": 4,
+    "time": "17:30-19:00",
+    "stage": "Barcelona",
+    "title": "CTF Awards",
+    "speakers": [],
+    "description": "",
+    "tags": [],
+    "lang": "",
+    "companies": [],
+    "company": "",
+    "short": "CTF Competition Awards"
+  },
+  {
+    "day": 4,
+    "time": "17:30-18:30",
+    "stage": "Skills Hub",
+    "title": "Decode Yourself: Discover Your DISC Style and Improve How You Work",
+    "speakers": [],
+    "description": "The DISC model identifies four behavioral styles that influence how we make decisions, communicate, and face challenges. Understanding them improves teamwork, professional effectiveness, and interpersonal relationships, helping individuals gain better self-awareness and respond appropriately in any situation. A workshop designed to help participants decode themselves through DISC.",
+    "tags": [
+      "Management"
+    ],
+    "lang": "Spanish",
+    "companies": [],
+    "company": "",
+    "short": "DISC Personality Discovery"
+  },
+  {
+    "day": 4,
+    "time": "18:00-18:30",
+    "stage": "Visionary Stage",
+    "title": "Day One: Shooting the Future — AI, VFX, and the Freedom Dilemma",
+    "speakers": [
+      {
+        "name": "Jordi Mollà",
+        "role": "Actor"
+      },
+      {
+        "name": "Cristina Pons",
+        "role": "Executive Producer at Grupo iZen"
+      },
+      {
+        "name": "José Velasco",
+        "role": "CEO of PLIA"
+      },
+      {
+        "name": "Laia Corbella",
+        "role": "Director of Communications and Institutional Relations at Mobile World Capital"
+      }
+    ],
+    "description": "Presentation ofDay One, an original Spanish tech thriller on Prime Video (premiering March 2026), starring Álex González and Jordi Mollá, set in Barcelona during the Mobile World Congress. In this talk, the creative and production team will show how AI applied to VFX was integrated into filming to generate imaginary technology, interfaces, and high-production-value shots. Barcelona—with landmarks such as the MWC, the BSC, and Torre Glòries—becomes the protagonist of a story that explores the moral dilemmas of technological development. The series poses an essential question: if technology can rewrite emotions, would you choose to be happy… or free?",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Independent",
+      "Grupo iZen",
+      "PLIA",
+      "Mobile World Capital"
+    ],
+    "company": "Grupo iZen",
+    "short": "AI and VFX in Future Media"
+  },
+  {
+    "day": 4,
+    "time": "18:00-18:30",
+    "stage": "XPRO stage",
+    "title": "Operating the Heart of the Sovereign Cloud",
+    "speakers": [
+      {
+        "name": "Jorge Turrado Ferrero",
+        "role": "Principal SRE at SCRM Lidl International Hub"
+      }
+    ],
+    "description": "Running an IdP at scale allows no room for error: if identity fails, the cloud goes down. In this technical talk, we open the hood of STACKIT to show how we manage our critical core. We’ll walk through our GitOps workflow, how we implement canary rollouts protected by automated end-to-end tests, and how we minimize the blast radius of every deployment. Real resilience engineering for the European cloud—no marketing slides.",
+    "tags": [
+      "Cloud Computing"
+    ],
+    "lang": "English",
+    "companies": [
+      "SCRM Lidl International Hub"
+    ],
+    "company": "SCRM Lidl International Hub",
+    "short": "Sovereign Cloud Operations"
+  },
+  {
+    "day": 4,
+    "time": "18:00-19:00",
+    "stage": "Meetup area",
+    "title": "Sewing AI: Innovation in Web Application Development with AI",
+    "speakers": [
+      {
+        "name": "Alberto Valiña Lema",
+        "role": "Principal Engineer at Inditex"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Inditex"
+    ],
+    "company": "Inditex",
+    "short": "AI Web Application Development"
+  },
+  {
+    "day": 4,
+    "time": "18:30-19:00",
+    "stage": "Visionary Stage",
+    "title": "Hispano Suiza: Engineering the Future. Back to Reality",
+    "speakers": [
+      {
+        "name": "Sergio Martínez Campos",
+        "role": "CEO, Hispano Suiza"
+      },
+      {
+        "name": "Juan Fernández",
+        "role": "CTO, Hispano Suiza"
+      },
+      {
+        "name": "Pipo Serrano",
+        "role": "Journalist & Executive Producer, Content & Innovation Specialist (moderator)"
+      }
+    ],
+    "description": "",
+    "tags": [
+      "Software Development"
+    ],
+    "lang": "Spanish",
+    "companies": [
+      "Hispano Suiza",
+      "Independent"
+    ],
+    "company": "Hispano Suiza",
+    "short": "Hispano Suiza Engineering"
+  }
+]
