@@ -445,8 +445,9 @@ function calendarDayHTML(day, indices) {
 
     const isHidden = hiddenSessions.has(idx);
     const isHighlighted = highlightedSessions.has(idx);
-    const isPast = _nowDay == day && endM <= _nowM;
-    const isOngoing = _nowDay == day && startM <= _nowM && endM > _nowM;
+    const midM = (startM + endM) / 2;
+    const isPast = _nowDay == day && _nowM >= midM;
+    const isOngoing = _nowDay == day && startM <= _nowM && _nowM < midM;
     html += `<div class="cal-ev${isHidden ? " hidden-session" : ""}${isHighlighted ? " highlighted-session" : ""}${isPast ? " cal-past" : ""}${isOngoing ? " cal-ongoing" : ""}" onclick="showModal(${idx})" style="top:${y}px;left:${left}px;width:${w}px;height:${h}px;background:color-mix(in srgb,${c} 15%,transparent);border-left:3px solid ${c}" title="${esc(s.time + ' | ' + s.stage + '\n' + s.title)}">`;
     html += `<b>${esc(s.title)}</b>`;
     if (co) html += `<div class="ev-spk">${esc(co)}</div>`;
@@ -553,8 +554,9 @@ function renderTimeline() {
       const h = rowH - 4;
       const isHidden = hiddenSessions.has(idx);
       const isHighlighted = highlightedSessions.has(idx);
-      const isPast = nowDay == day && endM <= nowM;
-      const isOngoing = nowDay == day && startM <= nowM && endM > nowM;
+      const midM = (startM + endM) / 2;
+      const isPast = nowDay == day && nowM >= midM;
+      const isOngoing = nowDay == day && startM <= nowM && nowM < midM;
       html += `<div class="tl-ev${isHidden ? " hidden-session" : ""}${isHighlighted ? " highlighted-session" : ""}${isPast ? " tl-past" : ""}${isOngoing ? " tl-ongoing" : ""}" onclick="showModal(${idx})" style="top:${y}px;left:${x}px;width:${w}px;height:${h}px;background:color-mix(in srgb,${c} 25%,transparent)" title="${esc(s.time + ' | ' + s.title)}"><span style="display:inline-block;width:5px;height:5px;border-radius:50%;background:${c};margin-right:4px;flex-shrink:0;margin-top:4px"></span><span style="overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;min-width:0">${esc(s.title)}</span></div>`;
     }
 
