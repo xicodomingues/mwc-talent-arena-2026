@@ -73,11 +73,12 @@ kbd{background:var(--surface3);color:var(--text);padding:0.15rem 0.4rem;border-r
   </section>
 
   <section>
-    <h2><span class="step">2</span> Hide from the popup</h2>
-    <p>When you click a card to open its detail popup, you'll see both a <kbd>−</kbd> (hide) and a <kbd>×</kbd> (close) button in the top-right corner.</p>
+    <h2><span class="step">2</span> Hide or star from the popup</h2>
+    <p>When you click a card to open its detail popup, you'll see three buttons in the top-right corner: <kbd>★</kbd> (star), <kbd>−</kbd> (hide), and <kbd>×</kbd> (close).</p>
     <div class="mock">
       <div class="mock-modal">
         <div class="mock-modal-btns">
+          <span class="hide-btn" style="color:var(--accent);border:1px solid var(--accent)">★</span>
           <span class="hide-btn highlight">−</span>
           <span class="close-btn">×</span>
         </div>
@@ -85,6 +86,7 @@ kbd{background:var(--surface3);color:var(--text);padding:0.15rem 0.4rem;border-r
         <div class="meta">Speaker Name · XPRO Stage · 09:30-10:00</div>
       </div>
     </div>
+    <p>Starred sessions get a gold border and can be filtered using the <kbd>Starred</kbd> button in the top bar.</p>
   </section>
 
   <section>
@@ -117,6 +119,12 @@ kbd{background:var(--surface3);color:var(--text);padding:0.15rem 0.4rem;border-r
       </div>
     </div>
     <p>You can also restore individual sessions by clicking on them while in "show hidden" mode, then hiding them again (the <kbd>−</kbd> button toggles).</p>
+  </section>
+
+  <section>
+    <h2><span class="step">5</span> Hide stages in Calendar & Timeline</h2>
+    <p>In the <strong>Calendar</strong> view, click a stage column header to hide that entire stage. In the <strong>Timeline</strong> view, click a stage name in the legend. Hidden stages appear in a row below the visible ones — click again to restore.</p>
+    <p>Stages are also auto-hidden when all their sessions have been individually hidden.</p>
   </section>
   <div style="border-top:1px solid #222;margin-top:2rem;padding-top:1rem;font-size:0.75rem;color:var(--text3);text-align:center"><a href="index.html" style="color:var(--text3);text-decoration:none">Schedule</a> &middot; <a href="help.html" style="color:var(--text3);text-decoration:none">Help</a> &middot; <a href="about.html" style="color:var(--text3);text-decoration:none">About</a></div>
 </div>
