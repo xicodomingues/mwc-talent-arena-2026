@@ -557,7 +557,7 @@ function renderTimeline() {
       const midM = (startM + endM) / 2;
       const isPast = nowDay == day && nowM >= midM;
       const isOngoing = nowDay == day && startM <= nowM && nowM < midM;
-      html += `<div class="tl-ev${isHidden ? " hidden-session" : ""}${isHighlighted ? " highlighted-session" : ""}${isPast ? " tl-past" : ""}${isOngoing ? " tl-ongoing" : ""}" onclick="showModal(${idx})" style="top:${y}px;left:${x}px;width:${w}px;height:${h}px;background:color-mix(in srgb,${c} 25%,transparent)" title="${esc(s.time + ' | ' + s.title)}"><span style="display:inline-block;width:5px;height:5px;border-radius:50%;background:${c};margin-right:4px;flex-shrink:0;margin-top:4px"></span><span style="overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;min-width:0">${esc(s.title)}</span></div>`;
+      html += `<div class="tl-ev${isHidden ? " hidden-session" : ""}${isHighlighted ? " highlighted-session" : ""}${isPast ? " tl-past" : ""}${isOngoing ? " tl-ongoing" : ""}" onclick="showModal(${idx})" style="top:${y}px;left:${x}px;width:${w}px;height:${h}px;background:color-mix(in srgb,${c} 25%,transparent)" title="${esc(s.time + ' | ' + s.title)}"><span class="tl-ev-dot" style="background:${c}"></span><span class="tl-ev-text">${esc(s.title)}</span></div>`;
     }
 
     // Now line
