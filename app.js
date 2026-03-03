@@ -7,6 +7,17 @@ const ALL_TAGS = ["Artificial Intelligence", "Cloud Computing", "Cybersecurity",
 const LANG_FLAGS = {English:"\u{1F1EC}\u{1F1E7}",Spanish:"\u{1F1EA}\u{1F1F8}",Catalan:"\u{1F3F4}"};
 const LANG_CLASS = {English:"lang-en",Spanish:"lang-es",Catalan:"lang-ca"};
 
+// ── Barcelona time helper (session times are in Europe/Madrid) ──
+function nowInBarcelona() {
+  const parts = new Intl.DateTimeFormat("en-GB", {
+    timeZone: "Europe/Madrid",
+    year: "numeric", month: "2-digit", day: "2-digit",
+    hour: "2-digit", minute: "2-digit", hour12: false
+  }).formatToParts(new Date());
+  const get = type => Number(parts.find(p => p.type === type).value);
+  return { year: get("year"), month: get("month"), day: get("day"), hours: get("hour"), minutes: get("minute") };
+}
+
 // ── State ──
 // Parse hash: #day=3&view=calendar
 function parseHash() {
@@ -21,7 +32,7 @@ function updateHash() {
 }
 const _hash = parseHash();
 let currentView = _hash.view || (window.innerWidth >= 768 ? "calendar" : "list");
-let dayFilter = _hash.day || (new Date().getDate() === 4 ? "4" : "3");
+let dayFilter = _hash.day || (nowInBarcelona().day === 4 ? "4" : "3");
 let searchQuery = "";
 let scrollToNow = true;
 const ALL_LANGS = ["English", "Spanish", "Catalan"];
@@ -426,9 +437,10 @@ function calendarDayHTML(day, indices) {
   }
 
   // Events
-  const _now = new Date();
-  const _nowDay = _now.getDate();
-  const _nowM = _now.getHours() * 60 + _now.getMinutes();
+  const _now = nowInBarcelona();
+  const _isEventMonth = _now.month === 3 && _now.year === 2026;
+  const _nowDay = _now.day;
+  const _nowM = _now.hours * 60 + _now.minutes;
   for (const idx of indices) {
     const s = SESSIONS[idx];
     if (!(s.stage in stageIdx)) continue;
@@ -445,19 +457,20 @@ function calendarDayHTML(day, indices) {
 
     const isHidden = hiddenSessions.has(idx);
     const isHighlighted = highlightedSessions.has(idx);
-    const isPast = _nowDay == day && _nowM >= endM;
-    const isOngoing = _nowDay == day && startM <= _nowM && _nowM < endM;
+    const midM = (startM + endM) / 2;
+    const isPast = _isEventMonth && _nowDay == day && _nowM >= midM;
+    const isOngoing = _isEventMonth && _nowDay == day && startM <= _nowM && _nowM < midM;
     html += `<div class="cal-ev${isHidden ? " hidden-session" : ""}${isHighlighted ? " highlighted-session" : ""}${isPast ? " cal-past" : ""}${isOngoing ? " cal-ongoing" : ""}" onclick="showModal(${idx})" style="top:${y}px;left:${left}px;width:${w}px;height:${h}px;background:color-mix(in srgb,${c} 15%,transparent);border-left:3px solid ${c}" title="${esc(s.time + ' | ' + s.stage + '\n' + s.title)}">`;
     html += `<b>${esc(s.title)}</b>`;
     if (co) html += `<div class="ev-spk">${esc(co)}</div>`;
     html += `</div>`;
   }
 
-  // Now line (shifted 15min up so you see upcoming sessions)
-  const now = new Date();
-  const nowDay = now.getDate();
-  if (nowDay == day) {
-    const nowM = now.getHours() * 60 + now.getMinutes();
+  // Now line
+  const now = nowInBarcelona();
+  const nowDay = now.day;
+  if (now.month === 3 && now.year === 2026 && nowDay == day) {
+    const nowM = now.hours * 60 + now.minutes;
     if (nowM >= minT && nowM <= maxT) {
       const nowY = (nowM - minT) * ppm + padTop;
       html += `<div class="cal-now-line" data-now-offset="${nowY}" style="top:${nowY}px;left:${timeCol}px;width:${totalW - timeCol}px"></div>`;
@@ -477,9 +490,10 @@ function renderTimeline() {
   const ppm = 5; // pixels per minute (horizontal)
   const rowH = 40; // row height per stage
   const labelW = 0;
-  const now = new Date();
-  const nowM = now.getHours() * 60 + now.getMinutes();
-  const nowDay = now.getDate();
+  const now = nowInBarcelona();
+  const isEventMonth = now.month === 3 && now.year === 2026;
+  const nowM = now.hours * 60 + now.minutes;
+  const nowDay = now.day;
 
   const days = [...new Set(filteredIndices.map(i => SESSIONS[i].day))].sort();
   let html = "";
@@ -553,13 +567,14 @@ function renderTimeline() {
       const h = rowH - 4;
       const isHidden = hiddenSessions.has(idx);
       const isHighlighted = highlightedSessions.has(idx);
-      const isPast = nowDay == day && nowM >= endM;
-      const isOngoing = nowDay == day && startM <= nowM && nowM < endM;
+      const midM = (startM + endM) / 2;
+      const isPast = isEventMonth && nowDay == day && nowM >= midM;
+      const isOngoing = isEventMonth && nowDay == day && startM <= nowM && nowM < midM;
       html += `<div class="tl-ev${isHidden ? " hidden-session" : ""}${isHighlighted ? " highlighted-session" : ""}${isPast ? " tl-past" : ""}${isOngoing ? " tl-ongoing" : ""}" onclick="showModal(${idx})" style="top:${y}px;left:${x}px;width:${w}px;height:${h}px;background:color-mix(in srgb,${c} 25%,transparent)" title="${esc(s.time + ' | ' + s.title)}"><span class="tl-ev-dot" style="background:${c}"></span><span class="tl-ev-text">${esc(s.title)}</span></div>`;
     }
 
     // Now line
-    if (nowDay == day && nowM >= minT && nowM <= maxT) {
+    if (isEventMonth && nowDay == day && nowM >= minT && nowM <= maxT) {
       const nowX = labelW + (nowM - minT) * ppm;
       html += `<div class="tl-now-line" style="left:${nowX}px;top:0;height:${bodyH}px"></div>`;
     }
@@ -721,8 +736,8 @@ renderCalendar = function() {
 
 // ── Scroll to current time (list/timeline) ──
 function scrollToNowSlot() {
-  const now = new Date();
-  const nowM = now.getHours() * 60 + now.getMinutes();
+  const now = nowInBarcelona();
+  const nowM = now.hours * 60 + now.minutes;
   const slots = document.querySelectorAll(".time-slot-heading, .tl-slot-time");
   let best = null, bestDiff = Infinity;
   for (const el of slots) {
