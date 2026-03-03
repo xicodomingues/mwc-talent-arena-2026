@@ -253,7 +253,6 @@ let filteredIndices = [];
 
 // Hidden sessions (persisted in localStorage)
 const LS_KEY = "mwc_hidden_sessions";
-const LS_INIT_KEY = "mwc_init_done";
 let hiddenSessions = new Set(JSON.parse(localStorage.getItem(LS_KEY) || "[]"));
 let showHidden = localStorage.getItem("showHidden") === "true";
 
@@ -267,12 +266,6 @@ function toggleCalStage(stage) {
   render();
 }
 
-// Auto-hide Catalan sessions on first load
-if (!localStorage.getItem(LS_INIT_KEY)) {
-  SESSIONS.forEach((s, i) => { if (s.lang === "Catalan") hiddenSessions.add(i); });
-  localStorage.setItem(LS_KEY, JSON.stringify([...hiddenSessions]));
-  localStorage.setItem(LS_INIT_KEY, "1");
-}
 
 function saveHidden() {
   localStorage.setItem(LS_KEY, JSON.stringify([...hiddenSessions]));
