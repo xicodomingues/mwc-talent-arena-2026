@@ -26,13 +26,13 @@ function parseHash() {
 }
 function updateHash() {
   const params = new URLSearchParams();
-  params.set("day", dayFilter);
   params.set("view", currentView);
   history.replaceState(null, "", "#" + params.toString());
 }
 const _hash = parseHash();
-let currentView = _hash.view || (window.innerWidth >= 768 ? "calendar" : "list");
-let dayFilter = _hash.day || (nowInBarcelona().day === 4 ? "4" : "3");
+let currentView = _hash.view || (window.innerWidth >= 768 ? "timeline" : "list");
+const _now = nowInBarcelona();
+let dayFilter = (_now.month === 3 && _now.year === 2026 && _now.day >= 4) ? "4" : "3";
 let searchQuery = "";
 let scrollToNow = true;
 const ALL_LANGS = ["English", "Spanish", "Catalan"];
@@ -59,7 +59,17 @@ let calHiddenStages = new Set(safeGetJSON(LS_CAL_STAGES_KEY));
 function toggleCalStage(stage) {
   if (calHiddenStages.has(stage)) calHiddenStages.delete(stage); else calHiddenStages.add(stage);
   localStorage.setItem(LS_CAL_STAGES_KEY, JSON.stringify([...calHiddenStages]));
-  render();
+  // Sync with filter chips: hide stage in filters when hidden in cal/timeline
+  if (calHiddenStages.has(stage) && activeStages.has(stage)) {
+    activeStages.delete(stage);
+    buildStageChips();
+    updateFilterDot();
+  } else if (!calHiddenStages.has(stage) && !activeStages.has(stage)) {
+    activeStages.add(stage);
+    buildStageChips();
+    updateFilterDot();
+  }
+  applyFilters();
 }
 
 
@@ -95,10 +105,12 @@ function toggleShowHighlightedOnly() {
 }
 function updateHighlightedCount() {
   const badge = document.getElementById("starBadge");
-  const btn = document.getElementById("showHighlightedBtn");
-  const n = highlightedSessions.size;
-  badge.textContent = n ? n : "";
-  if (!showHighlightedOnly) btn.classList.toggle("active-star", n > 0);
+  const day = parseInt(dayFilter);
+  let n = 0;
+  for (const i of highlightedSessions) {
+    if (SESSIONS[i] && SESSIONS[i].day === day) n++;
+  }
+  badge.textContent = n;
 }
 function toggleShowHidden() {
   showHidden = !showHidden;
@@ -120,11 +132,14 @@ function restoreAll() {
 }
 function updateHiddenCount() {
   const badge = document.getElementById("hiddenBadge");
-  const btn = document.getElementById("showHiddenBtn");
-  const n = hiddenSessions.size;
-  badge.textContent = n ? n : "";
-  if (!showHidden) btn.classList.toggle("active-hidden", n > 0);
-  document.getElementById("restoreAllBtn").style.display = (n && showHidden) ? "" : "none";
+  const day = parseInt(dayFilter);
+  let count = 0;
+  for (let i = 0; i < SESSIONS.length; i++) {
+    if (SESSIONS[i].day !== day) continue;
+    if (hiddenSessions.has(i) || calHiddenStages.has(SESSIONS[i].stage)) count++;
+  }
+  badge.textContent = count;
+  document.getElementById("restoreAllBtn").style.display = (count && showHidden) ? "" : "none";
 }
 
 // ── Build search index ──
@@ -194,6 +209,8 @@ function buildLangChips() {
 
 // ── Init ──
 function init() {
+  // Sync activeStages with calHiddenStages from localStorage
+  for (const st of calHiddenStages) activeStages.delete(st);
   updateDayIndicator();
   buildStageChips();
   buildTagChips();
@@ -211,6 +228,8 @@ function switchDay() {
   scrollToNow = true;
   updateDayIndicator();
   updateHash();
+  updateHiddenCount();
+  updateHighlightedCount();
   applyFilters();
 }
 function updateDayIndicator() {
@@ -255,7 +274,7 @@ function applyFilters() {
     if (showHighlightedOnly && currentView === "list" && !highlightedSessions.has(i)) continue;
     if (dayFilter && String(s.day) !== dayFilter) continue;
     if (activeLangs.size < ALL_LANGS.length && s.lang && !activeLangs.has(s.lang)) continue;
-    if (activeStages.size < STAGE_ORDER.length && !activeStages.has(s.stage)) continue;
+    if (activeStages.size < STAGE_ORDER.length && !activeStages.has(s.stage) && !(showHidden && calHiddenStages.has(s.stage))) continue;
     if (activeTags.size < ALL_TAGS.length) {
       const sTags = s.tags || [];
       if (sTags.length && !sTags.some(t => activeTags.has(t))) continue;
@@ -363,13 +382,17 @@ function parseTime(t) {
 }
 
 function calendarDayHTML(day, indices) {
-  // Collect stages present (exclude hidden)
+  // Collect stages present (exclude hidden unless showHidden)
+  // Check all sessions for this day (not just filtered) to find calHiddenStages
+  const allDayIndicesCal = [];
+  for (let i = 0; i < SESSIONS.length; i++) {
+    if (SESSIONS[i].day === day) allDayIndicesCal.push(i);
+  }
   const stagesPresent = [];
-  const stagesAll = []; // all stages with data, for the toggle row
   for (const st of STAGE_ORDER) {
-    if (indices.some(i => SESSIONS[i].stage === st)) {
-      stagesAll.push(st);
+    if (allDayIndicesCal.some(i => SESSIONS[i].stage === st)) {
       if (!calHiddenStages.has(st) && !isStageFullyHidden(st, indices)) stagesPresent.push(st);
+      else if (showHidden) stagesPresent.push(st);
     }
   }
 
@@ -385,7 +408,7 @@ function calendarDayHTML(day, indices) {
   maxT = Math.ceil(maxT / 30) * 30;
 
   const ppm = 3; // pixels per minute
-  const headerH = 44;
+  const headerH = 52;
   const timeCol = 50;
   const colW = 140;
   const totalW = timeCol + stagesPresent.length * colW;
@@ -403,21 +426,10 @@ function calendarDayHTML(day, indices) {
   html += `<div class="cal-header-corner"></div>`;
   for (const st of stagesPresent) {
     const c = STAGE_COLORS[st] || "#888";
-    html += `<div class="cal-stage-hdr" style="width:${colW}px;color:${c};border-bottom:2px solid ${c}" onclick="toggleCalStage('${esc(st)}')" title="Click to hide">${esc(st)}</div>`;
+    const isHiddenStage = calHiddenStages.has(st);
+    html += `<div class="cal-stage-hdr${isHiddenStage ? " cal-stage-hidden" : ""}" style="width:${colW}px;--hdr-color:${c}" onclick="toggleCalStage('${esc(st)}')" title="${isHiddenStage ? "Click to show" : "Click to hide"}"><span>${esc(st)}<small class="cal-hdr-hint">${isHiddenStage ? "tap to show" : "tap to hide"}</small></span></div>`;
   }
   html += `</div>`;
-
-  // Hidden stages restore bar (only visible when "Show hidden" is active)
-  const hiddenHere = stagesAll.filter(st => calHiddenStages.has(st));
-  if (hiddenHere.length && showHidden) {
-    html += `<div class="cal-hidden-bar">`;
-    html += `<span class="cal-hidden-label">Hidden:</span>`;
-    for (const st of hiddenHere) {
-      const c = STAGE_COLORS[st] || "#888";
-      html += `<button class="filter-chip" style="--chip-color:${c}" onclick="toggleCalStage('${esc(st)}')">${esc(st)}</button>`;
-    }
-    html += `</div>`;
-  }
 
   // Body (events + grid) — top offset so first label isn't clipped
   const padTop = 14;
@@ -445,7 +457,7 @@ function calendarDayHTML(day, indices) {
   for (const idx of indices) {
     const s = SESSIONS[idx];
     if (!(s.stage in stageIdx)) continue;
-    if (calHiddenStages.has(s.stage)) continue;
+    const isStageHidden = calHiddenStages.has(s.stage);
     const [startStr, endStr] = s.time.split("-");
     let startM = parseTime(startStr), endM = parseTime(endStr);
     if (endM <= startM) endM = startM + 30;
@@ -460,9 +472,9 @@ function calendarDayHTML(day, indices) {
     const isHighlighted = highlightedSessions.has(idx);
     const isDimmed = showHighlightedOnly && !isHighlighted;
     const midM = (startM + endM) / 2;
-    const isPast = _isEventMonth && _nowDay == day && _nowM >= midM;
+    const isPast = _isEventMonth && (_nowDay > day || (_nowDay == day && _nowM >= midM));
     const isOngoing = _isEventMonth && _nowDay == day && startM <= _nowM && _nowM < midM;
-    html += `<div class="cal-ev${isHidden ? " hidden-session" : ""}${isHighlighted ? " highlighted-session" : ""}${isDimmed ? " star-dimmed" : ""}${isPast ? " cal-past" : ""}${isOngoing ? " cal-ongoing" : ""}" onclick="showModal(${idx})" style="top:${y}px;left:${left}px;width:${w}px;height:${h}px;background:color-mix(in srgb,${c} 15%,transparent);border-left:3px solid ${c}" title="${esc(s.time + ' | ' + s.stage + '\n' + s.title)}">`;
+    html += `<div class="cal-ev${isHidden ? " hidden-session" : ""}${isStageHidden ? " ev-stage-hidden" : ""}${isHighlighted ? " highlighted-session" : ""}${isDimmed ? " star-dimmed" : ""}${isPast ? " ev-past" : ""}${isOngoing ? " ev-ongoing" : ""}" onclick="showModal(${idx})" style="top:${y}px;left:${left}px;width:${w}px;height:${h}px;background:color-mix(in srgb,${c} 15%,transparent);border-left:3px solid ${c};--card-color:${c}" title="${esc(s.time + ' | ' + s.stage + '\n' + s.title)}">`;
     html += `<b>${esc(s.title)}</b>`;
     if (co) html += `<div class="ev-spk">${esc(co)}</div>`;
     html += `</div>`;
@@ -503,13 +515,19 @@ function renderTimeline() {
     html += `<h2 class="day-heading">March ${day}</h2>`;
     const dayIndices = filteredIndices.filter(i => SESSIONS[i].day === day);
 
-    // Find stages present and time range (exclude hidden stages)
+    // Find stages present and time range (exclude hidden unless showHidden)
+    // Check all sessions for this day (not just filtered) to find calHiddenStages
+    const allDayIndices = [];
+    for (let i = 0; i < SESSIONS.length; i++) {
+      if (String(SESSIONS[i].day) === String(day)) allDayIndices.push(i);
+    }
     const stagesPresent = [];
     const stagesAllTl = [];
     for (const st of STAGE_ORDER) {
-      if (dayIndices.some(i => SESSIONS[i].stage === st)) {
+      if (allDayIndices.some(i => SESSIONS[i].stage === st)) {
         stagesAllTl.push(st);
         if (!calHiddenStages.has(st) && !isStageFullyHidden(st, dayIndices)) stagesPresent.push(st);
+        else if (showHidden) stagesPresent.push(st);
       }
     }
     let minT = 1440, maxT = 0;
@@ -540,56 +558,50 @@ function renderTimeline() {
     }
     html += `</div>`;
 
-    // Body
-    html += `<div class="tl-body" style="height:${bodyH}px;position:relative">`;
+    // Body with rows
+    html += `<div class="tl-body" style="position:relative">`;
 
-    // Alternating row backgrounds + stage labels
-    for (let i = 0; i < stagesPresent.length; i++) {
-      const y = i * rowH;
-      const st = stagesPresent[i];
-      const c = STAGE_COLORS[st] || "#888";
-      const bg = i % 2 === 1 ? "rgba(255,255,255,0.02)" : "transparent";
-      html += `<div class="tl-row-bg" style="top:${y}px;height:${rowH}px;left:${labelW}px;width:${bodyW}px;background:${bg}"></div>`;
-      html += `<div class="tl-row-label" style="top:${y}px;height:${rowH}px;width:${labelW}px;border-right:2px solid ${c}" onclick="toggleCalStage('${esc(st)}')" title="Click to hide ${esc(st)}"><span class="tl-label-dot" style="background:${c}"></span><span class="tl-label-text">${esc(st)}</span></div>`;
-    }
-
-    // Vertical gridlines
+    // Gridlines overlay (behind rows)
+    html += `<div class="tl-gridlines" style="position:absolute;top:0;left:0;width:100%;height:${bodyH}px;pointer-events:none">`;
     for (let t = minT; t <= maxT; t += 30) {
       const x = labelW + (t - minT) * ppm;
       html += `<div class="tl-gridline" style="left:${x}px;top:0;height:${bodyH}px"></div>`;
     }
-
-    // Row separator lines
-    for (let i = 1; i < stagesPresent.length; i++) {
-      const y = i * rowH;
-      html += `<div style="position:absolute;left:${labelW}px;top:${y}px;width:${bodyW}px;height:1px;background:#2a2a2a"></div>`;
-    }
-
-    // Events
-    for (const idx of dayIndices) {
-      const s = SESSIONS[idx];
-      if (!(s.stage in stageIdx)) continue;
-      const c = STAGE_COLORS[s.stage] || "#888";
-      const [startStr, endStr] = s.time.split("-");
-      let startM = parseTime(startStr), endM = parseTime(endStr);
-      if (endM <= startM) endM = startM + 30;
-      const x = labelW + (startM - minT) * ppm;
-      const w = Math.max((endM - startM) * ppm - 4, 20);
-      const y = stageIdx[s.stage] * rowH + 2;
-      const h = rowH - 4;
-      const isHidden = hiddenSessions.has(idx);
-      const isHighlighted = highlightedSessions.has(idx);
-      const isDimmed = showHighlightedOnly && !isHighlighted;
-      const midM = (startM + endM) / 2;
-      const isPast = isEventMonth && nowDay == day && nowM >= midM;
-      const isOngoing = isEventMonth && nowDay == day && startM <= nowM && nowM < midM;
-      html += `<div class="tl-ev${isHidden ? " hidden-session" : ""}${isHighlighted ? " highlighted-session" : ""}${isDimmed ? " star-dimmed" : ""}${isPast ? " tl-past" : ""}${isOngoing ? " tl-ongoing" : ""}" onclick="showModal(${idx})" style="top:${y}px;left:${x}px;width:${w}px;height:${h}px;background:color-mix(in srgb,${c} 20%,var(--surface2));border-left:3px solid ${c}" title="${esc(s.time + ' | ' + s.stage + '\n' + s.title)}"><span class="tl-ev-text">${esc(s.title)}</span></div>`;
-    }
-
-    // Now line
     if (isEventMonth && nowDay == day && nowM >= minT && nowM <= maxT) {
       const nowX = labelW + (nowM - minT) * ppm;
       html += `<div class="tl-now-line" style="left:${nowX}px;top:0;height:${bodyH}px"></div>`;
+    }
+    html += `</div>`;
+
+    // Stage rows
+    for (let i = 0; i < stagesPresent.length; i++) {
+      const st = stagesPresent[i];
+      const c = STAGE_COLORS[st] || "#888";
+      const isStageHidden = calHiddenStages.has(st);
+      const bg = i % 2 === 1 ? "rgba(255,255,255,0.02)" : "transparent";
+      html += `<div class="tl-row${isStageHidden ? " tl-row-hidden" : ""}" style="height:${rowH}px;background:${bg}">`;
+      html += `<div class="tl-row-label" style="width:${labelW}px;min-width:${labelW}px;border-right:2px solid ${c}" onclick="toggleCalStage('${esc(st)}')" title="${isStageHidden ? "Click to show" : "Click to hide"} ${esc(st)}"><span class="tl-label-dot" style="background:${c}"></span><span class="tl-label-text">${esc(st)}</span></div>`;
+      // Events for this stage
+      html += `<div class="tl-row-events" style="position:relative;height:${rowH}px;flex:1">`;
+      for (const idx of dayIndices) {
+        const s = SESSIONS[idx];
+        if (s.stage !== st) continue;
+        const c2 = STAGE_COLORS[s.stage] || "#888";
+        const [startStr, endStr] = s.time.split("-");
+        let startM = parseTime(startStr), endM = parseTime(endStr);
+        if (endM <= startM) endM = startM + 30;
+        const x = (startM - minT) * ppm;
+        const w = Math.max((endM - startM) * ppm - 4, 20);
+        const isHidden = hiddenSessions.has(idx);
+        const isHighlighted = highlightedSessions.has(idx);
+        const isDimmed = showHighlightedOnly && !isHighlighted;
+        const midM = (startM + endM) / 2;
+        const isPast = isEventMonth && (nowDay > day || (nowDay == day && nowM >= midM));
+        const isOngoing = isEventMonth && nowDay == day && startM <= nowM && nowM < midM;
+        html += `<div class="tl-ev${isHidden ? " hidden-session" : ""}${isStageHidden ? " ev-stage-hidden" : ""}${isHighlighted ? " highlighted-session" : ""}${isDimmed ? " star-dimmed" : ""}${isPast ? " ev-past" : ""}${isOngoing ? " ev-ongoing" : ""}" onclick="showModal(${idx})" style="top:2px;left:${x}px;width:${w}px;height:${rowH - 4}px;background:color-mix(in srgb,${c2} 20%,var(--surface2));border-left:3px solid ${c2}" title="${esc(s.time + ' | ' + s.stage + '\n' + s.title)}"><span class="tl-ev-text">${esc(s.title)}</span></div>`;
+      }
+      html += `</div>`; // tl-row-events
+      html += `</div>`; // tl-row
     }
 
     html += `</div>`; // tl-body
