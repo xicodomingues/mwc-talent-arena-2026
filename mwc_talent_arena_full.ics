@@ -1,0 +1,484 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MWC Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:MWC Talent Arena March 3-4
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VTIMEZONE
+TZID:Europe/Madrid
+BEGIN:STANDARD
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260303T093000
+DTEND;TZID=Europe/Madrid:20260303T103000
+SUMMARY:💊 Roche: Closing the Velocity Gap – AI & Healthcare
+LOCATION:Fira Montjuïc Hall 8 – Plug-in Talks
+DESCRIPTION:3 Roche speakers: Nicole Arbiv, Alex Morcillo, Laura Vidal Borrell\nAI adoption in healthcare – governance, collaboration, execution
+UID:db7cf051-2b29-4766-92a7-e7b1966ff7cd
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260303T093000
+DTEND;TZID=Europe/Madrid:20260303T103000
+SUMMARY:🤖 Claude Code: Babysitting to Autonomous Agents
+LOCATION:Fira Montjuïc Hall 8 – Hotspot Talks
+DESCRIPTION:Kate Marshalkina – Staff Engineer at Datavant\n90-day playbook for AI coding agents in real-world repos
+UID:45f9d8af-1d0f-4165-b195-228ccc0451fc
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260303T103000
+DTEND;TZID=Europe/Madrid:20260303T110000
+SUMMARY:📚 Linux Foundation: Learning at the Speed of AI
+LOCATION:Fira Montjuïc Hall 8 – Visionary Stage
+DESCRIPTION:Timothy Serewicz – VP Education, Linux Foundation\nUpskilling strategies in the AI era
+UID:af53696e-a7b4-44f8-a67e-2b4f5416cfda
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260303T103000
+DTEND;TZID=Europe/Madrid:20260303T113000
+SUMMARY:💼 The AI-Ready Workforce: Who Thrives, Who Survives?
+LOCATION:Fira Montjuïc Hall 8 – XPRO Talks
+DESCRIPTION:Who succeeds in AI-transformed orgs – career strategy
+UID:377a39db-382c-40dc-8cd7-75ec84218a36
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260303T110000
+DTEND;TZID=Europe/Madrid:20260303T113000
+SUMMARY:🚀 From Idea to Product: Rethinking How We Build
+LOCATION:Fira Montjuïc Hall 8 – XPRO Stage
+DESCRIPTION:How product building changes with AI – senior dev perspective
+UID:b1e78fb2-c3df-46bf-8850-42cd07c60a89
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260303T111500
+DTEND;TZID=Europe/Madrid:20260303T124500
+SUMMARY:🔧 Giving AI Agents Superpowers: Connecting to the Real World
+LOCATION:Fira Montjuïc Hall 8 – Frontier Lab
+DESCRIPTION:Hands-on workshop – connecting AI agents to real-world systems
+UID:e20d3c05-9c64-4c1b-9de6-e0324a59cbbd
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260303T113000
+DTEND;TZID=Europe/Madrid:20260303T123000
+SUMMARY:💊 Sanofi: PLAI – Data & AI Democratization
+LOCATION:Fira Montjuïc Hall 8 – Hotspot Talks
+DESCRIPTION:How Sanofi structures data and AI across the org
+UID:bfc23fc8-f2f0-4ccd-b91d-1ff7488b0946
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260303T123000
+DTEND;TZID=Europe/Madrid:20260303T130000
+SUMMARY:💊 Roche: From Data to Impact – AI Rewriting Healthcare
+LOCATION:Fira Montjuïc Hall 8 – Visionary Stage
+DESCRIPTION:Second Roche session – more impact-focused
+UID:5149ead9-68f1-4a15-ad14-87adeb4bbd75
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260303T123000
+DTEND;TZID=Europe/Madrid:20260303T130000
+SUMMARY:⚙️ Engineering in the Age of AI – Why Fundamentals Matter
+LOCATION:Fira Montjuïc Hall 8 – XPRO Stage
+DESCRIPTION:Why solid engineering foundations still matter with AI
+UID:52f8d2d4-9130-4323-8d18-b50664261d00
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260303T130000
+DTEND;TZID=Europe/Madrid:20260303T133000
+SUMMARY:☕ Lunch Break
+LOCATION:Fira Montjuïc Hall 8 – Food area
+DESCRIPTION:Recharge before the afternoon
+UID:c2b68bb9-ca96-4454-8ba0-ef9b320df239
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260303T133000
+DTEND;TZID=Europe/Madrid:20260303T143000
+SUMMARY:📊 From Data Stack Challenges to AI-Ready Scale
+LOCATION:Fira Montjuïc Hall 8 – XPRO Talks
+DESCRIPTION:Lessons learned scaling data infrastructure for AI
+UID:f607448e-2ca3-442c-a036-205d10250c5e
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260303T133000
+DTEND;TZID=Europe/Madrid:20260303T143000
+SUMMARY:👨‍💻 Evolution of Developer's Role in Era of Agents
+LOCATION:Fira Montjuïc Hall 8 – Plug-in Talks
+DESCRIPTION:How the developer role is shifting with AI agents (Spanish)
+UID:1dc2a807-fbec-4222-8586-a6fefa26f944
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260303T133000
+DTEND;TZID=Europe/Madrid:20260303T143000
+SUMMARY:🏥 Managing Transformation: AI Reshapes Health Orgs
+LOCATION:Fira Montjuïc Hall 8 – Barcelona Stage
+DESCRIPTION:AI transformation in healthcare organizations
+UID:e590f893-c903-4b4d-8598-81fda86fb77a
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260303T133000
+DTEND;TZID=Europe/Madrid:20260303T143000
+SUMMARY:🎙️ Fireside Chat: Kate Darling
+LOCATION:Fira Montjuïc Hall 8 – Visionary Stage
+DESCRIPTION:Kate Darling – MIT robotics researcher\nInspiring conversation about robots and society
+UID:58b701c3-c12b-4a92-9dfb-b1248f5a3f69
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260303T150000
+DTEND;TZID=Europe/Madrid:20260303T151500
+SUMMARY:📱 From Code to Capability: New App Experiences
+LOCATION:Fira Montjuïc Hall 8 – XPRO Stage
+DESCRIPTION:Quick 15-min talk on unlocking new app experiences
+UID:68450e74-f7b4-41df-b96b-aa41f582e4cd
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260303T150000
+DTEND;TZID=Europe/Madrid:20260303T163000
+SUMMARY:🛠️ Boosting Productivity with AI: Hands-On Workshop
+LOCATION:Fira Montjuïc Hall 8 – Focus Lab
+DESCRIPTION:Practical workshop on AI-assisted productivity
+UID:5ab95145-d601-47bb-acd1-cd7110a2ae33
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260303T151500
+DTEND;TZID=Europe/Madrid:20260303T153000
+SUMMARY:🔑 Auth for the AI Era: Passwordless Security
+LOCATION:Fira Montjuïc Hall 8 – XPRO Stage
+DESCRIPTION:Build passwordless security patterns
+UID:5e1b8c6f-e3dd-4ca9-bc37-7eb658d4d23c
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260303T154500
+DTEND;TZID=Europe/Madrid:20260303T160000
+SUMMARY:🔌 Agent Protocols to Real-World API Integration
+LOCATION:Fira Montjuïc Hall 8 – XPRO Stage
+DESCRIPTION:From agent protocols to real apps – practical backend
+UID:2813ce8a-0551-481d-9ba6-2a3083b8d42f
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260303T153000
+DTEND;TZID=Europe/Madrid:20260303T163000
+SUMMARY:🔄 How AI Is Redefining the Software Lifecycle
+LOCATION:Fira Montjuïc Hall 8 – XPRO Talks
+DESCRIPTION:Impact of AI across the entire software development lifecycle
+UID:dc1ef3e1-5a9f-4133-a153-ffafcfe517eb
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260303T160000
+DTEND;TZID=Europe/Madrid:20260303T164500
+SUMMARY:⚽ How AI Is Boosting Barça's Edge
+LOCATION:Fira Montjuïc Hall 8 – Visionary Stage
+DESCRIPTION:87-minute game – AI + football analytics
+UID:38130f85-34ce-4c18-bbf8-6f47aadd82c1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260303T164500
+DTEND;TZID=Europe/Madrid:20260303T181500
+SUMMARY:⭐ Building AI Agents with Spring AI
+LOCATION:Fira Montjuïc Hall 8 – XPRO Lab
+DESCRIPTION:THE session. Java + Spring + AI Agents.\n90 min hands-on workshop. XPRO exclusive.
+UID:8b8da228-a0e3-4511-ada2-e25f29729f82
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260303T164500
+DTEND;TZID=Europe/Madrid:20260303T170000
+SUMMARY:🔒 Secure MCP Servers with OAuth, JWT, SPIFFE
+LOCATION:Fira Montjuïc Hall 8 – XPRO Stage
+DESCRIPTION:MCP security – cutting-edge, 15 min only
+UID:b8a53349-7956-4d8d-8734-c150d3be62fc
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260303T183000
+DTEND;TZID=Europe/Madrid:20260303T203000
+SUMMARY:🍺 Talent Arena Party by Estrella Damm
+LOCATION:Fira Montjuïc Hall 8 – Visionary Stage
+DESCRIPTION:Networking!
+UID:9602db81-9863-4b23-8605-9c104005bfea
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260304T093000
+DTEND;TZID=Europe/Madrid:20260304T100000
+SUMMARY:🤖 Confessions of a Vibecoding Engineer
+LOCATION:Fira Montjuïc Hall 8 – XPRO Stage
+DESCRIPTION:Nicolás Grenié – Developer Advocate, ex-Typeform\nHow AI reshapes engineering roles – lessons from dozens of AI projects
+UID:5ab597ba-6def-409e-9f8d-daf491b42ced
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260304T093000
+DTEND;TZID=Europe/Madrid:20260304T103000
+SUMMARY:🏭 Nestlé: Innovation Through XR Across the Value Chain
+LOCATION:Fira Montjuïc Hall 8 – Hotspot Talks
+DESCRIPTION:4 Nestlé speakers on XR adoption across the value chain\nHow a major corp drives immersive tech innovation
+UID:859ba461-5032-48b0-ab05-629c8d7ef158
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260304T093000
+DTEND;TZID=Europe/Madrid:20260304T103000
+SUMMARY:💡 Innovation in Action: Reinventing and Accelerating Innovation
+LOCATION:Fira Montjuïc Hall 8 – Plug-in Talks
+DESCRIPTION:Enterprise innovation strategies
+UID:187abeeb-a315-4a63-8604-ab0c7fd5cf13
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260304T093000
+DTEND;TZID=Europe/Madrid:20260304T103000
+SUMMARY:🔮 The Future of Edge AI and Physical AI
+LOCATION:Fira Montjuïc Hall 8 – XPRO Talks
+DESCRIPTION:Arduino + Edge Impulse + Qualcomm – 5 speakers\nEdge AI on microcontrollers, privacy-first AI, scalable ML
+UID:654b136f-9c4e-429c-98af-7a8815805e07
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260304T093000
+DTEND;TZID=Europe/Madrid:20260304T110000
+SUMMARY:🦀 From Frustrait-ion to Async Mastery: Become a Rust Trait
+LOCATION:Fira Montjuïc Hall 8 – Frontier Lab
+DESCRIPTION:Hands-on Rust workshop – async patterns and traits
+UID:c588ef7c-9de7-47a3-a4a9-3e302351e755
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260304T103000
+DTEND;TZID=Europe/Madrid:20260304T110000
+SUMMARY:🎨 Creative Coding to Demystify Technology
+LOCATION:Fira Montjuïc Hall 8 – Visionary Stage
+DESCRIPTION:Tim Roedenbroker – how coding empowers innovators
+UID:f2f7531e-5318-4c7a-8191-50a757faf0f8
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260304T103000
+DTEND;TZID=Europe/Madrid:20260304T113000
+SUMMARY:🔄 Turning Silos into Synergy Through InnerSource
+LOCATION:Fira Montjuïc Hall 8 – XPRO Talks
+DESCRIPTION:InnerSource practices for breaking down org silos – relevant for large pharma orgs
+UID:cd093d5e-8a86-479f-9e20-a35d4b923d1a
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260304T110000
+DTEND;TZID=Europe/Madrid:20260304T113000
+SUMMARY:🚀 From 'Promstitution' to Impact: How Developers Stay Essential
+LOCATION:Fira Montjuïc Hall 8 – Visionary Stage
+DESCRIPTION:How developers remain essential in the AI era (Spanish)
+UID:cf55899c-cf8e-4917-a580-0cbfada9dd49
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260304T111500
+DTEND;TZID=Europe/Madrid:20260304T124500
+SUMMARY:👁️ Computer Vision with Arduino UNO Q: From Edge AI to VLMs
+LOCATION:Fira Montjuïc Hall 8 – XPRO Lab
+DESCRIPTION:Hands-on workshop – computer vision on edge devices
+UID:e89e928a-e843-4ea8-9f17-6bddc6e45f7a
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260304T113000
+DTEND;TZID=Europe/Madrid:20260304T120000
+SUMMARY:📈 From Adoption to Impact: How Adoption Accelerates AI
+LOCATION:Fira Montjuïc Hall 8 – Visionary Stage
+DESCRIPTION:Driving AI adoption to real business impact
+UID:75230da6-dbb0-49b1-b05e-e6c46c1edc53
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260304T113000
+DTEND;TZID=Europe/Madrid:20260304T123000
+SUMMARY:🌐 Scaling Science at Large Facilities: ALBA and BSC
+LOCATION:Fira Montjuïc Hall 8 – XPRO Talks
+DESCRIPTION:How ALBA synchrotron and Barcelona Supercomputing Center scale science
+UID:9ebcb6a5-826c-4cf3-a98d-225537d1865c
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260304T113000
+DTEND;TZID=Europe/Madrid:20260304T123000
+SUMMARY:🔓 A More Accessible and Democratic Open-Source AI
+LOCATION:Fira Montjuïc Hall 8 – Plug-in Talks
+DESCRIPTION:Open-source AI democratization (Spanish)
+UID:a26cb84a-7a2f-471f-bf5a-4cc403f26b6c
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260304T120000
+DTEND;TZID=Europe/Madrid:20260304T123000
+SUMMARY:🏛️ The Future of Enterprise AI Governance
+LOCATION:Fira Montjuïc Hall 8 – Visionary Stage
+DESCRIPTION:AI governance frameworks for enterprises – critical for pharma compliance
+UID:91d112d8-1b8d-4f08-8ff0-454692045a8c
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260304T123000
+DTEND;TZID=Europe/Madrid:20260304T133000
+SUMMARY:🍺 Tapas & Observability: Connect, Chat, Enjoy
+LOCATION:Fira Montjuïc Hall 8 – Meetup Area
+DESCRIPTION:Networking meetup with food – observability community
+UID:dc694b3a-4340-410f-bf91-6c555c7746ae
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260304T123000
+DTEND;TZID=Europe/Madrid:20260304T133000
+SUMMARY:🔐 Cybersecurity Certification with Cisco
+LOCATION:Fira Montjuïc Hall 8 – XPRO Talks
+DESCRIPTION:Zero to Hero cybersecurity path (Spanish)
+UID:1bf6ddee-0543-48ef-88e7-629a47a9842f
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260304T130000
+DTEND;TZID=Europe/Madrid:20260304T133000
+SUMMARY:🚀 AI Lift-Off: Escaping Prototype Gravity to Production
+LOCATION:Fira Montjuïc Hall 8 – XPRO Stage
+DESCRIPTION:How to get AI from prototype to production – the gap every backend dev faces
+UID:9fefb1e3-6209-47af-9a6d-de5b0031c284
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260304T130000
+DTEND;TZID=Europe/Madrid:20260304T143000
+SUMMARY:🤖 Build Your Own AI Agent – From Theory to Practice
+LOCATION:Fira Montjuïc Hall 8 – Frontier Lab
+DESCRIPTION:CaixaBank Tech – 4 speakers\nHands-on: build and customize AI agents step by step (Spanish)
+UID:aaa7dd2e-9c91-4787-bf6c-2762e9d25821
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260304T133000
+DTEND;TZID=Europe/Madrid:20260304T143000
+SUMMARY:🏥 Responsible and Secure AI: Protect Your Org in the GenAI Era
+LOCATION:Fira Montjuïc Hall 8 – Barcelona Stage
+DESCRIPTION:GFT + speakers – AI security and responsibility\nCritical for pharma where AI governance is mandatory
+UID:a58e71b2-aed0-4757-b5cd-2871e0eaf382
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260304T133000
+DTEND;TZID=Europe/Madrid:20260304T143000
+SUMMARY:⚖️ AI with Purpose: Ethics That Transform Talent Management
+LOCATION:Fira Montjuïc Hall 8 – Hotspot Talks
+DESCRIPTION:Ethical AI in talent management
+UID:d9578b40-2acc-47a2-9c9b-9f21edd515dd
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260304T150000
+DTEND;TZID=Europe/Madrid:20260304T153000
+SUMMARY:😅 How to Survive an AI That's Trying to Replace You
+LOCATION:Fira Montjuïc Hall 8 – Visionary Stage
+DESCRIPTION:Developer survival guide in the AI era (Spanish)
+UID:344f56c7-61a6-43c9-a79d-6272e9cec512
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260304T150000
+DTEND;TZID=Europe/Madrid:20260304T163000
+SUMMARY:☁️ Sovereign AI & FinOps: Cloud Control into Competitive Advantage
+LOCATION:Fira Montjuïc Hall 8 – XPRO Lab
+DESCRIPTION:Hands-on workshop – AI sovereignty + cloud cost management\nRelevant for enterprise/pharma cloud strategy
+UID:caf34054-032d-4752-b561-6cb38c39bf3a
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260304T153000
+DTEND;TZID=Europe/Madrid:20260304T160000
+SUMMARY:📱 From Devices to Digital: Building Connected Experiences
+LOCATION:Fira Montjuïc Hall 8 – Visionary Stage
+DESCRIPTION:Connected device experiences
+UID:d759aba8-2c4c-4510-9b65-21e8a0db40a8
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260304T153000
+DTEND;TZID=Europe/Madrid:20260304T163000
+SUMMARY:🔧 Rebuild AI: Generative AI for Business (Live Demos)
+LOCATION:Fira Montjuïc Hall 8 – Plug-in Talks
+DESCRIPTION:Live demos of generative AI business applications (Catalan)
+UID:4263963d-a3a7-4bba-9966-74b52e2b5260
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260304T163000
+DTEND;TZID=Europe/Madrid:20260304T173000
+SUMMARY:🤖 From Digital to Agentic (A Realistic Approximation)
+LOCATION:Fira Montjuïc Hall 8 – Hotspot Talks
+DESCRIPTION:Realistic take on the shift from digital to agentic systems
+UID:f7d210a3-cd10-4cda-ac06-fe4583f8c89e
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260304T163000
+DTEND;TZID=Europe/Madrid:20260304T173000
+SUMMARY:⭐ Our AI Agents Are Finally in Production — And Now What?
+LOCATION:Fira Montjuïc Hall 8 – XPRO Talks
+DESCRIPTION:Post-deployment challenges with AI agents in production\nTHE afternoon session – what happens after you ship agents
+UID:2058daa3-1c31-49cc-98e9-ed843bc0bce4
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260304T173000
+DTEND;TZID=Europe/Madrid:20260304T183000
+SUMMARY:🦸 We Are Superhuman
+LOCATION:Fira Montjuïc Hall 8 – XPRO Talks
+DESCRIPTION:Closing XPRO Talks session
+UID:b2b72e9e-5143-4144-8747-77a3c6174d2b
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260304T173000
+DTEND;TZID=Europe/Madrid:20260304T183000
+SUMMARY:📚 10 Lessons I Would Have Said to the Me of 25 Years Ago
+LOCATION:Fira Montjuïc Hall 8 – Hotspot Talks
+DESCRIPTION:Career retrospective and lessons learned
+UID:e3a6ce49-99fc-4ab0-856f-e3ae148f3944
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260304T183000
+DTEND;TZID=Europe/Madrid:20260304T203000
+SUMMARY:🍺 Closing Party
+LOCATION:Fira Montjuïc Hall 8 – Venue
+DESCRIPTION:Last night networking!
+UID:e536e1c0-9848-473c-8de9-33757a81be3b
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
