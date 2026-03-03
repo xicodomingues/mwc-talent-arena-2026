@@ -266,6 +266,7 @@ const _hash = parseHash();
 let currentView = _hash.view || (window.innerWidth >= 768 ? "calendar" : "list");
 let dayFilter = _hash.day || (new Date().getDate() === 4 ? "4" : "3");
 let searchQuery = "";
+let scrollToNow = true;
 const ALL_LANGS = ["English", "Spanish", "Catalan"];
 let activeLangs = new Set(ALL_LANGS);
 let activeStages = new Set(STAGE_ORDER);
@@ -399,6 +400,7 @@ function buildTagMenu() {
 // ── Filters ──
 function setDay(btn) {
   dayFilter = btn.dataset.day;
+  scrollToNow = true;
   document.querySelectorAll(".day-toggle button").forEach(b => b.classList.toggle("active", b === btn));
   updateHash();
   applyFilters();
@@ -502,6 +504,7 @@ function applyFilters() {
 // ── Render dispatch ──
 function setView(v) {
   currentView = v;
+  scrollToNow = true;
   document.querySelectorAll(".view-btns button").forEach(b => b.classList.toggle("active", b.dataset.view === v));
   updateHash();
   applyFilters();
@@ -827,11 +830,13 @@ function renderTimeline() {
   }
   el.innerHTML = html;
 
-  // Scroll to now line
-  const nowLine = document.querySelector(".tl-now-line");
-  if (nowLine) {
-    const wrapper = nowLine.closest(".tl-wrapper");
-    if (wrapper) wrapper.scrollLeft = Math.max(0, nowLine.offsetLeft - 60);
+  // Scroll to now line (only on first render or view switch)
+  if (scrollToNow) {
+    const nowLine = document.querySelector(".tl-now-line");
+    if (nowLine) {
+      const wrapper = nowLine.closest(".tl-wrapper");
+      if (wrapper) wrapper.scrollLeft = Math.max(0, nowLine.offsetLeft - 60);
+    }
   }
 }
 
@@ -943,17 +948,19 @@ function initDragScroll() {
   });
 }
 
-// Re-init drag after each render + scroll to now
+// Re-init drag after each render + scroll to now on first render
 const _origRenderCal = renderCalendar;
 renderCalendar = function() {
   _origRenderCal();
   initDragScroll();
-  const nowLine = document.querySelector(".cal-now-line");
-  if (nowLine) {
-    const wrapper = nowLine.closest(".cal-wrapper");
-    if (wrapper) {
-      const lineTop = nowLine.offsetTop;
-      wrapper.scrollTop = Math.max(0, lineTop - 45);
+  if (scrollToNow) {
+    const nowLine = document.querySelector(".cal-now-line");
+    if (nowLine) {
+      const wrapper = nowLine.closest(".cal-wrapper");
+      if (wrapper) {
+        const lineTop = nowLine.offsetTop;
+        wrapper.scrollTop = Math.max(0, lineTop - 45);
+      }
     }
   }
 };
@@ -979,15 +986,16 @@ function scrollToNowSlot() {
 const _origRender = render;
 render = function() {
   _origRender();
-  if (currentView === "list") scrollToNowSlot();
+  if (scrollToNow && currentView === "list") scrollToNowSlot();
   if (currentView === "timeline") initDragScroll();
+  scrollToNow = false;
 };
 
 // ── Start ──
 init();
 
 // Refresh every 5 minutes to update the now line
-setInterval(() => { render(); }, 5 * 60 * 1000);
+setInterval(() => { scrollToNow = true; render(); }, 5 * 60 * 1000);
 </script>
 </body>
 </html>
