@@ -138,6 +138,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 .tl-past{opacity:0.35}
 .tl-ongoing{opacity:0.55}
 .tl-legend{display:flex;flex-wrap:wrap;gap:8px 16px;padding:8px 12px;font-size:0.7rem;color:#aaa}
+.tl-legend-item{cursor:pointer;transition:opacity 0.15s;user-select:none}
+.tl-legend-item:hover{opacity:0.7}
+.tl-legend-hidden{opacity:0.35;text-decoration:line-through}
 .tl-gridline{position:absolute;width:1px;background:#1e1e1e;pointer-events:none}
 .tl-now-line{position:absolute;width:1px;background:#E74C3C99;z-index:0;pointer-events:none}
 .tl-now-line::before{content:"";position:absolute;top:-3px;left:-3px;width:6px;height:6px;border-radius:50%;background:#E74C3C99}
@@ -515,16 +518,18 @@ function renderList() {
   const el = document.getElementById("content");
   if (!filteredIndices.length) { el.innerHTML = '<p style="text-align:center;color:var(--text3);padding:3rem">No sessions match your filters.</p>'; return; }
 
-  // Group by day → time
+  // Group by day → time (skip hidden stages)
   const grouped = {};
   for (const idx of filteredIndices) {
     const s = SESSIONS[idx];
+    if (calHiddenStages.has(s.stage)) continue;
     const key = s.day + "|" + s.time;
     if (!grouped[key]) grouped[key] = {day: s.day, time: s.time, items: []};
     grouped[key].items.push(idx);
   }
 
   const keys = Object.keys(grouped).sort();
+  if (!keys.length) { el.innerHTML = '<p style="text-align:center;color:var(--text3);padding:3rem">No sessions match your filters.</p>'; return; }
   let html = "";
   let lastDay = null;
   for (const k of keys) {
@@ -725,10 +730,14 @@ function renderTimeline() {
     html += `<h2 class="day-heading">March ${day}</h2>`;
     const dayIndices = filteredIndices.filter(i => SESSIONS[i].day === day);
 
-    // Find stages present and time range
+    // Find stages present and time range (exclude hidden stages)
     const stagesPresent = [];
+    const stagesAllTl = [];
     for (const st of STAGE_ORDER) {
-      if (dayIndices.some(i => SESSIONS[i].stage === st)) stagesPresent.push(st);
+      if (dayIndices.some(i => SESSIONS[i].stage === st)) {
+        stagesAllTl.push(st);
+        if (!calHiddenStages.has(st)) stagesPresent.push(st);
+      }
     }
     let minT = 1440, maxT = 0;
     for (const i of dayIndices) {
@@ -801,11 +810,18 @@ function renderTimeline() {
     html += `</div>`; // tl-body
     html += `</div></div>`; // tl-grid, tl-wrapper
 
-    // Legend
+    // Legend (clickable to hide/show stages)
     html += `<div class="tl-legend">`;
     for (const stage of stagesPresent) {
       const c = STAGE_COLORS[stage] || "#888";
-      html += `<span><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${c};margin-right:4px;vertical-align:middle"></span>${esc(stage)}</span>`;
+      html += `<span class="tl-legend-item" onclick="toggleCalStage('${esc(stage)}')" title="Click to hide"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${c};margin-right:4px;vertical-align:middle"></span>${esc(stage)}</span>`;
+    }
+    const hiddenTl = stagesAllTl.filter(st => calHiddenStages.has(st));
+    if (hiddenTl.length && showHidden) {
+      for (const stage of hiddenTl) {
+        const c = STAGE_COLORS[stage] || "#888";
+        html += `<span class="tl-legend-item tl-legend-hidden" onclick="toggleCalStage('${esc(stage)}')" title="Click to restore"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${c};margin-right:4px;vertical-align:middle"></span>${esc(stage)}</span>`;
+      }
     }
     html += `</div>`;
   }
