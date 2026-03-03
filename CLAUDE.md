@@ -97,9 +97,11 @@ Global mutable state variables:
 
 ### "Now" Indicator & Past/Ongoing Logic
 
-- Events are grayed out (`cal-past`, `tl-past`) when the current time is past the event's **end time** (`endM`).
-- Events get `cal-ongoing` / `tl-ongoing` when the current time is between `startM` and `endM`.
+- All "now" calculations use `nowInBarcelona()` which returns the current time in `Europe/Madrid` timezone (session times are in Barcelona local time).
+- Events are grayed out (`cal-past`, `tl-past`) when the current time is past the event's **midpoint** (`midM = (startM + endM) / 2`).
+- Events get `cal-ongoing` / `tl-ongoing` when the current time is between `startM` and `midM`.
 - A red now-line is drawn at the current time position.
+- Grayout and now-line only activate during the actual event month (March 2026) to avoid false matches on other dates.
 - The view auto-refreshes every 5 minutes and when the page regains visibility.
 
 ## CSS Conventions
