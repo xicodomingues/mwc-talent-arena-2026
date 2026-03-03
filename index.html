@@ -57,6 +57,15 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 .card.hidden-session .card-title,.tl-card.hidden-session .card-title{text-decoration:line-through}
 .hide-btn{background:none;border:none;color:var(--text3);cursor:pointer;font-size:0.8rem;padding:0.2rem 0.4rem;border-radius:var(--radius-sm);float:right;min-width:32px;min-height:32px;display:inline-flex;align-items:center;justify-content:center}
 .hide-btn:hover{color:#fff;background:var(--surface3)}
+
+/* ── Highlighted sessions ── */
+.card.highlighted-session{border-left-width:4px;box-shadow:0 0 8px rgba(255,215,0,0.3);background:color-mix(in srgb,var(--accent) 8%,var(--surface))}
+.cal-ev.highlighted-session{outline:2px solid var(--accent);outline-offset:-1px;z-index:3;filter:brightness(1.3)}
+.tl-ev.highlighted-session{outline:2px solid var(--accent);outline-offset:-1px;z-index:3;filter:brightness(1.3)}
+.highlight-btn{background:none;border:none;color:var(--text3);cursor:pointer;font-size:0.8rem;padding:0.2rem 0.4rem;border-radius:var(--radius-sm);float:right;min-width:32px;min-height:32px;display:inline-flex;align-items:center;justify-content:center}
+.highlight-btn:hover{color:var(--accent);background:var(--surface3)}
+.show-highlighted-toggle{background:var(--surface2);color:var(--text2);border:1px solid #333;padding:0.35rem 0.75rem;border-radius:var(--radius-sm);font-size:0.8rem;cursor:pointer;height:36px}
+.show-highlighted-toggle.active{background:color-mix(in srgb,var(--accent) 20%,transparent);color:var(--accent);border-color:var(--accent)}
 .show-hidden-toggle{background:var(--surface2);color:var(--text2);border:1px solid #333;padding:0.35rem 0.75rem;border-radius:var(--radius-sm);font-size:0.8rem;cursor:pointer;height:36px;margin-right:0}
 .show-hidden-toggle.active{background:#E74C3C33;color:#E74C3C;border-color:#E74C3C}
 
@@ -168,7 +177,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
   .search-box{max-width:100%;order:11;flex:1 1 100px;min-width:80px;margin-left:auto;height:30px;font-size:0.75rem}
   .show-hidden-toggle{order:9}
   .help-link{order:10;width:30px;height:30px;font-size:0.8rem}
-  .dropdown-btn,.day-toggle button,.view-btns button,.show-hidden-toggle{font-size:0.7rem;padding:0.25rem 0.4rem;height:30px}
+  .dropdown-btn,.day-toggle button,.view-btns button,.show-hidden-toggle,.show-highlighted-toggle{font-size:0.7rem;padding:0.25rem 0.4rem;height:30px}
 }
 @media(min-width:768px){
   .list-cards{grid-template-columns:repeat(auto-fill,minmax(340px,1fr))}
@@ -204,6 +213,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
       <button class="dropdown-btn" onclick="toggleDropdown('langDropdown')"><span class="label">Lang</span> <span id="langLabel">All</span></button>
       <div class="dropdown-menu" id="langMenu"></div>
     </div>
+    <button class="show-highlighted-toggle" id="showHighlightedBtn" onclick="toggleShowHighlightedOnly()">Starred</button>
     <button class="show-hidden-toggle" id="showHiddenBtn" onclick="toggleShowHidden()">Hidden</button>
     <button class="show-hidden-toggle" id="restoreAllBtn" onclick="restoreAll()" style="display:none">Restore all</button>
     <input type="text" class="search-box" id="searchBox" placeholder="Search..." oninput="applyFilters()" onkeydown="if(!this._typed){this.select();this._typed=true}" onfocus="this._typed=false">
@@ -220,6 +230,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 <!-- ── Modal ── -->
 <div class="modal-backdrop" id="modalBackdrop">
   <div class="modal" id="modal">
+    <button class="modal-close modal-hide-btn" id="modalHighlightBtn" onclick="" title="Star" style="right:4.85rem">&#9733;</button>
     <button class="modal-close modal-hide-btn" id="modalHideBtn" onclick="">&minus;</button>
     <button class="modal-close" onclick="closeModal()">&times;</button>
     <div id="modalBody"></div>
@@ -263,6 +274,11 @@ const LS_KEY = "mwc_hidden_sessions";
 let hiddenSessions = new Set(JSON.parse(localStorage.getItem(LS_KEY) || "[]"));
 let showHidden = localStorage.getItem("showHidden") === "true";
 
+// Highlighted sessions (persisted in localStorage)
+const LS_HIGHLIGHT_KEY = "mwc_highlighted_sessions";
+let highlightedSessions = new Set(JSON.parse(localStorage.getItem(LS_HIGHLIGHT_KEY) || "[]"));
+let showHighlightedOnly = false;
+
 // Calendar stage visibility (persisted)
 const LS_CAL_STAGES_KEY = "mwc_cal_hidden_stages";
 let calHiddenStages = new Set(JSON.parse(localStorage.getItem(LS_CAL_STAGES_KEY) || "[]"));
@@ -283,6 +299,26 @@ function toggleHide(idx, evt) {
   if (hiddenSessions.has(idx)) hiddenSessions.delete(idx); else hiddenSessions.add(idx);
   saveHidden();
   applyFilters();
+}
+function saveHighlighted() {
+  localStorage.setItem(LS_HIGHLIGHT_KEY, JSON.stringify([...highlightedSessions]));
+  updateHighlightedCount();
+}
+function toggleHighlight(idx, evt) {
+  if (evt) evt.stopPropagation();
+  if (highlightedSessions.has(idx)) highlightedSessions.delete(idx); else highlightedSessions.add(idx);
+  saveHighlighted();
+  applyFilters();
+}
+function toggleShowHighlightedOnly() {
+  showHighlightedOnly = !showHighlightedOnly;
+  document.getElementById("showHighlightedBtn").classList.toggle("active", showHighlightedOnly);
+  applyFilters();
+}
+function updateHighlightedCount() {
+  const btn = document.getElementById("showHighlightedBtn");
+  const n = highlightedSessions.size;
+  btn.textContent = n ? "Starred (" + n + ")" : "Starred";
 }
 function toggleShowHidden() {
   showHidden = !showHidden;
@@ -330,6 +366,7 @@ function init() {
   buildLangMenu();
   document.getElementById("showHiddenBtn").classList.toggle("active", showHidden);
   updateHiddenCount();
+  updateHighlightedCount();
   setView(currentView);
 }
 
@@ -439,6 +476,7 @@ function applyFilters() {
   for (let i = 0; i < SESSIONS.length; i++) {
     const s = SESSIONS[i];
     if (!showHidden && hiddenSessions.has(i)) continue;
+    if (showHighlightedOnly && !highlightedSessions.has(i)) continue;
     if (dayFilter && String(s.day) !== dayFilter) continue;
     if (activeLangs.size < ALL_LANGS.length && s.lang && !activeLangs.has(s.lang)) continue;
     if (activeStages.size < STAGE_ORDER.length && !activeStages.has(s.stage)) continue;
@@ -509,8 +547,10 @@ function cardHTML(idx) {
   const spk = s.speakers.map(sp => sp.name).join(", ");
   const co = s.company || "";
   const isHidden = hiddenSessions.has(idx);
-  let html = `<div class="card${isHidden ? " hidden-session" : ""}" style="--card-color:${c}" onclick="showModal(${idx})">`;
+  const isHighlighted = highlightedSessions.has(idx);
+  let html = `<div class="card${isHidden ? " hidden-session" : ""}${isHighlighted ? " highlighted-session" : ""}" style="--card-color:${c}" onclick="showModal(${idx})">`;
   html += `<button class="hide-btn" onclick="toggleHide(${idx},event)" title="${isHidden ? "Unhide" : "Hide"}">${isHidden ? "\u{2795}" : "\u{2796}"}</button>`;
+  html += `<button class="highlight-btn" onclick="toggleHighlight(${idx},event)" title="${isHighlighted ? "Unstar" : "Star"}" style="${isHighlighted ? "color:var(--accent)" : ""}">${isHighlighted ? "\u{2605}" : "\u{2606}"}</button>`;
   html += `<span class="card-stage">${esc(s.stage)}</span>`;
   html += `<div class="card-title">${esc(s.title)}</div>`;
   const spkLine = [co, spk].filter(Boolean).join(" – ");
@@ -642,9 +682,10 @@ function calendarDayHTML(day, indices) {
     const co = s.company || "";
 
     const isHidden = hiddenSessions.has(idx);
+    const isHighlighted = highlightedSessions.has(idx);
     const isPast = _nowDay == day && endM <= _nowM;
     const isOngoing = _nowDay == day && startM <= _nowM && endM > _nowM;
-    html += `<div class="cal-ev${isHidden ? " hidden-session" : ""}${isPast ? " cal-past" : ""}${isOngoing ? " cal-ongoing" : ""}" onclick="showModal(${idx})" style="top:${y}px;left:${left}px;width:${w}px;height:${h}px;background:color-mix(in srgb,${c} 15%,transparent);border-left:3px solid ${c}" title="${esc(s.time + ' | ' + s.stage + '\n' + s.title)}">`;
+    html += `<div class="cal-ev${isHidden ? " hidden-session" : ""}${isHighlighted ? " highlighted-session" : ""}${isPast ? " cal-past" : ""}${isOngoing ? " cal-ongoing" : ""}" onclick="showModal(${idx})" style="top:${y}px;left:${left}px;width:${w}px;height:${h}px;background:color-mix(in srgb,${c} 15%,transparent);border-left:3px solid ${c}" title="${esc(s.time + ' | ' + s.stage + '\n' + s.title)}">`;
     html += `<b>${esc(s.title)}</b>`;
     if (co) html += `<div class="ev-spk">${esc(co)}</div>`;
     html += `</div>`;
@@ -745,9 +786,10 @@ function renderTimeline() {
       const y = stageIdx[s.stage] * rowH + 2;
       const h = rowH - 4;
       const isHidden = hiddenSessions.has(idx);
+      const isHighlighted = highlightedSessions.has(idx);
       const isPast = nowDay == day && endM <= nowM;
       const isOngoing = nowDay == day && startM <= nowM && endM > nowM;
-      html += `<div class="tl-ev${isHidden ? " hidden-session" : ""}${isPast ? " tl-past" : ""}${isOngoing ? " tl-ongoing" : ""}" onclick="showModal(${idx})" style="top:${y}px;left:${x}px;width:${w}px;height:${h}px;background:color-mix(in srgb,${c} 25%,transparent)" title="${esc(s.time + ' | ' + s.title)}"><span style="display:inline-block;width:5px;height:5px;border-radius:50%;background:${c};margin-right:4px;flex-shrink:0"></span><span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0">${esc(s.short || s.title)}</span></div>`;
+      html += `<div class="tl-ev${isHidden ? " hidden-session" : ""}${isHighlighted ? " highlighted-session" : ""}${isPast ? " tl-past" : ""}${isOngoing ? " tl-ongoing" : ""}" onclick="showModal(${idx})" style="top:${y}px;left:${x}px;width:${w}px;height:${h}px;background:color-mix(in srgb,${c} 25%,transparent)" title="${esc(s.time + ' | ' + s.title)}"><span style="display:inline-block;width:5px;height:5px;border-radius:50%;background:${c};margin-right:4px;flex-shrink:0"></span><span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0">${esc(s.short || s.title)}</span></div>`;
     }
 
     // Now line
@@ -799,6 +841,19 @@ function showModal(idx) {
   if (s.description) html += `<div class="modal-desc">${esc(s.description)}</div>`;
 
   html += '<div class="modal-meta">';
+
+  // Update highlight button in header
+  const mHighlighted = highlightedSessions.has(idx);
+  const hlBtn = document.getElementById("modalHighlightBtn");
+  hlBtn.innerHTML = mHighlighted ? "&#9733;" : "&#9734;";
+  hlBtn.style.color = mHighlighted ? "var(--accent)" : "var(--text3)";
+  hlBtn.title = mHighlighted ? "Unstar" : "Star";
+  hlBtn.onclick = function() {
+    const wasHighlighted = highlightedSessions.has(idx);
+    toggleHighlight(idx);
+    closeModal();
+    showToast(wasHighlighted ? "Session unstarred" : "Session starred");
+  };
 
   // Update hide button in header
   const mHidden = hiddenSessions.has(idx);
