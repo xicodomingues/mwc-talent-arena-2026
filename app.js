@@ -1,7 +1,7 @@
 // ── Data ──
 let SESSIONS = [];
 let searchIndex = [];
-const STAGE_COLORS = {"XPRO stage": "#FFD700", "XPRO Lab": "#FF6B35", "XPRO Talks": "#00BCD4", "Visionary Stage": "#9B59B6", "Hotspot Talks": "#3498DB", "Plug-in Talks": "#E74C3C", "Focus Lab": "#2ECC71", "Frontier lab": "#FF4081", "Meetup area": "#78909C", "Barcelona": "#FFEB3B", "Skills Hub": "#26A69A", "Robotics": "#7C4DFF", "Gaming": "#F50057", "TECHNICAL DEV DIVES": "#546E7A"};
+const STAGE_COLORS = {"XPRO stage": "#FFD700", "XPRO Lab": "#FF6B35", "XPRO Talks": "#00BCD4", "Visionary Stage": "#9B59B6", "Hotspot Talks": "#3498DB", "Plug-in Talks": "#E74C3C", "Focus Lab": "#2ECC71", "Frontier lab": "#FF4081", "Meetup area": "#78909C", "Barcelona": "#FFEB3B", "Skills Hub": "#26A69A", "Robotics": "#7C4DFF", "Gaming": "#F50057"};
 const STAGE_ORDER = ["XPRO stage", "XPRO Lab", "XPRO Talks", "Visionary Stage", "Hotspot Talks", "Plug-in Talks", "Focus Lab", "Frontier lab", "Meetup area", "Barcelona", "Skills Hub", "Robotics", "Gaming"];
 const ALL_TAGS = ["Artificial Intelligence", "Cloud Computing", "Cybersecurity", "Future Trends", "GAMING", "Management", "ROBOTICS", "Software Development"];
 const LANG_FLAGS = {English:"\u{1F1EC}\u{1F1E7}",Spanish:"\u{1F1EA}\u{1F1F8}",Catalan:"\u{1F3F4}"};
@@ -43,17 +43,18 @@ let filteredIndices = [];
 
 // Hidden sessions (persisted in localStorage)
 const LS_KEY = "mwc_hidden_sessions";
-let hiddenSessions = new Set(JSON.parse(localStorage.getItem(LS_KEY) || "[]"));
+function safeGetJSON(key) { try { return JSON.parse(localStorage.getItem(key) || "[]"); } catch { return []; } }
+let hiddenSessions = new Set(safeGetJSON(LS_KEY));
 let showHidden = localStorage.getItem("showHidden") === "true";
 
 // Highlighted sessions (persisted in localStorage)
 const LS_HIGHLIGHT_KEY = "mwc_highlighted_sessions";
-let highlightedSessions = new Set(JSON.parse(localStorage.getItem(LS_HIGHLIGHT_KEY) || "[]"));
+let highlightedSessions = new Set(safeGetJSON(LS_HIGHLIGHT_KEY));
 let showHighlightedOnly = false;
 
 // Calendar stage visibility (persisted)
 const LS_CAL_STAGES_KEY = "mwc_cal_hidden_stages";
-let calHiddenStages = new Set(JSON.parse(localStorage.getItem(LS_CAL_STAGES_KEY) || "[]"));
+let calHiddenStages = new Set(safeGetJSON(LS_CAL_STAGES_KEY));
 
 function toggleCalStage(stage) {
   if (calHiddenStages.has(stage)) calHiddenStages.delete(stage); else calHiddenStages.add(stage);
@@ -89,34 +90,40 @@ function toggleHighlight(idx, evt) {
 }
 function toggleShowHighlightedOnly() {
   showHighlightedOnly = !showHighlightedOnly;
-  document.getElementById("showHighlightedBtn").classList.toggle("active", showHighlightedOnly);
+  document.getElementById("showHighlightedBtn").classList.toggle("active-star", showHighlightedOnly);
   applyFilters();
 }
 function updateHighlightedCount() {
+  const badge = document.getElementById("starBadge");
   const btn = document.getElementById("showHighlightedBtn");
   const n = highlightedSessions.size;
-  btn.textContent = n ? "Starred (" + n + ")" : "Starred";
+  badge.textContent = n ? n : "";
+  if (!showHighlightedOnly) btn.classList.toggle("active-star", n > 0);
 }
 function toggleShowHidden() {
   showHidden = !showHidden;
   localStorage.setItem("showHidden", showHidden);
-  document.getElementById("showHiddenBtn").classList.toggle("active", showHidden);
+  document.getElementById("showHiddenBtn").classList.toggle("active-hidden", showHidden);
   updateHiddenCount();
   applyFilters();
 }
 function restoreAll() {
   hiddenSessions.clear();
   localStorage.setItem(LS_KEY, "[]");
+  calHiddenStages.clear();
+  localStorage.setItem(LS_CAL_STAGES_KEY, "[]");
   showHidden = false;
   localStorage.setItem("showHidden", "false");
-  document.getElementById("showHiddenBtn").classList.remove("active");
+  document.getElementById("showHiddenBtn").classList.remove("active-hidden");
   updateHiddenCount();
   applyFilters();
 }
 function updateHiddenCount() {
+  const badge = document.getElementById("hiddenBadge");
   const btn = document.getElementById("showHiddenBtn");
   const n = hiddenSessions.size;
-  btn.textContent = n ? "Show hidden (" + n + ")" : "Show hidden";
+  badge.textContent = n ? n : "";
+  if (!showHidden) btn.classList.toggle("active-hidden", n > 0);
   document.getElementById("restoreAllBtn").style.display = (n && showHidden) ? "" : "none";
 }
 
@@ -136,117 +143,106 @@ function buildSearchIndex() {
   });
 }
 
-// ── Init ──
-function init() {
-  // Sync day button active state
-  document.querySelectorAll(".day-toggle button").forEach(b => b.classList.toggle("active", b.dataset.day === dayFilter));
-  buildStageMenu();
-  buildTagMenu();
-  buildLangMenu();
-  document.getElementById("showHiddenBtn").classList.toggle("active", showHidden);
-  updateHiddenCount();
-  updateHighlightedCount();
-  setView(currentView);
+// ── Filter Panel ──
+function toggleFilterPanel() {
+  const panel = document.getElementById("filterPanel");
+  const btn = document.getElementById("filterToggleBtn");
+  panel.classList.toggle("open");
+  btn.classList.toggle("active", panel.classList.contains("open"));
 }
 
-function buildStageMenu() {
-  const el = document.getElementById("stageMenu");
+function updateFilterDot() {
+  const dot = document.getElementById("filterDot");
+  const hasActiveFilters =
+    activeStages.size < STAGE_ORDER.length ||
+    activeTags.size < ALL_TAGS.length ||
+    activeLangs.size < ALL_LANGS.length;
+  dot.classList.toggle("on", hasActiveFilters);
+}
+
+// ── Chip Builders ──
+function buildStageChips() {
+  const el = document.getElementById("stageChips");
   let html = "";
   for (const st of STAGE_ORDER) {
     const c = STAGE_COLORS[st] || "#888";
-    const checked = activeStages.has(st) ? "checked" : "";
-    html += `<label class="dropdown-item"><input type="checkbox" ${checked} onchange="toggleStage('${esc(st)}')"><span style="color:${c}">${esc(st)}</span></label>`;
+    const on = activeStages.has(st) ? " on" : "";
+    html += `<button class="filter-chip${on}" style="--chip-color:${c}" onclick="toggleStage('${esc(st)}')"><span class="chip-dot" style="background:${c}"></span>${esc(st)}</button>`;
   }
   el.innerHTML = html;
-  updateStageLabel();
 }
 
-function buildTagMenu() {
-  const el = document.getElementById("tagMenu");
+function buildTagChips() {
+  const el = document.getElementById("tagChips");
   let html = "";
   for (const tag of ALL_TAGS) {
-    const checked = activeTags.has(tag) ? "checked" : "";
-    html += `<label class="dropdown-item"><input type="checkbox" ${checked} onchange="toggleTag('${esc(tag)}')">${esc(tag)}</label>`;
+    const on = activeTags.has(tag) ? " on" : "";
+    html += `<button class="filter-chip${on}" onclick="toggleTag('${esc(tag)}')">${esc(tag)}</button>`;
   }
   el.innerHTML = html;
-  updateTagLabel();
+}
+
+function buildLangChips() {
+  const el = document.getElementById("langChips");
+  let html = "";
+  for (const lang of ALL_LANGS) {
+    const on = activeLangs.has(lang) ? " on" : "";
+    html += `<button class="filter-chip${on}" onclick="toggleLang('${lang}')">${LANG_FLAGS[lang]||""} ${lang}</button>`;
+  }
+  el.innerHTML = html;
+}
+
+// ── Init ──
+function init() {
+  updateDayIndicator();
+  buildStageChips();
+  buildTagChips();
+  buildLangChips();
+  document.getElementById("showHiddenBtn").classList.toggle("active-hidden", showHidden);
+  updateHiddenCount();
+  updateHighlightedCount();
+  updateFilterDot();
+  setView(currentView);
 }
 
 // ── Filters ──
-function setDay(btn) {
-  dayFilter = btn.dataset.day;
+function switchDay() {
+  dayFilter = dayFilter === "3" ? "4" : "3";
   scrollToNow = true;
-  document.querySelectorAll(".day-toggle button").forEach(b => b.classList.toggle("active", b === btn));
+  updateDayIndicator();
   updateHash();
+  applyFilters();
+}
+function updateDayIndicator() {
+  document.getElementById("dayIndicatorText").textContent = "Mar " + dayFilter;
+}
+
+function clearSearch() {
+  const box = document.getElementById("searchBox");
+  box.value = "";
+  box.focus();
   applyFilters();
 }
 
 function toggleStage(st) {
   if (activeStages.has(st)) activeStages.delete(st); else activeStages.add(st);
-  updateStageLabel();
+  buildStageChips();
+  updateFilterDot();
   applyFilters();
-}
-
-function updateStageLabel() {
-  const el = document.getElementById("stageLabel");
-  if (activeStages.size === STAGE_ORDER.length) el.textContent = "All";
-  else if (activeStages.size === 0) el.textContent = "None";
-  else el.textContent = activeStages.size + "/" + STAGE_ORDER.length;
 }
 
 function toggleTag(tag) {
   if (activeTags.has(tag)) activeTags.delete(tag); else activeTags.add(tag);
-  updateTagLabel();
+  buildTagChips();
+  updateFilterDot();
   applyFilters();
-}
-
-function updateTagLabel() {
-  const el = document.getElementById("tagLabel");
-  if (activeTags.size === ALL_TAGS.length) el.textContent = "All";
-  else if (activeTags.size === 0) el.textContent = "None";
-  else el.textContent = activeTags.size + "/" + ALL_TAGS.length;
-}
-
-function buildLangMenu() {
-  const el = document.getElementById("langMenu");
-  const flags = {English:"\u{1F1EC}\u{1F1E7}",Spanish:"\u{1F1EA}\u{1F1F8}",Catalan:"\u{1F3F4}"};
-  let html = "";
-  for (const lang of ALL_LANGS) {
-    const checked = activeLangs.has(lang) ? "checked" : "";
-    html += `<label class="dropdown-item"><input type="checkbox" ${checked} onchange="toggleLang('${lang}')">${flags[lang]||""} ${lang}</label>`;
-  }
-  el.innerHTML = html;
-  updateLangLabel();
 }
 
 function toggleLang(lang) {
   if (activeLangs.has(lang)) activeLangs.delete(lang); else activeLangs.add(lang);
-  updateLangLabel();
+  buildLangChips();
+  updateFilterDot();
   applyFilters();
-}
-
-function updateLangLabel() {
-  const el = document.getElementById("langLabel");
-  if (activeLangs.size === ALL_LANGS.length) el.textContent = "All";
-  else if (activeLangs.size === 0) el.textContent = "None";
-  else el.textContent = [...activeLangs].map(l => l.slice(0,2).toUpperCase()).join(", ");
-}
-
-function toggleDropdown(id) {
-  const dd = document.getElementById(id);
-  dd.classList.toggle("open");
-}
-
-// Close dropdown when clicking outside
-document.addEventListener("click", e => {
-  if (!e.target.closest(".dropdown")) {
-    document.querySelectorAll(".dropdown.open").forEach(d => d.classList.remove("open"));
-  }
-});
-
-function toggleFilters() {
-  document.getElementById("filterPanel").classList.toggle("open");
-  document.getElementById("filterToggle").classList.toggle("active");
 }
 
 function applyFilters() {
@@ -256,13 +252,13 @@ function applyFilters() {
   for (let i = 0; i < SESSIONS.length; i++) {
     const s = SESSIONS[i];
     if (!showHidden && hiddenSessions.has(i)) continue;
-    if (showHighlightedOnly && !highlightedSessions.has(i)) continue;
+    if (showHighlightedOnly && currentView === "list" && !highlightedSessions.has(i)) continue;
     if (dayFilter && String(s.day) !== dayFilter) continue;
     if (activeLangs.size < ALL_LANGS.length && s.lang && !activeLangs.has(s.lang)) continue;
     if (activeStages.size < STAGE_ORDER.length && !activeStages.has(s.stage)) continue;
     if (activeTags.size < ALL_TAGS.length) {
       const sTags = s.tags || [];
-      if (sTags.length > 0 && !sTags.some(t => activeTags.has(t))) continue;
+      if (sTags.length && !sTags.some(t => activeTags.has(t))) continue;
     }
     if (searchQuery && !searchIndex[i].includes(searchQuery)) continue;
     filteredIndices.push(i);
@@ -275,7 +271,7 @@ function applyFilters() {
 function setView(v) {
   currentView = v;
   scrollToNow = true;
-  document.querySelectorAll(".view-btns button").forEach(b => b.classList.toggle("active", b.dataset.view === v));
+  document.querySelectorAll(".view-icons button").forEach(b => b.classList.toggle("active", b.dataset.view === v));
   updateHash();
   applyFilters();
 }
@@ -291,11 +287,9 @@ function renderList() {
   const el = document.getElementById("content");
   if (!filteredIndices.length) { el.innerHTML = '<p style="text-align:center;color:var(--text3);padding:3rem">No sessions match your filters.</p>'; return; }
 
-  // Group by day → time (skip hidden stages)
   const grouped = {};
   for (const idx of filteredIndices) {
     const s = SESSIONS[idx];
-    if (calHiddenStages.has(s.stage)) continue;
     const key = s.day + "|" + s.time;
     if (!grouped[key]) grouped[key] = {day: s.day, time: s.time, items: []};
     grouped[key].items.push(idx);
@@ -327,8 +321,10 @@ function cardHTML(idx) {
   const isHidden = hiddenSessions.has(idx);
   const isHighlighted = highlightedSessions.has(idx);
   let html = `<div class="card${isHidden ? " hidden-session" : ""}${isHighlighted ? " highlighted-session" : ""}" style="--card-color:${c}" onclick="showModal(${idx})">`;
-  html += `<button class="hide-btn" onclick="toggleHide(${idx},event)" title="${isHidden ? "Unhide" : "Hide"}">${isHidden ? "\u{2795}" : "\u{2796}"}</button>`;
-  html += `<button class="highlight-btn" onclick="toggleHighlight(${idx},event)" title="${isHighlighted ? "Unstar" : "Star"}" style="${isHighlighted ? "color:var(--accent)" : ""}">${isHighlighted ? "\u{2605}" : "\u{2606}"}</button>`;
+  html += `<div class="card-actions">`;
+  html += `<button class="card-action act-star${isHighlighted ? " on" : ""}" onclick="toggleHighlight(${idx},event)" title="${isHighlighted ? "Unstar" : "Star"}"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 1l2.2 4.5 5 .7-3.6 3.5.85 5L8 12.4l-4.45 2.3.85-5L.8 6.2l5-.7z"/></svg></button>`;
+  html += `<button class="card-action act-hide${isHidden ? " on" : ""}" onclick="toggleHide(${idx},event)" title="${isHidden ? "Restore" : "Hide"}"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">${isHidden ? '<path d="M1 8s2.5-5 7-5 7 5 7 5-2.5 5-7 5-7-5-7-5z"/><circle cx="8" cy="8" r="2.5"/>' : '<path d="M1 8s2.5-5 7-5 7 5 7 5-2.5 5-7 5-7-5-7-5z"/><circle cx="8" cy="8" r="2.5"/><line x1="2" y1="14" x2="14" y2="2"/>'}</svg></button>`;
+  html += `</div>`;
   html += `<span class="card-stage">${esc(s.stage)}</span>`;
   html += `<div class="card-title">${esc(s.title)}</div>`;
   const spkLine = [co, spk].filter(Boolean).join(" – ");
@@ -418,7 +414,7 @@ function calendarDayHTML(day, indices) {
     html += `<span class="cal-hidden-label">Hidden:</span>`;
     for (const st of hiddenHere) {
       const c = STAGE_COLORS[st] || "#888";
-      html += `<button class="pill" style="--pill-color:${c}" onclick="toggleCalStage('${esc(st)}')">${esc(st)}</button>`;
+      html += `<button class="filter-chip" style="--chip-color:${c}" onclick="toggleCalStage('${esc(st)}')">${esc(st)}</button>`;
     }
     html += `</div>`;
   }
@@ -462,10 +458,11 @@ function calendarDayHTML(day, indices) {
 
     const isHidden = hiddenSessions.has(idx);
     const isHighlighted = highlightedSessions.has(idx);
+    const isDimmed = showHighlightedOnly && !isHighlighted;
     const midM = (startM + endM) / 2;
     const isPast = _isEventMonth && _nowDay == day && _nowM >= midM;
     const isOngoing = _isEventMonth && _nowDay == day && startM <= _nowM && _nowM < midM;
-    html += `<div class="cal-ev${isHidden ? " hidden-session" : ""}${isHighlighted ? " highlighted-session" : ""}${isPast ? " cal-past" : ""}${isOngoing ? " cal-ongoing" : ""}" onclick="showModal(${idx})" style="top:${y}px;left:${left}px;width:${w}px;height:${h}px;background:color-mix(in srgb,${c} 15%,transparent);border-left:3px solid ${c}" title="${esc(s.time + ' | ' + s.stage + '\n' + s.title)}">`;
+    html += `<div class="cal-ev${isHidden ? " hidden-session" : ""}${isHighlighted ? " highlighted-session" : ""}${isDimmed ? " star-dimmed" : ""}${isPast ? " cal-past" : ""}${isOngoing ? " cal-ongoing" : ""}" onclick="showModal(${idx})" style="top:${y}px;left:${left}px;width:${w}px;height:${h}px;background:color-mix(in srgb,${c} 15%,transparent);border-left:3px solid ${c}" title="${esc(s.time + ' | ' + s.stage + '\n' + s.title)}">`;
     html += `<b>${esc(s.title)}</b>`;
     if (co) html += `<div class="ev-spk">${esc(co)}</div>`;
     html += `</div>`;
@@ -493,8 +490,8 @@ function renderTimeline() {
   if (!filteredIndices.length) { el.innerHTML = '<p style="text-align:center;color:var(--text3);padding:3rem">No sessions match your filters.</p>'; return; }
 
   const ppm = 5; // pixels per minute (horizontal)
-  const rowH = 40; // row height per stage
-  const labelW = 0;
+  const rowH = 44; // row height per stage
+  const labelW = 110;
   const now = nowInBarcelona();
   const isEventMonth = now.month === 3 && now.year === 2026;
   const nowM = now.hours * 60 + now.minutes;
@@ -535,8 +532,8 @@ function renderTimeline() {
 
     // Time header
     html += `<div class="tl-header">`;
+    html += `<div class="tl-header-corner" style="width:${labelW}px;min-width:${labelW}px"></div>`;
     for (let t = minT; t < maxT; t += 30) {
-      const x = (t - minT) * ppm;
       const w = 30 * ppm;
       const label = Math.floor(t / 60) + ":" + String(t % 60).padStart(2, "0");
       html += `<div class="tl-time-hdr" style="width:${w}px">${label}</div>`;
@@ -546,16 +543,26 @@ function renderTimeline() {
     // Body
     html += `<div class="tl-body" style="height:${bodyH}px;position:relative">`;
 
+    // Alternating row backgrounds + stage labels
+    for (let i = 0; i < stagesPresent.length; i++) {
+      const y = i * rowH;
+      const st = stagesPresent[i];
+      const c = STAGE_COLORS[st] || "#888";
+      const bg = i % 2 === 1 ? "rgba(255,255,255,0.02)" : "transparent";
+      html += `<div class="tl-row-bg" style="top:${y}px;height:${rowH}px;left:${labelW}px;width:${bodyW}px;background:${bg}"></div>`;
+      html += `<div class="tl-row-label" style="top:${y}px;height:${rowH}px;width:${labelW}px;border-right:2px solid ${c}" onclick="toggleCalStage('${esc(st)}')" title="Click to hide ${esc(st)}"><span class="tl-label-dot" style="background:${c}"></span><span class="tl-label-text">${esc(st)}</span></div>`;
+    }
+
     // Vertical gridlines
     for (let t = minT; t <= maxT; t += 30) {
       const x = labelW + (t - minT) * ppm;
       html += `<div class="tl-gridline" style="left:${x}px;top:0;height:${bodyH}px"></div>`;
     }
 
-    // Stage row lines
+    // Row separator lines
     for (let i = 1; i < stagesPresent.length; i++) {
       const y = i * rowH;
-      html += `<div style="position:absolute;left:${labelW}px;top:${y}px;width:${bodyW}px;height:1px;background:#1a1a1a"></div>`;
+      html += `<div style="position:absolute;left:${labelW}px;top:${y}px;width:${bodyW}px;height:1px;background:#2a2a2a"></div>`;
     }
 
     // Events
@@ -572,10 +579,11 @@ function renderTimeline() {
       const h = rowH - 4;
       const isHidden = hiddenSessions.has(idx);
       const isHighlighted = highlightedSessions.has(idx);
+      const isDimmed = showHighlightedOnly && !isHighlighted;
       const midM = (startM + endM) / 2;
       const isPast = isEventMonth && nowDay == day && nowM >= midM;
       const isOngoing = isEventMonth && nowDay == day && startM <= nowM && nowM < midM;
-      html += `<div class="tl-ev${isHidden ? " hidden-session" : ""}${isHighlighted ? " highlighted-session" : ""}${isPast ? " tl-past" : ""}${isOngoing ? " tl-ongoing" : ""}" onclick="showModal(${idx})" style="top:${y}px;left:${x}px;width:${w}px;height:${h}px;background:color-mix(in srgb,${c} 25%,transparent)" title="${esc(s.time + ' | ' + s.title)}"><span class="tl-ev-dot" style="background:${c}"></span><span class="tl-ev-text">${esc(s.title)}</span></div>`;
+      html += `<div class="tl-ev${isHidden ? " hidden-session" : ""}${isHighlighted ? " highlighted-session" : ""}${isDimmed ? " star-dimmed" : ""}${isPast ? " tl-past" : ""}${isOngoing ? " tl-ongoing" : ""}" onclick="showModal(${idx})" style="top:${y}px;left:${x}px;width:${w}px;height:${h}px;background:color-mix(in srgb,${c} 20%,var(--surface2));border-left:3px solid ${c}" title="${esc(s.time + ' | ' + s.stage + '\n' + s.title)}"><span class="tl-ev-text">${esc(s.title)}</span></div>`;
     }
 
     // Now line
@@ -636,30 +644,6 @@ function showModal(idx) {
   if (s.description) html += `<div class="modal-desc">${esc(s.description)}</div>`;
 
   html += '<div class="modal-meta">';
-
-  // Update highlight button in header
-  const mHighlighted = highlightedSessions.has(idx);
-  const hlBtn = document.getElementById("modalHighlightBtn");
-  hlBtn.innerHTML = mHighlighted ? "&#9733;" : "&#9734;";
-  hlBtn.style.color = mHighlighted ? "var(--accent)" : "var(--text3)";
-  hlBtn.title = mHighlighted ? "Unstar" : "Star";
-  hlBtn.onclick = function() {
-    const wasHighlighted = highlightedSessions.has(idx);
-    toggleHighlight(idx);
-    closeModal();
-    showToast(wasHighlighted ? "Session unstarred" : "Session starred");
-  };
-
-  // Update hide button in header
-  const mHidden = hiddenSessions.has(idx);
-  const hBtn = document.getElementById("modalHideBtn");
-  hBtn.innerHTML = mHidden ? "+" : "&minus;";
-  hBtn.onclick = function() {
-    const wasHidden = hiddenSessions.has(idx);
-    toggleHide(idx);
-    closeModal();
-    showToast(wasHidden ? "Session restored" : "Session hidden");
-  };
   for (const t of s.tags) html += `<span>${esc(t)}</span>`;
   if (s.lang) {
     const flag = LANG_FLAGS[s.lang] || "";
@@ -667,7 +651,33 @@ function showModal(idx) {
   }
   html += '</div>';
 
+  // Action bar
+  const mHighlighted = highlightedSessions.has(idx);
+  const mHidden = hiddenSessions.has(idx);
+  const starSvg = '<svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 1l2.2 4.5 5 .7-3.6 3.5.85 5L8 12.4l-4.45 2.3.85-5L.8 6.2l5-.7z"/></svg>';
+  const hideSvg = mHidden
+    ? '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 8s2.5-5 7-5 7 5 7 5-2.5 5-7 5-7-5-7-5z"/><circle cx="8" cy="8" r="2.5"/></svg>'
+    : '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 8s2.5-5 7-5 7 5 7 5-2.5 5-7 5-7-5-7-5z"/><circle cx="8" cy="8" r="2.5"/><line x1="2" y1="14" x2="14" y2="2"/></svg>';
+  html += `<div class="modal-actions">`;
+  html += `<button class="modal-action-btn act-star${mHighlighted ? " star-active" : ""}" id="modalStarBtn">${starSvg} ${mHighlighted ? "Starred" : "Star"}</button>`;
+  html += `<button class="modal-action-btn act-hide${mHidden ? " hide-active" : ""}" id="modalHideBtn">${hideSvg} ${mHidden ? "Restore" : "Hide"}</button>`;
+  html += `</div>`;
+
   document.getElementById("modalBody").innerHTML = html;
+
+  document.getElementById("modalStarBtn").onclick = function() {
+    const was = highlightedSessions.has(idx);
+    toggleHighlight(idx);
+    closeModal();
+    showToast(was ? "Session unstarred" : "Session starred");
+  };
+  document.getElementById("modalHideBtn").onclick = function() {
+    const was = hiddenSessions.has(idx);
+    toggleHide(idx);
+    closeModal();
+    showToast(was ? "Session restored" : "Session hidden");
+  };
+
   document.getElementById("modalBackdrop").classList.add("open");
 }
 
@@ -692,7 +702,7 @@ document.addEventListener("keydown", e => { if (e.key === "Escape") closeModal()
 function esc(text) {
   const d = document.createElement("div");
   d.textContent = String(text);
-  return d.innerHTML;
+  return d.innerHTML.replace(/'/g, "&#39;");
 }
 
 // ── Drag-to-scroll for calendar wrappers ──
@@ -743,7 +753,7 @@ renderCalendar = function() {
 function scrollToNowSlot() {
   const now = nowInBarcelona();
   const nowM = now.hours * 60 + now.minutes;
-  const slots = document.querySelectorAll(".time-slot-heading, .tl-slot-time");
+  const slots = document.querySelectorAll(".time-slot-heading, .tl-time-hdr");
   let best = null, bestDiff = Infinity;
   for (const el of slots) {
     const m = el.textContent.match(/(\d{2}):(\d{2})/);
@@ -783,15 +793,17 @@ render = function() {
 
 // ── Start ──
 fetch("sessions.json")
-  .then(r => r.json())
+  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
   .then(data => {
     SESSIONS = data;
     buildSearchIndex();
     init();
-    // Refresh every 5 minutes to update the now line
-    setInterval(() => { scrollToNow = true; render(); }, 5 * 60 * 1000);
-    // Also refresh the now line when the user returns to the page
+    setInterval(() => render(), 5 * 60 * 1000);
     document.addEventListener('visibilitychange', () => {
       if (!document.hidden) render();
     });
+  })
+  .catch(() => {
+    document.getElementById("content").innerHTML =
+      '<p style="text-align:center;padding:3rem;color:var(--text2)">Failed to load sessions. Please refresh the page.</p>';
   });
