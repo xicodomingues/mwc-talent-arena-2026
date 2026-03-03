@@ -481,4 +481,12 @@ DESCRIPTION:Last night networking!
 UID:e536e1c0-9848-473c-8de9-33757a81be3b
 STATUS:CONFIRMED
 END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Madrid:20260304T163000
+DTEND;TZID=Europe/Madrid:20260304T170000
+SUMMARY:💊 Improving patients' life through AI in pharma
+LOCATION:Fira Montjuïc Hall 8 – XPRO stage
+DESCRIPTION:Speaker: Alexander Holbach\, Head of Clinical Data Management at Bayer.\nAI for optimizing drug discovery and streamlining clinical trials.
+STATUS:CONFIRMED
+END:VEVENT
 END:VCALENDAR

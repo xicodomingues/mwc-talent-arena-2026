@@ -226,8 +226,6 @@ const ALL_TAGS = ["Artificial Intelligence", "Cloud Computing", "Cybersecurity",
 const LANG_FLAGS = {English:"\u{1F1EC}\u{1F1E7}",Spanish:"\u{1F1EA}\u{1F1F8}",Catalan:"\u{1F3F4}"};
 const LANG_CLASS = {English:"lang-en",Spanish:"lang-es",Catalan:"lang-ca"};
 
-// DEBUG: fake time
-const _RD=Date;Date=class extends _RD{constructor(...a){if(a.length)return super(...a);return new _RD(2026,2,3,11,23,0)}static now(){return new _RD(2026,2,3,11,23,0).getTime()}};
 // ── State ──
 // Parse hash: #day=3&view=calendar
 function parseHash() {
