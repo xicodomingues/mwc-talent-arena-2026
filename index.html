@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MWC Talent Arena 2026 – Schedule</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📅</text></svg>">
 <link rel="stylesheet" href="style.css">
@@ -12,47 +12,79 @@
 <!-- ── Top Bar ── -->
 <div class="topbar">
   <div class="topbar-inner">
-    <div class="day-toggle">
-      <button data-day="3" onclick="setDay(this)">Mar 3</button>
-      <button data-day="4" onclick="setDay(this)">Mar 4</button>
+    <button class="day-indicator" id="dayIndicator" onclick="switchDay()">
+      <span id="dayIndicatorText">Mar 3</span>
+      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4l3 3 3-3"/></svg>
+    </button>
+
+    <div class="view-icons">
+      <button data-view="list" onclick="setView('list')" title="List view">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="1" y1="3" x2="15" y2="3"/><line x1="1" y1="8" x2="15" y2="8"/><line x1="1" y1="13" x2="15" y2="13"/></svg>
+        <span class="view-label">List</span>
+      </button>
+      <button data-view="calendar" onclick="setView('calendar')" title="Calendar view">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="2" width="14" height="13" rx="1.5"/><line x1="1" y1="6" x2="15" y2="6"/><line x1="5" y1="1" x2="5" y2="3"/><line x1="11" y1="1" x2="11" y2="3"/></svg>
+        <span class="view-label">Calendar</span>
+      </button>
+      <button data-view="timeline" onclick="setView('timeline')" title="Timeline view">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="2" width="8" height="3" rx="1"/><rect x="4" y="7" width="11" height="3" rx="1"/><rect x="2" y="12" width="6" height="3" rx="1"/></svg>
+        <span class="view-label">Timeline</span>
+      </button>
     </div>
-    <div class="view-btns">
-      <button data-view="list" onclick="setView('list')">List</button>
-      <button data-view="calendar" onclick="setView('calendar')">Cal</button>
-      <button data-view="timeline" onclick="setView('timeline')">TL</button>
+
+    <div class="topbar-spacer"></div>
+
+    <button id="showHighlightedBtn" class="topbar-action" onclick="toggleShowHighlightedOnly()" title="Starred sessions">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1l2.2 4.5 5 .7-3.6 3.5.85 5L8 12.4l-4.45 2.3.85-5L.8 6.2l5-.7z"/></svg>
+      <span class="action-badge" id="starBadge"></span>
+    </button>
+    <button id="showHiddenBtn" class="topbar-action" onclick="toggleShowHidden()" title="Hidden sessions">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 8s2.5-5 7-5 7 5 7 5-2.5 5-7 5-7-5-7-5z"/><circle cx="8" cy="8" r="2.5"/><line x1="2" y1="14" x2="14" y2="2"/></svg>
+      <span class="action-badge" id="hiddenBadge"></span>
+    </button>
+
+    <button id="filterToggleBtn" class="filter-trigger" onclick="toggleFilterPanel()">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 2h14l-5 6v5l-4 2V8z"/></svg>
+      <span class="filter-trigger-label">Filters</span>
+      <span id="filterDot" class="filter-dot"></span>
+    </button>
+
+    <div class="topbar-search">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="5"/><line x1="11" y1="11" x2="15" y2="15"/></svg>
+      <input id="searchBox" placeholder="Search sessions, speakers..." oninput="applyFilters()" onkeydown="if(!this._typed){this.select();this._typed=true}" onfocus="this._typed=false">
+      <button class="search-clear" id="searchClear" onclick="clearSearch()" title="Clear search">&times;</button>
     </div>
-    <div class="dropdown" id="stageDropdown">
-      <button class="dropdown-btn" onclick="toggleDropdown('stageDropdown')"><span class="label">Stages</span> <span id="stageLabel">All</span></button>
-      <div class="dropdown-menu" id="stageMenu"></div>
-    </div>
-    <div class="dropdown" id="tagDropdown">
-      <button class="dropdown-btn" onclick="toggleDropdown('tagDropdown')"><span class="label">Topics</span> <span id="tagLabel">All</span></button>
-      <div class="dropdown-menu" id="tagMenu"></div>
-    </div>
-    <div class="dropdown" id="langDropdown">
-      <button class="dropdown-btn" onclick="toggleDropdown('langDropdown')"><span class="label">Lang</span> <span id="langLabel">All</span></button>
-      <div class="dropdown-menu" id="langMenu"></div>
-    </div>
-    <button class="show-highlighted-toggle" id="showHighlightedBtn" onclick="toggleShowHighlightedOnly()">Starred</button>
-    <button class="show-hidden-toggle" id="showHiddenBtn" onclick="toggleShowHidden()">Hidden</button>
-    <button class="show-hidden-toggle" id="restoreAllBtn" onclick="restoreAll()" style="display:none">Restore all</button>
-    <input type="text" class="search-box" id="searchBox" placeholder="Search..." oninput="applyFilters()" onkeydown="if(!this._typed){this.select();this._typed=true}" onfocus="this._typed=false">
-    <a href="help.html" class="help-link" title="Help">?</a>
   </div>
 </div>
-<div class="filter-panel" id="filterPanel" style="display:none"></div>
+
+<!-- ── Filter Panel (slide-down) ── -->
+<div class="filter-panel" id="filterPanel">
+  <div class="filter-group">
+    <div class="filter-group-label">Stages</div>
+    <div class="filter-chips" id="stageChips"></div>
+  </div>
+  <div class="filter-group">
+    <div class="filter-group-label">Topics</div>
+    <div class="filter-chips" id="tagChips"></div>
+  </div>
+  <div class="filter-group">
+    <div class="filter-group-label">Language</div>
+    <div class="filter-chips" id="langChips"></div>
+  </div>
+  <div class="filter-group">
+    <button id="restoreAllBtn" class="restore-all-btn" onclick="restoreAll()" style="display:none">Restore all hidden</button>
+  </div>
+</div>
 
 <!-- ── Content ── -->
 <div class="content" id="content"></div>
 
-<footer class="site-footer"><a href="help.html">Help</a> &middot; <a href="about.html">About</a></footer>
+<footer class="site-footer"><a href="mwc_talent_arena_full.ics" download>Export calendar (.ics)</a> &middot; <a href="help.html">Help</a> &middot; <a href="about.html">About</a></footer>
 
 <!-- ── Modal ── -->
-<div class="modal-backdrop" id="modalBackdrop">
+<div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
   <div class="modal" id="modal">
-    <button class="modal-close modal-hide-btn" id="modalHighlightBtn" onclick="" title="Star" style="right:4.85rem">&#9733;</button>
-    <button class="modal-close modal-hide-btn" id="modalHideBtn" onclick="">&minus;</button>
-    <button class="modal-close" onclick="closeModal()">&times;</button>
+    <button class="modal-x" onclick="closeModal()" title="Close">&times;</button>
     <div id="modalBody"></div>
   </div>
 </div>
