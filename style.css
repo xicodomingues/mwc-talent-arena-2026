@@ -124,11 +124,15 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 .lang-es{background:#3a2a1a;color:#FF9800}
 .lang-ca{background:#1a2a3a;color:#2196F3}
 
+/* ── Shared calendar/timeline wrapper & header ── */
+.cal-wrapper,.tl-wrapper{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid #222;border-radius:var(--radius);background:var(--surface);margin-bottom:1.5rem;cursor:grab}
+.cal-wrapper{overflow-y:auto;max-height:85dvh}
+.cal-wrapper.dragging,.tl-wrapper.dragging{cursor:grabbing;user-select:none}
+.cal-header,.tl-header{position:sticky;top:0;z-index:10;display:flex;background:var(--surface);box-shadow:0 4px 16px rgba(0,0,0,0.5)}
+
 /* ── Calendar View ── */
-.cal-wrapper{overflow-x:auto;overflow-y:auto;max-height:85dvh;-webkit-overflow-scrolling:touch;border:1px solid #222;border-radius:var(--radius);background:var(--surface);margin-bottom:1.5rem;cursor:grab}
-.cal-wrapper.dragging{cursor:grabbing;user-select:none}
 .cal-grid{position:relative;min-width:600px}
-.cal-header{position:sticky;top:0;z-index:10;display:flex;background:var(--surface);box-shadow:0 4px 16px rgba(0,0,0,0.5);align-items:stretch}
+.cal-header{align-items:stretch}
 .cal-header-corner{width:50px;min-width:50px;background:var(--surface)}
 .cal-stage-hdr{display:flex;align-items:center;justify-content:center;font-size:0.72rem;font-weight:600;text-align:center;padding:10px 2px 6px;line-height:1.2;cursor:pointer;user-select:none;position:relative;color:var(--hdr-color);border-bottom:2px solid var(--hdr-color);transition:opacity 0.15s}
 .cal-stage-hdr:hover{opacity:0.7}
@@ -152,10 +156,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 .cal-ev .ev-spk{opacity:0.7;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
 /* ── Timeline View ── */
-.tl-wrapper{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid #222;border-radius:var(--radius);background:var(--surface);cursor:grab}
-.tl-wrapper.dragging{cursor:grabbing;user-select:none}
 .tl-grid{position:relative}
-.tl-header{position:sticky;top:0;z-index:10;display:flex;background:var(--surface);border-bottom:1px solid #333}
+.tl-header{border-bottom:1px solid #333}
 .tl-header-corner{height:34px;background:var(--surface);border-right:1px solid #333;position:sticky;left:0;z-index:6}
 .tl-time-hdr{height:34px;display:flex;align-items:center;justify-content:flex-start;font-size:0.68rem;color:var(--accent2);font-weight:700;border-left:1px solid #222;padding-left:6px}
 .tl-body{position:relative}

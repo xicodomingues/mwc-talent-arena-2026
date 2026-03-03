@@ -540,7 +540,8 @@ function renderTimeline() {
     minT = Math.floor(minT / 30) * 30;
     maxT = Math.ceil(maxT / 30) * 30;
 
-    const bodyW = (maxT - minT) * ppm;
+    const padLeft = 10;
+    const bodyW = (maxT - minT) * ppm + padLeft;
     const totalW = labelW + bodyW;
     const bodyH = stagesPresent.length * rowH;
     const stageIdx = {};
@@ -550,7 +551,7 @@ function renderTimeline() {
 
     // Time header
     html += `<div class="tl-header">`;
-    html += `<div class="tl-header-corner" style="width:${labelW}px;min-width:${labelW}px"></div>`;
+    html += `<div class="tl-header-corner" style="width:${labelW + padLeft}px;min-width:${labelW + padLeft}px"></div>`;
     for (let t = minT; t < maxT; t += 30) {
       const w = 30 * ppm;
       const label = Math.floor(t / 60) + ":" + String(t % 60).padStart(2, "0");
@@ -564,11 +565,11 @@ function renderTimeline() {
     // Gridlines overlay (behind rows)
     html += `<div class="tl-gridlines" style="position:absolute;top:0;left:0;width:100%;height:${bodyH}px;pointer-events:none">`;
     for (let t = minT; t <= maxT; t += 30) {
-      const x = labelW + (t - minT) * ppm;
+      const x = labelW + padLeft + (t - minT) * ppm;
       html += `<div class="tl-gridline" style="left:${x}px;top:0;height:${bodyH}px"></div>`;
     }
     if (isEventMonth && nowDay == day && nowM >= minT && nowM <= maxT) {
-      const nowX = labelW + (nowM - minT) * ppm;
+      const nowX = labelW + padLeft + (nowM - minT) * ppm;
       html += `<div class="tl-now-line" style="left:${nowX}px;top:0;height:${bodyH}px"></div>`;
     }
     html += `</div>`;
@@ -590,7 +591,7 @@ function renderTimeline() {
         const [startStr, endStr] = s.time.split("-");
         let startM = parseTime(startStr), endM = parseTime(endStr);
         if (endM <= startM) endM = startM + 30;
-        const x = (startM - minT) * ppm;
+        const x = padLeft + (startM - minT) * ppm;
         const w = Math.max((endM - startM) * ppm - 4, 20);
         const isHidden = hiddenSessions.has(idx);
         const isHighlighted = highlightedSessions.has(idx);
