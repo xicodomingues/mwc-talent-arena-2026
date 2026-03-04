@@ -177,7 +177,7 @@ function init() {
 Object.assign(window, {
   switchDay, selectDay, setView, toggleShowHighlightedOnly, toggleShowHidden,
   toggleFilterPanel, clearSearch, closeModal, showModal,
-  restoreAll() { restoreAll(); buildStageChips(); updateFilterDot(); },
+  restoreAll() { restoreAll(); rebuildAllChips(); },
   toggleHighlight, toggleHide, toggleStage, toggleTag, toggleLang,
   toggleTheme, toggleAccess, toggleInterest,
   toggleCalStage, showExportPrompt, exportDay, applyFilters: filterAndRender,

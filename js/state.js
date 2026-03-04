@@ -198,12 +198,25 @@ export function toggleShowHidden() {
 export function restoreAll() {
   hiddenSessions.clear();
   localStorage.setItem(lsKey("hidden"), "[]");
-  for (const stage of calHiddenStages) activeStages.add(stage);
   calHiddenStages.clear();
   localStorage.setItem(lsKey("cal_stages"), "[]");
   showHidden = false;
   localStorage.setItem("showHidden", "false");
   document.getElementById("showHiddenBtn").classList.remove("active-hidden");
+
+  // Reset all filter sets to defaults
+  const stageOrder = sectionStageOrder();
+  activeStages.clear();
+  for (const s of stageOrder) activeStages.add(s);
+  if (section === "mwc") {
+    activeThemes.clear(); for (const t of ALL_MWC_THEMES) activeThemes.add(t);
+    activeAccess.clear(); for (const a of ALL_MWC_ACCESS) activeAccess.add(a);
+    activeInterests.clear(); for (const i of ALL_MWC_INTERESTS) activeInterests.add(i);
+  } else {
+    activeTags.clear(); for (const t of ALL_TAGS) activeTags.add(t);
+    activeLangs.clear(); for (const l of ALL_LANGS) activeLangs.add(l);
+  }
+
   updateHiddenCount();
   refresh();
 }
