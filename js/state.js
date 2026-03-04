@@ -190,6 +190,7 @@ export function toggleShowHidden() {
   showHidden = !showHidden;
   localStorage.setItem("showHidden", showHidden);
   document.getElementById("showHiddenBtn").classList.toggle("active-hidden", showHidden);
+  updateHiddenCount();
   refresh();
 }
 
@@ -202,6 +203,7 @@ export function restoreAll() {
   showHidden = false;
   localStorage.setItem("showHidden", "false");
   document.getElementById("showHiddenBtn").classList.remove("active-hidden");
+  updateHiddenCount();
   refresh();
 }
 
@@ -210,6 +212,8 @@ export function updateHiddenCount() {
   const count = countHiddenForDay(dayFilter);
   document.getElementById("hiddenBadge").textContent = count;
   document.getElementById("restoreAllBtn").style.display = (count && showHidden) ? "" : "none";
+  const topBtn = document.getElementById("restoreAllTopBtn");
+  if (topBtn) topBtn.style.display = (count && showHidden) ? "" : "none";
 }
 
 export function updateHighlightedCount() {
@@ -217,10 +221,8 @@ export function updateHighlightedCount() {
 }
 
 // ── Day switching ──
-export function switchDay() {
-  const days = sectionDays();
-  const idx = days.indexOf(parseInt(dayFilter));
-  dayFilter = String(days[(idx + 1) % days.length]);
+export function selectDay(val) {
+  dayFilter = String(val);
   scrollToNow = true;
   updateDayIndicator();
   updateHash(currentView);
@@ -229,8 +231,17 @@ export function switchDay() {
   refresh();
 }
 
+export function switchDay() {
+  const days = sectionDays();
+  const idx = days.indexOf(parseInt(dayFilter));
+  selectDay(days[(idx + 1) % days.length]);
+}
+
 export function updateDayIndicator() {
-  document.getElementById("dayIndicatorText").textContent = "Mar " + dayFilter;
+  const sel = document.getElementById("dayIndicator");
+  const days = sectionDays();
+  sel.innerHTML = days.map(d => `<option value="${d}"${String(d) === dayFilter ? ' selected' : ''}>Mar ${d}</option>`).join('');
+  sel.value = dayFilter;
 }
 
 // ── Migration: copy old keys to new prefixed format ──

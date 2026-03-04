@@ -21,10 +21,10 @@
 .view-icons button.active{background:var(--accent);color:#000;border-color:var(--accent);font-weight:700}
 .view-icons button svg{flex-shrink:0}
 
-/* Day indicator */
-.day-indicator{display:inline-flex;align-items:center;gap:0.3rem;background:var(--surface2);color:var(--accent2);border:1px solid color-mix(in srgb,var(--accent2) 40%,transparent);border-radius:var(--radius-sm);padding:0 0.6rem;height:36px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.15s;white-space:nowrap;margin-right:0.35rem}
-.day-indicator:hover{border-color:var(--accent2);background:color-mix(in srgb,var(--accent2) 10%,transparent)}
-.day-indicator svg{flex-shrink:0;opacity:0.6}
+/* Day indicator (select) */
+.day-indicator{appearance:none;-webkit-appearance:none;background:var(--surface2) url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' stroke='%23999' stroke-width='1.5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 4l3 3 3-3'/%3E%3C/svg%3E") no-repeat right 0.5rem center;color:var(--accent2);border:1px solid color-mix(in srgb,var(--accent2) 40%,transparent);border-radius:var(--radius-sm);padding:0 1.6rem 0 0.6rem;height:36px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.15s;white-space:nowrap;margin-right:0.35rem;font-family:inherit}
+.day-indicator:hover{border-color:var(--accent2);background-color:color-mix(in srgb,var(--accent2) 10%,transparent)}
+.day-indicator option{background:var(--surface);color:var(--text)}
 
 .topbar-spacer{flex:1}
 
@@ -53,3 +53,8 @@
 .search-clear{display:none;background:none;border:none;color:var(--text3);font-size:1.1rem;cursor:pointer;padding:0 0.15rem;line-height:1;transition:color 0.15s}
 .search-clear:hover{color:#fff}
 .topbar-search:has(input:not(:placeholder-shown)) .search-clear{display:block}
+
+/* Restore All (topbar) */
+.restore-all-top{color:var(--color-error);border-color:var(--color-error);background:color-mix(in srgb,var(--color-error) 12%,transparent);gap:0.35rem}
+.restore-all-top:hover{background:color-mix(in srgb,var(--color-error) 22%,transparent)}
+.restore-all-label{font-size:0.75rem;font-weight:600;white-space:nowrap}

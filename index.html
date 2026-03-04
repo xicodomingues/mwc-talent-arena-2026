@@ -42,10 +42,10 @@
 <!-- ── Top Bar ── -->
 <div class="topbar">
   <div class="topbar-inner">
-    <button class="day-indicator" id="dayIndicator" onclick="switchDay()">
-      <span id="dayIndicatorText">Mar 3</span>
-      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4l3 3 3-3"/></svg>
-    </button>
+    <select class="day-indicator" id="dayIndicator" onchange="selectDay(this.value)">
+      <option value="3">Mar 3</option>
+      <option value="4" selected>Mar 4</option>
+    </select>
 
     <div class="view-icons">
       <button data-view="timeline" onclick="setView('timeline')" title="Timeline view">
@@ -71,6 +71,10 @@
     <button id="showHiddenBtn" class="topbar-action" onclick="toggleShowHidden()" title="Hidden sessions">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 8s2.5-5 7-5 7 5 7 5-2.5 5-7 5-7-5-7-5z"/><circle cx="8" cy="8" r="2.5"/><line x1="2" y1="14" x2="14" y2="2"/></svg>
       <span class="action-badge" id="hiddenBadge"></span>
+    </button>
+    <button id="restoreAllTopBtn" class="topbar-action restore-all-top" onclick="restoreAll()" title="Restore all hidden" style="display:none">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8a6 6 0 1 1 1.8 4.3"/><path d="M2 12V8h4"/></svg>
+      <span class="restore-all-label">Restore</span>
     </button>
 
     <button id="filterToggleBtn" class="filter-trigger" onclick="toggleFilterPanel()">

@@ -2,7 +2,7 @@ import {
   currentView, scrollToNow, setCurrentView, setScrollToNow,
   setSessions, buildSearchIndex, setRefreshFn, updateHash,
   updateDayIndicator, updateHiddenCount, updateHighlightedCount,
-  switchDay, toggleShowHidden, toggleShowHighlightedOnly, restoreAll,
+  switchDay, selectDay, toggleShowHidden, toggleShowHighlightedOnly, restoreAll,
   toggleHide, toggleHighlight, calHiddenStages, activeStages, showHidden,
   SESSIONS, filteredIndices, hiddenSessions, highlightedSessions,
   dayFilter, searchQuery, showHighlightedOnly, activeLangs, activeTags,
@@ -175,7 +175,7 @@ function init() {
 
 // ── Expose functions to window for onclick handlers ──
 Object.assign(window, {
-  switchDay, setView, toggleShowHighlightedOnly, toggleShowHidden,
+  switchDay, selectDay, setView, toggleShowHighlightedOnly, toggleShowHidden,
   toggleFilterPanel, clearSearch, closeModal, showModal, restoreAll,
   toggleHighlight, toggleHide, toggleStage, toggleTag, toggleLang,
   toggleTheme, toggleAccess, toggleInterest,
@@ -197,7 +197,7 @@ Object.defineProperty(window, '__test', {
     get scrollToNow() { return scrollToNow; },
     get section() { return section; },
     searchIndex,
-    setDayFilter, setShowHidden, setCurrentView, setScrollToNow, setSearchQuery, setSection,
+    selectDay, setDayFilter, setShowHidden, setCurrentView, setScrollToNow, setSearchQuery, setSection,
     saveHidden, saveHighlighted, saveCalHiddenStages,
     parseTime, esc, nowInBarcelona, isStageFullyHidden,
     STAGE_ORDER, ALL_TAGS, ALL_LANGS,

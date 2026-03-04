@@ -6,7 +6,8 @@
   .topbar-search{width:100%;order:10}
   .topbar-search:focus-within{width:100%}
   .filter-trigger-label{display:none}
-  .day-indicator{height:32px;font-size:0.75rem;padding:0 0.5rem;margin-right:0.2rem}
+  .day-indicator{height:32px;font-size:0.75rem;padding:0 1.4rem 0 0.4rem;margin-right:0.2rem}
+  .restore-all-label{display:none}
   .topbar-action,.filter-trigger{height:32px;min-width:32px;padding:0 0.4rem;font-size:0.7rem}
   .view-icons button{height:32px;font-size:0.7rem}
   .filter-panel.open{flex-direction:column;gap:0.5rem}

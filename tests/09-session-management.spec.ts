@@ -97,6 +97,15 @@ test.describe('Session management', () => {
     expect(parseInt(badge || '0')).toBeGreaterThan(0);
   });
 
+  test('topbar restore button appears when viewing hidden items', async ({ page }) => {
+    await expect(page.locator('#restoreAllTopBtn')).toBeHidden();
+    await page.evaluate(() => (window as any).toggleHide(100));
+    await page.evaluate(() => (window as any).toggleShowHidden());
+    await expect(page.locator('#restoreAllTopBtn')).toBeVisible();
+    await page.locator('#restoreAllTopBtn').click();
+    await expect(page.locator('#restoreAllTopBtn')).toBeHidden();
+  });
+
   test('hidden count includes stage-hidden sessions', async ({ page }) => {
     await page.evaluate(() => {
       (window as any).toggleCalStage('Gaming');

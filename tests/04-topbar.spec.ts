@@ -5,20 +5,20 @@ import { LS_HIGHLIGHTED, LS_HIDDEN } from './helpers/constants';
 test.describe('Top bar', () => {
   test('day indicator shows Mar 4 by default', async ({ page }) => {
     await loadApp(page);
-    await expect(page.locator('#dayIndicatorText')).toHaveText('Mar 4');
+    await expect(page.locator('#dayIndicator')).toHaveValue('4');
   });
 
-  test('day indicator click toggles to Mar 3', async ({ page }) => {
+  test('day indicator selects Mar 3', async ({ page }) => {
     await loadApp(page);
-    await page.locator('#dayIndicator').click();
-    await expect(page.locator('#dayIndicatorText')).toHaveText('Mar 3');
+    await page.locator('#dayIndicator').selectOption('3');
+    await expect(page.locator('#dayIndicator')).toHaveValue('3');
   });
 
-  test('day indicator double-click returns to Mar 4', async ({ page }) => {
+  test('day indicator selects back to Mar 4', async ({ page }) => {
     await loadApp(page);
-    await page.locator('#dayIndicator').click();
-    await page.locator('#dayIndicator').click();
-    await expect(page.locator('#dayIndicatorText')).toHaveText('Mar 4');
+    await page.locator('#dayIndicator').selectOption('3');
+    await page.locator('#dayIndicator').selectOption('4');
+    await expect(page.locator('#dayIndicator')).toHaveValue('4');
   });
 
   test('view switcher: clicking each button switches view', async ({ page }) => {
@@ -44,7 +44,7 @@ test.describe('Top bar', () => {
     // Day 4 (default) should show 2
     await expect(page.locator('#starBadge')).toHaveText('2');
 
-    await page.locator('#dayIndicator').click(); // day 3
+    await page.locator('#dayIndicator').selectOption('3'); // day 3
     await expect(page.locator('#starBadge')).toHaveText('1');
   });
 
@@ -58,7 +58,7 @@ test.describe('Top bar', () => {
     await loadApp(page, { localStorage: { [LS_HIDDEN]: '[0,100,105]' } });
     await expect(page.locator('#hiddenBadge')).toHaveText('2');
 
-    await page.locator('#dayIndicator').click(); // day 3
+    await page.locator('#dayIndicator').selectOption('3'); // day 3
     await expect(page.locator('#hiddenBadge')).toHaveText('1');
   });
 
