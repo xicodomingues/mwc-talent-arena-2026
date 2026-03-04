@@ -198,6 +198,7 @@ export function toggleShowHidden() {
 export function restoreAll() {
   hiddenSessions.clear();
   localStorage.setItem(lsKey("hidden"), "[]");
+  for (const stage of calHiddenStages) activeStages.add(stage);
   calHiddenStages.clear();
   localStorage.setItem(lsKey("cal_stages"), "[]");
   showHidden = false;

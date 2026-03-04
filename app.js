@@ -176,7 +176,8 @@ function init() {
 // ── Expose functions to window for onclick handlers ──
 Object.assign(window, {
   switchDay, selectDay, setView, toggleShowHighlightedOnly, toggleShowHidden,
-  toggleFilterPanel, clearSearch, closeModal, showModal, restoreAll,
+  toggleFilterPanel, clearSearch, closeModal, showModal,
+  restoreAll() { restoreAll(); buildStageChips(); updateFilterDot(); },
   toggleHighlight, toggleHide, toggleStage, toggleTag, toggleLang,
   toggleTheme, toggleAccess, toggleInterest,
   toggleCalStage, showExportPrompt, exportDay, applyFilters: filterAndRender,
