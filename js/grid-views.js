@@ -162,7 +162,7 @@ export function renderTimeline() {
   if (!filteredIndices.length) { el.innerHTML = '<p style="text-align:center;color:var(--text3);padding:3rem">No sessions match your filters.</p>'; return; }
 
   const ppm = 5;
-  const rowH = 44;
+  const rowH = 38;
   const labelW = 110;
   const nowState = getNowState();
 
