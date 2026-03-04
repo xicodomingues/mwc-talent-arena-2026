@@ -1,13 +1,13 @@
 /* ── Modal ── */
-.modal-backdrop{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.65);z-index:200;justify-content:center;align-items:flex-end}
+.modal-backdrop{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.65);z-index:var(--z-modal);justify-content:center;align-items:flex-end}
 .modal-backdrop.open{display:flex}
 .modal{background:var(--surface2);border-radius:var(--radius) var(--radius) 0 0;padding:1.25rem;width:100%;max-height:85dvh;overflow-y:auto;position:relative}
 .modal-x{position:absolute;top:0.6rem;right:0.75rem;background:none;border:none;color:var(--text3);font-size:1.3rem;cursor:pointer;width:36px;height:36px;display:flex;align-items:center;justify-content:center;border-radius:var(--radius-sm);transition:all 0.15s}
 .modal-x:hover{color:#fff;background:var(--surface3)}
 .modal-actions{position:absolute;top:0.6rem;right:3rem;display:flex;gap:0.3rem}
-.modal-actions .card-action{width:32px;height:32px;border:1px solid #444}
+.modal-actions .card-action{width:32px;height:32px;border:1px solid var(--border-dark)}
 .modal-actions .card-action svg{width:15px;height:15px}
-.modal-stage{font-size:0.75rem;font-weight:700;padding:0.2rem 0.65rem;border-radius:999px;display:inline-block;margin-bottom:0.5rem}
+.modal-stage{font-size:0.75rem;font-weight:700;padding:0.2rem 0.65rem;border-radius:var(--radius-pill);display:inline-block;margin-bottom:0.5rem}
 .modal-title{font-size:1.15rem;font-weight:700;color:#fff;margin-bottom:0.35rem;padding-right:2.5rem}
 .modal-time{font-size:0.85rem;color:var(--accent2);margin-bottom:0.75rem}
 .modal-speakers{margin-bottom:0.75rem;line-height:1.7}
@@ -15,17 +15,17 @@
 .modal-speaker-role{color:var(--text2);font-size:0.85rem}
 .modal-desc{font-size:0.88rem;color:var(--text2);line-height:1.6;margin-bottom:0.75rem}
 .modal-meta{display:flex;gap:0.5rem;flex-wrap:wrap}
-.modal-meta span{font-size:0.75rem;padding:0.2rem 0.5rem;border-radius:999px;background:var(--surface3);color:var(--text2)}
+.modal-meta span{font-size:0.75rem;padding:0.2rem 0.5rem;border-radius:var(--radius-pill);background:var(--surface3);color:var(--text2)}
 .modal-meta+.modal-meta{margin-top:0.4rem}
 .modal-link-btn{display:inline-block;padding:0.4rem 0.9rem;border:1px solid var(--accent2);border-radius:var(--radius-sm);color:var(--accent2);font-size:0.82rem;text-decoration:none;transition:all 0.15s}
 .modal-link-btn:hover{background:color-mix(in srgb,var(--accent2) 15%,transparent)}
 
 /* ── Export Prompt ── */
-.export-prompt{display:none;position:fixed;bottom:2.8rem;left:50%;transform:translateX(-50%);background:var(--surface2);border:1px solid #333;border-radius:var(--radius);padding:0.85rem 1rem;z-index:150;width:min(340px,calc(100vw - 2rem));box-shadow:0 -4px 20px rgba(0,0,0,0.5)}
+.export-prompt{display:none;position:fixed;bottom:2.8rem;left:50%;transform:translateX(-50%);background:var(--surface2);border:1px solid var(--border-mid);border-radius:var(--radius);padding:0.85rem 1rem;z-index:var(--z-prompt);width:min(340px,calc(100vw - 2rem));box-shadow:0 -4px 20px rgba(0,0,0,0.5)}
 .export-prompt.open{display:block}
 .export-summary{font-size:0.8rem;color:var(--text2);margin-bottom:0.6rem;line-height:1.4}
 .export-buttons{display:flex;gap:0.4rem}
-.export-btn{flex:1;padding:0.45rem 0.5rem;border:1px solid #444;border-radius:var(--radius-sm);background:var(--surface3);color:var(--text);font-size:0.78rem;cursor:pointer;transition:all 0.15s;white-space:nowrap}
+.export-btn{flex:1;padding:0.45rem 0.5rem;border:1px solid var(--border-dark);border-radius:var(--radius-sm);background:var(--surface3);color:var(--text);font-size:0.78rem;cursor:pointer;transition:all 0.15s;white-space:nowrap}
 .export-btn:hover{border-color:var(--accent2);color:var(--accent2)}
 .export-btn.current{border-color:var(--accent2);color:var(--accent2)}
 .export-btn-both{background:color-mix(in srgb,var(--accent2) 12%,var(--surface3))}

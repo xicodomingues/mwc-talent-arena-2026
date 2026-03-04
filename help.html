@@ -4,86 +4,81 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Help – Hide & Show Sessions</title>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>❓</text></svg>">
+<meta name="description" content="Learn how to hide, star, and restore sessions in the MWC Talent Arena 2026 schedule viewer.">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📅</text></svg>">
+<link rel="stylesheet" href="css/pages.css">
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-:root{--bg:#0a0a0a;--surface:#141414;--surface2:#1e1e1e;--surface3:#282828;--text:#e0e0e0;--text2:#aaa;--text3:#777;--accent:#FFD700;--accent2:#00D4FF;--radius:10px;--radius-sm:6px}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);min-height:100dvh;padding:1.5rem 1rem 3rem}
-.container{max-width:640px;margin:0 auto}
-h1{font-size:1.4rem;color:var(--accent);margin-bottom:0.5rem}
-.back{display:inline-block;color:var(--accent2);text-decoration:none;font-size:0.85rem;margin-bottom:1.5rem}
-.back:hover{text-decoration:underline}
+h2{display:flex;align-items:center;gap:0.5rem}
+h2 .step{background:var(--accent2);color:#000;font-size:0.7rem;font-weight:700;width:22px;height:22px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
 p.intro{color:var(--text2);font-size:0.9rem;margin-bottom:2rem;line-height:1.5}
 section{margin-bottom:2rem}
-h2{font-size:1rem;color:var(--accent2);margin-bottom:0.5rem;display:flex;align-items:center;gap:0.5rem}
-h2 .step{background:var(--accent2);color:#000;font-size:0.7rem;font-weight:700;width:22px;height:22px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
-p{color:var(--text2);font-size:0.85rem;line-height:1.6;margin-bottom:0.75rem}
 
 /* Mock UI elements */
-.mock{background:var(--surface);border-radius:var(--radius);padding:1rem;margin:0.75rem 0;border:1px solid #222}
+.mock{background:var(--surface);border-radius:var(--radius);padding:1rem;margin:0.75rem 0;border:1px solid var(--border-light)}
 .mock-card{background:var(--surface2);border-radius:var(--radius-sm);padding:0.75rem;border-left:4px solid var(--accent);position:relative}
 .mock-card .title{font-size:0.85rem;font-weight:600;color:#fff}
 .mock-card .meta{font-size:0.75rem;color:var(--text3);margin-top:0.25rem}
 .mock-btn{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:var(--radius-sm);font-size:0.85rem;position:absolute;top:0.5rem;right:0.5rem}
 .mock-btn.hide{background:none;color:var(--text3);border:1px dashed var(--text3)}
-.mock-btn.hide.highlight{background:#E74C3C;color:#fff;border:none;box-shadow:0 0 8px rgba(231,76,60,0.5);animation:pulse 1.5s infinite}
+.mock-btn.hide.highlight{background:var(--color-error);color:#fff;border:none;box-shadow:0 0 8px rgba(231,76,60,0.5);animation:pulse 1.5s infinite}
 @keyframes pulse{0%,100%{box-shadow:0 0 8px rgba(231,76,60,0.5)}50%{box-shadow:0 0 16px rgba(231,76,60,0.8)}}
 
-.mock-modal{background:var(--surface2);border-radius:var(--radius);padding:1rem;border:1px solid #444;position:relative}
+.mock-modal{background:var(--surface2);border-radius:var(--radius);padding:1rem;border:1px solid var(--border-dark);position:relative}
 .mock-modal .title{font-size:1rem;font-weight:600;color:#fff;margin-bottom:0.25rem;padding-right:4rem}
 .mock-modal .meta{font-size:0.8rem;color:var(--text3)}
 .mock-modal-btns{position:absolute;top:0.75rem;right:0.75rem;display:flex;gap:0.35rem}
 .mock-modal-btns span{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:var(--radius-sm);font-size:0.9rem;cursor:default}
 .mock-modal-btns .hide-btn{color:var(--text3);border:1px dashed var(--text3)}
-.mock-modal-btns .hide-btn.highlight{background:#E74C3C;color:#fff;border:none;box-shadow:0 0 8px rgba(231,76,60,0.5)}
+.mock-modal-btns .hide-btn.highlight{background:var(--color-error);color:#fff;border:none;box-shadow:0 0 8px rgba(231,76,60,0.5)}
 .mock-modal-btns .close-btn{color:var(--text3)}
 
 .mock-topbar{display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap}
-.mock-pill{background:var(--surface2);color:var(--text2);border:1px solid #333;padding:0.3rem 0.6rem;border-radius:var(--radius-sm);font-size:0.75rem;white-space:nowrap}
-.mock-pill.active{background:#E74C3C33;color:#E74C3C;border-color:#E74C3C}
-.mock-pill.restore{background:#27ae6033;color:#27ae60;border-color:#27ae60}
+.mock-pill{background:var(--surface2);color:var(--text2);border:1px solid var(--border-mid);padding:0.3rem 0.6rem;border-radius:var(--radius-sm);font-size:0.75rem;white-space:nowrap}
+.mock-pill.active{background:color-mix(in srgb,var(--color-error) 20%,transparent);color:var(--color-error);border-color:var(--color-error)}
+.mock-pill.restore{background:color-mix(in srgb,#27ae60 20%,transparent);color:#27ae60;border-color:#27ae60}
 .mock-pill.highlight{box-shadow:0 0 8px rgba(231,76,60,0.5);animation:pulse 1.5s infinite}
 
 .mock-hidden-card{background:var(--surface2);border-radius:var(--radius-sm);padding:0.75rem;border-left:4px dashed var(--text3);opacity:0.4;position:relative}
 .mock-hidden-card .title{font-size:0.85rem;font-weight:600;color:#fff;text-decoration:line-through}
 .mock-hidden-card .meta{font-size:0.75rem;color:var(--text3);margin-top:0.25rem}
 
-.arrow{color:#E74C3C;font-size:0.8rem;margin:0.5rem 0;display:flex;align-items:center;gap:0.4rem}
-.arrow::before{content:'→';font-size:1.1rem}
+.arrow{color:var(--color-error);font-size:0.8rem;margin:0.5rem 0;display:flex;align-items:center;gap:0.4rem}
+.arrow::before{content:'\2192';font-size:1.1rem}
 
-kbd{background:var(--surface3);color:var(--text);padding:0.15rem 0.4rem;border-radius:4px;font-size:0.8rem;border:1px solid #444;font-family:inherit}
+kbd{background:var(--surface3);color:var(--text);padding:0.15rem 0.4rem;border-radius:4px;font-size:0.8rem;border:1px solid var(--border-dark);font-family:inherit}
 </style>
 </head>
 <body>
 <div class="container">
-  <a class="back" href="index.html">← Back to schedule</a>
+  <a class="back" href="index.html">&larr; Back to schedule</a>
   <h1>Hiding & Restoring Sessions</h1>
   <p class="intro">You can hide sessions you're not interested in to declutter your view. Hidden sessions are saved in your browser and persist across visits.</p>
 
   <section>
     <h2><span class="step">1</span> Hide from the list</h2>
-    <p>Each card has a small <kbd>−</kbd> button in the top-right corner. Click it to hide that session.</p>
+    <p>Each card has a small <kbd>&minus;</kbd> button in the top-right corner. Click it to hide that session.</p>
     <div class="mock">
       <div class="mock-card">
-        <span class="mock-btn hide highlight">−</span>
+        <span class="mock-btn hide highlight">&minus;</span>
         <div class="title">Example Session Title</div>
-        <div class="meta">Speaker Name · 09:30-10:00</div>
+        <div class="meta">Speaker Name &middot; 09:30-10:00</div>
       </div>
     </div>
   </section>
 
   <section>
     <h2><span class="step">2</span> Hide or star from the popup</h2>
-    <p>When you click a card to open its detail popup, you'll see three buttons in the top-right corner: <kbd>★</kbd> (star), <kbd>−</kbd> (hide), and <kbd>×</kbd> (close).</p>
+    <p>When you click a card to open its detail popup, you'll see three buttons in the top-right corner: <kbd>&starf;</kbd> (star), <kbd>&minus;</kbd> (hide), and <kbd>&times;</kbd> (close).</p>
     <div class="mock">
       <div class="mock-modal">
         <div class="mock-modal-btns">
-          <span class="hide-btn" style="color:var(--accent);border:1px solid var(--accent)">★</span>
-          <span class="hide-btn highlight">−</span>
-          <span class="close-btn">×</span>
+          <span class="hide-btn" style="color:var(--accent);border:1px solid var(--accent)">&starf;</span>
+          <span class="hide-btn highlight">&minus;</span>
+          <span class="close-btn">&times;</span>
         </div>
         <div class="title">Example Session Title</div>
-        <div class="meta">Speaker Name · XPRO Stage · 09:30-10:00</div>
+        <div class="meta">Speaker Name &middot; XPRO Stage &middot; 09:30-10:00</div>
       </div>
     </div>
     <p>Starred sessions get a gold border and can be filtered using the <kbd>Starred</kbd> button in the top bar.</p>
@@ -104,7 +99,7 @@ kbd{background:var(--surface3);color:var(--text);padding:0.15rem 0.4rem;border-r
     <div class="mock">
       <div class="mock-hidden-card">
         <div class="title">A Hidden Session</div>
-        <div class="meta">Speaker · 10:00-10:30</div>
+        <div class="meta">Speaker &middot; 10:00-10:30</div>
       </div>
     </div>
   </section>
@@ -118,12 +113,12 @@ kbd{background:var(--surface3);color:var(--text);padding:0.15rem 0.4rem;border-r
         <span class="mock-pill restore highlight">Restore all</span>
       </div>
     </div>
-    <p>You can also restore individual sessions by clicking on them while in "show hidden" mode, then hiding them again (the <kbd>−</kbd> button toggles).</p>
+    <p>You can also restore individual sessions by clicking on them while in "show hidden" mode, then hiding them again (the <kbd>&minus;</kbd> button toggles).</p>
   </section>
 
   <section>
     <h2><span class="step">5</span> Hide stages in Calendar & Timeline</h2>
-    <p>In the <strong>Calendar</strong> view, click a stage column header to hide that entire stage. In the <strong>Timeline</strong> view, click a stage name in the legend. Hidden stages appear in a row below the visible ones — click again to restore.</p>
+    <p>In the <strong>Calendar</strong> view, click a stage column header to hide that entire stage. In the <strong>Timeline</strong> view, click a stage name in the legend. Hidden stages appear in a row below the visible ones &mdash; click again to restore.</p>
     <p>Stages are also auto-hidden when all their sessions have been individually hidden.</p>
   </section>
   <section>
@@ -133,7 +128,7 @@ kbd{background:var(--surface3);color:var(--text);padding:0.15rem 0.4rem;border-r
     <p>You can choose to export <strong>March 3 only</strong>, <strong>March 4 only</strong>, or <strong>both days</strong>. The current day is highlighted in the prompt.</p>
   </section>
 
-  <div style="border-top:1px solid #222;margin-top:2rem;padding-top:1rem;font-size:0.75rem;color:var(--text3);text-align:center"><a href="index.html" style="color:var(--text3);text-decoration:none">Schedule</a> &middot; <a href="help.html" style="color:var(--text3);text-decoration:none">Help</a> &middot; <a href="about.html" style="color:var(--text3);text-decoration:none">About</a></div>
+  <div class="page-footer"><a href="index.html">Schedule</a> &middot; <a href="help.html">Help</a> &middot; <a href="about.html">About</a></div>
 </div>
 </body>
 </html>

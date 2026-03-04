@@ -4,6 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MWC 2026 – Schedule</title>
+<meta name="description" content="Interactive schedule viewer for MWC 2026 (Talent Arena & MWC Barcelona). Filter sessions by stage, topic, and language. Three views: List, Calendar, Timeline.">
+<meta name="theme-color" content="#0a0a0a">
+<meta property="og:title" content="MWC 2026 – Schedule">
+<meta property="og:description" content="Interactive schedule viewer for MWC 2026. Filter sessions, star favorites, export to calendar.">
+<meta property="og:url" content="https://xicodomingues.github.io/mwc-talent-arena-2026/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MWC 2026 Schedule">
+<meta name="twitter:description" content="Filter and view sessions in three interactive views. Star favorites, hide uninteresting talks, export to .ics.">
+<link rel="canonical" href="https://xicodomingues.github.io/mwc-talent-arena-2026/">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📅</text></svg>">
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/topbar.css">
@@ -118,7 +128,7 @@
 <footer class="site-footer"><a href="#" class="export-trigger" onclick="showExportPrompt(); return false">Export calendar (.ics)</a> &middot; <a href="help.html">Help</a> &middot; <a href="about.html">About</a> &middot; <a href="https://github.com/xicodomingues/mwc-talent-arena-2026" target="_blank" rel="noopener">GitHub</a></footer>
 
 <!-- ── Modal ── -->
-<div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+<div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-label="Session details">
   <div class="modal" id="modal">
     <button class="modal-x" onclick="closeModal()" title="Close">&times;</button>
     <div id="modalBody"></div>

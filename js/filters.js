@@ -22,7 +22,7 @@ function buildChips(containerId, items, activeSet, toggleFnName, options = {}) {
     const style = color ? ` style="--chip-color:${color}"` : "";
     const dot = color ? `<span class="chip-dot" style="background:${color}"></span>` : "";
     const prefix = options.prefixMap?.[item] ? options.prefixMap[item] + " " : "";
-    html += `<button class="filter-chip${on}"${style} onclick="${toggleFnName}('${esc(item)}')">${dot}${prefix}${esc(item)}</button>`;
+    html += `<button class="filter-chip${on}" aria-pressed="${activeSet.has(item)}"${style} onclick="${toggleFnName}('${esc(item)}')">${dot}${prefix}${esc(item)}</button>`;
   }
   el.innerHTML = html;
 }
@@ -120,7 +120,6 @@ export function clearSearch() {
 // ── Rebuild all chips on section switch ──
 export function rebuildAllChips() {
   const isMwc = section === "mwc";
-  // Toggle filter group visibility
   document.getElementById("tagFilterGroup").style.display = isMwc ? "none" : "";
   document.getElementById("langFilterGroup").style.display = isMwc ? "none" : "";
   document.getElementById("themeFilterGroup").style.display = isMwc ? "" : "none";
@@ -139,31 +138,31 @@ export function rebuildAllChips() {
   updateFilterDot();
 }
 
-// ── Apply filters (computes filteredIndices, does NOT render) ──
-export function applyFilters() {
-  const searchQuery = document.getElementById("searchBox").value.toLowerCase().trim();
-  setSearchQuery(searchQuery);
-
+// ── Shared filter logic (used by applyFilters and ICS export) ──
+export function filterSessions(forDay) {
+  const q = forDay !== undefined ? (document.getElementById("searchBox")?.value?.toLowerCase().trim() || "") : document.getElementById("searchBox").value.toLowerCase().trim();
   const stageOrder = sectionStageOrder();
   const indices = [];
   for (let i = 0; i < SESSIONS.length; i++) {
     const s = SESSIONS[i];
     if (!showHidden && hiddenSessions.has(i)) continue;
     if (showHighlightedOnly && currentView === "list" && !highlightedSessions.has(i)) continue;
-    if (dayFilter && String(s.day) !== dayFilter) continue;
+    if (forDay !== undefined) {
+      if (forDay && s.day !== forDay) continue;
+    } else {
+      if (dayFilter && String(s.day) !== dayFilter) continue;
+    }
 
     // Stage filter
     if (activeStages.size < stageOrder.length && !activeStages.has(s.stage) && !(showHidden && calHiddenStages.has(s.stage))) continue;
 
     if (section === "ta") {
-      // TA-specific filters
       if (activeLangs.size < ALL_LANGS.length && s.lang && !activeLangs.has(s.lang)) continue;
       if (activeTags.size < ALL_TAGS.length) {
         const sTags = s.tags || [];
         if (sTags.length && !sTags.some(t => activeTags.has(t))) continue;
       }
     } else {
-      // MWC-specific filters
       if (activeThemes.size < ALL_MWC_THEMES.length && s.theme && !activeThemes.has(s.theme)) continue;
       if (activeAccess.size < ALL_MWC_ACCESS.length && s.access && !activeAccess.has(s.access)) continue;
       if (activeInterests.size < ALL_MWC_INTERESTS.length) {
@@ -172,9 +171,14 @@ export function applyFilters() {
       }
     }
 
-    if (searchQuery && !searchIndex[i].includes(searchQuery)) continue;
+    if (q && !searchIndex[i].includes(q)) continue;
     indices.push(i);
   }
+  return indices;
+}
 
-  setFilteredIndices(indices);
+// ── Apply filters (computes filteredIndices, does NOT render) ──
+export function applyFilters() {
+  setSearchQuery(document.getElementById("searchBox").value.toLowerCase().trim());
+  setFilteredIndices(filterSessions());
 }

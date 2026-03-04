@@ -1,10 +1,10 @@
-import { STAGE_COLORS, LANG_FLAGS, LANG_CLASS, MWC_STAGE_COLORS } from './constants.js';
+import { STAGE_COLORS, LANG_FLAGS, LANG_CLASS, MWC_STAGE_COLORS, STAR_SVG, EYE_SVG, EYE_OFF_SVG, NO_RESULTS_HTML } from './constants.js';
 import { esc } from './utils.js';
 import { SESSIONS, filteredIndices, hiddenSessions, highlightedSessions, section } from './state.js';
 
 export function renderList() {
   const el = document.getElementById("content");
-  if (!filteredIndices.length) { el.innerHTML = '<p style="text-align:center;color:var(--text3);padding:3rem">No sessions match your filters.</p>'; return; }
+  if (!filteredIndices.length) { el.innerHTML = NO_RESULTS_HTML; return; }
 
   const grouped = {};
   for (const idx of filteredIndices) {
@@ -15,7 +15,7 @@ export function renderList() {
   }
 
   const keys = Object.keys(grouped).sort();
-  if (!keys.length) { el.innerHTML = '<p style="text-align:center;color:var(--text3);padding:3rem">No sessions match your filters.</p>'; return; }
+  if (!keys.length) { el.innerHTML = NO_RESULTS_HTML; return; }
   let html = "";
   let lastDay = null;
   for (const k of keys) {
@@ -40,14 +40,13 @@ function cardHTML(idx) {
   const isHighlighted = highlightedSessions.has(idx);
   let html = `<div class="card${isHidden ? " hidden-session" : ""}${isHighlighted ? " highlighted-session" : ""}" style="--card-color:${c}" onclick="showModal(${idx})">`;
   html += `<div class="card-actions">`;
-  html += `<button class="card-action act-star${isHighlighted ? " on" : ""}" onclick="toggleHighlight(${idx},event)" title="${isHighlighted ? "Unstar" : "Star"}"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 1l2.2 4.5 5 .7-3.6 3.5.85 5L8 12.4l-4.45 2.3.85-5L.8 6.2l5-.7z"/></svg></button>`;
-  html += `<button class="card-action act-hide${isHidden ? " on" : ""}" onclick="toggleHide(${idx},event)" title="${isHidden ? "Restore" : "Hide"}"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">${isHidden ? '<path d="M1 8s2.5-5 7-5 7 5 7 5-2.5 5-7 5-7-5-7-5z"/><circle cx="8" cy="8" r="2.5"/>' : '<path d="M1 8s2.5-5 7-5 7 5 7 5-2.5 5-7 5-7-5-7-5z"/><circle cx="8" cy="8" r="2.5"/><line x1="2" y1="14" x2="14" y2="2"/>'}</svg></button>`;
+  html += `<button class="card-action act-star${isHighlighted ? " on" : ""}" onclick="toggleHighlight(${idx},event)" title="${isHighlighted ? "Unstar" : "Star"}">${STAR_SVG}</button>`;
+  html += `<button class="card-action act-hide${isHidden ? " on" : ""}" onclick="toggleHide(${idx},event)" title="${isHidden ? "Restore" : "Hide"}">${isHidden ? EYE_SVG : EYE_OFF_SVG}</button>`;
   html += `</div>`;
   html += `<span class="card-stage">${esc(s.stage)}</span>`;
   html += `<div class="card-title">${esc(s.title)}</div>`;
 
   if (section === "mwc") {
-    // MWC: show hall, theme, access
     if (s.hall) html += `<div class="card-speakers">${esc(s.hall)}</div>`;
     if (s.company) html += `<div class="card-speakers">${esc(s.company)}</div>`;
     html += '<div class="card-meta">';
@@ -61,7 +60,6 @@ function cardHTML(idx) {
       html += '</div>';
     }
   } else {
-    // TA: existing layout
     const spk = s.speakers.map(sp => sp.name).join(", ");
     const co = s.company || "";
     const spkLine = [co, spk].filter(Boolean).join(" \u2013 ");

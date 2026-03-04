@@ -1,29 +1,25 @@
-import { STAGE_COLORS, LANG_FLAGS, MWC_STAGE_COLORS } from './constants.js';
+import { STAGE_COLORS, LANG_FLAGS, MWC_STAGE_COLORS, STAR_SVG, EYE_SVG, EYE_OFF_SVG } from './constants.js';
 import { esc } from './utils.js';
 import { SESSIONS, hiddenSessions, highlightedSessions, toggleHide, toggleHighlight, section } from './state.js';
 
 export function showModal(idx) {
   const s = SESSIONS[idx];
+  if (!s) return;
   const colors = section === "mwc" ? MWC_STAGE_COLORS : STAGE_COLORS;
   const c = colors[s.stage] || "#888";
   const mHighlighted = highlightedSessions.has(idx);
   const mHidden = hiddenSessions.has(idx);
-  const starSvg = '<svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 1l2.2 4.5 5 .7-3.6 3.5.85 5L8 12.4l-4.45 2.3.85-5L.8 6.2l5-.7z"/></svg>';
-  const hideSvg = mHidden
-    ? '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 8s2.5-5 7-5 7 5 7 5-2.5 5-7 5-7-5-7-5z"/><circle cx="8" cy="8" r="2.5"/></svg>'
-    : '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 8s2.5-5 7-5 7 5 7 5-2.5 5-7 5-7-5-7-5z"/><circle cx="8" cy="8" r="2.5"/><line x1="2" y1="14" x2="14" y2="2"/></svg>';
 
   let html = "";
   html += `<div class="modal-actions">`;
-  html += `<button class="card-action act-star${mHighlighted ? " on" : ""}" id="modalStarBtn" title="${mHighlighted ? "Unstar" : "Star"}">${starSvg}</button>`;
-  html += `<button class="card-action act-hide${mHidden ? " on" : ""}" id="modalHideBtn" title="${mHidden ? "Restore" : "Hide"}">${hideSvg}</button>`;
+  html += `<button class="card-action act-star${mHighlighted ? " on" : ""}" id="modalStarBtn" title="${mHighlighted ? "Unstar" : "Star"}">${STAR_SVG}</button>`;
+  html += `<button class="card-action act-hide${mHidden ? " on" : ""}" id="modalHideBtn" title="${mHidden ? "Restore" : "Hide"}">${mHidden ? EYE_SVG : EYE_OFF_SVG}</button>`;
   html += `</div>`;
   html += `<div class="modal-stage" style="color:${c};background:color-mix(in srgb,${c} 15%,transparent)">${esc(s.stage)}</div>`;
   html += `<div class="modal-title">${esc(s.title)}</div>`;
   html += `<div class="modal-time">${esc(s.time)} \u2022 March ${s.day}</div>`;
 
   if (section === "mwc") {
-    // MWC-specific modal content
     if (s.hall) html += `<div class="modal-time">${esc(s.hall)}</div>`;
     if (s.company) html += `<div class="modal-speakers"><div>${esc(s.company)}</div></div>`;
     if (s.description) html += `<div class="modal-desc">${esc(s.description)}</div>`;
@@ -43,7 +39,6 @@ export function showModal(idx) {
       html += `<div style="margin-top:0.75rem"><a href="${esc(s.url)}" target="_blank" rel="noopener" class="modal-link-btn">View on MWC Barcelona \u2192</a></div>`;
     }
   } else {
-    // TA modal content
     if (s.speakers.length) {
       html += '<div class="modal-speakers">';
       for (const sp of s.speakers) {

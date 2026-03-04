@@ -12,6 +12,7 @@
   .filter-panel.open{flex-direction:column;gap:0.5rem}
   .filter-group{gap:0.3rem}
   .filter-chip{font-size:0.68rem;padding:0.2rem 0.45rem}
+  .cal-hdr-hint{display:block}
 }
 @media(min-width:768px){
   .list-cards{grid-template-columns:repeat(auto-fill,minmax(340px,1fr))}

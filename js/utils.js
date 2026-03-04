@@ -9,6 +9,10 @@ export function parseTime(t) {
   return h * 60 + m;
 }
 
+export function formatTime(minutesSinceMidnight) {
+  return Math.floor(minutesSinceMidnight / 60) + ":" + String(minutesSinceMidnight % 60).padStart(2, "0");
+}
+
 export function nowInBarcelona() {
   const parts = new Intl.DateTimeFormat("en-GB", {
     timeZone: "Europe/Madrid",

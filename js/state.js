@@ -91,7 +91,31 @@ function lsKey(purpose) {
   return `${prefix}_${purpose}`;
 }
 
+// ── Helpers ──
 function safeGetJSON(key) { try { const v = JSON.parse(localStorage.getItem(key) || "[]"); return Array.isArray(v) ? v : []; } catch { return []; } }
+
+function toggleSetItem(set, item) {
+  if (set.has(item)) set.delete(item); else set.add(item);
+}
+
+export function countForDay(set, day) {
+  const d = parseInt(day);
+  let n = 0;
+  for (const i of set) {
+    if (SESSIONS[i] && SESSIONS[i].day === d) n++;
+  }
+  return n;
+}
+
+export function countHiddenForDay(day) {
+  const d = parseInt(day);
+  let count = 0;
+  for (let i = 0; i < SESSIONS.length; i++) {
+    if (SESSIONS[i].day !== d) continue;
+    if (hiddenSessions.has(i) || calHiddenStages.has(SESSIONS[i].stage)) count++;
+  }
+  return count;
+}
 
 // ── Hidden sessions (persisted per section) ──
 export const hiddenSessions = new Set();
@@ -110,7 +134,7 @@ export function saveHidden() {
 
 export function toggleHide(idx, evt) {
   if (evt) evt.stopPropagation();
-  if (hiddenSessions.has(idx)) hiddenSessions.delete(idx); else hiddenSessions.add(idx);
+  toggleSetItem(hiddenSessions, idx);
   saveHidden();
   refresh();
 }
@@ -132,7 +156,7 @@ export function saveHighlighted() {
 
 export function toggleHighlight(idx, evt) {
   if (evt) evt.stopPropagation();
-  if (highlightedSessions.has(idx)) highlightedSessions.delete(idx); else highlightedSessions.add(idx);
+  toggleSetItem(highlightedSessions, idx);
   saveHighlighted();
   refresh();
 }
@@ -141,16 +165,6 @@ export function toggleShowHighlightedOnly() {
   showHighlightedOnly = !showHighlightedOnly;
   document.getElementById("showHighlightedBtn").classList.toggle("active-star", showHighlightedOnly);
   refresh();
-}
-
-export function updateHighlightedCount() {
-  const badge = document.getElementById("starBadge");
-  const day = parseInt(dayFilter);
-  let n = 0;
-  for (const i of highlightedSessions) {
-    if (SESSIONS[i] && SESSIONS[i].day === day) n++;
-  }
-  badge.textContent = n;
 }
 
 // ── Calendar stage visibility (persisted per section) ──
@@ -176,7 +190,6 @@ export function toggleShowHidden() {
   showHidden = !showHidden;
   localStorage.setItem("showHidden", showHidden);
   document.getElementById("showHiddenBtn").classList.toggle("active-hidden", showHidden);
-  updateHiddenCount();
   refresh();
 }
 
@@ -189,20 +202,18 @@ export function restoreAll() {
   showHidden = false;
   localStorage.setItem("showHidden", "false");
   document.getElementById("showHiddenBtn").classList.remove("active-hidden");
-  updateHiddenCount();
   refresh();
 }
 
+// ── UI update helpers ──
 export function updateHiddenCount() {
-  const badge = document.getElementById("hiddenBadge");
-  const day = parseInt(dayFilter);
-  let count = 0;
-  for (let i = 0; i < SESSIONS.length; i++) {
-    if (SESSIONS[i].day !== day) continue;
-    if (hiddenSessions.has(i) || calHiddenStages.has(SESSIONS[i].stage)) count++;
-  }
-  badge.textContent = count;
+  const count = countHiddenForDay(dayFilter);
+  document.getElementById("hiddenBadge").textContent = count;
   document.getElementById("restoreAllBtn").style.display = (count && showHidden) ? "" : "none";
+}
+
+export function updateHighlightedCount() {
+  document.getElementById("starBadge").textContent = countForDay(highlightedSessions, dayFilter);
 }
 
 // ── Day switching ──

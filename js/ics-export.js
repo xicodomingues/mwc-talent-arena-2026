@@ -1,11 +1,5 @@
-import {
-  SESSIONS, searchIndex, filteredIndices, dayFilter,
-  showHidden, showHighlightedOnly,
-  hiddenSessions, highlightedSessions, calHiddenStages,
-  activeStages, activeTags, activeLangs, activeThemes, activeAccess, activeInterests,
-  searchQuery, currentView, section, sectionStageOrder, sectionDays
-} from './state.js';
-import { STAGE_ORDER, ALL_TAGS, ALL_LANGS, ALL_MWC_THEMES, ALL_MWC_ACCESS, ALL_MWC_INTERESTS } from './constants.js';
+import { SESSIONS, dayFilter, showHighlightedOnly, showHidden, section, sectionDays } from './state.js';
+import { filterSessions } from './filters.js';
 
 const VTIMEZONE = `BEGIN:VTIMEZONE\r\nTZID:Europe/Madrid\r\nBEGIN:STANDARD\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nTZNAME:CET\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nTZNAME:CEST\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE`;
 
@@ -77,38 +71,6 @@ function generateICS(indices) {
   return lines.join('\r\n');
 }
 
-function computeExportIndices(forDay) {
-  const q = searchQuery;
-  const stageOrder = sectionStageOrder();
-  const indices = [];
-  for (let i = 0; i < SESSIONS.length; i++) {
-    const s = SESSIONS[i];
-    if (!showHidden && hiddenSessions.has(i)) continue;
-    if (showHighlightedOnly && currentView === "list" && !highlightedSessions.has(i)) continue;
-    if (forDay && s.day !== forDay) continue;
-    if (activeStages.size < stageOrder.length && !activeStages.has(s.stage) && !(showHidden && calHiddenStages.has(s.stage))) continue;
-
-    if (section === "ta") {
-      if (activeLangs.size < ALL_LANGS.length && s.lang && !activeLangs.has(s.lang)) continue;
-      if (activeTags.size < ALL_TAGS.length) {
-        const sTags = s.tags || [];
-        if (sTags.length && !sTags.some(t => activeTags.has(t))) continue;
-      }
-    } else {
-      if (activeThemes.size < ALL_MWC_THEMES.length && s.theme && !activeThemes.has(s.theme)) continue;
-      if (activeAccess.size < ALL_MWC_ACCESS.length && s.access && !activeAccess.has(s.access)) continue;
-      if (activeInterests.size < ALL_MWC_INTERESTS.length) {
-        const sInt = s.interests || [];
-        if (sInt.length && !sInt.some(int => activeInterests.has(int))) continue;
-      }
-    }
-
-    if (q && !searchIndex[i].includes(q)) continue;
-    indices.push(i);
-  }
-  return indices;
-}
-
 function getExportContext() {
   const parts = [];
   if (showHighlightedOnly) parts.push('starred only');
@@ -129,7 +91,7 @@ function downloadBlob(content, filename) {
 }
 
 function doExport(day) {
-  const indices = computeExportIndices(day);
+  const indices = filterSessions(day);
   const ics = generateICS(indices);
   const prefix = section === "mwc" ? "mwc-barcelona" : "mwc-talent-arena";
   const suffix = day ? `mar${day}` : 'all';
@@ -163,7 +125,7 @@ export function showExportPrompt() {
   const dayCounts = {};
   let total = 0;
   for (const d of days) {
-    dayCounts[d] = computeExportIndices(d).length;
+    dayCounts[d] = filterSessions(d).length;
     total += dayCounts[d];
   }
   const ctx = getExportContext();

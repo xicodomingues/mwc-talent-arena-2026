@@ -24,7 +24,7 @@ import { renderCalendar, renderTimeline } from './js/grid-views.js';
 import { showModal, closeModal, initModalListeners } from './js/modal.js';
 import { initDragScroll, scrollToNowSlot, parseTime, esc, nowInBarcelona } from './js/utils.js';
 import {
-  STAGE_ORDER, ALL_TAGS, ALL_LANGS,
+  STAGE_ORDER, ALL_TAGS, ALL_LANGS, SCROLL_NOW_PAD_TOP, SCROLL_NOW_PAD_LEFT,
   MWC_STAGE_ORDER, ALL_MWC_THEMES, ALL_MWC_ACCESS, ALL_MWC_INTERESTS
 } from './js/constants.js';
 import { showExportPrompt, exportDay } from './js/ics-export.js';
@@ -33,10 +33,39 @@ import { showExportPrompt, exportDay } from './js/ics-export.js';
 let _taSessions = [];
 let _mwcSessions = [];
 
+// ── Scroll position helpers ──
+function saveScrollPositions(selector) {
+  return Array.from(document.querySelectorAll(selector)).map(w => ({ scrollLeft: w.scrollLeft, scrollTop: w.scrollTop }));
+}
+
+function restoreScrollPositions(selector, saved) {
+  document.querySelectorAll(selector).forEach((w, i) => {
+    if (saved[i]) { w.scrollLeft = saved[i].scrollLeft; w.scrollTop = saved[i].scrollTop; }
+  });
+}
+
+function scrollGridToNow() {
+  if (currentView === "list") {
+    scrollToNowSlot();
+  } else if (currentView === "calendar") {
+    const nowLine = document.querySelector(".cal-now-line");
+    if (nowLine) {
+      const wrapper = nowLine.closest(".cal-wrapper");
+      if (wrapper) wrapper.scrollTop = Math.max(0, nowLine.offsetTop - SCROLL_NOW_PAD_TOP);
+    }
+  } else {
+    const nowLine = document.querySelector(".tl-now-line");
+    if (nowLine) {
+      const wrapper = nowLine.closest(".tl-wrapper");
+      if (wrapper) wrapper.scrollLeft = Math.max(0, nowLine.offsetLeft - SCROLL_NOW_PAD_LEFT);
+    }
+  }
+}
+
 // ── Render dispatch ──
 function render() {
-  const savedCal = Array.from(document.querySelectorAll('.cal-wrapper')).map(w => ({ scrollLeft: w.scrollLeft, scrollTop: w.scrollTop }));
-  const savedTl = Array.from(document.querySelectorAll('.tl-wrapper')).map(w => ({ scrollLeft: w.scrollLeft, scrollTop: w.scrollTop }));
+  const savedCal = saveScrollPositions('.cal-wrapper');
+  const savedTl = saveScrollPositions('.tl-wrapper');
 
   if (currentView === "list") renderList();
   else if (currentView === "calendar") renderCalendar();
@@ -44,31 +73,10 @@ function render() {
 
   if (currentView !== "list") initDragScroll();
 
-  if (scrollToNow) {
-    if (currentView === "list") {
-      scrollToNowSlot();
-    } else if (currentView === "calendar") {
-      const nowLine = document.querySelector(".cal-now-line");
-      if (nowLine) {
-        const wrapper = nowLine.closest(".cal-wrapper");
-        if (wrapper) wrapper.scrollTop = Math.max(0, nowLine.offsetTop - 45);
-      }
-    } else {
-      const nowLine = document.querySelector(".tl-now-line");
-      if (nowLine) {
-        const wrapper = nowLine.closest(".tl-wrapper");
-        if (wrapper) wrapper.scrollLeft = Math.max(0, nowLine.offsetLeft - 60);
-      }
-    }
-  }
-
-  if (!scrollToNow) {
-    document.querySelectorAll('.cal-wrapper').forEach((w, i) => {
-      if (savedCal[i]) { w.scrollLeft = savedCal[i].scrollLeft; w.scrollTop = savedCal[i].scrollTop; }
-    });
-    document.querySelectorAll('.tl-wrapper').forEach((w, i) => {
-      if (savedTl[i]) { w.scrollLeft = savedTl[i].scrollLeft; w.scrollTop = savedTl[i].scrollTop; }
-    });
+  if (scrollToNow) scrollGridToNow();
+  else {
+    restoreScrollPositions('.cal-wrapper', savedCal);
+    restoreScrollPositions('.tl-wrapper', savedTl);
   }
 
   setScrollToNow(false);
@@ -189,23 +197,19 @@ Object.defineProperty(window, '__test', {
     get scrollToNow() { return scrollToNow; },
     get section() { return section; },
     searchIndex,
-    // Mutators
     setDayFilter, setShowHidden, setCurrentView, setScrollToNow, setSearchQuery, setSection,
     saveHidden, saveHighlighted, saveCalHiddenStages,
-    // Utils
     parseTime, esc, nowInBarcelona, isStageFullyHidden,
-    // Constants
     STAGE_ORDER, ALL_TAGS, ALL_LANGS,
     MWC_STAGE_ORDER, ALL_MWC_THEMES, ALL_MWC_ACCESS, ALL_MWC_INTERESTS,
-    // Chip builders
     buildStageChips, updateFilterDot, updateHiddenCount, updateHighlightedCount,
-    // Section
     switchSection,
     sectionStageOrder, sectionDays,
   })
 });
 
 // ── Start ──
+const RE_RENDER_INTERVAL_MS = 5 * 60 * 1000;
 Promise.all([
   fetch("sessions.json").then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
   fetch("mwc_sessions.json").then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).catch(() => []),
@@ -216,12 +220,13 @@ Promise.all([
     setSessions(section === "mwc" ? mwcData : taData);
     buildSearchIndex();
     init();
-    setInterval(() => render(), 5 * 60 * 1000);
+    setInterval(() => render(), RE_RENDER_INTERVAL_MS);
     document.addEventListener('visibilitychange', () => {
       if (!document.hidden) render();
     });
   })
-  .catch(() => {
+  .catch(err => {
+    console.error('Failed to load sessions:', err);
     document.getElementById("content").innerHTML =
       '<p style="text-align:center;padding:3rem;color:var(--text2)">Failed to load sessions. Please refresh the page.</p>';
   });
