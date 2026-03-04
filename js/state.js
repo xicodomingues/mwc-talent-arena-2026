@@ -1,10 +1,17 @@
-import { STAGE_ORDER, ALL_TAGS, ALL_LANGS } from './constants.js';
+import {
+  STAGE_ORDER, ALL_TAGS, ALL_LANGS,
+  MWC_STAGE_ORDER, ALL_MWC_THEMES, ALL_MWC_ACCESS, ALL_MWC_INTERESTS
+} from './constants.js';
 import { nowInBarcelona } from './utils.js';
 
 // ── Refresh callback (set by app.js to avoid circular deps) ──
 let _refreshFn = () => {};
 export function setRefreshFn(fn) { _refreshFn = fn; }
 export function refresh() { _refreshFn(); }
+
+// ── Section ──
+export let section = "ta"; // "ta" | "mwc"
+export function setSection(s) { section = s; }
 
 // ── Data ──
 export let SESSIONS = [];
@@ -15,7 +22,14 @@ export function setSessions(data) { SESSIONS = data; }
 export function buildSearchIndex() {
   searchIndex = SESSIONS.map(s => {
     const parts = [s.title, s.stage, s.description, s.lang, ...s.tags];
-    for (const sp of s.speakers) {
+    if (section === "mwc") {
+      if (s.theme) parts.push(s.theme);
+      if (s.access) parts.push(s.access);
+      if (s.interests) parts.push(...s.interests);
+      if (s.hall) parts.push(s.hall);
+      if (s.track) parts.push(s.track);
+    }
+    for (const sp of (s.speakers || [])) {
       parts.push(sp.name);
       if (sp.role) {
         parts.push(sp.role);
@@ -23,6 +37,7 @@ export function buildSearchIndex() {
         if (m) parts.push(m[1]);
       }
     }
+    if (s.company) parts.push(s.company);
     return parts.join(" ").toLowerCase();
   });
 }
@@ -30,12 +45,13 @@ export function buildSearchIndex() {
 // ── Hash-based state ──
 function parseHash() {
   const params = new URLSearchParams(location.hash.slice(1));
-  return { day: params.get("day"), view: params.get("view") };
+  return { day: params.get("day"), view: params.get("view"), section: params.get("section") };
 }
 
 export function updateHash(view) {
   const params = new URLSearchParams();
   params.set("view", view);
+  if (section !== "ta") params.set("section", section);
   history.replaceState(null, "", "#" + params.toString());
 }
 
@@ -47,28 +63,48 @@ export let dayFilter = (_now.month === 3 && _now.year === 2026 && _now.day >= 4)
 export let searchQuery = "";
 export let scrollToNow = true;
 
+// Init section from hash
+if (_hash.section === "mwc") section = "mwc";
+
 export function setCurrentView(v) { currentView = v; }
 export function setDayFilter(d) { dayFilter = d; }
 export function setSearchQuery(q) { searchQuery = q; }
 export function setScrollToNow(v) { scrollToNow = v; }
 
+// ── Section-aware helpers ──
+export function sectionStageOrder() { return section === "mwc" ? MWC_STAGE_ORDER : STAGE_ORDER; }
+export function sectionDays() { return section === "mwc" ? [4, 5] : [3, 4]; }
+
 // ── Filter sets ──
 export const activeLangs = new Set(ALL_LANGS);
 export const activeStages = new Set(STAGE_ORDER);
 export const activeTags = new Set(ALL_TAGS);
+export const activeThemes = new Set(ALL_MWC_THEMES);
+export const activeAccess = new Set(ALL_MWC_ACCESS);
+export const activeInterests = new Set(ALL_MWC_INTERESTS);
 export let filteredIndices = [];
 export function setFilteredIndices(arr) { filteredIndices = arr; }
 
-// ── Hidden sessions (persisted) ──
-const LS_KEY = "mwc_hidden_sessions";
+// ── Section-scoped localStorage keys ──
+function lsKey(purpose) {
+  const prefix = section === "mwc" ? "mwc" : "ta";
+  return `${prefix}_${purpose}`;
+}
+
 function safeGetJSON(key) { try { const v = JSON.parse(localStorage.getItem(key) || "[]"); return Array.isArray(v) ? v : []; } catch { return []; } }
 
-export const hiddenSessions = new Set(safeGetJSON(LS_KEY));
+// ── Hidden sessions (persisted per section) ──
+export const hiddenSessions = new Set();
 export let showHidden = localStorage.getItem("showHidden") === "true";
 export function setShowHidden(v) { showHidden = v; }
 
+export function loadHidden() {
+  hiddenSessions.clear();
+  for (const v of safeGetJSON(lsKey("hidden"))) hiddenSessions.add(v);
+}
+
 export function saveHidden() {
-  localStorage.setItem(LS_KEY, JSON.stringify([...hiddenSessions]));
+  localStorage.setItem(lsKey("hidden"), JSON.stringify([...hiddenSessions]));
   updateHiddenCount();
 }
 
@@ -79,14 +115,18 @@ export function toggleHide(idx, evt) {
   refresh();
 }
 
-// ── Highlighted sessions (persisted) ──
-const LS_HIGHLIGHT_KEY = "mwc_highlighted_sessions";
-export const highlightedSessions = new Set(safeGetJSON(LS_HIGHLIGHT_KEY));
+// ── Highlighted sessions (persisted per section) ──
+export const highlightedSessions = new Set();
 export let showHighlightedOnly = false;
 export function setShowHighlightedOnly(v) { showHighlightedOnly = v; }
 
+export function loadHighlighted() {
+  highlightedSessions.clear();
+  for (const v of safeGetJSON(lsKey("highlighted"))) highlightedSessions.add(v);
+}
+
 export function saveHighlighted() {
-  localStorage.setItem(LS_HIGHLIGHT_KEY, JSON.stringify([...highlightedSessions]));
+  localStorage.setItem(lsKey("highlighted"), JSON.stringify([...highlightedSessions]));
   updateHighlightedCount();
 }
 
@@ -113,12 +153,16 @@ export function updateHighlightedCount() {
   badge.textContent = n;
 }
 
-// ── Calendar stage visibility (persisted) ──
-const LS_CAL_STAGES_KEY = "mwc_cal_hidden_stages";
-export const calHiddenStages = new Set(safeGetJSON(LS_CAL_STAGES_KEY));
+// ── Calendar stage visibility (persisted per section) ──
+export const calHiddenStages = new Set();
+
+export function loadCalHiddenStages() {
+  calHiddenStages.clear();
+  for (const v of safeGetJSON(lsKey("cal_stages"))) calHiddenStages.add(v);
+}
 
 export function saveCalHiddenStages() {
-  localStorage.setItem(LS_CAL_STAGES_KEY, JSON.stringify([...calHiddenStages]));
+  localStorage.setItem(lsKey("cal_stages"), JSON.stringify([...calHiddenStages]));
 }
 
 export function isStageFullyHidden(stage, indices) {
@@ -139,9 +183,9 @@ export function toggleShowHidden() {
 // ── Restore all ──
 export function restoreAll() {
   hiddenSessions.clear();
-  localStorage.setItem(LS_KEY, "[]");
+  localStorage.setItem(lsKey("hidden"), "[]");
   calHiddenStages.clear();
-  localStorage.setItem(LS_CAL_STAGES_KEY, "[]");
+  localStorage.setItem(lsKey("cal_stages"), "[]");
   showHidden = false;
   localStorage.setItem("showHidden", "false");
   document.getElementById("showHiddenBtn").classList.remove("active-hidden");
@@ -163,7 +207,9 @@ export function updateHiddenCount() {
 
 // ── Day switching ──
 export function switchDay() {
-  dayFilter = dayFilter === "3" ? "4" : "3";
+  const days = sectionDays();
+  const idx = days.indexOf(parseInt(dayFilter));
+  dayFilter = String(days[(idx + 1) % days.length]);
   scrollToNow = true;
   updateDayIndicator();
   updateHash(currentView);
@@ -174,4 +220,19 @@ export function switchDay() {
 
 export function updateDayIndicator() {
   document.getElementById("dayIndicatorText").textContent = "Mar " + dayFilter;
+}
+
+// ── Migration: copy old keys to new prefixed format ──
+export function migrateLocalStorage() {
+  const oldKeys = {
+    "mwc_hidden_sessions": "ta_hidden",
+    "mwc_highlighted_sessions": "ta_highlighted",
+    "mwc_cal_hidden_stages": "ta_cal_stages",
+  };
+  for (const [oldKey, newKey] of Object.entries(oldKeys)) {
+    if (localStorage.getItem(oldKey) !== null && localStorage.getItem(newKey) === null) {
+      localStorage.setItem(newKey, localStorage.getItem(oldKey));
+      localStorage.removeItem(oldKey);
+    }
+  }
 }

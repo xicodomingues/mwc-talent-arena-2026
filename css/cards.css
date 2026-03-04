@@ -22,6 +22,9 @@
 .card-meta{display:flex;gap:0.4rem;flex-wrap:wrap;margin-top:0.4rem}
 .card-tag{font-size:0.65rem;background:var(--surface3);color:var(--text2);padding:0.15rem 0.4rem;border-radius:999px}
 .card-lang{font-size:0.65rem;padding:0.15rem 0.4rem;border-radius:999px}
+.card-access{background:#1a2a3a;color:var(--accent2)}
+.card-interest{font-size:0.6rem;background:var(--surface2);color:var(--text3)}
+.card-meta-interests{margin-top:0.2rem}
 .lang-en{background:#1a3a2a;color:#4CAF50}
 .lang-es{background:#3a2a1a;color:#FF9800}
 .lang-ca{background:#1a2a3a;color:#2196F3}

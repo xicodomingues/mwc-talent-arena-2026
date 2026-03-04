@@ -1,19 +1,24 @@
-import { STAGE_COLORS, STAGE_ORDER } from './constants.js';
+import { STAGE_COLORS, STAGE_ORDER, MWC_STAGE_COLORS, MWC_STAGE_ORDER } from './constants.js';
 import { esc, parseTime, nowInBarcelona } from './utils.js';
 import {
   SESSIONS, filteredIndices, hiddenSessions, highlightedSessions,
-  showHighlightedOnly, showHidden, calHiddenStages, isStageFullyHidden
+  showHighlightedOnly, showHidden, calHiddenStages, isStageFullyHidden,
+  section, sectionStageOrder
 } from './state.js';
+
+// ── Section-aware helpers ──
+function stageColors() { return section === "mwc" ? MWC_STAGE_COLORS : STAGE_COLORS; }
 
 // ── Shared grid helpers ──
 
 function getStagesForDay(day, indices) {
+  const order = sectionStageOrder();
   const allDayIndices = [];
   for (let i = 0; i < SESSIONS.length; i++) {
     if (SESSIONS[i].day == day) allDayIndices.push(i);
   }
   const stagesPresent = [];
-  for (const st of STAGE_ORDER) {
+  for (const st of order) {
     if (allDayIndices.some(i => SESSIONS[i].stage === st)) {
       if (!calHiddenStages.has(st) && !isStageFullyHidden(st, indices)) stagesPresent.push(st);
       else if (showHidden) stagesPresent.push(st);
@@ -76,6 +81,7 @@ export function renderCalendar() {
 }
 
 function calendarDayHTML(day, indices) {
+  const colors = stageColors();
   const { stagesPresent } = getStagesForDay(day, indices);
   const { minT, maxT } = getTimeRange(indices);
   const nowState = getNowState();
@@ -83,7 +89,8 @@ function calendarDayHTML(day, indices) {
   const ppm = 3;
   const headerH = 52;
   const timeCol = 50;
-  const colW = 140;
+  // Use narrower columns for MWC (many stages)
+  const colW = section === "mwc" ? 120 : 140;
   const totalW = timeCol + stagesPresent.length * colW;
   const bodyH = (maxT - minT) * ppm;
   const stageIdx = {};
@@ -96,7 +103,7 @@ function calendarDayHTML(day, indices) {
   html += `<div class="cal-header">`;
   html += `<div class="cal-header-corner"></div>`;
   for (const st of stagesPresent) {
-    const c = STAGE_COLORS[st] || "#888";
+    const c = colors[st] || "#888";
     const isHiddenStage = calHiddenStages.has(st);
     html += `<div class="cal-stage-hdr${isHiddenStage ? " cal-stage-hidden" : ""}" style="width:${colW}px;--hdr-color:${c}" onclick="toggleCalStage('${esc(st)}')" title="${isHiddenStage ? "Click to show" : "Click to hide"}"><span>${esc(st)}<small class="cal-hdr-hint">${isHiddenStage ? "tap to show" : "tap to hide"}</small></span></div>`;
   }
@@ -132,7 +139,7 @@ function calendarDayHTML(day, indices) {
     const h = Math.max((endM - startM) * ppm - 2, 4);
     const left = timeCol + stageIdx[s.stage] * colW + 2;
     const w = colW - 4;
-    const c = STAGE_COLORS[s.stage] || "#888";
+    const c = colors[s.stage] || "#888";
     const co = s.company || "";
     const cls = eventClasses(idx, startM, endM, day, isStageHidden, nowState);
 
@@ -161,9 +168,11 @@ export function renderTimeline() {
   const el = document.getElementById("content");
   if (!filteredIndices.length) { el.innerHTML = '<p style="text-align:center;color:var(--text3);padding:3rem">No sessions match your filters.</p>'; return; }
 
+  const colors = stageColors();
+  const order = sectionStageOrder();
   const ppm = 5;
   const rowH = 38;
-  const labelW = 110;
+  const labelW = section === "mwc" ? 140 : 110;
   const nowState = getNowState();
 
   const days = [...new Set(filteredIndices.map(i => SESSIONS[i].day))].sort();
@@ -177,7 +186,7 @@ export function renderTimeline() {
 
     // Collect all stages for legend (including hidden)
     const stagesAllTl = [];
-    for (const st of STAGE_ORDER) {
+    for (const st of order) {
       if (allDayIndices.some(i => SESSIONS[i].stage === st)) stagesAllTl.push(st);
     }
 
@@ -218,7 +227,7 @@ export function renderTimeline() {
     // Stage rows
     for (let i = 0; i < stagesPresent.length; i++) {
       const st = stagesPresent[i];
-      const c = STAGE_COLORS[st] || "#888";
+      const c = colors[st] || "#888";
       const isStageHidden = calHiddenStages.has(st);
       const bg = i % 2 === 1 ? "rgba(255,255,255,0.02)" : "transparent";
       html += `<div class="tl-row${isStageHidden ? " tl-row-hidden" : ""}" style="height:${rowH}px;background:${bg}">`;
@@ -227,7 +236,7 @@ export function renderTimeline() {
       for (const idx of dayIndices) {
         const s = SESSIONS[idx];
         if (s.stage !== st) continue;
-        const c2 = STAGE_COLORS[s.stage] || "#888";
+        const c2 = colors[s.stage] || "#888";
         const [startStr, endStr] = s.time.split("-");
         let startM = parseTime(startStr), endM = parseTime(endStr);
         if (endM <= startM) endM = startM + 30;
@@ -246,7 +255,7 @@ export function renderTimeline() {
     // Legend
     html += `<div class="tl-legend">`;
     for (const stage of stagesAllTl) {
-      const c = STAGE_COLORS[stage] || "#888";
+      const c = colors[stage] || "#888";
       const isHiddenStage = calHiddenStages.has(stage) || isStageFullyHidden(stage, dayIndices);
       const cls = isHiddenStage ? " tl-legend-hidden" : "";
       const tip = isHiddenStage ? "Click to restore" : "Click to hide";
