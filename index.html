@@ -87,7 +87,11 @@
 <!-- ── Content ── -->
 <div class="content" id="content"></div>
 
-<footer class="site-footer"><a href="mwc_talent_arena_full.ics" download>Export calendar (.ics)</a> &middot; <a href="help.html">Help</a> &middot; <a href="about.html">About</a> &middot; <a href="https://github.com/xicodomingues/mwc-talent-arena-2026" target="_blank" rel="noopener">GitHub</a></footer>
+<div class="export-prompt" id="exportPrompt">
+  <div class="export-summary" id="exportSummary"></div>
+  <div class="export-buttons" id="exportButtons"></div>
+</div>
+<footer class="site-footer"><a href="#" class="export-trigger" onclick="showExportPrompt(); return false">Export calendar (.ics)</a> &middot; <a href="help.html">Help</a> &middot; <a href="about.html">About</a> &middot; <a href="https://github.com/xicodomingues/mwc-talent-arena-2026" target="_blank" rel="noopener">GitHub</a></footer>
 
 <!-- ── Modal ── -->
 <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
