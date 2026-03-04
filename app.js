@@ -57,7 +57,8 @@ function scrollGridToNow() {
     const nowLine = document.querySelector(".tl-now-line");
     if (nowLine) {
       const wrapper = nowLine.closest(".tl-wrapper");
-      if (wrapper) wrapper.scrollLeft = Math.max(0, nowLine.offsetLeft - SCROLL_NOW_PAD_LEFT);
+      const labelW = wrapper.querySelector('.tl-row-label')?.offsetWidth || 0;
+      if (wrapper) wrapper.scrollLeft = Math.max(0, nowLine.offsetLeft - labelW - SCROLL_NOW_PAD_LEFT);
     }
   }
 }
