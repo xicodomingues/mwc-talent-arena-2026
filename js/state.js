@@ -61,7 +61,7 @@ export function setFilteredIndices(arr) { filteredIndices = arr; }
 
 // ── Hidden sessions (persisted) ──
 const LS_KEY = "mwc_hidden_sessions";
-function safeGetJSON(key) { try { return JSON.parse(localStorage.getItem(key) || "[]"); } catch { return []; } }
+function safeGetJSON(key) { try { const v = JSON.parse(localStorage.getItem(key) || "[]"); return Array.isArray(v) ? v : []; } catch { return []; } }
 
 export const hiddenSessions = new Set(safeGetJSON(LS_KEY));
 export let showHidden = localStorage.getItem("showHidden") === "true";
