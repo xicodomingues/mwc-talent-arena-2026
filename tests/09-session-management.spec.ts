@@ -109,7 +109,6 @@ test.describe('Session management', () => {
   test('hidden count includes stage-hidden sessions', async ({ page }) => {
     await page.evaluate(() => {
       (window as any).toggleCalStage('Gaming');
-      (window as any).__test.updateHiddenCount();
     });
     const badge = await page.locator('#hiddenBadge').textContent();
     const count = parseInt(badge || '0');
@@ -118,5 +117,16 @@ test.describe('Session management', () => {
       return t.SESSIONS.filter((s: any) => s.day === 4 && s.stage === 'Gaming').length;
     });
     expect(count).toBeGreaterThanOrEqual(gamingDay4);
+  });
+
+  test('toggleCalStage updates hidden badge without manual updateHiddenCount', async ({ page }) => {
+    const before = await page.locator('#hiddenBadge').textContent();
+    await page.evaluate(() => (window as any).toggleCalStage('Gaming'));
+    const after = await page.locator('#hiddenBadge').textContent();
+    expect(parseInt(after || '0')).toBeGreaterThan(parseInt(before || '0'));
+
+    await page.evaluate(() => (window as any).toggleCalStage('Gaming'));
+    const restored = await page.locator('#hiddenBadge').textContent();
+    expect(parseInt(restored || '0')).toBe(parseInt(before || '0'));
   });
 });

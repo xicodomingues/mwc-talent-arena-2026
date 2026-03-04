@@ -8,7 +8,8 @@ import {
   activeThemes, activeAccess, activeInterests,
   hiddenSessions, showHidden, highlightedSessions, showHighlightedOnly,
   calHiddenStages, saveCalHiddenStages, currentView, dayFilter,
-  setFilteredIndices, setSearchQuery, refresh, section, sectionStageOrder
+  setFilteredIndices, setSearchQuery, refresh, section, sectionStageOrder,
+  updateHiddenCount
 } from './state.js';
 
 // ── Unified chip builder ──
@@ -81,6 +82,7 @@ export function toggleCalStage(stage) {
     buildStageChips();
     updateFilterDot();
   }
+  updateHiddenCount();
   refresh();
 }
 
