@@ -16,3 +16,13 @@
 .modal-desc{font-size:0.88rem;color:var(--text2);line-height:1.6;margin-bottom:0.75rem}
 .modal-meta{display:flex;gap:0.5rem;flex-wrap:wrap}
 .modal-meta span{font-size:0.75rem;padding:0.2rem 0.5rem;border-radius:999px;background:var(--surface3);color:var(--text2)}
+
+/* ── Export Prompt ── */
+.export-prompt{display:none;position:fixed;bottom:2.8rem;left:50%;transform:translateX(-50%);background:var(--surface2);border:1px solid #333;border-radius:var(--radius);padding:0.85rem 1rem;z-index:150;width:min(340px,calc(100vw - 2rem));box-shadow:0 -4px 20px rgba(0,0,0,0.5)}
+.export-prompt.open{display:block}
+.export-summary{font-size:0.8rem;color:var(--text2);margin-bottom:0.6rem;line-height:1.4}
+.export-buttons{display:flex;gap:0.4rem}
+.export-btn{flex:1;padding:0.45rem 0.5rem;border:1px solid #444;border-radius:var(--radius-sm);background:var(--surface3);color:var(--text);font-size:0.78rem;cursor:pointer;transition:all 0.15s;white-space:nowrap}
+.export-btn:hover{border-color:var(--accent2);color:var(--accent2)}
+.export-btn.current{border-color:var(--accent2);color:var(--accent2)}
+.export-btn-both{background:color-mix(in srgb,var(--accent2) 12%,var(--surface3))}

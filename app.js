@@ -15,6 +15,7 @@ import { renderCalendar, renderTimeline } from './js/grid-views.js';
 import { showModal, closeModal, initModalListeners } from './js/modal.js';
 import { initDragScroll, scrollToNowSlot, parseTime, esc, nowInBarcelona } from './js/utils.js';
 import { STAGE_ORDER, ALL_TAGS, ALL_LANGS } from './js/constants.js';
+import { showExportPrompt, exportDay } from './js/ics-export.js';
 
 // ── Render dispatch (replaces monkey-patched render) ──
 function render() {
@@ -96,7 +97,7 @@ Object.assign(window, {
   switchDay, setView, toggleShowHighlightedOnly, toggleShowHidden,
   toggleFilterPanel, clearSearch, closeModal, showModal, restoreAll,
   toggleHighlight, toggleHide, toggleStage, toggleTag, toggleLang,
-  toggleCalStage, applyFilters: filterAndRender
+  toggleCalStage, showExportPrompt, exportDay, applyFilters: filterAndRender
 });
 
 // ── Test bridge: expose state for Playwright tests ──
