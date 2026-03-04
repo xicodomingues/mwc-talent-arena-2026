@@ -16,6 +16,9 @@
 .modal-desc{font-size:0.88rem;color:var(--text2);line-height:1.6;margin-bottom:0.75rem}
 .modal-meta{display:flex;gap:0.5rem;flex-wrap:wrap}
 .modal-meta span{font-size:0.75rem;padding:0.2rem 0.5rem;border-radius:999px;background:var(--surface3);color:var(--text2)}
+.modal-meta+.modal-meta{margin-top:0.4rem}
+.modal-link-btn{display:inline-block;padding:0.4rem 0.9rem;border:1px solid var(--accent2);border-radius:var(--radius-sm);color:var(--accent2);font-size:0.82rem;text-decoration:none;transition:all 0.15s}
+.modal-link-btn:hover{background:color-mix(in srgb,var(--accent2) 15%,transparent)}
 
 /* ── Export Prompt ── */
 .export-prompt{display:none;position:fixed;bottom:2.8rem;left:50%;transform:translateX(-50%);background:var(--surface2);border:1px solid #333;border-radius:var(--radius);padding:0.85rem 1rem;z-index:150;width:min(340px,calc(100vw - 2rem));box-shadow:0 -4px 20px rgba(0,0,0,0.5)}

@@ -27,31 +27,51 @@ def query_sessions(date_str):
 
 
 def map_hit(hit, day):
+    sponsors = hit.get("sponsors", [])
+    sponsor_names = [sp["name"] for sp in sponsors if sp.get("name")]
+    company = sponsor_names[0] if sponsor_names else ""
     return {
         "day": day,
         "time": f'{hit["startsAt"]}-{hit["endAt"]}',
         "stage": hit.get("stage", ""),
         "hall": hit.get("hall", ""),
         "title": hit["title"],
+        "speakers": [],
+        "description": "",
+        "tags": [],
+        "lang": "",
+        "company": company,
+        "companies": sponsor_names,
         "track": hit.get("track", ""),
         "theme": hit.get("theme", ""),
         "interests": hit.get("interests", []),
         "access": hit.get("access", ""),
         "type": hit.get("type", ""),
-        "sponsors": hit.get("sponsors", []),
         "url": hit.get("url", ""),
+        "source": "mwc",
     }
 
 
 if __name__ == "__main__":
+    all_sessions = []
     for day, date in [(4, "2026-03-04"), (5, "2026-03-05")]:
         print(f"Fetching {date}...", end=" ")
         hits = query_sessions(date)
-        sessions = sorted(
-            [map_hit(h, day) for h in hits],
-            key=lambda s: s["time"],
-        )
+        sessions = [map_hit(h, day) for h in hits]
+        print(f"{len(sessions)} sessions")
+        all_sessions.extend(sessions)
+
+    all_sessions.sort(key=lambda s: (s["day"], s["time"], s["stage"]))
+
+    # Write combined file
+    with open("mwc_sessions.json", "w") as f:
+        json.dump(all_sessions, f, indent=1, ensure_ascii=False)
+    print(f"Total: {len(all_sessions)} sessions → mwc_sessions.json")
+
+    # Also write per-day files for reference
+    for day in [4, 5]:
+        day_sessions = [s for s in all_sessions if s["day"] == day]
         fname = f"mwc_day{day}_sessions.json"
         with open(fname, "w") as f:
-            json.dump(sessions, f, indent=1, ensure_ascii=False)
-        print(f"{len(sessions)} sessions → {fname}")
+            json.dump(day_sessions, f, indent=1, ensure_ascii=False)
+        print(f"  Day {day}: {len(day_sessions)} → {fname}")

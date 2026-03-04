@@ -15,7 +15,7 @@ test.describe('Session management', () => {
 
   test('toggleHide persists to localStorage', async ({ page }) => {
     await page.evaluate(() => (window as any).toggleHide(100));
-    const stored = await page.evaluate(() => JSON.parse(localStorage.getItem('mwc_hidden_sessions') || '[]'));
+    const stored = await page.evaluate(() => JSON.parse(localStorage.getItem('ta_hidden') || '[]'));
     expect(stored).toContain(100);
   });
 
@@ -28,7 +28,7 @@ test.describe('Session management', () => {
 
   test('toggleHighlight persists to localStorage', async ({ page }) => {
     await page.evaluate(() => (window as any).toggleHighlight(105));
-    const stored = await page.evaluate(() => JSON.parse(localStorage.getItem('mwc_highlighted_sessions') || '[]'));
+    const stored = await page.evaluate(() => JSON.parse(localStorage.getItem('ta_highlighted') || '[]'));
     expect(stored).toContain(105);
   });
 
@@ -52,7 +52,7 @@ test.describe('Session management', () => {
 
   test('toggleCalStage persists to localStorage', async ({ page }) => {
     await page.evaluate(() => (window as any).toggleCalStage('Robotics'));
-    const stored = await page.evaluate(() => JSON.parse(localStorage.getItem('mwc_cal_hidden_stages') || '[]'));
+    const stored = await page.evaluate(() => JSON.parse(localStorage.getItem('ta_cal_stages') || '[]'));
     expect(stored).toContain('Robotics');
   });
 
@@ -72,8 +72,8 @@ test.describe('Session management', () => {
         hidden: t.hiddenSessions.size,
         calHidden: t.calHiddenStages.size,
         showHidden: t.showHidden,
-        lsHidden: localStorage.getItem('mwc_hidden_sessions'),
-        lsCalStages: localStorage.getItem('mwc_cal_hidden_stages'),
+        lsHidden: localStorage.getItem('ta_hidden'),
+        lsCalStages: localStorage.getItem('ta_cal_stages'),
         lsShowHidden: localStorage.getItem('showHidden'),
       };
     });

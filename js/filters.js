@@ -1,15 +1,20 @@
-import { STAGE_COLORS, STAGE_ORDER, ALL_TAGS, ALL_LANGS, LANG_FLAGS } from './constants.js';
+import {
+  STAGE_COLORS, STAGE_ORDER, ALL_TAGS, ALL_LANGS, LANG_FLAGS,
+  MWC_STAGE_COLORS, MWC_STAGE_ORDER, ALL_MWC_THEMES, ALL_MWC_ACCESS, ALL_MWC_INTERESTS
+} from './constants.js';
 import { esc } from './utils.js';
 import {
   SESSIONS, searchIndex, activeStages, activeTags, activeLangs,
+  activeThemes, activeAccess, activeInterests,
   hiddenSessions, showHidden, highlightedSessions, showHighlightedOnly,
   calHiddenStages, saveCalHiddenStages, currentView, dayFilter,
-  setFilteredIndices, setSearchQuery, refresh
+  setFilteredIndices, setSearchQuery, refresh, section, sectionStageOrder
 } from './state.js';
 
 // ── Unified chip builder ──
 function buildChips(containerId, items, activeSet, toggleFnName, options = {}) {
   const el = document.getElementById(containerId);
+  if (!el) return;
   let html = "";
   for (const item of items) {
     const on = activeSet.has(item) ? " on" : "";
@@ -23,7 +28,9 @@ function buildChips(containerId, items, activeSet, toggleFnName, options = {}) {
 }
 
 export function buildStageChips() {
-  buildChips("stageChips", STAGE_ORDER, activeStages, "toggleStage", { colorMap: STAGE_COLORS });
+  const colors = section === "mwc" ? MWC_STAGE_COLORS : STAGE_COLORS;
+  const order = sectionStageOrder();
+  buildChips("stageChips", order, activeStages, "toggleStage", { colorMap: colors });
 }
 
 export function buildTagChips() {
@@ -32,6 +39,18 @@ export function buildTagChips() {
 
 export function buildLangChips() {
   buildChips("langChips", ALL_LANGS, activeLangs, "toggleLang", { prefixMap: LANG_FLAGS });
+}
+
+export function buildThemeChips() {
+  buildChips("themeChips", ALL_MWC_THEMES, activeThemes, "toggleTheme");
+}
+
+export function buildAccessChips() {
+  buildChips("accessChips", ALL_MWC_ACCESS, activeAccess, "toggleAccess");
+}
+
+export function buildInterestChips() {
+  buildChips("interestChips", ALL_MWC_INTERESTS, activeInterests, "toggleInterest");
 }
 
 // ── Filter toggles ──
@@ -45,6 +64,9 @@ function toggle(set, item, buildFn) {
 export function toggleStage(st) { toggle(activeStages, st, buildStageChips); }
 export function toggleTag(tag) { toggle(activeTags, tag, buildTagChips); }
 export function toggleLang(lang) { toggle(activeLangs, lang, buildLangChips); }
+export function toggleTheme(th) { toggle(activeThemes, th, buildThemeChips); }
+export function toggleAccess(ac) { toggle(activeAccess, ac, buildAccessChips); }
+export function toggleInterest(int) { toggle(activeInterests, int, buildInterestChips); }
 
 // ── Calendar/timeline stage toggle ──
 export function toggleCalStage(stage) {
@@ -72,10 +94,18 @@ export function toggleFilterPanel() {
 
 export function updateFilterDot() {
   const dot = document.getElementById("filterDot");
-  const hasActiveFilters =
-    activeStages.size < STAGE_ORDER.length ||
-    activeTags.size < ALL_TAGS.length ||
-    activeLangs.size < ALL_LANGS.length;
+  const stageOrder = sectionStageOrder();
+  let hasActiveFilters = activeStages.size < stageOrder.length;
+  if (section === "ta") {
+    hasActiveFilters = hasActiveFilters ||
+      activeTags.size < ALL_TAGS.length ||
+      activeLangs.size < ALL_LANGS.length;
+  } else {
+    hasActiveFilters = hasActiveFilters ||
+      activeThemes.size < ALL_MWC_THEMES.length ||
+      activeAccess.size < ALL_MWC_ACCESS.length ||
+      activeInterests.size < ALL_MWC_INTERESTS.length;
+  }
   dot.classList.toggle("on", hasActiveFilters);
 }
 
@@ -87,23 +117,61 @@ export function clearSearch() {
   refresh();
 }
 
+// ── Rebuild all chips on section switch ──
+export function rebuildAllChips() {
+  const isMwc = section === "mwc";
+  // Toggle filter group visibility
+  document.getElementById("tagFilterGroup").style.display = isMwc ? "none" : "";
+  document.getElementById("langFilterGroup").style.display = isMwc ? "none" : "";
+  document.getElementById("themeFilterGroup").style.display = isMwc ? "" : "none";
+  document.getElementById("accessFilterGroup").style.display = isMwc ? "" : "none";
+  document.getElementById("interestFilterGroup").style.display = isMwc ? "" : "none";
+
+  buildStageChips();
+  if (isMwc) {
+    buildThemeChips();
+    buildAccessChips();
+    buildInterestChips();
+  } else {
+    buildTagChips();
+    buildLangChips();
+  }
+  updateFilterDot();
+}
+
 // ── Apply filters (computes filteredIndices, does NOT render) ──
 export function applyFilters() {
   const searchQuery = document.getElementById("searchBox").value.toLowerCase().trim();
   setSearchQuery(searchQuery);
 
+  const stageOrder = sectionStageOrder();
   const indices = [];
   for (let i = 0; i < SESSIONS.length; i++) {
     const s = SESSIONS[i];
     if (!showHidden && hiddenSessions.has(i)) continue;
     if (showHighlightedOnly && currentView === "list" && !highlightedSessions.has(i)) continue;
     if (dayFilter && String(s.day) !== dayFilter) continue;
-    if (activeLangs.size < ALL_LANGS.length && s.lang && !activeLangs.has(s.lang)) continue;
-    if (activeStages.size < STAGE_ORDER.length && !activeStages.has(s.stage) && !(showHidden && calHiddenStages.has(s.stage))) continue;
-    if (activeTags.size < ALL_TAGS.length) {
-      const sTags = s.tags || [];
-      if (sTags.length && !sTags.some(t => activeTags.has(t))) continue;
+
+    // Stage filter
+    if (activeStages.size < stageOrder.length && !activeStages.has(s.stage) && !(showHidden && calHiddenStages.has(s.stage))) continue;
+
+    if (section === "ta") {
+      // TA-specific filters
+      if (activeLangs.size < ALL_LANGS.length && s.lang && !activeLangs.has(s.lang)) continue;
+      if (activeTags.size < ALL_TAGS.length) {
+        const sTags = s.tags || [];
+        if (sTags.length && !sTags.some(t => activeTags.has(t))) continue;
+      }
+    } else {
+      // MWC-specific filters
+      if (activeThemes.size < ALL_MWC_THEMES.length && s.theme && !activeThemes.has(s.theme)) continue;
+      if (activeAccess.size < ALL_MWC_ACCESS.length && s.access && !activeAccess.has(s.access)) continue;
+      if (activeInterests.size < ALL_MWC_INTERESTS.length) {
+        const sInt = s.interests || [];
+        if (sInt.length && !sInt.some(int => activeInterests.has(int))) continue;
+      }
     }
+
     if (searchQuery && !searchIndex[i].includes(searchQuery)) continue;
     indices.push(i);
   }

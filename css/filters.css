@@ -10,3 +10,6 @@
 .chip-dot{display:inline-block;width:8px;height:8px;border-radius:50%;flex-shrink:0}
 .restore-all-btn{background:color-mix(in srgb,#E74C3C 15%,transparent);color:#E74C3C;border:1px solid #E74C3C;padding:0.25rem 0.65rem;border-radius:999px;cursor:pointer;font-size:0.72rem;transition:all 0.15s}
 .restore-all-btn:hover{filter:brightness(1.2)}
+
+/* Scrollable interest chips */
+.filter-chips-scroll{max-height:120px;overflow-y:auto;align-content:flex-start}

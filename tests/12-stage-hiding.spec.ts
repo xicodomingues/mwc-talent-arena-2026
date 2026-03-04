@@ -25,7 +25,7 @@ test.describe('Stage hiding', () => {
   test('calHiddenStages persists to localStorage', async ({ page }) => {
     await loadApp(page, { hash: 'view=calendar' });
     await page.locator('.cal-stage-hdr').first().click();
-    const stored = await page.evaluate(() => JSON.parse(localStorage.getItem('mwc_cal_hidden_stages') || '[]'));
+    const stored = await page.evaluate(() => JSON.parse(localStorage.getItem('ta_cal_stages') || '[]'));
     expect(stored.length).toBe(1);
   });
 

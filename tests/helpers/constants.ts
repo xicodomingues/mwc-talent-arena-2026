@@ -25,8 +25,8 @@ export const NO_TAGS_SESSION_IDX = 7; // day 3, Frontier lab, no tags
 export const EMPTY_LANG_SESSION_IDX = 63; // day 3, XPRO Lab, empty lang
 export const GAMING_DAY4_IDX = 115; // day 4, Gaming stage
 
-// localStorage keys
-export const LS_HIDDEN = 'mwc_hidden_sessions';
-export const LS_HIGHLIGHTED = 'mwc_highlighted_sessions';
-export const LS_CAL_STAGES = 'mwc_cal_hidden_stages';
+// localStorage keys (section-scoped, default section is "ta")
+export const LS_HIDDEN = 'ta_hidden';
+export const LS_HIGHLIGHTED = 'ta_highlighted';
+export const LS_CAL_STAGES = 'ta_cal_stages';
 export const LS_SHOW_HIDDEN = 'showHidden';

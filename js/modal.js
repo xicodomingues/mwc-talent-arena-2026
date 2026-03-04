@@ -1,10 +1,11 @@
-import { STAGE_COLORS, LANG_FLAGS } from './constants.js';
+import { STAGE_COLORS, LANG_FLAGS, MWC_STAGE_COLORS } from './constants.js';
 import { esc } from './utils.js';
-import { SESSIONS, hiddenSessions, highlightedSessions, toggleHide, toggleHighlight } from './state.js';
+import { SESSIONS, hiddenSessions, highlightedSessions, toggleHide, toggleHighlight, section } from './state.js';
 
 export function showModal(idx) {
   const s = SESSIONS[idx];
-  const c = STAGE_COLORS[s.stage] || "#888";
+  const colors = section === "mwc" ? MWC_STAGE_COLORS : STAGE_COLORS;
+  const c = colors[s.stage] || "#888";
   const mHighlighted = highlightedSessions.has(idx);
   const mHidden = hiddenSessions.has(idx);
   const starSvg = '<svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 1l2.2 4.5 5 .7-3.6 3.5.85 5L8 12.4l-4.45 2.3.85-5L.8 6.2l5-.7z"/></svg>';
@@ -21,25 +22,48 @@ export function showModal(idx) {
   html += `<div class="modal-title">${esc(s.title)}</div>`;
   html += `<div class="modal-time">${esc(s.time)} \u2022 March ${s.day}</div>`;
 
-  if (s.speakers.length) {
-    html += '<div class="modal-speakers">';
-    for (const sp of s.speakers) {
-      html += `<div><span class="modal-speaker-name">${esc(sp.name)}</span>`;
-      if (sp.role) html += ` <span class="modal-speaker-role">\u2013 ${esc(sp.role)}</span>`;
-      html += `</div>`;
+  if (section === "mwc") {
+    // MWC-specific modal content
+    if (s.hall) html += `<div class="modal-time">${esc(s.hall)}</div>`;
+    if (s.company) html += `<div class="modal-speakers"><div>${esc(s.company)}</div></div>`;
+    if (s.description) html += `<div class="modal-desc">${esc(s.description)}</div>`;
+
+    html += '<div class="modal-meta">';
+    if (s.theme) html += `<span>${esc(s.theme)}</span>`;
+    if (s.access) html += `<span>${esc(s.access)}</span>`;
+    html += '</div>';
+
+    if (s.interests && s.interests.length) {
+      html += '<div class="modal-meta">';
+      for (const int of s.interests) html += `<span>${esc(int)}</span>`;
+      html += '</div>';
+    }
+
+    if (s.url) {
+      html += `<div style="margin-top:0.75rem"><a href="${esc(s.url)}" target="_blank" rel="noopener" class="modal-link-btn">View on MWC Barcelona \u2192</a></div>`;
+    }
+  } else {
+    // TA modal content
+    if (s.speakers.length) {
+      html += '<div class="modal-speakers">';
+      for (const sp of s.speakers) {
+        html += `<div><span class="modal-speaker-name">${esc(sp.name)}</span>`;
+        if (sp.role) html += ` <span class="modal-speaker-role">\u2013 ${esc(sp.role)}</span>`;
+        html += `</div>`;
+      }
+      html += '</div>';
+    }
+
+    if (s.description) html += `<div class="modal-desc">${esc(s.description)}</div>`;
+
+    html += '<div class="modal-meta">';
+    for (const t of s.tags) html += `<span>${esc(t)}</span>`;
+    if (s.lang) {
+      const flag = LANG_FLAGS[s.lang] || "";
+      html += `<span>${flag} ${esc(s.lang)}</span>`;
     }
     html += '</div>';
   }
-
-  if (s.description) html += `<div class="modal-desc">${esc(s.description)}</div>`;
-
-  html += '<div class="modal-meta">';
-  for (const t of s.tags) html += `<span>${esc(t)}</span>`;
-  if (s.lang) {
-    const flag = LANG_FLAGS[s.lang] || "";
-    html += `<span>${flag} ${esc(s.lang)}</span>`;
-  }
-  html += '</div>';
 
   document.getElementById("modalBody").innerHTML = html;
 

@@ -1,0 +1,5088 @@
+[
+ {
+  "day": 4,
+  "time": "08:30-09:00",
+  "stage": "MWC Networking Hub",
+  "hall": "Hall 6",
+  "title": "Meta Wearables Demonstration",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "Meta Platforms, Inc.",
+  "companies": [
+   "Meta Platforms, Inc."
+  ],
+  "track": "Networking",
+  "theme": "GAME CHANGERS",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "VIRTUAL REALITY / AUGMENTED REALITY",
+   "MOBILE DEVICE HARDWARE",
+   "GAME CHANGERS"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6069-meta-wearables-demonstration",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "08:45-08:55",
+  "stage": "MWC Broadcast Stage",
+  "hall": "Hall 4",
+  "title": "Exclusive Interview: Vivek Badrinath -  Director General, GSMA",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "MWC Broadcast Stage",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "5G / 6G",
+   "APP / MOBILE SERVICES",
+   "ARTIFICIAL INTELLIGENCE",
+   "AUTOMOTIVE / TRANSPORT",
+   "BIG DATA / ANALYTICS",
+   "CLIMATE / ENVIRONMENT / SUSTAINABILITY",
+   "CLOUD SERVICES / DATACENTERS",
+   "CORPORATE INNOVATION",
+   "CORPORATE VENTURING",
+   "CYBERSECURITY",
+   "DIGITAL IDENTITY / AUTHENTICATION",
+   "DIGITAL MARKETING / ADTECH",
+   "DIVERSITY",
+   "E-COMMERCE",
+   "EDUCATION",
+   "ENTERPRISE SOLUTIONS",
+   "ENTREPRENEURSHIP",
+   "FINTECH / FINANCE / INSURANCE SERVICES",
+   "FOUNDERS",
+   "GAMING",
+   "GOVERNMENT / PUBLIC POLICY",
+   "HEALTH / FITNESS / WELLBEING",
+   "IMPACT / SOCIAL INNOVATION",
+   "INNOVATION ECOSYSTEMS",
+   "IOT",
+   "MANUFACTURING AND INDUSTRY 4.0",
+   "MEDIA / CONTENT / ENTERTAINMENT",
+   "VIRTUAL REALITY / AUGMENTED REALITY",
+   "MOBILE DEVICE HARDWARE",
+   "MOBILE DEVICE SOFTWARE",
+   "NETWORK INFRASTRUCTURE",
+   "NETWORK SECURITY",
+   "PRIVATE NETWORKS",
+   "QUANTUM",
+   "RETAIL / DISTRIBUTION CHANNELS",
+   "SATELLITE / NON TERRESTRIAL NETWORKS",
+   "SMART CITIES",
+   "SYSTEMS INTEGRATION",
+   "TALENT",
+   "TOWER & FIBRE",
+   "VENTURE CAPITAL / INVESTMENT / M&A",
+   "BLOCKCHAIN / DECENTRALISATION",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical",
+   "Virtual"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6338-exclusive-interview-vivek-badrinath-director-general-gsma",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "09:00-09:25",
+  "stage": "MWC Networking Hub",
+  "hall": "Hall 6",
+  "title": "Scaling AI network optimization from trials to nationwide impact",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "Meta Platforms, Inc.",
+  "companies": [
+   "Meta Platforms, Inc."
+  ],
+  "track": "Networking",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "NETWORK INFRASTRUCTURE",
+   "NETWORK SECURITY",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6316-scaling-ai-network-optimization-from-trials-to-nationwide-impact",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "09:00-11:00",
+  "stage": "CC2.2 MWC Roundtable Room 2",
+  "hall": "Hall 2",
+  "title": "AI Leaders Roundtable: Open Telco AI",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Roundtables & Summits",
+  "theme": "AI NEXUS",
+  "interests": [
+   "5G / 6G",
+   "APP / MOBILE SERVICES",
+   "ARTIFICIAL INTELLIGENCE",
+   "BIG DATA / ANALYTICS",
+   "INNOVATION ECOSYSTEMS",
+   "NETWORK INFRASTRUCTURE",
+   "AI NEXUS"
+  ],
+  "access": "Invitation Required",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6212-ai-leaders-roundtable-open-telco-ai",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "09:00-11:30",
+  "stage": "Partner Theatre 4",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "IoT Summit: Simplifying the Future of Connected Innovation",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Roundtables & Summits",
+  "theme": "GAME CHANGERS",
+  "interests": [
+   "5G / 6G",
+   "IOT",
+   "MOBILE DEVICE SOFTWARE",
+   "PRIVATE NETWORKS",
+   "QUANTUM",
+   "SATELLITE / NON TERRESTRIAL NETWORKS",
+   "SMART CITIES",
+   "GAME CHANGERS"
+  ],
+  "access": "Pre-registered & Approved have priority",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6080-iot-summit-simplifying-the-future-of-connected-innovation",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "09:00-13:00",
+  "stage": "Partner Theatre 2",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Open Gateway Summit: Accelerating Network API Adoption",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Roundtables & Summits",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "5G / 6G",
+   "APP / MOBILE SERVICES",
+   "ARTIFICIAL INTELLIGENCE",
+   "AUTOMOTIVE / TRANSPORT",
+   "DIGITAL IDENTITY / AUTHENTICATION",
+   "ENTERPRISE SOLUTIONS",
+   "FINTECH / FINANCE / INSURANCE SERVICES",
+   "INNOVATION ECOSYSTEMS",
+   "MANUFACTURING AND INDUSTRY 4.0",
+   "MEDIA / CONTENT / ENTERTAINMENT",
+   "NETWORK INFRASTRUCTURE",
+   "PRIVATE NETWORKS",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5917-open-gateway-summit-accelerating-network-api-adoption",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "09:00-13:00",
+  "stage": "Partner Theatre 5",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "The Telecom Retail Summit",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "iQmetrix",
+  "companies": [
+   "iQmetrix"
+  ],
+  "track": "Partner Programmes",
+  "theme": "GAME CHANGERS",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "BIG DATA / ANALYTICS",
+   "CORPORATE INNOVATION",
+   "E-COMMERCE",
+   "ENTERPRISE SOLUTIONS",
+   "FINTECH / FINANCE / INSURANCE SERVICES",
+   "INNOVATION ECOSYSTEMS",
+   "MOBILE DEVICE SOFTWARE",
+   "RETAIL / DISTRIBUTION CHANNELS",
+   "SYSTEMS INTEGRATION",
+   "GAME CHANGERS"
+  ],
+  "access": "Pre-registered & Approved have priority",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6105-the-telecom-retail-summit",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "09:15-09:35",
+  "stage": "MWC Broadcast Stage",
+  "hall": "Hall 4",
+  "title": "Show Daily Panel",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "MWC Broadcast Stage",
+  "theme": "INFINITE AI",
+  "interests": [
+   "5G / 6G",
+   "APP / MOBILE SERVICES",
+   "ARTIFICIAL INTELLIGENCE",
+   "AUTOMOTIVE / TRANSPORT",
+   "BIG DATA / ANALYTICS",
+   "CLIMATE / ENVIRONMENT / SUSTAINABILITY",
+   "CLOUD SERVICES / DATACENTERS",
+   "CORPORATE INNOVATION",
+   "CORPORATE VENTURING",
+   "CYBERSECURITY",
+   "DIGITAL IDENTITY / AUTHENTICATION",
+   "DIGITAL MARKETING / ADTECH",
+   "DIVERSITY",
+   "E-COMMERCE",
+   "EDUCATION",
+   "ENTERPRISE SOLUTIONS",
+   "ENTREPRENEURSHIP",
+   "FINTECH / FINANCE / INSURANCE SERVICES",
+   "FOUNDERS",
+   "GAMING",
+   "GOVERNMENT / PUBLIC POLICY",
+   "HEALTH / FITNESS / WELLBEING",
+   "IMPACT / SOCIAL INNOVATION",
+   "INNOVATION ECOSYSTEMS",
+   "IOT",
+   "MANUFACTURING AND INDUSTRY 4.0",
+   "MEDIA / CONTENT / ENTERTAINMENT",
+   "VIRTUAL REALITY / AUGMENTED REALITY",
+   "MOBILE DEVICE HARDWARE",
+   "MOBILE DEVICE SOFTWARE",
+   "NETWORK INFRASTRUCTURE",
+   "NETWORK SECURITY",
+   "PRIVATE NETWORKS",
+   "QUANTUM",
+   "RETAIL / DISTRIBUTION CHANNELS",
+   "SATELLITE / NON TERRESTRIAL NETWORKS",
+   "SMART CITIES",
+   "SYSTEMS INTEGRATION",
+   "TALENT",
+   "TOWER & FIBRE",
+   "VENTURE CAPITAL / INVESTMENT / M&A",
+   "BLOCKCHAIN / DECENTRALISATION",
+   "INFINITE AI"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical",
+   "Virtual"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6337-show-daily-panel",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "09:30-09:55",
+  "stage": "MWC Networking Hub",
+  "hall": "Hall 6",
+  "title": "Transforming user experience and unlocking value in emerging markets",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "Meta Platforms, Inc.",
+  "companies": [
+   "Meta Platforms, Inc."
+  ],
+  "track": "Networking",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "NETWORK INFRASTRUCTURE",
+   "NETWORK SECURITY",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6307-transforming-user-experience-and-unlocking-value-in-emerging-markets",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "09:30-10:00",
+  "stage": "New Frontiers Stage",
+  "hall": "Hall 6",
+  "title": "CircuitX Partner Session: Matsing - Transforming The Circuit Experience With Connectivity",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Partner Programmes",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "5G / 6G",
+   "IOT",
+   "MEDIA / CONTENT / ENTERTAINMENT",
+   "NETWORK INFRASTRUCTURE",
+   "PRIVATE NETWORKS",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6204-circuitx-partner-session-matsing-transforming-the-circuit-experience-with-connectivity",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "09:30-10:30",
+  "stage": "Marconi Stage",
+  "hall": "Hall 6",
+  "title": "5G ROI Playbook: Innovation, Monetisation & What’s Next",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Conference",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "5G / 6G",
+   "ARTIFICIAL INTELLIGENCE",
+   "CLOUD SERVICES / DATACENTERS",
+   "NETWORK INFRASTRUCTURE",
+   "PRIVATE NETWORKS",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5929-5g-roi-playbook-innovation-monetisation-whats-next",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "09:30-11:00",
+  "stage": "Partner Theatre 1",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "AI Beyond Boundaries Summit: AI Drives B2B New Growth",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Roundtables & Summits",
+  "theme": "AI4ENTERPRISE",
+  "interests": [
+   "5G / 6G",
+   "ARTIFICIAL INTELLIGENCE",
+   "DIGITAL MARKETING / ADTECH",
+   "EDUCATION",
+   "ENTERPRISE SOLUTIONS",
+   "GOVERNMENT / PUBLIC POLICY",
+   "HEALTH / FITNESS / WELLBEING",
+   "IMPACT / SOCIAL INNOVATION",
+   "INNOVATION ECOSYSTEMS",
+   "IOT",
+   "RETAIL / DISTRIBUTION CHANNELS",
+   "AI4ENTERPRISE"
+  ],
+  "access": "Pre-registered & Approved have priority",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6253-ai-beyond-boundaries-summit-ai-drives-b2b-new-growth",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "09:30-11:40",
+  "stage": "Lamarr Stage",
+  "hall": "Hall 6",
+  "title": "Quantum Technology Summit: What Quantum Technology means for Telco",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Roundtables & Summits",
+  "theme": "GAME CHANGERS",
+  "interests": [
+   "5G / 6G",
+   "APP / MOBILE SERVICES",
+   "IOT",
+   "MOBILE DEVICE HARDWARE",
+   "PRIVATE NETWORKS",
+   "QUANTUM",
+   "SMART CITIES",
+   "GAME CHANGERS"
+  ],
+  "access": "Pre-registered & Approved have priority",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6079-quantum-technology-summit-what-quantum-technology-means-for-telco",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "09:45-10:15",
+  "stage": "Turing Stage",
+  "hall": "Hall 6",
+  "title": "Data, Compute, Energy: The Power Equation of the AI Era",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Conference",
+  "theme": "CONNECT AI",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "BIG DATA / ANALYTICS",
+   "CLIMATE / ENVIRONMENT / SUSTAINABILITY",
+   "GOVERNMENT / PUBLIC POLICY",
+   "INNOVATION ECOSYSTEMS",
+   "CONNECT AI"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5935-data-compute-energy-the-power-equation-of-the-ai-era",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "09:45-10:30",
+  "stage": "Johnson Stage",
+  "hall": "Hall 6",
+  "title": "#ChangeTheFace Summit: The Growth Multiplier: Unlocking Innovation through People and Culture",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "Cloudflare",
+  "companies": [
+   "Cloudflare"
+  ],
+  "track": "#ChangeTheFace",
+  "theme": "TECH4ALL",
+  "interests": [
+   "DIVERSITY",
+   "IMPACT / SOCIAL INNOVATION",
+   "TECH4ALL"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6194-changetheface-summit-the-growth-multiplier-unlocking-innovation-through-people-and-culture",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "09:50-10:00",
+  "stage": "MWC Broadcast Stage",
+  "hall": "Hall 4",
+  "title": "Preview - Keynote 10: Blueprints for the Intelligent Future",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "MWC Broadcast Stage",
+  "theme": "CONNECT AI",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "CONNECT AI"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical",
+   "Virtual"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6339-preview-keynote-10-blueprints-for-the-intelligent-future",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "10:00-10:10",
+  "stage": "Founders Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Project Presentation: Innovally and Tech Barcelona",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "FOUNDERS ACADEMY",
+  "interests": [
+   "ENTREPRENEURSHIP",
+   "FOUNDERS",
+   "INNOVATION ECOSYSTEMS",
+   "FOUNDERS ACADEMY"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6326-project-presentation-innovally-and-tech-barcelona",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "10:00-10:25",
+  "stage": "MWC Networking Hub",
+  "hall": "Hall 6",
+  "title": "The Future of Video Now: A Cross-Industry Alliance for Next-Gen Streaming",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "Meta Platforms, Inc.",
+  "companies": [
+   "Meta Platforms, Inc."
+  ],
+  "track": "Networking",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "NETWORK INFRASTRUCTURE",
+   "NETWORK SECURITY",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6311-the-future-of-video-now-a-cross-industry-alliance-for-next-gen-streaming",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "10:00-10:30",
+  "stage": "Agora Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Robots, AI and Fundamental Rights: Just Another Member of the Family?",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "INFINITE AI",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "CYBERSECURITY",
+   "DIGITAL IDENTITY / AUTHENTICATION",
+   "GOVERNMENT / PUBLIC POLICY",
+   "IMPACT / SOCIAL INNOVATION",
+   "INFINITE AI"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5885-robots-ai-and-fundamental-rights-just-another-member-of-the-family",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "10:00-10:30",
+  "stage": "Connected Industries",
+  "hall": "Hall 4",
+  "title": "Smart Mobility Summit: Connectivity Meets Autonomy",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "Accenture",
+  "companies": [
+   "Accenture"
+  ],
+  "track": "Connected Industries",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "AUTOMOTIVE / TRANSPORT",
+   "INNOVATION ECOSYSTEMS",
+   "IOT",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6142-smart-mobility-summit-connectivity-meets-autonomy",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "10:00-10:45",
+  "stage": "CC5 Focus Stage",
+  "hall": "Upper Walkway",
+  "title": "DPI at Scale: Powered by Mobile Networks",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "GSMA Ministerial Programme",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "GOVERNMENT / PUBLIC POLICY",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Invitation Required",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6098-dpi-at-scale-powered-by-mobile-networks",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "10:00-11:00",
+  "stage": "4YFN Meeting Hub",
+  "hall": "Hall 8.1 - 4YFN",
+  "title": "Creative Ecosystems: Networking Meetup",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "CREATIVITY",
+  "interests": [
+   "ENTREPRENEURSHIP",
+   "INNOVATION ECOSYSTEMS",
+   "MEDIA / CONTENT / ENTERTAINMENT",
+   "CREATIVITY"
+  ],
+  "access": "Pre-registered & Approved have priority",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6304-creative-ecosystems-networking-meetup",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "10:00-11:00",
+  "stage": "4YFN Pitching Stage",
+  "hall": "Hall 8.1 - 4YFN",
+  "title": "Startup Pitching Session: Japanese Innovation Unleashed - Part 1",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "FOUNDERS ACADEMY",
+  "interests": [
+   "CORPORATE INNOVATION",
+   "ENTREPRENEURSHIP",
+   "INNOVATION ECOSYSTEMS",
+   "FOUNDERS ACADEMY"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6170-startup-pitching-session-japanese-innovation-unleashed-part-1",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "10:00-11:00",
+  "stage": "4YFN Workshop Room",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Founders Workshop: Building High Performance Teams for Scaling Startups",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "FOUNDERS ACADEMY",
+  "interests": [
+   "ENTREPRENEURSHIP",
+   "FOUNDERS",
+   "TALENT",
+   "FOUNDERS ACADEMY"
+  ],
+  "access": "Pre-registered & Approved have priority",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6229-founders-workshop-building-high-performance-teams-for-scaling-startups",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "10:00-11:00",
+  "stage": "Banco Sabadell Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "The Innovation Trinity: How Startups, Corporates, and Investors Can Win Together",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "CORPORATE INNOVATION",
+  "interests": [
+   "CORPORATE INNOVATION",
+   "CORPORATE VENTURING",
+   "CORPORATE INNOVATION"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5836-the-innovation-trinity-how-startups-corporates-and-investors-can-win-together",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "10:00-11:00",
+  "stage": "CC2 GSMA Insights Hub Stage",
+  "hall": "Hall 2",
+  "title": "The Business Imperative for Digital Inclusion",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "GSMA Insights Hub",
+  "theme": "TECH4ALL",
+  "interests": [
+   "BIG DATA / ANALYTICS",
+   "CLIMATE / ENVIRONMENT / SUSTAINABILITY",
+   "DIVERSITY",
+   "GOVERNMENT / PUBLIC POLICY",
+   "TECH4ALL"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6148-the-business-imperative-for-digital-inclusion",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "10:00-11:00",
+  "stage": "CC2.3 GSMA Insights Hub",
+  "hall": "Hall 2",
+  "title": "Small business vs. Big opportunity: Can telcos succeed in B2B beyond large enterprises?",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Roundtables & Summits",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "5G / 6G",
+   "CORPORATE INNOVATION",
+   "ENTERPRISE SOLUTIONS",
+   "INNOVATION ECOSYSTEMS",
+   "MANUFACTURING AND INDUSTRY 4.0",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6302-small-business-vs-big-opportunity-can-telcos-succeed-in-b2b-beyond-large-enterprises",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "10:00-11:00",
+  "stage": "CC5 Ministerial Stage",
+  "hall": "Upper Walkway",
+  "title": "What Keeps Systems Running",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "GSMA Ministerial Programme",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "CYBERSECURITY",
+   "GOVERNMENT / PUBLIC POLICY",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Invitation Required",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6097-what-keeps-systems-running",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "10:00-11:00",
+  "stage": "Ericsson pavilion",
+  "hall": "Hall 2",
+  "title": "How can hybrid connectivity solutions deliver ubiquitous mission-critical broadband services?",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Exhibitor",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "5G / 6G",
+   "GOVERNMENT / PUBLIC POLICY",
+   "NETWORK INFRASTRUCTURE",
+   "PRIVATE NETWORKS",
+   "SMART CITIES",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical",
+   "Virtual"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6284-how-can-hybrid-connectivity-solutions-deliver-ubiquitous-mission-critical-broadband-services",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "10:00-11:00",
+  "stage": "MWC Main Stage",
+  "hall": "Hall 4",
+  "title": "Keynote 10: Blueprints for the Intelligent Future",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Keynotes",
+  "theme": "CONNECT AI",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "ENTERPRISE SOLUTIONS",
+   "INNOVATION ECOSYSTEMS",
+   "CONNECT AI"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical",
+   "Virtual"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6230-keynote-10-blueprints-for-the-intelligent-future",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "10:00-11:30",
+  "stage": "4YFN Networking Hub",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Africa AI Networking Event",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "AI NEXUS",
+  "interests": [
+   "5G / 6G",
+   "ARTIFICIAL INTELLIGENCE",
+   "DIVERSITY",
+   "EDUCATION",
+   "ENTREPRENEURSHIP",
+   "FOUNDERS",
+   "AI NEXUS"
+  ],
+  "access": "Pre-registered & Approved have priority",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6226-africa-ai-networking-event",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "10:00-12:00",
+  "stage": "Partner Theatre 6",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "YOFC Hollow-core Fibre Product Launch Event",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Partner Programmes",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "NETWORK INFRASTRUCTURE",
+   "TOWER & FIBRE",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5992-yofc-hollow-core-fibre-product-launch-event",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "10:00-12:30",
+  "stage": "GSMA Summits Stage",
+  "hall": "Hall 6",
+  "title": "Satellite and NTN Summit",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Roundtables & Summits",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "SATELLITE / NON TERRESTRIAL NETWORKS",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6135-satellite-and-ntn-summit",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "10:00-15:30",
+  "stage": "PwC - Stand 4D10",
+  "hall": "Hall 4",
+  "title": "Scale what matters with PwC",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "PwC",
+  "companies": [
+   "PwC"
+  ],
+  "track": "Partner Programmes",
+  "theme": "CONNECT AI",
+  "interests": [
+   "5G / 6G",
+   "ARTIFICIAL INTELLIGENCE",
+   "AUTOMOTIVE / TRANSPORT",
+   "CLOUD SERVICES / DATACENTERS",
+   "CYBERSECURITY",
+   "GOVERNMENT / PUBLIC POLICY",
+   "NETWORK SECURITY",
+   "PRIVATE NETWORKS",
+   "SMART CITIES",
+   "SYSTEMS INTEGRATION",
+   "CONNECT AI"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6056-scale-what-matters-with-pwc",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "10:00-18:00",
+  "stage": "Sky Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "AI in Healthcare: Hype or Hope? - AstraZeneca at 4YFN 2026",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "AstraZeneca Farmaceutica Spain SA",
+  "companies": [
+   "AstraZeneca Farmaceutica Spain SA"
+  ],
+  "track": "4YFN",
+  "theme": "HEALTH TECH",
+  "interests": [
+   "HEALTH / FITNESS / WELLBEING",
+   "HEALTH TECH"
+  ],
+  "access": "Pre-registered & Approved have priority",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6012-ai-in-healthcare-hype-or-hope-astrazeneca-at-4yfn-2026",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "10:10-10:20",
+  "stage": "Founders Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Project Presentation: GetVocal.AI",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "FOUNDERS ACADEMY",
+  "interests": [
+   "CORPORATE INNOVATION",
+   "ENTREPRENEURSHIP",
+   "INNOVATION ECOSYSTEMS",
+   "FOUNDERS ACADEMY"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6321-project-presentation-getvocal-ai",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "10:10-10:40",
+  "stage": "MWC Broadcast Stage",
+  "hall": "Hall 4",
+  "title": "Google × Infobip: Conversations that Drive Results with AI & RCS for Business",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "Infobip",
+  "companies": [
+   "Infobip"
+  ],
+  "track": "MWC Broadcast Stage",
+  "theme": "AI4ENTERPRISE",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "CORPORATE INNOVATION",
+   "DIGITAL IDENTITY / AUTHENTICATION",
+   "DIGITAL MARKETING / ADTECH",
+   "E-COMMERCE",
+   "ENTERPRISE SOLUTIONS",
+   "FINTECH / FINANCE / INSURANCE SERVICES",
+   "AI4ENTERPRISE"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical",
+   "Virtual"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6004-google-x-infobip-conversations-that-drive-results-with-ai-rcs-for-business",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "10:30-10:55",
+  "stage": "MWC Networking Hub",
+  "hall": "Hall 6",
+  "title": "Evolving the Authentication Landscape: All Roads Lead to API",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "Meta Platforms, Inc.",
+  "companies": [
+   "Meta Platforms, Inc."
+  ],
+  "track": "Networking",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "NETWORK INFRASTRUCTURE",
+   "NETWORK SECURITY",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6310-evolving-the-authentication-landscape-all-roads-lead-to-api",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "10:30-11:00",
+  "stage": "Agora Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Scaling the Energy Transition: Investment and Technological Innovation",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "CLIMATE TECH",
+  "interests": [
+   "CLIMATE / ENVIRONMENT / SUSTAINABILITY",
+   "CORPORATE INNOVATION",
+   "ENTERPRISE SOLUTIONS",
+   "MANUFACTURING AND INDUSTRY 4.0",
+   "VENTURE CAPITAL / INVESTMENT / M&A",
+   "CLIMATE TECH"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5892-scaling-the-energy-transition-investment-and-technological-innovation",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "10:30-11:00",
+  "stage": "New Frontiers Stage",
+  "hall": "Hall 6",
+  "title": "Humanoid Robots: From Playmates to Soulmates",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Partner Programmes",
+  "theme": "AI4ENTERPRISE",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "CORPORATE INNOVATION",
+   "IMPACT / SOCIAL INNOVATION",
+   "AI4ENTERPRISE"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6063-humanoid-robots-from-playmates-to-soulmates",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "10:30-11:30",
+  "stage": "Connected Industries",
+  "hall": "Hall 4",
+  "title": "Smart Mobility Summit: Built for Tomorrow - Infrastructure for Intelligent Mobility",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Connected Industries",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "5G / 6G",
+   "ARTIFICIAL INTELLIGENCE",
+   "AUTOMOTIVE / TRANSPORT",
+   "BIG DATA / ANALYTICS",
+   "CYBERSECURITY",
+   "ENTERPRISE SOLUTIONS",
+   "IOT",
+   "NETWORK INFRASTRUCTURE",
+   "NETWORK SECURITY",
+   "PRIVATE NETWORKS",
+   "SMART CITIES",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5978-smart-mobility-summit-built-for-tomorrow-infrastructure-for-intelligent-mobility",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "10:35-10:55",
+  "stage": "Founders Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Unlocking Spain’s Tech Momentum",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "FOUNDERS ACADEMY",
+  "interests": [
+   "FOUNDERS",
+   "FOUNDERS ACADEMY"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6026-unlocking-spains-tech-momentum",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "11:00-11:30",
+  "stage": "Agora Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "AI Agents for Wildfire Prevention: From Prediction to Action",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "CLIMATE TECH",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "BIG DATA / ANALYTICS",
+   "CLIMATE / ENVIRONMENT / SUSTAINABILITY",
+   "CLIMATE TECH"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5886-ai-agents-for-wildfire-prevention-from-prediction-to-action",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "11:00-11:30",
+  "stage": "Banco Sabadell Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Funding Deep Tech: Lessons from Both Sides of the Term Sheet",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "INVESTORS",
+  "interests": [
+   "BIG DATA / ANALYTICS",
+   "CORPORATE VENTURING",
+   "ENTREPRENEURSHIP",
+   "FINTECH / FINANCE / INSURANCE SERVICES",
+   "VENTURE CAPITAL / INVESTMENT / M&A",
+   "INVESTORS"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5873-funding-deep-tech-lessons-from-both-sides-of-the-term-sheet",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "11:00-11:30",
+  "stage": "Turing Stage",
+  "hall": "Hall 6",
+  "title": "Seeing Double: Digital Twins as the Smartest Bet for Business",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Conference",
+  "theme": "AI4ENTERPRISE",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "ENTERPRISE SOLUTIONS",
+   "IOT",
+   "AI4ENTERPRISE"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5933-seeing-double-digital-twins-as-the-smartest-bet-for-business",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "11:00-11:45",
+  "stage": "Johnson Stage",
+  "hall": "Hall 6",
+  "title": "Are We Heading Towards an AI Governance Cold War?",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Conference",
+  "theme": "AI NEXUS",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "GOVERNMENT / PUBLIC POLICY",
+   "AI NEXUS"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5956-are-we-heading-towards-an-ai-governance-cold-war",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "11:00-12:30",
+  "stage": "Partner Theatre 3",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "MediaTek AI for Life Keynote",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Partner Programmes",
+  "theme": "CONNECT AI",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "AUTOMOTIVE / TRANSPORT",
+   "GAMING",
+   "SATELLITE / NON TERRESTRIAL NETWORKS",
+   "CONNECT AI"
+  ],
+  "access": "Invitation Required",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6030-mediatek-ai-for-life-keynote",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "11:15-11:45",
+  "stage": "Founders Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Investors Reverse Pitching",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "INVESTORS",
+  "interests": [
+   "ENTREPRENEURSHIP",
+   "FOUNDERS",
+   "VENTURE CAPITAL / INVESTMENT / M&A",
+   "INVESTORS"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5902-investors-reverse-pitching",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "11:15-12:15",
+  "stage": "4YFN Pitching Stage",
+  "hall": "Hall 8.1 - 4YFN",
+  "title": "Startup Pitching Session: The Basque Innovation Spotlight: Where Big Ideas Shine",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "FOUNDERS ACADEMY",
+  "interests": [
+   "CORPORATE INNOVATION",
+   "ENTREPRENEURSHIP",
+   "INNOVATION ECOSYSTEMS",
+   "FOUNDERS ACADEMY"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6171-startup-pitching-session-the-basque-innovation-spotlight-where-big-ideas-shine",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "11:15-12:45",
+  "stage": "Marconi Stage",
+  "hall": "Hall 6",
+  "title": "Cloud Fusion: Mastering Data Centres for the AI Era",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Conference",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "BIG DATA / ANALYTICS",
+   "CLIMATE / ENVIRONMENT / SUSTAINABILITY",
+   "CLOUD SERVICES / DATACENTERS",
+   "VENTURE CAPITAL / INVESTMENT / M&A",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Pre-registered & Approved have priority",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5928-cloud-fusion-mastering-data-centres-for-the-ai-era",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "11:20-11:30",
+  "stage": "MWC Broadcast Stage",
+  "hall": "Hall 4",
+  "title": "Exclusive Interview: Kaiwei Tang Light, CEO &  Co-Founder",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "MWC Broadcast Stage",
+  "theme": "TECH4ALL",
+  "interests": [
+   "MOBILE DEVICE HARDWARE",
+   "TECH4ALL"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical",
+   "Virtual"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6340-exclusive-interview-kaiwei-tang-light-ceo-co-founder",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "11:30-12:15",
+  "stage": "CC5 Ministerial Stage",
+  "hall": "Upper Walkway",
+  "title": "Access Denied!",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "GSMA Ministerial Programme",
+  "theme": "CYBERSECURITY",
+  "interests": [
+   "GOVERNMENT / PUBLIC POLICY",
+   "CYBERSECURITY"
+  ],
+  "access": "Invitation Required",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6109-access-denied",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "11:30-12:15",
+  "stage": "Ericsson pavilion",
+  "hall": "Hall 2",
+  "title": "From telco to techco: expanding into digital financial services",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Exhibitor",
+  "theme": "AI4ENTERPRISE",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "DIGITAL IDENTITY / AUTHENTICATION",
+   "ENTERPRISE SOLUTIONS",
+   "FINTECH / FINANCE / INSURANCE SERVICES",
+   "INNOVATION ECOSYSTEMS",
+   "AI4ENTERPRISE"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical",
+   "Virtual"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6285-from-telco-to-techco-expanding-into-digital-financial-services",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "11:30-12:30",
+  "stage": "4YFN Workshop Room",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Investor Workshop: Pathways to VC liquidity",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "INVESTORS",
+  "interests": [
+   "VENTURE CAPITAL / INVESTMENT / M&A",
+   "INVESTORS"
+  ],
+  "access": "Pre-registered & Approved have priority",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6198-investor-workshop-pathways-to-vc-liquidity",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "11:30-12:30",
+  "stage": "CC2 GSMA Insights Hub Stage",
+  "hall": "Hall 2",
+  "title": "Mapping mobile’s global coverage: Myths, realities, and why high-resolution insights matter for progress",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "GSMA Insights Hub",
+  "theme": "TECH4ALL",
+  "interests": [
+   "5G / 6G",
+   "APP / MOBILE SERVICES",
+   "BIG DATA / ANALYTICS",
+   "NETWORK INFRASTRUCTURE",
+   "SATELLITE / NON TERRESTRIAL NETWORKS",
+   "TOWER & FIBRE",
+   "TECH4ALL"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6234-mapping-mobiles-global-coverage-myths-realities-and-why-high-resolution-insights-matter-for-progress",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "11:30-12:30",
+  "stage": "CC2.3 GSMA Insights Hub",
+  "hall": "Hall 2",
+  "title": "ISAC: Precision Positioning for industry, mission-first defence…or both?",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "GSMA Insights Hub",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "5G / 6G",
+   "BIG DATA / ANALYTICS",
+   "IMPACT / SOCIAL INNOVATION",
+   "MANUFACTURING AND INDUSTRY 4.0",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6268-isac-precision-positioning-for-industry-mission-first-defence...or-both",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "11:50-12:00",
+  "stage": "MWC Broadcast Stage",
+  "hall": "Hall 4",
+  "title": "Preview - Keynote 11: Rewriting the Playbook",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "MWC Broadcast Stage",
+  "theme": "GAME CHANGERS",
+  "interests": [
+   "5G / 6G",
+   "APP / MOBILE SERVICES",
+   "ARTIFICIAL INTELLIGENCE",
+   "AUTOMOTIVE / TRANSPORT",
+   "BIG DATA / ANALYTICS",
+   "CLIMATE / ENVIRONMENT / SUSTAINABILITY",
+   "CLOUD SERVICES / DATACENTERS",
+   "CORPORATE INNOVATION",
+   "CORPORATE VENTURING",
+   "CYBERSECURITY",
+   "DIGITAL IDENTITY / AUTHENTICATION",
+   "DIGITAL MARKETING / ADTECH",
+   "DIVERSITY",
+   "E-COMMERCE",
+   "EDUCATION",
+   "ENTERPRISE SOLUTIONS",
+   "ENTREPRENEURSHIP",
+   "FINTECH / FINANCE / INSURANCE SERVICES",
+   "FOUNDERS",
+   "GAMING",
+   "GOVERNMENT / PUBLIC POLICY",
+   "HEALTH / FITNESS / WELLBEING",
+   "IMPACT / SOCIAL INNOVATION",
+   "INNOVATION ECOSYSTEMS",
+   "IOT",
+   "MANUFACTURING AND INDUSTRY 4.0",
+   "MEDIA / CONTENT / ENTERTAINMENT",
+   "VIRTUAL REALITY / AUGMENTED REALITY",
+   "MOBILE DEVICE HARDWARE",
+   "MOBILE DEVICE SOFTWARE",
+   "NETWORK INFRASTRUCTURE",
+   "NETWORK SECURITY",
+   "PRIVATE NETWORKS",
+   "QUANTUM",
+   "RETAIL / DISTRIBUTION CHANNELS",
+   "SATELLITE / NON TERRESTRIAL NETWORKS",
+   "SMART CITIES",
+   "SYSTEMS INTEGRATION",
+   "TALENT",
+   "TOWER & FIBRE",
+   "VENTURE CAPITAL / INVESTMENT / M&A",
+   "BLOCKCHAIN / DECENTRALISATION",
+   "GAME CHANGERS"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical",
+   "Virtual"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6341-preview-keynote-11-rewriting-the-playbook",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "11:50-12:20",
+  "stage": "Agora Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Pioneering the Present of Quantum: International Opportunities for Spanish Companies",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "FOUNDERS ACADEMY",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "ENTREPRENEURSHIP",
+   "FOUNDERS",
+   "INNOVATION ECOSYSTEMS",
+   "FOUNDERS ACADEMY"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5898-pioneering-the-present-of-quantum-international-opportunities-for-spanish-companies",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "12:00-12:30",
+  "stage": "CC5 Focus Stage",
+  "hall": "Upper Walkway",
+  "title": "Habitats of the Future: Digital Cities",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "GSMA Ministerial Programme",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "CLIMATE / ENVIRONMENT / SUSTAINABILITY",
+   "GOVERNMENT / PUBLIC POLICY",
+   "SMART CITIES",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Invitation Required",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6112-habitats-of-the-future-digital-cities",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "12:00-12:30",
+  "stage": "New Frontiers Stage",
+  "hall": "Hall 6",
+  "title": "MagicLab New Frontiers Stage",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Partner Programmes",
+  "theme": "CONNECT AI",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "CONNECT AI"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6154-magiclab-new-frontiers-stage",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "12:00-12:45",
+  "stage": "Turing Stage",
+  "hall": "Hall 6",
+  "title": "Digital Disparity: Addressing the Language Gap in AI",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Conference",
+  "theme": "TECH4ALL",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "TECH4ALL"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5957-digital-disparity-addressing-the-language-gap-in-ai",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "12:00-13:00",
+  "stage": "CC2.2 MWC Roundtable Room 2",
+  "hall": "Hall 2",
+  "title": "Designing Customer Experience with AI: Scaling Trust, Resolution, and Brand Voice Across Millions of Interactions",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Partner Programmes",
+  "theme": "AI4ENTERPRISE",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "CORPORATE INNOVATION",
+   "ENTERPRISE SOLUTIONS",
+   "AI4ENTERPRISE"
+  ],
+  "access": "Pre-registered & Approved have priority",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6192-designing-customer-experience-with-ai-scaling-trust-resolution-and-brand-voice-across-millions-of-interactions",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "12:00-13:00",
+  "stage": "Connected Industries",
+  "hall": "Hall 4",
+  "title": "Smart Mobility Summit: AI Takes Flight - Transforming Mobility Right Now",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Connected Industries",
+  "theme": "AI4ENTERPRISE",
+  "interests": [
+   "5G / 6G",
+   "ARTIFICIAL INTELLIGENCE",
+   "AUTOMOTIVE / TRANSPORT",
+   "BIG DATA / ANALYTICS",
+   "CORPORATE INNOVATION",
+   "CYBERSECURITY",
+   "ENTERPRISE SOLUTIONS",
+   "INNOVATION ECOSYSTEMS",
+   "IOT",
+   "NETWORK INFRASTRUCTURE",
+   "NETWORK SECURITY",
+   "PRIVATE NETWORKS",
+   "SMART CITIES",
+   "AI4ENTERPRISE"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5983-smart-mobility-summit-ai-takes-flight-transforming-mobility-right-now",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "12:00-13:00",
+  "stage": "Founders Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Startup Pitching Session by Cámara de Comercio de España",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "FOUNDERS ACADEMY",
+  "interests": [
+   "CORPORATE INNOVATION",
+   "ENTREPRENEURSHIP",
+   "INNOVATION ECOSYSTEMS",
+   "FOUNDERS ACADEMY"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6028-startup-pitching-session-by-camara-de-comercio-de-espana",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "12:00-13:00",
+  "stage": "MWC Main Stage",
+  "hall": "Hall 4",
+  "title": "Keynote 11: Rewriting the Playbook",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Keynotes",
+  "theme": "GAME CHANGERS",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "IMPACT / SOCIAL INNOVATION",
+   "INNOVATION ECOSYSTEMS",
+   "GAME CHANGERS"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical",
+   "Virtual"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6092-keynote-11-rewriting-the-playbook",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "12:00-13:30",
+  "stage": "Partner Theatre 1",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "AI Transformation in Telecom: Unlocking $100M+ Value with Innovative Use Cases (TELUS, NVIDIA, F3 Networks)",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Partner Programmes",
+  "theme": "AI4ENTERPRISE",
+  "interests": [
+   "5G / 6G",
+   "APP / MOBILE SERVICES",
+   "ARTIFICIAL INTELLIGENCE",
+   "AUTOMOTIVE / TRANSPORT",
+   "BIG DATA / ANALYTICS",
+   "CLOUD SERVICES / DATACENTERS",
+   "CORPORATE INNOVATION",
+   "CORPORATE VENTURING",
+   "CYBERSECURITY",
+   "DIGITAL IDENTITY / AUTHENTICATION",
+   "DIGITAL MARKETING / ADTECH",
+   "E-COMMERCE",
+   "EDUCATION",
+   "ENTERPRISE SOLUTIONS",
+   "ENTREPRENEURSHIP",
+   "FINTECH / FINANCE / INSURANCE SERVICES",
+   "FOUNDERS",
+   "GAMING",
+   "GOVERNMENT / PUBLIC POLICY",
+   "HEALTH / FITNESS / WELLBEING",
+   "IMPACT / SOCIAL INNOVATION",
+   "INNOVATION ECOSYSTEMS",
+   "IOT",
+   "MANUFACTURING AND INDUSTRY 4.0",
+   "MEDIA / CONTENT / ENTERTAINMENT",
+   "VIRTUAL REALITY / AUGMENTED REALITY",
+   "MOBILE DEVICE SOFTWARE",
+   "NETWORK INFRASTRUCTURE",
+   "NETWORK SECURITY",
+   "PRIVATE NETWORKS",
+   "QUANTUM",
+   "RETAIL / DISTRIBUTION CHANNELS",
+   "SATELLITE / NON TERRESTRIAL NETWORKS",
+   "SMART CITIES",
+   "SYSTEMS INTEGRATION",
+   "TOWER & FIBRE",
+   "AI4ENTERPRISE"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6003-ai-transformation-in-telecom-unlocking-100m-value-with-innovative-use-cases-telus-nvidia-f3-networks",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "12:00-16:30",
+  "stage": "Tech Mahindra - Stand 2D46",
+  "hall": "Hall 2",
+  "title": "Tech Mahindra - Day 3 : TRANSFORM",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "Tech Mahindra",
+  "companies": [
+   "Tech Mahindra"
+  ],
+  "track": "Partner Programmes",
+  "theme": "CYBERSECURITY",
+  "interests": [
+   "5G / 6G",
+   "APP / MOBILE SERVICES",
+   "ARTIFICIAL INTELLIGENCE",
+   "AUTOMOTIVE / TRANSPORT",
+   "CLOUD SERVICES / DATACENTERS",
+   "CYBERSECURITY",
+   "DIGITAL MARKETING / ADTECH",
+   "E-COMMERCE",
+   "ENTERPRISE SOLUTIONS",
+   "FOUNDERS",
+   "IOT",
+   "MANUFACTURING AND INDUSTRY 4.0",
+   "NETWORK INFRASTRUCTURE",
+   "PRIVATE NETWORKS",
+   "QUANTUM",
+   "SATELLITE / NON TERRESTRIAL NETWORKS",
+   "SYSTEMS INTEGRATION",
+   "CYBERSECURITY"
+  ],
+  "access": "Pre-registered & Approved have priority",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6054-tech-mahindra-day-3-transform",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "12:10-12:50",
+  "stage": "Banco Sabadell Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Physical AI: From Virtual to Real",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "INFINITE AI",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "INFINITE AI"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5844-physical-ai-from-virtual-to-real",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "12:20-12:40",
+  "stage": "Agora Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Eyes on AI. Ears to the ground for Quantum. What’s going on with Blockchain?",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "INFINITE AI",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "INNOVATION ECOSYSTEMS",
+   "QUANTUM",
+   "VENTURE CAPITAL / INVESTMENT / M&A",
+   "BLOCKCHAIN / DECENTRALISATION",
+   "INFINITE AI"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5855-eyes-on-ai-ears-to-the-ground-for-quantum-whats-going-on-with-blockchain",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "12:30-13:30",
+  "stage": "4YFN Pitching Stage",
+  "hall": "Hall 8.1 - 4YFN",
+  "title": "Startup Pitching Session: Pitch Parade by Deutsche Telekom: 10 Startup Pitches from our Ecosystem",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "FOUNDERS ACADEMY",
+  "interests": [
+   "CORPORATE INNOVATION",
+   "ENTREPRENEURSHIP",
+   "INNOVATION ECOSYSTEMS",
+   "FOUNDERS ACADEMY"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6176-startup-pitching-session-pitch-parade-by-deutsche-telekom-10-startup-pitches-from-our-ecosystem",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "12:30-14:00",
+  "stage": "4YFN Networking Hub",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "4YFN Awards Networking Lunch",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "INVESTORS",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "CLIMATE / ENVIRONMENT / SUSTAINABILITY",
+   "CYBERSECURITY",
+   "ENTERPRISE SOLUTIONS",
+   "ENTREPRENEURSHIP",
+   "FINTECH / FINANCE / INSURANCE SERVICES",
+   "HEALTH / FITNESS / WELLBEING",
+   "INVESTORS"
+  ],
+  "access": "Invitation Required",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6295-4yfn-awards-networking-lunch",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "12:30-14:30",
+  "stage": "CC2.1 MWC Roundtable Room 1",
+  "hall": "Hall 2",
+  "title": "Connected Healthcare Roundtable",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Roundtables & Summits",
+  "theme": "HEALTH TECH",
+  "interests": [
+   "5G / 6G",
+   "ARTIFICIAL INTELLIGENCE",
+   "HEALTH / FITNESS / WELLBEING",
+   "PRIVATE NETWORKS",
+   "HEALTH TECH"
+  ],
+  "access": "Invitation Required",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6280-connected-healthcare-roundtable",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "12:30-14:30",
+  "stage": "Partner Theatre 4",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "eSim Summit - eSIM Everywhere: eSIM Without Borders",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Roundtables & Summits",
+  "theme": "GAME CHANGERS",
+  "interests": [
+   "5G / 6G",
+   "APP / MOBILE SERVICES",
+   "CLOUD SERVICES / DATACENTERS",
+   "IOT",
+   "MOBILE DEVICE HARDWARE",
+   "MOBILE DEVICE SOFTWARE",
+   "NETWORK SECURITY",
+   "PRIVATE NETWORKS",
+   "SMART CITIES",
+   "GAME CHANGERS"
+  ],
+  "access": "Pre-registered & Approved have priority",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6081-esim-summit-esim-everywhere-esim-without-borders",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "12:45-13:30",
+  "stage": "Ericsson pavilion",
+  "hall": "Hall 2",
+  "title": "Realizing autonomous networks: from talk to accelerating implementations",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Exhibitor",
+  "theme": "CONNECT AI",
+  "interests": [
+   "5G / 6G",
+   "ARTIFICIAL INTELLIGENCE",
+   "BIG DATA / ANALYTICS",
+   "ENTERPRISE SOLUTIONS",
+   "NETWORK INFRASTRUCTURE",
+   "CONNECT AI"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical",
+   "Virtual"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6287-realizing-autonomous-networks-from-talk-to-accelerating-implementations",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "12:55-13:15",
+  "stage": "Agora Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "The AI Time Machine: Why Speed is the New Competitive Edge",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "INFINITE AI",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "BIG DATA / ANALYTICS",
+   "CORPORATE INNOVATION",
+   "INNOVATION ECOSYSTEMS",
+   "VENTURE CAPITAL / INVESTMENT / M&A",
+   "INFINITE AI"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5889-the-ai-time-machine-why-speed-is-the-new-competitive-edge",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "13:00-13:05",
+  "stage": "MWC Broadcast Stage",
+  "hall": "Hall 4",
+  "title": "Analysis - Keynote 11: Rewriting the Playbook",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "MWC Broadcast Stage",
+  "theme": "GAME CHANGERS",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "GAME CHANGERS"
+  ],
+  "access": "",
+  "type": [
+   "Physical",
+   "Virtual"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6342-analysis-keynote-11-rewriting-the-playbook",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "13:00-13:20",
+  "stage": "Banco Sabadell Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "AI Eats the World",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "INFINITE AI",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "CORPORATE INNOVATION",
+   "FOUNDERS",
+   "INFINITE AI"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5848-ai-eats-the-world",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "13:00-13:30",
+  "stage": "New Frontiers Stage",
+  "hall": "Hall 6",
+  "title": "Qilimanjaro’s Quantum Computers: From the Lab to Data Centers",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "QILIMANJARO QUANTUM TECH S.L.",
+  "companies": [
+   "QILIMANJARO QUANTUM TECH S.L."
+  ],
+  "track": "Partner Programmes",
+  "theme": "TECH4ALL",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "CLOUD SERVICES / DATACENTERS",
+   "ENTERPRISE SOLUTIONS",
+   "QUANTUM",
+   "SYSTEMS INTEGRATION",
+   "TECH4ALL"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6152-qilimanjaros-quantum-computers-from-the-lab-to-data-centers",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "13:00-13:45",
+  "stage": "Johnson Stage",
+  "hall": "Hall 6",
+  "title": "The Voice of the Global South: Redefining Global Governance",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Conference",
+  "theme": "TECH4ALL",
+  "interests": [
+   "DIVERSITY",
+   "EDUCATION",
+   "GAMING",
+   "IMPACT / SOCIAL INNOVATION",
+   "TECH4ALL"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5954-the-voice-of-the-global-south-redefining-global-governance",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "13:15-13:45",
+  "stage": "Agora Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "AI that’s Already Moving the Needle",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "INFINITE AI",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "BIG DATA / ANALYTICS",
+   "CORPORATE INNOVATION",
+   "ENTERPRISE SOLUTIONS",
+   "ENTREPRENEURSHIP",
+   "INNOVATION ECOSYSTEMS",
+   "VENTURE CAPITAL / INVESTMENT / M&A",
+   "INFINITE AI"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5883-ai-thats-already-moving-the-needle",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "13:15-13:45",
+  "stage": "Founders Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Community Pitching",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "INFINITE AI",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "ENTREPRENEURSHIP",
+   "FOUNDERS",
+   "INFINITE AI"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5901-community-pitching",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "13:15-13:45",
+  "stage": "MWC Broadcast Stage",
+  "hall": "Hall 4",
+  "title": "From Vision to Reality - The Journey to Becoming an AI-First Telco Organization",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "Amdocs Management Limited",
+  "companies": [
+   "Amdocs Management Limited"
+  ],
+  "track": "MWC Broadcast Stage",
+  "theme": "CONNECT AI",
+  "interests": [
+   "5G / 6G",
+   "APP / MOBILE SERVICES",
+   "ARTIFICIAL INTELLIGENCE",
+   "CLOUD SERVICES / DATACENTERS",
+   "ENTERPRISE SOLUTIONS",
+   "MEDIA / CONTENT / ENTERTAINMENT",
+   "CONNECT AI"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical",
+   "Virtual"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5990-from-vision-to-reality-the-journey-to-becoming-an-ai-first-telco-organization",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "13:15-14:15",
+  "stage": "Marconi Stage",
+  "hall": "Hall 6",
+  "title": "From Telco LLMs to Domain AI: Building the Brains of Specialised Intelligence",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Conference",
+  "theme": "CONNECT AI",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "CORPORATE INNOVATION",
+   "ENTERPRISE SOLUTIONS",
+   "INNOVATION ECOSYSTEMS",
+   "NETWORK INFRASTRUCTURE",
+   "CONNECT AI"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5949-from-telco-llms-to-domain-ai-building-the-brains-of-specialised-intelligence",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "13:20-14:00",
+  "stage": "Banco Sabadell Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "The (VC) World Beyond AI",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "INVESTORS",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "VENTURE CAPITAL / INVESTMENT / M&A",
+   "INVESTORS"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5860-the-vc-world-beyond-ai",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "13:30-14:00",
+  "stage": "CC5 Focus Stage",
+  "hall": "Upper Walkway",
+  "title": "Unlocking the Next Chapter of Mobile Money",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "GSMA Ministerial Programme",
+  "theme": "FINTECH",
+  "interests": [
+   "FINTECH / FINANCE / INSURANCE SERVICES",
+   "GOVERNMENT / PUBLIC POLICY",
+   "FINTECH"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6115-unlocking-the-next-chapter-of-mobile-money",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "13:30-16:00",
+  "stage": "CC2.5 GSMA Insights Hub",
+  "hall": "Hall 2",
+  "title": "First Post Quantum Implementations in the Telco Ecosystem",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "GSMA Insights Hub",
+  "theme": "CYBERSECURITY",
+  "interests": [
+   "5G / 6G",
+   "APP / MOBILE SERVICES",
+   "BIG DATA / ANALYTICS",
+   "CLOUD SERVICES / DATACENTERS",
+   "CORPORATE INNOVATION",
+   "CORPORATE VENTURING",
+   "CYBERSECURITY",
+   "ENTERPRISE SOLUTIONS",
+   "ENTREPRENEURSHIP",
+   "IMPACT / SOCIAL INNOVATION",
+   "INNOVATION ECOSYSTEMS",
+   "IOT",
+   "MOBILE DEVICE HARDWARE",
+   "MOBILE DEVICE SOFTWARE",
+   "NETWORK INFRASTRUCTURE",
+   "NETWORK SECURITY",
+   "QUANTUM",
+   "SYSTEMS INTEGRATION",
+   "VENTURE CAPITAL / INVESTMENT / M&A",
+   "BLOCKCHAIN / DECENTRALISATION",
+   "CYBERSECURITY"
+  ],
+  "access": "Pre-registered & Approved have priority",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6178-first-post-quantum-implementations-in-the-telco-ecosystem",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "13:45-14:15",
+  "stage": "4YFN Pitching Stage",
+  "hall": "Hall 8.1 - 4YFN",
+  "title": "Startup Pitching Session: Shift' to Global Scale: LG U+'s Open Innovation Catalyst for the AI Ecosystem",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "FOUNDERS ACADEMY",
+  "interests": [
+   "CORPORATE INNOVATION",
+   "ENTREPRENEURSHIP",
+   "INNOVATION ECOSYSTEMS",
+   "FOUNDERS ACADEMY"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6175-startup-pitching-session-shift-to-global-scale-lg-u-s-open-innovation-catalyst-for-the-ai-ecosystem",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "14:00-14:45",
+  "stage": "4YFN Workshop Room",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Investor Workshop: Spotting High‑Performance AI‑Era Leaders",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "INVESTORS",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "VENTURE CAPITAL / INVESTMENT / M&A",
+   "INVESTORS"
+  ],
+  "access": "Pre-registered & Approved have priority",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6299-investor-workshop-spotting-high-performance-ai-era-leaders",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "14:00-14:45",
+  "stage": "CC5 Ministerial Stage",
+  "hall": "Upper Walkway",
+  "title": "The Great Skills Reset",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "GSMA Ministerial Programme",
+  "theme": "CREATIVITY",
+  "interests": [
+   "EDUCATION",
+   "ENTREPRENEURSHIP",
+   "GOVERNMENT / PUBLIC POLICY",
+   "CREATIVITY"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6095-the-great-skills-reset",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "14:00-14:45",
+  "stage": "Turing Stage",
+  "hall": "Hall 6",
+  "title": "Skybound 5G: Drones, HAPS, Satellites & the Race to Connect the World",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Conference",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "5G / 6G",
+   "CLOUD SERVICES / DATACENTERS",
+   "NETWORK INFRASTRUCTURE",
+   "SATELLITE / NON TERRESTRIAL NETWORKS",
+   "SMART CITIES",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5939-skybound-5g-drones-haps-satellites-the-race-to-connect-the-world",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "14:10-14:40",
+  "stage": "MWC Broadcast Stage",
+  "hall": "Hall 4",
+  "title": "Operationalizing Intelligence: Powering Agentic AI at Telco Scale",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "Amdocs Management Limited",
+  "companies": [
+   "Amdocs Management Limited"
+  ],
+  "track": "MWC Broadcast Stage",
+  "theme": "CONNECT AI",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "CORPORATE INNOVATION",
+   "CONNECT AI"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical",
+   "Virtual"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6015-operationalizing-intelligence-powering-agentic-ai-at-telco-scale",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "14:15-15:00",
+  "stage": "Johnson Stage",
+  "hall": "Hall 6",
+  "title": "Blink and You’ll Miss It: The Power of Micro-Moments",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Conference",
+  "theme": "GAME CHANGERS",
+  "interests": [
+   "APP / MOBILE SERVICES",
+   "DIGITAL MARKETING / ADTECH",
+   "ENTERPRISE SOLUTIONS",
+   "GAME CHANGERS"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5967-blink-and-youll-miss-it-the-power-of-micro-moments",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "14:30-15:30",
+  "stage": "4YFN Pitching Stage",
+  "hall": "Hall 8.1 - 4YFN",
+  "title": "Startup Pitching Session: Japanese Innovation Unleashed - Part 2",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "FOUNDERS ACADEMY",
+  "interests": [
+   "CORPORATE INNOVATION",
+   "ENTREPRENEURSHIP",
+   "INNOVATION ECOSYSTEMS",
+   "FOUNDERS ACADEMY"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6168-startup-pitching-session-japanese-innovation-unleashed-part-2",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "14:30-15:30",
+  "stage": "Ericsson pavilion",
+  "hall": "Hall 2",
+  "title": "Accelerating service innovation across the ICT industry: a collaborative vision",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Exhibitor",
+  "theme": "GAME CHANGERS",
+  "interests": [
+   "APP / MOBILE SERVICES",
+   "CORPORATE INNOVATION",
+   "ENTERPRISE SOLUTIONS",
+   "INNOVATION ECOSYSTEMS",
+   "SYSTEMS INTEGRATION",
+   "GAME CHANGERS"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6286-accelerating-service-innovation-across-the-ict-industry-a-collaborative-vision",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "14:30-15:45",
+  "stage": "Connected Industries",
+  "hall": "Hall 4",
+  "title": "Smart Mobility Summit: Connected Future - The Engine of Smart Mobility",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Connected Industries",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "5G / 6G",
+   "ARTIFICIAL INTELLIGENCE",
+   "AUTOMOTIVE / TRANSPORT",
+   "BIG DATA / ANALYTICS",
+   "CLOUD SERVICES / DATACENTERS",
+   "CYBERSECURITY",
+   "ENTERPRISE SOLUTIONS",
+   "IOT",
+   "NETWORK INFRASTRUCTURE",
+   "NETWORK SECURITY",
+   "PRIVATE NETWORKS",
+   "SMART CITIES",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5980-smart-mobility-summit-connected-future-the-engine-of-smart-mobility",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "14:30-16:30",
+  "stage": "CC2 GSMA Insights Hub Stage",
+  "hall": "Hall 2",
+  "title": "Global 5G Alliances Summit - From Connectivity to Intelligent Industry and Ecosystem",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "GSMA Insights Hub",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "5G / 6G",
+   "INNOVATION ECOSYSTEMS",
+   "IOT",
+   "MANUFACTURING AND INDUSTRY 4.0",
+   "NETWORK INFRASTRUCTURE",
+   "PRIVATE NETWORKS",
+   "SMART CITIES",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6227-global-5g-alliances-summit-from-connectivity-to-intelligent-industry-and-ecosystem",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "14:45-16:00",
+  "stage": "Marconi Stage",
+  "hall": "Hall 6",
+  "title": "Networks 2030: AI and the 6G Horizon",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Conference",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "5G / 6G",
+   "ARTIFICIAL INTELLIGENCE",
+   "NETWORK INFRASTRUCTURE",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Pre-registered & Approved have priority",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5941-networks-2030-ai-and-the-6g-horizon",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "15:00-15:25",
+  "stage": "Founders Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Founders Operating System: Building for Legacy vs. Exit",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "FOUNDERS ACADEMY",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "CORPORATE INNOVATION",
+   "ENTERPRISE SOLUTIONS",
+   "ENTREPRENEURSHIP",
+   "FINTECH / FINANCE / INSURANCE SERVICES",
+   "FOUNDERS",
+   "GOVERNMENT / PUBLIC POLICY",
+   "TALENT",
+   "FOUNDERS ACADEMY"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6246-founders-operating-system-building-for-legacy-vs-exit",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "15:00-15:30",
+  "stage": "Agora Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "New Era in T1 Diabetes Diagnose: From Reactive to Proactive Through Early, Digital, and Automatized Approach",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "HEALTH TECH",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "BIG DATA / ANALYTICS",
+   "ENTERPRISE SOLUTIONS",
+   "HEALTH / FITNESS / WELLBEING",
+   "INNOVATION ECOSYSTEMS",
+   "HEALTH TECH"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5890-new-era-in-t1-diabetes-diagnose-from-reactive-to-proactive-through-early-digital-and-automatized-approach",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "15:00-15:30",
+  "stage": "MWC Broadcast Stage",
+  "hall": "Hall 4",
+  "title": "Redefining Network Intelligence: The journey to full autonomy",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "MWC Broadcast Stage",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical",
+   "Virtual"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6187-redefining-network-intelligence-the-journey-to-full-autonomy",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "15:00-15:30",
+  "stage": "New Frontiers Stage",
+  "hall": "Hall 6",
+  "title": "Quantum Across Industries",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "Global DataQuantum",
+  "companies": [
+   "Global DataQuantum"
+  ],
+  "track": "Partner Programmes",
+  "theme": "TECH4ALL",
+  "interests": [
+   "ENTERPRISE SOLUTIONS",
+   "FINTECH / FINANCE / INSURANCE SERVICES",
+   "INNOVATION ECOSYSTEMS",
+   "QUANTUM",
+   "TECH4ALL"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6236-quantum-across-industries",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "15:00-16:00",
+  "stage": "CC2.3 GSMA Insights Hub",
+  "hall": "Hall 2",
+  "title": "Networks for AI: Can operators execute on the opportunity?",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Roundtables & Summits",
+  "theme": "CONNECT AI",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "CONNECT AI"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6322-networks-for-ai-can-operators-execute-on-the-opportunity",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "15:00-16:30",
+  "stage": "Lamarr Stage",
+  "hall": "Hall 6",
+  "title": "SEC CON",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Roundtables & Summits",
+  "theme": "CYBERSECURITY",
+  "interests": [
+   "5G / 6G",
+   "APP / MOBILE SERVICES",
+   "ARTIFICIAL INTELLIGENCE",
+   "CORPORATE INNOVATION",
+   "CORPORATE VENTURING",
+   "CYBERSECURITY",
+   "DIGITAL IDENTITY / AUTHENTICATION",
+   "FINTECH / FINANCE / INSURANCE SERVICES",
+   "FOUNDERS",
+   "GOVERNMENT / PUBLIC POLICY",
+   "INNOVATION ECOSYSTEMS",
+   "IOT",
+   "MANUFACTURING AND INDUSTRY 4.0",
+   "MOBILE DEVICE HARDWARE",
+   "MOBILE DEVICE SOFTWARE",
+   "NETWORK INFRASTRUCTURE",
+   "NETWORK SECURITY",
+   "PRIVATE NETWORKS",
+   "QUANTUM",
+   "SATELLITE / NON TERRESTRIAL NETWORKS",
+   "CYBERSECURITY"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5988-sec-con",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "15:00-17:00",
+  "stage": "Partner Theatre 1",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Device Enablement Summit",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "Google, LLC",
+  "companies": [
+   "Google, LLC"
+  ],
+  "track": "Roundtables & Summits",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "5G / 6G",
+   "CLOUD SERVICES / DATACENTERS",
+   "DIGITAL IDENTITY / AUTHENTICATION",
+   "ENTERPRISE SOLUTIONS",
+   "INNOVATION ECOSYSTEMS",
+   "IOT",
+   "MANUFACTURING AND INDUSTRY 4.0",
+   "MOBILE DEVICE HARDWARE",
+   "MOBILE DEVICE SOFTWARE",
+   "NETWORK INFRASTRUCTURE",
+   "PRIVATE NETWORKS",
+   "SATELLITE / NON TERRESTRIAL NETWORKS",
+   "SYSTEMS INTEGRATION",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Pre-registered & Approved have priority",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6270-device-enablement-summit",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "15:00-18:30",
+  "stage": "GSMA Summits Stage",
+  "hall": "Hall 6",
+  "title": "Mobile Identity Summit",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Roundtables & Summits",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "INNOVATION ECOSYSTEMS",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6084-mobile-identity-summit",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "15:00-19:00",
+  "stage": "Partner Theatre 5",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "The Data Driven Telco - AI Rescue: The Data Strategy Lifeline",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Partner Programmes",
+  "theme": "CORPORATE INNOVATION",
+  "interests": [
+   "5G / 6G",
+   "APP / MOBILE SERVICES",
+   "ARTIFICIAL INTELLIGENCE",
+   "BIG DATA / ANALYTICS",
+   "CLOUD SERVICES / DATACENTERS",
+   "CORPORATE INNOVATION",
+   "ENTERPRISE SOLUTIONS",
+   "INNOVATION ECOSYSTEMS",
+   "NETWORK INFRASTRUCTURE",
+   "SMART CITIES",
+   "CORPORATE INNOVATION"
+  ],
+  "access": "Pre-registered & Approved have priority",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5995-the-data-driven-telco-ai-rescue-the-data-strategy-lifeline",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "15:00-19:00",
+  "stage": "Partner Theatre 6",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Space‑Enabled Mobility: Unlocking a Competitive, Resilient, and Sovereign Future",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Partner Programmes",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "5G / 6G",
+   "NETWORK INFRASTRUCTURE",
+   "SATELLITE / NON TERRESTRIAL NETWORKS",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5993-space-enabled-mobility-unlocking-a-competitive-resilient-and-sovereign-future",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "15:15-16:00",
+  "stage": "Turing Stage",
+  "hall": "Hall 6",
+  "title": "Intelligent Resilience: Building Networks That Endure",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Conference",
+  "theme": "TECH4ALL",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "NETWORK INFRASTRUCTURE",
+   "NETWORK SECURITY",
+   "TECH4ALL"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5975-intelligent-resilience-building-networks-that-endure",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "15:15-18:45",
+  "stage": "Partner Theatre 2",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "The Agentic Enterprise: Building the People, Platforms, and Processes",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Partner Programmes",
+  "theme": "AI4ENTERPRISE",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "AI4ENTERPRISE"
+  ],
+  "access": "Pre-registered & Approved have priority",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6157-the-agentic-enterprise-building-the-people-platforms-and-processes",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "15:15-19:00",
+  "stage": "Partner Theatre 3",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Tower Summit",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Roundtables & Summits",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "5G / 6G",
+   "CLOUD SERVICES / DATACENTERS",
+   "NETWORK INFRASTRUCTURE",
+   "TOWER & FIBRE",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6188-tower-summit",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "15:30-15:55",
+  "stage": "Founders Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Founders Operating System: Hiring",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "FOUNDERS ACADEMY",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "CORPORATE INNOVATION",
+   "ENTERPRISE SOLUTIONS",
+   "ENTREPRENEURSHIP",
+   "FOUNDERS",
+   "SYSTEMS INTEGRATION",
+   "TALENT",
+   "VENTURE CAPITAL / INVESTMENT / M&A",
+   "FOUNDERS ACADEMY"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6245-founders-operating-system-hiring",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "15:30-16:00",
+  "stage": "Agora Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Tips for Startups Expanding Internationally",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "CORPORATE INNOVATION",
+  "interests": [
+   "ENTERPRISE SOLUTIONS",
+   "ENTREPRENEURSHIP",
+   "INNOVATION ECOSYSTEMS",
+   "VENTURE CAPITAL / INVESTMENT / M&A",
+   "CORPORATE INNOVATION"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5884-tips-for-startups-expanding-internationally",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "15:30-16:15",
+  "stage": "Johnson Stage",
+  "hall": "Hall 6",
+  "title": "Private 5G in the AI-Native Era: Smart Slicing at the Enterprise Edge",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Conference",
+  "theme": "AI4ENTERPRISE",
+  "interests": [
+   "5G / 6G",
+   "ARTIFICIAL INTELLIGENCE",
+   "ENTERPRISE SOLUTIONS",
+   "NETWORK INFRASTRUCTURE",
+   "PRIVATE NETWORKS",
+   "AI4ENTERPRISE"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5950-private-5g-in-the-ai-native-era-smart-slicing-at-the-enterprise-edge",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "15:30-17:00",
+  "stage": "4YFN Meeting Hub",
+  "hall": "Hall 8.1 - 4YFN",
+  "title": "4YFN Exhibitor Mentoring: Deeptech & Spin-offs",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "UNIVERSITIES & SPIN-OFFS",
+  "interests": [
+   "ENTREPRENEURSHIP",
+   "FOUNDERS",
+   "UNIVERSITIES & SPIN-OFFS"
+  ],
+  "access": "Invitation Required",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6289-4yfn-exhibitor-mentoring-deeptech-spin-offs",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "15:30-17:00",
+  "stage": "4YFN Networking Hub",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Connecting the Global Startup Map: Meet & Mingle with Dealroom.co",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "INFINITE AI",
+  "interests": [
+   "INNOVATION ECOSYSTEMS",
+   "VENTURE CAPITAL / INVESTMENT / M&A",
+   "INFINITE AI"
+  ],
+  "access": "Pre-registered & Approved have priority",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6305-connecting-the-global-startup-map-meet-mingle-with-dealroom-co",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "15:30-17:30",
+  "stage": "CC2.2 MWC Roundtable Room 2",
+  "hall": "Hall 2",
+  "title": "Modernizing Telecom Legacy at Scale: Unlocking Capital Without Disruption",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Partner Programmes",
+  "theme": "AI4ENTERPRISE",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "CLOUD SERVICES / DATACENTERS",
+   "ENTERPRISE SOLUTIONS",
+   "AI4ENTERPRISE"
+  ],
+  "access": "Invitation Required",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6254-modernizing-telecom-legacy-at-scale-unlocking-capital-without-disruption",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "15:45-16:45",
+  "stage": "4YFN Pitching Stage",
+  "hall": "Hall 8.1 - 4YFN",
+  "title": "Startup Pitching Session: Universitat Politècnica de Catalunya (UPC)",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "FOUNDERS ACADEMY",
+  "interests": [
+   "CORPORATE INNOVATION",
+   "ENTREPRENEURSHIP",
+   "INNOVATION ECOSYSTEMS",
+   "FOUNDERS ACADEMY"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6216-startup-pitching-session-universitat-politecnica-de-catalunya-upc",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "15:55-16:20",
+  "stage": "Founders Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Founders Operating System: Remuneration schemes",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "FOUNDERS ACADEMY",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "ENTERPRISE SOLUTIONS",
+   "ENTREPRENEURSHIP",
+   "FINTECH / FINANCE / INSURANCE SERVICES",
+   "FOUNDERS",
+   "TALENT",
+   "VENTURE CAPITAL / INVESTMENT / M&A",
+   "FOUNDERS ACADEMY"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6240-founders-operating-system-remuneration-schemes",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "16:00-16:30",
+  "stage": "New Frontiers Stage",
+  "hall": "Hall 6",
+  "title": "Securing the Quantum Era - Why CIOs and CISOs Must Act Now",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Partner Programmes",
+  "theme": "CYBERSECURITY",
+  "interests": [
+   "BIG DATA / ANALYTICS",
+   "CLOUD SERVICES / DATACENTERS",
+   "CYBERSECURITY",
+   "ENTERPRISE SOLUTIONS",
+   "FINTECH / FINANCE / INSURANCE SERVICES",
+   "GOVERNMENT / PUBLIC POLICY",
+   "NETWORK INFRASTRUCTURE",
+   "NETWORK SECURITY",
+   "QUANTUM",
+   "CYBERSECURITY"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6275-securing-the-quantum-era-why-cios-and-cisos-must-act-now",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "16:00-17:00",
+  "stage": "Agora Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Hacked by Design? AI’s Overlooked Backdoors and What They Mean for Security",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "CYBERSECURITY",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "CYBERSECURITY",
+   "QUANTUM",
+   "BLOCKCHAIN / DECENTRALISATION",
+   "CYBERSECURITY"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5894-hacked-by-design-ais-overlooked-backdoors-and-what-they-mean-for-security",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "16:00-17:00",
+  "stage": "Ericsson pavilion",
+  "hall": "Hall 2",
+  "title": "Mobile broadband reloaded: the transformation to performance-based service offerings",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Exhibitor",
+  "theme": "CONNECT AI",
+  "interests": [
+   "5G / 6G",
+   "APP / MOBILE SERVICES",
+   "BIG DATA / ANALYTICS",
+   "ENTERPRISE SOLUTIONS",
+   "NETWORK INFRASTRUCTURE",
+   "CONNECT AI"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical",
+   "Virtual"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6288-mobile-broadband-reloaded-the-transformation-to-performance-based-service-offerings",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "16:00-18:00",
+  "stage": "CC2.1 MWC Roundtable Room 1",
+  "hall": "Hall 2",
+  "title": "From AI Adoption to Intelligent Workflows: The Role of AI PCs in Enterprise Transformation",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Partner Programmes",
+  "theme": "CONNECT AI",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "CORPORATE INNOVATION",
+   "ENTERPRISE SOLUTIONS",
+   "INNOVATION ECOSYSTEMS",
+   "CONNECT AI"
+  ],
+  "access": "Invitation Required",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6303-from-ai-adoption-to-intelligent-workflows-the-role-of-ai-pcs-in-enterprise-transformation",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "16:00-18:30",
+  "stage": "Partner Theatre 4",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "MVNO Summit: Innovation and Partnering for Growth",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Roundtables & Summits",
+  "theme": "CORPORATE INNOVATION",
+  "interests": [
+   "AUTOMOTIVE / TRANSPORT",
+   "CORPORATE INNOVATION",
+   "ENTERPRISE SOLUTIONS",
+   "IOT",
+   "SMART CITIES",
+   "CORPORATE INNOVATION"
+  ],
+  "access": "",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6122-mvno-summit-innovation-and-partnering-for-growth",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "16:05-16:35",
+  "stage": "MWC Broadcast Stage",
+  "hall": "Hall 4",
+  "title": "From Prototype to Profit: Executive Lessons on Scaling Agentic AI in CX - with Engageware, NetUno & IDC",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "MWC Broadcast Stage",
+  "theme": "AI4ENTERPRISE",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "ENTERPRISE SOLUTIONS",
+   "FINTECH / FINANCE / INSURANCE SERVICES",
+   "MOBILE DEVICE SOFTWARE",
+   "NETWORK INFRASTRUCTURE",
+   "SATELLITE / NON TERRESTRIAL NETWORKS",
+   "AI4ENTERPRISE"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical",
+   "Virtual"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6057-from-prototype-to-profit-executive-lessons-on-scaling-agentic-ai-in-cx-with-engageware-netuno-idc",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "16:15-17:30",
+  "stage": "Connected Industries",
+  "hall": "Hall 4",
+  "title": "Masterclass: Turning Business Problems into Scaled Private 5G Value",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Connected Industries",
+  "theme": "CORPORATE INNOVATION",
+  "interests": [
+   "5G / 6G",
+   "APP / MOBILE SERVICES",
+   "ARTIFICIAL INTELLIGENCE",
+   "BIG DATA / ANALYTICS",
+   "CLOUD SERVICES / DATACENTERS",
+   "ENTERPRISE SOLUTIONS",
+   "ENTREPRENEURSHIP",
+   "IOT",
+   "PRIVATE NETWORKS",
+   "CORPORATE INNOVATION"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6219-masterclass-turning-business-problems-into-scaled-private-5g-value",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "16:25-16:50",
+  "stage": "Founders Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Founders Operating System: Earned Media",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "FOUNDERS ACADEMY",
+  "interests": [
+   "CORPORATE INNOVATION",
+   "DIGITAL MARKETING / ADTECH",
+   "ENTERPRISE SOLUTIONS",
+   "ENTREPRENEURSHIP",
+   "FOUNDERS",
+   "MEDIA / CONTENT / ENTERTAINMENT",
+   "TALENT",
+   "VENTURE CAPITAL / INVESTMENT / M&A",
+   "FOUNDERS ACADEMY"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6244-founders-operating-system-earned-media",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "16:30-17:30",
+  "stage": "CC2.3 GSMA Insights Hub",
+  "hall": "Hall 2",
+  "title": "AI factories: how to build, how to monetise",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Roundtables & Summits",
+  "theme": "AI4ENTERPRISE",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "ENTERPRISE SOLUTIONS",
+   "MANUFACTURING AND INDUSTRY 4.0",
+   "AI4ENTERPRISE"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6301-ai-factories-how-to-build-how-to-monetise",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "16:45-17:30",
+  "stage": "Marconi Stage",
+  "hall": "Hall 6",
+  "title": "Personality Engineering: How Does Your Agent Represent Your Company?",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Conference",
+  "theme": "AI NEXUS",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "ENTERPRISE SOLUTIONS",
+   "AI NEXUS"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5961-personality-engineering-how-does-your-agent-represent-your-company",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "16:50-17:20",
+  "stage": "Founders Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Founders Operating System: Customer Engagement",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "FOUNDERS ACADEMY",
+  "interests": [
+   "CORPORATE INNOVATION",
+   "ENTERPRISE SOLUTIONS",
+   "ENTREPRENEURSHIP",
+   "FINTECH / FINANCE / INSURANCE SERVICES",
+   "FOUNDERS",
+   "VENTURE CAPITAL / INVESTMENT / M&A",
+   "FOUNDERS ACADEMY"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6249-founders-operating-system-customer-engagement",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "17:00-18:00",
+  "stage": "4YFN Pitching Stage",
+  "hall": "Hall 8.1 - 4YFN",
+  "title": "Startup Pitching Session: Madrid’s Innovation Ecosystem",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "FOUNDERS ACADEMY",
+  "interests": [
+   "CORPORATE INNOVATION",
+   "ENTREPRENEURSHIP",
+   "INNOVATION ECOSYSTEMS",
+   "FOUNDERS ACADEMY"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6162-startup-pitching-session-madrids-innovation-ecosystem",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "17:00-18:00",
+  "stage": "Banco Sabadell Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "4YFN Awards Finale",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "FOUNDERS ACADEMY",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "FOUNDERS",
+   "FOUNDERS ACADEMY"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5869-4yfn-awards-finale",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "17:00-18:00",
+  "stage": "Turing Stage",
+  "hall": "Hall 6",
+  "title": "GLOMO Awards 2026: Winners Ceremony",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Glomos",
+  "theme": "GAME CHANGERS",
+  "interests": [
+   "5G / 6G",
+   "APP / MOBILE SERVICES",
+   "ARTIFICIAL INTELLIGENCE",
+   "AUTOMOTIVE / TRANSPORT",
+   "BIG DATA / ANALYTICS",
+   "CLIMATE / ENVIRONMENT / SUSTAINABILITY",
+   "CLOUD SERVICES / DATACENTERS",
+   "CORPORATE INNOVATION",
+   "CORPORATE VENTURING",
+   "CYBERSECURITY",
+   "DIGITAL IDENTITY / AUTHENTICATION",
+   "DIGITAL MARKETING / ADTECH",
+   "DIVERSITY",
+   "E-COMMERCE",
+   "EDUCATION",
+   "ENTERPRISE SOLUTIONS",
+   "ENTREPRENEURSHIP",
+   "FINTECH / FINANCE / INSURANCE SERVICES",
+   "FOUNDERS",
+   "GAMING",
+   "GOVERNMENT / PUBLIC POLICY",
+   "HEALTH / FITNESS / WELLBEING",
+   "IMPACT / SOCIAL INNOVATION",
+   "INNOVATION ECOSYSTEMS",
+   "IOT",
+   "MANUFACTURING AND INDUSTRY 4.0",
+   "MEDIA / CONTENT / ENTERTAINMENT",
+   "VIRTUAL REALITY / AUGMENTED REALITY",
+   "MOBILE DEVICE HARDWARE",
+   "MOBILE DEVICE SOFTWARE",
+   "NETWORK INFRASTRUCTURE",
+   "NETWORK SECURITY",
+   "PRIVATE NETWORKS",
+   "QUANTUM",
+   "RETAIL / DISTRIBUTION CHANNELS",
+   "SATELLITE / NON TERRESTRIAL NETWORKS",
+   "SMART CITIES",
+   "SYSTEMS INTEGRATION",
+   "TALENT",
+   "TOWER & FIBRE",
+   "VENTURE CAPITAL / INVESTMENT / M&A",
+   "BLOCKCHAIN / DECENTRALISATION",
+   "GAME CHANGERS"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical",
+   "Virtual"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5952-glomo-awards-2026-winners-ceremony",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "17:30-18:00",
+  "stage": "New Frontiers Stage",
+  "hall": "Hall 6",
+  "title": "CircuitX Partner Session: BCN Drone Center - Transforming The Circuit Experience With Connectivity",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Partner Programmes",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "5G / 6G",
+   "IOT",
+   "NETWORK INFRASTRUCTURE",
+   "PRIVATE NETWORKS",
+   "SYSTEMS INTEGRATION",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6205-circuitx-partner-session-bcn-drone-center-transforming-the-circuit-experience-with-connectivity",
+  "source": "mwc"
+ },
+ {
+  "day": 4,
+  "time": "18:00-19:00",
+  "stage": "Leaders Lounge",
+  "hall": "Hall 6",
+  "title": "GLOMO Awards Networking Reception",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Glomos",
+  "theme": "CREATIVITY",
+  "interests": [
+   "5G / 6G",
+   "APP / MOBILE SERVICES",
+   "ARTIFICIAL INTELLIGENCE",
+   "AUTOMOTIVE / TRANSPORT",
+   "BIG DATA / ANALYTICS",
+   "CLIMATE / ENVIRONMENT / SUSTAINABILITY",
+   "CLOUD SERVICES / DATACENTERS",
+   "CORPORATE INNOVATION",
+   "CORPORATE VENTURING",
+   "CYBERSECURITY",
+   "DIGITAL IDENTITY / AUTHENTICATION",
+   "DIGITAL MARKETING / ADTECH",
+   "DIVERSITY",
+   "E-COMMERCE",
+   "EDUCATION",
+   "ENTERPRISE SOLUTIONS",
+   "ENTREPRENEURSHIP",
+   "FINTECH / FINANCE / INSURANCE SERVICES",
+   "FOUNDERS",
+   "GAMING",
+   "GOVERNMENT / PUBLIC POLICY",
+   "HEALTH / FITNESS / WELLBEING",
+   "IMPACT / SOCIAL INNOVATION",
+   "INNOVATION ECOSYSTEMS",
+   "IOT",
+   "MANUFACTURING AND INDUSTRY 4.0",
+   "MEDIA / CONTENT / ENTERTAINMENT",
+   "VIRTUAL REALITY / AUGMENTED REALITY",
+   "MOBILE DEVICE HARDWARE",
+   "MOBILE DEVICE SOFTWARE",
+   "NETWORK INFRASTRUCTURE",
+   "NETWORK SECURITY",
+   "PRIVATE NETWORKS",
+   "QUANTUM",
+   "RETAIL / DISTRIBUTION CHANNELS",
+   "SATELLITE / NON TERRESTRIAL NETWORKS",
+   "SMART CITIES",
+   "SYSTEMS INTEGRATION",
+   "TALENT",
+   "TOWER & FIBRE",
+   "VENTURE CAPITAL / INVESTMENT / M&A",
+   "BLOCKCHAIN / DECENTRALISATION",
+   "CREATIVITY"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6343-glomo-awards-networking-reception",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "08:30-11:00",
+  "stage": "MWC Networking Hub",
+  "hall": "Hall 6",
+  "title": "Meta Wearables Demonstration",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "Meta Platforms, Inc.",
+  "companies": [
+   "Meta Platforms, Inc."
+  ],
+  "track": "Networking",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "NETWORK INFRASTRUCTURE",
+   "NETWORK SECURITY",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6068-meta-wearables-demonstration",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "09:00-11:00",
+  "stage": "CC2.3 GSMA Insights Hub",
+  "hall": "Hall 2",
+  "title": "Private Networks in Practice: Enterprise deployment models and ecosystem collaboration",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "GSMA Insights Hub",
+  "theme": "CORPORATE INNOVATION",
+  "interests": [
+   "PRIVATE NETWORKS",
+   "CORPORATE INNOVATION"
+  ],
+  "access": "Invitation Required",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6182-private-networks-in-practice-enterprise-deployment-models-and-ecosystem-collaboration",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "09:00-11:00",
+  "stage": "CC2.5 GSMA Insights Hub",
+  "hall": "Hall 2",
+  "title": "From Research to Reality: Shaping the Path to 6G",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "GSMA Insights Hub",
+  "theme": "CORPORATE INNOVATION",
+  "interests": [
+   "5G / 6G",
+   "CORPORATE INNOVATION"
+  ],
+  "access": "Invitation Required",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6184-from-research-to-reality-shaping-the-path-to-6g",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "09:00-13:00",
+  "stage": "Sky Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "AWS Startup Theatre Programme - Sky Stage",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "Amazon Web Services",
+  "companies": [
+   "Amazon Web Services"
+  ],
+  "track": "4YFN",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "CLOUD SERVICES / DATACENTERS",
+   "CORPORATE INNOVATION",
+   "DIGITAL MARKETING / ADTECH",
+   "ENTERPRISE SOLUTIONS",
+   "FOUNDERS",
+   "INNOVATION ECOSYSTEMS",
+   "VENTURE CAPITAL / INVESTMENT / M&A",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Pre-registered & Approved have priority",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6017-aws-startup-theatre-programme-sky-stage",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "09:30-10:00",
+  "stage": "MWC Broadcast Stage",
+  "hall": "Hall 4",
+  "title": "GSMA Services Partnerships: Where Growth Meets Industry Impact",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "MWC Broadcast Stage",
+  "theme": "CORPORATE INNOVATION",
+  "interests": [
+   "5G / 6G",
+   "APP / MOBILE SERVICES",
+   "BIG DATA / ANALYTICS",
+   "CLIMATE / ENVIRONMENT / SUSTAINABILITY",
+   "CYBERSECURITY",
+   "CORPORATE INNOVATION"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical",
+   "Virtual"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6273-gsma-services-partnerships-where-growth-meets-industry-impact",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "09:30-10:00",
+  "stage": "New Frontiers Stage",
+  "hall": "Hall 6",
+  "title": "CircuitX Partner Session: Ericsson - Transforming The Circuit Experience With Connectivity",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Partner Programmes",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "5G / 6G",
+   "ENTERPRISE SOLUTIONS",
+   "IOT",
+   "NETWORK INFRASTRUCTURE",
+   "PRIVATE NETWORKS",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6201-circuitx-partner-session-ericsson-transforming-the-circuit-experience-with-connectivity",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "10:00-10:30",
+  "stage": "Connected Industries",
+  "hall": "Hall 4",
+  "title": "Sports and Entertainment Summit: From field to screen: AI-powered, immersive fan experiences at scale",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "Accenture",
+  "companies": [
+   "Accenture"
+  ],
+  "track": "Connected Industries",
+  "theme": "CONNECT AI",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "E-COMMERCE",
+   "IOT",
+   "MEDIA / CONTENT / ENTERTAINMENT",
+   "CONNECT AI"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6144-sports-and-entertainment-summit-from-field-to-screen-ai-powered-immersive-fan-experiences-at-scale",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "10:00-10:30",
+  "stage": "Founders Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Startup Pitching Session: K-Startup Spotlight: Innovating the Future",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "FOUNDERS ACADEMY",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "CORPORATE INNOVATION",
+   "ENTERPRISE SOLUTIONS",
+   "FOUNDERS",
+   "MEDIA / CONTENT / ENTERTAINMENT",
+   "BLOCKCHAIN / DECENTRALISATION",
+   "FOUNDERS ACADEMY"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6024-startup-pitching-session-k-startup-spotlight-innovating-the-future",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "10:00-10:45",
+  "stage": "Johnson Stage",
+  "hall": "Hall 6",
+  "title": "CX-Factor: Can AI Truly Win the Customer’s Heart?",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Conference",
+  "theme": "CONNECT AI",
+  "interests": [
+   "APP / MOBILE SERVICES",
+   "ARTIFICIAL INTELLIGENCE",
+   "BIG DATA / ANALYTICS",
+   "ENTERPRISE SOLUTIONS",
+   "NETWORK INFRASTRUCTURE",
+   "CONNECT AI"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5943-cx-factor-can-ai-truly-win-the-customers-heart",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "10:00-10:45",
+  "stage": "Marconi Stage",
+  "hall": "Hall 6",
+  "title": "From Steel to Silicon: The Next Chapter for Towers",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Conference",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "5G / 6G",
+   "ARTIFICIAL INTELLIGENCE",
+   "CLIMATE / ENVIRONMENT / SUSTAINABILITY",
+   "CLOUD SERVICES / DATACENTERS",
+   "TOWER & FIBRE",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5930-from-steel-to-silicon-the-next-chapter-for-towers",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "10:00-10:45",
+  "stage": "Turing Stage",
+  "hall": "Hall 6",
+  "title": "Enterprise Swipe-Right: The Partnership Paradox",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Conference",
+  "theme": "AI4ENTERPRISE",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "ENTERPRISE SOLUTIONS",
+   "INNOVATION ECOSYSTEMS",
+   "AI4ENTERPRISE"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5938-enterprise-swipe-right-the-partnership-paradox",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "10:00-11:00",
+  "stage": "4YFN Pitching Stage",
+  "hall": "Hall 8.1 - 4YFN",
+  "title": "Startup Pitching Session: From Lab to Scale: European Deep Tech powered by EIC",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "FOUNDERS ACADEMY",
+  "interests": [
+   "CORPORATE INNOVATION",
+   "ENTREPRENEURSHIP",
+   "INNOVATION ECOSYSTEMS",
+   "FOUNDERS ACADEMY"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6167-startup-pitching-session-from-lab-to-scale-european-deep-tech-powered-by-eic",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "10:00-11:00",
+  "stage": "Agora Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Game On: Who Wins the Next Generation of Play",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "GAMING",
+  "interests": [
+   "CORPORATE INNOVATION",
+   "GAMING"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5871-game-on-who-wins-the-next-generation-of-play",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "10:00-11:30",
+  "stage": "Partner Theatre 6",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "AI for Good Innovation Factory Catalonia. AI for Health",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Partner Programmes",
+  "theme": "GAME CHANGERS",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "GOVERNMENT / PUBLIC POLICY",
+   "HEALTH / FITNESS / WELLBEING",
+   "INNOVATION ECOSYSTEMS",
+   "GAME CHANGERS"
+  ],
+  "access": "Pre-registered & Approved have priority",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6001-ai-for-good-innovation-factory-catalonia-ai-for-health",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "10:00-13:00",
+  "stage": "MWC Main Stage",
+  "hall": "Hall 4",
+  "title": "Changing Education Together 2026: Technology with purpose - educating for the common good in the age of algorithms",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Conference",
+  "theme": "TECH4ALL",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "DIVERSITY",
+   "EDUCATION",
+   "GOVERNMENT / PUBLIC POLICY",
+   "IMPACT / SOCIAL INNOVATION",
+   "INNOVATION ECOSYSTEMS",
+   "TALENT",
+   "TECH4ALL"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6300-changing-education-together-2026-technology-with-purpose-educating-for-the-common-good-in-the-age-of-algorithms",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "10:00-15:30",
+  "stage": "PwC - Stand 4D10",
+  "hall": "Hall 4",
+  "title": "Outthink, outpace and outperform with PwC",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "PwC",
+  "companies": [
+   "PwC"
+  ],
+  "track": "Partner Programmes",
+  "theme": "CONNECT AI",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "CONNECT AI"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6055-outthink-outpace-and-outperform-with-pwc",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "10:30-11:00",
+  "stage": "MWC Broadcast Stage",
+  "hall": "Hall 4",
+  "title": "AI Security: Adoption and Enablement for Telco Businesses",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "Check Point",
+  "companies": [
+   "Check Point"
+  ],
+  "track": "MWC Broadcast Stage",
+  "theme": "AI4ENTERPRISE",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "CYBERSECURITY",
+   "AI4ENTERPRISE"
+  ],
+  "access": "",
+  "type": [
+   "Physical",
+   "Virtual"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6186-ai-security-adoption-and-enablement-for-telco-businesses",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "10:30-11:30",
+  "stage": "Banco Sabadell Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Imagination Meets Technology: The Science of Creativity",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "CREATIVITY",
+  "interests": [
+   "CORPORATE INNOVATION",
+   "CREATIVITY"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5838-imagination-meets-technology-the-science-of-creativity",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "10:30-12:00",
+  "stage": "Connected Industries",
+  "hall": "Hall 4",
+  "title": "Sports and Entertainment Summit: Connectivity Revolutionising Sports and Entertainment",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Connected Industries",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "5G / 6G",
+   "ENTERPRISE SOLUTIONS",
+   "MEDIA / CONTENT / ENTERTAINMENT",
+   "VIRTUAL REALITY / AUGMENTED REALITY",
+   "NETWORK INFRASTRUCTURE",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6023-sports-and-entertainment-summit-connectivity-revolutionising-sports-and-entertainment",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "10:45-11:45",
+  "stage": "Founders Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "4YFN26 Spin-off Pitch Battle",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "UNIVERSITIES & SPIN-OFFS",
+  "interests": [
+   "EDUCATION",
+   "UNIVERSITIES & SPIN-OFFS"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5906-4yfn26-spin-off-pitch-battle",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "11:00-11:30",
+  "stage": "Agora Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "One Size Fits None: Can AI Accelerate Inclusion?",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "CORPORATE INNOVATION",
+  "interests": [
+   "DIVERSITY",
+   "CORPORATE INNOVATION"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5868-one-size-fits-none-can-ai-accelerate-inclusion",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "11:15-11:45",
+  "stage": "4YFN Pitching Stage",
+  "hall": "Hall 8.1 - 4YFN",
+  "title": "Open Mic Session",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "FOUNDERS ACADEMY",
+  "interests": [
+   "CORPORATE INNOVATION",
+   "ENTREPRENEURSHIP",
+   "INNOVATION ECOSYSTEMS",
+   "FOUNDERS ACADEMY"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6318-open-mic-session",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "11:15-12:00",
+  "stage": "Johnson Stage",
+  "hall": "Hall 6",
+  "title": "#ChangeTheFace Summit: Youth Unmuted: Defining Digital Wellbeing",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "Cloudflare",
+  "companies": [
+   "Cloudflare"
+  ],
+  "track": "#ChangeTheFace",
+  "theme": "TECH4ALL",
+  "interests": [
+   "DIVERSITY",
+   "IMPACT / SOCIAL INNOVATION",
+   "TALENT",
+   "TECH4ALL"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6196-changetheface-summit-youth-unmuted-defining-digital-wellbeing",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "11:15-12:00",
+  "stage": "Marconi Stage",
+  "hall": "Hall 6",
+  "title": "How Green is Your Bottom Line?",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Conference",
+  "theme": "TECH4ALL",
+  "interests": [
+   "CLIMATE / ENVIRONMENT / SUSTAINABILITY",
+   "TECH4ALL"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5960-how-green-is-your-bottom-line",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "11:15-12:00",
+  "stage": "Turing Stage",
+  "hall": "Hall 6",
+  "title": "The End of the Automobile as We Know It",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Conference",
+  "theme": "GAME CHANGERS",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "AUTOMOTIVE / TRANSPORT",
+   "BIG DATA / ANALYTICS",
+   "IOT",
+   "GAME CHANGERS"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5969-the-end-of-the-automobile-as-we-know-it",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "11:30-13:30",
+  "stage": "CC2.3 GSMA Insights Hub",
+  "hall": "Hall 2",
+  "title": "Open Verifiable Calling Roundtable",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "GSMA Insights Hub",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "CORPORATE INNOVATION",
+   "CYBERSECURITY",
+   "DIGITAL IDENTITY / AUTHENTICATION",
+   "MOBILE DEVICE HARDWARE",
+   "MOBILE DEVICE SOFTWARE",
+   "NETWORK INFRASTRUCTURE",
+   "NETWORK SECURITY",
+   "SYSTEMS INTEGRATION",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Invitation Required",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6265-open-verifiable-calling-roundtable",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "11:50-13:00",
+  "stage": "Banco Sabadell Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "AI Won’t Steal Your Job, But…",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "INFINITE AI",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "INFINITE AI"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5849-ai-wont-steal-your-job-but...",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "12:00-12:45",
+  "stage": "Founders Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Startup Pitching Session by ESADE",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "FOUNDERS ACADEMY",
+  "interests": [
+   "CORPORATE INNOVATION",
+   "ENTREPRENEURSHIP",
+   "INNOVATION ECOSYSTEMS",
+   "FOUNDERS ACADEMY"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6025-startup-pitching-session-by-esade",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "12:00-13:00",
+  "stage": "Agora Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "10 Years Transforming Lives: Humanitarian Technology with Commitment",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "4YFN",
+  "theme": "CLIMATE TECH",
+  "interests": [
+   "ENTREPRENEURSHIP",
+   "IMPACT / SOCIAL INNOVATION",
+   "INNOVATION ECOSYSTEMS",
+   "CLIMATE TECH"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5874-10-years-transforming-lives-humanitarian-technology-with-commitment",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "12:30-13:15",
+  "stage": "Johnson Stage",
+  "hall": "Hall 6",
+  "title": "MWC 26: What Did We Learn?",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Conference",
+  "theme": "GAME CHANGERS",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "GAME CHANGERS"
+  ],
+  "access": "Pre-registered & Approved have priority",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6255-mwc-26-what-did-we-learn",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "12:30-13:15",
+  "stage": "Marconi Stage",
+  "hall": "Hall 6",
+  "title": "Built-In, Not Bolt-On: Co-Designing for Inclusive Consumer Experiences",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Conference",
+  "theme": "GAME CHANGERS",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "INNOVATION ECOSYSTEMS",
+   "MOBILE DEVICE HARDWARE",
+   "GAME CHANGERS"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5974-built-in-not-bolt-on-co-designing-for-inclusive-consumer-experiences",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "12:30-13:15",
+  "stage": "Turing Stage",
+  "hall": "Hall 6",
+  "title": "Jobpocalypse: The White Collar Workers’ Nightmare",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Conference",
+  "theme": "AI NEXUS",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "DIVERSITY",
+   "EDUCATION",
+   "IMPACT / SOCIAL INNOVATION",
+   "INNOVATION ECOSYSTEMS",
+   "AI NEXUS"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5958-jobpocalypse-the-white-collar-workers-nightmare",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "12:30-13:30",
+  "stage": "Partner Theatre 6",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "AI in Action: use cases across Cyber, Defence and Space",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Partner Programmes",
+  "theme": "CONNECT AI",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "CYBERSECURITY",
+   "SATELLITE / NON TERRESTRIAL NETWORKS",
+   "CONNECT AI"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6032-ai-in-action-use-cases-across-cyber-defence-and-space",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "12:30-14:00",
+  "stage": "Connected Industries",
+  "hall": "Hall 4",
+  "title": "Sports and Entertainment Summit: Beyond Connectivity – Fan Engagement in Sports and Entertainment",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "",
+  "companies": [],
+  "track": "Connected Industries",
+  "theme": "GAMING",
+  "interests": [
+   "APP / MOBILE SERVICES",
+   "GAMING",
+   "MEDIA / CONTENT / ENTERTAINMENT",
+   "GAMING"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6027-sports-and-entertainment-summit-beyond-connectivity---fan-engagement-in-sports-and-entertainment",
+  "source": "mwc"
+ },
+ {
+  "day": 5,
+  "time": "12:30-14:30",
+  "stage": "MWC Networking Hub",
+  "hall": "Hall 6",
+  "title": "From Discovery to Decision: How AI Is Reshaping the B2B Journey",
+  "speakers": [],
+  "description": "",
+  "tags": [],
+  "lang": "",
+  "company": "The Trade Desk",
+  "companies": [
+   "The Trade Desk"
+  ],
+  "track": "Networking",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "CORPORATE INNOVATION",
+   "DIGITAL MARKETING / ADTECH",
+   "FINTECH / FINANCE / INSURANCE SERVICES",
+   "MOBILE DEVICE HARDWARE",
+   "MOBILE DEVICE SOFTWARE",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Pre-registered & Approved have priority",
+  "type": [
+   "Physical"
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6153-from-discovery-to-decision-how-ai-is-reshaping-the-b2b-journey",
+  "source": "mwc"
+ }
+]

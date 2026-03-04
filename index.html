@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MWC Talent Arena 2026 – Schedule</title>
+<title>MWC 2026 – Schedule</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📅</text></svg>">
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/topbar.css">
@@ -16,6 +16,18 @@
 <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+
+<!-- ── Section Switcher ── -->
+<div class="section-bar">
+  <div class="section-bar-inner">
+    <button class="section-btn active" id="sectionTA" onclick="switchSection('ta')">
+      Talent Arena <small>Fira Montjuïc</small>
+    </button>
+    <button class="section-btn" id="sectionMWC" onclick="switchSection('mwc')">
+      MWC Barcelona <small>Fira Gran Via</small>
+    </button>
+  </div>
+</div>
 
 <!-- ── Top Bar ── -->
 <div class="topbar">
@@ -71,13 +83,25 @@
     <div class="filter-group-label">Stages</div>
     <div class="filter-chips" id="stageChips"></div>
   </div>
-  <div class="filter-group">
+  <div class="filter-group" id="tagFilterGroup">
     <div class="filter-group-label">Topics</div>
     <div class="filter-chips" id="tagChips"></div>
   </div>
-  <div class="filter-group">
+  <div class="filter-group" id="langFilterGroup">
     <div class="filter-group-label">Language</div>
     <div class="filter-chips" id="langChips"></div>
+  </div>
+  <div class="filter-group" id="themeFilterGroup" style="display:none">
+    <div class="filter-group-label">Themes</div>
+    <div class="filter-chips" id="themeChips"></div>
+  </div>
+  <div class="filter-group" id="accessFilterGroup" style="display:none">
+    <div class="filter-group-label">Access</div>
+    <div class="filter-chips" id="accessChips"></div>
+  </div>
+  <div class="filter-group" id="interestFilterGroup" style="display:none">
+    <div class="filter-group-label">Interests</div>
+    <div class="filter-chips filter-chips-scroll" id="interestChips"></div>
   </div>
   <div class="filter-group">
     <button id="restoreAllBtn" class="restore-all-btn" onclick="restoreAll()" style="display:none">Restore all hidden</button>
