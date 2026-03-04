@@ -9,3 +9,9 @@ mwc_api_map.json
 
 # Design drafts
 topbar-concepts.html
+
+# Node/Playwright
+node_modules/
+test-results/
+playwright-report/
+playwright/.cache/

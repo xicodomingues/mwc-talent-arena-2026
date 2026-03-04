@@ -1,0 +1,12 @@
+{
+  "name": "mwc-talent-arena-tests",
+  "private": true,
+  "scripts": {
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test --ui",
+    "test:debug": "npx playwright test --debug"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0"
+  }
+}
