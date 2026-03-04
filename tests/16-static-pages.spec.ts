@@ -1,10 +1,10 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('Static pages & footer', () => {
-  test('footer links present: ICS, Help, About', async ({ page }) => {
+  test('footer links present: Export, Help, About', async ({ page }) => {
     await page.goto('/');
     const footer = page.locator('.site-footer');
-    await expect(footer.locator('a[href="mwc_talent_arena_full.ics"]')).toBeVisible();
+    await expect(footer.locator('a.export-trigger')).toBeVisible();
     await expect(footer.locator('a[href="help.html"]')).toBeVisible();
     await expect(footer.locator('a[href="about.html"]')).toBeVisible();
   });
@@ -22,9 +22,16 @@ test.describe('Static pages & footer', () => {
     await expect(page.locator('body')).not.toBeEmpty();
   });
 
-  test('ICS file link has download attribute', async ({ page }) => {
+  test('export trigger opens prompt instead of downloading', async ({ page }) => {
     await page.goto('/');
-    const link = page.locator('a[href="mwc_talent_arena_full.ics"]');
-    await expect(link).toHaveAttribute('download', '');
+    await page.waitForFunction(
+      () => (window as any).__test && (window as any).__test.SESSIONS.length > 0,
+      null,
+      { timeout: 10000 }
+    );
+    const trigger = page.locator('a.export-trigger');
+    await expect(trigger).toHaveAttribute('href', '#');
+    await trigger.click();
+    await expect(page.locator('#exportPrompt')).toHaveClass(/open/);
   });
 });
