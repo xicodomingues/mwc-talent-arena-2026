@@ -1,9 +1,9 @@
 /* ── Timeline View ── */
 .tl-grid{position:relative}
 .tl-header{border-bottom:1px solid var(--border-mid)}
-.tl-header-corner{height:34px;background:var(--surface);border-right:1px solid var(--border-mid);position:sticky;left:0;z-index:var(--z-header);display:flex;align-items:center;justify-content:center}
-.tl-collapse-btn{background:none;border:none;color:var(--text2);cursor:pointer;font-size:0.85rem;padding:2px 4px;line-height:1;border-radius:3px;opacity:0.6;transition:opacity 0.15s}
-.tl-collapse-btn:hover{opacity:1}
+.tl-header-corner{height:34px;background:var(--surface);border-right:1px solid var(--border-mid);position:sticky;left:0;z-index:var(--z-header);display:flex;align-items:center;justify-content:flex-end;padding-right:4px}
+.tl-collapse-btn{background:rgba(255,255,255,0.06);border:1px solid var(--border-mid);color:var(--text2);cursor:pointer;font-size:0.75rem;width:22px;height:22px;display:flex;align-items:center;justify-content:center;line-height:1;border-radius:4px;opacity:0.7;transition:opacity 0.15s,background 0.15s}
+.tl-collapse-btn:hover{opacity:1;background:rgba(255,255,255,0.12)}
 .tl-label-collapsed{width:0!important;min-width:0!important;padding:0!important;overflow:hidden;border:none!important}
 .tl-time-hdr{height:34px;display:flex;align-items:center;justify-content:flex-start;font-size:0.68rem;color:var(--accent2);font-weight:700;border-left:1px solid var(--border-light);padding-left:6px}
 .tl-body{position:relative}
