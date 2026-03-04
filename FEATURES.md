@@ -465,7 +465,7 @@ A pre-generated `.ics` file containing all sessions. Linked in the footer with t
 ## 16. Error Handling
 
 - **Fetch failure:** Shows centered error message
-- **localStorage parse errors:** `safeGetJSON()` returns empty array
+- **localStorage parse errors:** `safeGetJSON()` returns empty array. Also validates the parsed result is an array (handles `null`, numbers, etc.)
 - **Invalid time ranges:** Defaults to start + 30 minutes
 
 ---
