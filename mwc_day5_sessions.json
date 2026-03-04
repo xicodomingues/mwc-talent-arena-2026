@@ -1,0 +1,830 @@
+[
+ {
+  "day": 5,
+  "time": "08:30-11:00",
+  "stage": "MWC Networking Hub",
+  "hall": "Hall 6",
+  "title": "Meta Wearables Demonstration",
+  "track": "Networking",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "NETWORK INFRASTRUCTURE",
+   "NETWORK SECURITY",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [
+   {
+    "modifiedDate": 1771244895896,
+    "id": 1285,
+    "originId": "097e63e8-31e3-4add-918a-cb9424f04af1",
+    "name": "Meta Platforms, Inc.",
+    "description": "Meta builds technology that connects you to people, interests and experiences that matter to you.  When Facebook launched in 2004, it changed the way people connect. Apps like Messenger, Instagram and WhatsApp further empowered billions around the world. Now, Meta has moved beyond 2D screens toward immersive experiences in mixed reality and innovation with AI to help build the next evolution in social technology.",
+    "address": null,
+    "image": "https://ucarecdn.com/4356b80d-a83c-4d16-b32e-52f11c626b47/",
+    "exhibitorId": 34284
+   }
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6068-meta-wearables-demonstration"
+ },
+ {
+  "day": 5,
+  "time": "09:00-11:00",
+  "stage": "CC2.5 GSMA Insights Hub",
+  "hall": "Hall 2",
+  "title": "From Research to Reality: Shaping the Path to 6G",
+  "track": "GSMA Insights Hub",
+  "theme": "CORPORATE INNOVATION",
+  "interests": [
+   "5G / 6G",
+   "CORPORATE INNOVATION"
+  ],
+  "access": "Invitation Required",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6184-from-research-to-reality-shaping-the-path-to-6g"
+ },
+ {
+  "day": 5,
+  "time": "09:00-11:00",
+  "stage": "CC2.3 GSMA Insights Hub",
+  "hall": "Hall 2",
+  "title": "Private Networks in Practice: Enterprise deployment models and ecosystem collaboration",
+  "track": "GSMA Insights Hub",
+  "theme": "CORPORATE INNOVATION",
+  "interests": [
+   "PRIVATE NETWORKS",
+   "CORPORATE INNOVATION"
+  ],
+  "access": "Invitation Required",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6182-private-networks-in-practice-enterprise-deployment-models-and-ecosystem-collaboration"
+ },
+ {
+  "day": 5,
+  "time": "09:00-13:00",
+  "stage": "Sky Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "AWS Startup Theatre Programme - Sky Stage",
+  "track": "4YFN",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "CLOUD SERVICES / DATACENTERS",
+   "CORPORATE INNOVATION",
+   "DIGITAL MARKETING / ADTECH",
+   "ENTERPRISE SOLUTIONS",
+   "FOUNDERS",
+   "INNOVATION ECOSYSTEMS",
+   "VENTURE CAPITAL / INVESTMENT / M&A",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Pre-registered & Approved have priority",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [
+   {
+    "modifiedDate": 1770155431943,
+    "id": 1270,
+    "originId": "1730b666-963e-4cb1-b5ac-92dbf843013a",
+    "name": "Amazon Web Services",
+    "description": "Amazon Web Services (AWS) is guided by customer obsession, pace of innovation, commitment to operational excellence, and long-term thinking. By democratizing technology for nearly two decades and making cloud computing and generative AI accessible to organizations of every size and industry, AWS has built one of the fastest-growing enterprise technology businesses in history. Millions of customers trust AWS to accelerate innovation, transform their businesses, and shape the future. With the most comprehensive AI capabilities and global infrastructure footprint, AWS empowers builders to turn big ideas into reality. Learn more at aws.amazon.com and follow @AWSNewsroom.",
+    "address": null,
+    "image": "https://ucarecdn.com/faca9ca4-05e6-400a-93fa-4e89808ce39a/",
+    "exhibitorId": 34224
+   }
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6017-aws-startup-theatre-programme-sky-stage"
+ },
+ {
+  "day": 5,
+  "time": "09:30-10:00",
+  "stage": "MWC Broadcast Stage",
+  "hall": "Hall 4",
+  "title": "GSMA Services Partnerships: Where Growth Meets Industry Impact",
+  "track": "MWC Broadcast Stage",
+  "theme": "CORPORATE INNOVATION",
+  "interests": [
+   "5G / 6G",
+   "APP / MOBILE SERVICES",
+   "BIG DATA / ANALYTICS",
+   "CLIMATE / ENVIRONMENT / SUSTAINABILITY",
+   "CYBERSECURITY",
+   "CORPORATE INNOVATION"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical",
+   "Virtual"
+  ],
+  "sponsors": [],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6273-gsma-services-partnerships-where-growth-meets-industry-impact"
+ },
+ {
+  "day": 5,
+  "time": "09:30-10:00",
+  "stage": "New Frontiers Stage",
+  "hall": "Hall 6",
+  "title": "CircuitX Partner Session: Ericsson - Transforming The Circuit Experience With Connectivity",
+  "track": "Partner Programmes",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "5G / 6G",
+   "ENTERPRISE SOLUTIONS",
+   "IOT",
+   "NETWORK INFRASTRUCTURE",
+   "PRIVATE NETWORKS",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6201-circuitx-partner-session-ericsson-transforming-the-circuit-experience-with-connectivity"
+ },
+ {
+  "day": 5,
+  "time": "10:00-10:30",
+  "stage": "Connected Industries",
+  "hall": "Hall 4",
+  "title": "Sports and Entertainment Summit: From field to screen: AI-powered, immersive fan experiences at scale",
+  "track": "Connected Industries",
+  "theme": "CONNECT AI",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "E-COMMERCE",
+   "IOT",
+   "MEDIA / CONTENT / ENTERTAINMENT",
+   "CONNECT AI"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [
+   {
+    "modifiedDate": 1766167579410,
+    "id": 1274,
+    "originId": "8b619a21-7cdf-4473-9be4-2d9b5014ca77",
+    "name": "Accenture",
+    "description": "Accenture is a leading solutions and services company that helps the world’s leading enterprises reinvent by building their digital core and unleashing the power of AI to create value at speed across the enterprise, bringing together the talent of our approximately 784,000 people, our proprietary assets and platforms, and deep ecosystem relationships. Our strategy is to be the reinvention partner of choice for our clients and to be the most client-focused, AI-enabled, great place to work in the world. Through our Reinvention Services we bring together our capabilities across strategy, consulting, technology, operations, Song and Industry X with our deep industry expertise to create and deliver solutions and services for our clients. Our purpose is to deliver on the promise of technology and human ingenuity, and we measure our success by the 360° value we create for all our stakeholders. Visit us at www.accenture.com.",
+    "address": null,
+    "image": "https://ucarecdn.com/c85e1988-74e9-496c-acd7-f9d00be55098/",
+    "exhibitorId": 34009
+   }
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6144-sports-and-entertainment-summit-from-field-to-screen-ai-powered-immersive-fan-experiences-at-scale"
+ },
+ {
+  "day": 5,
+  "time": "10:00-10:30",
+  "stage": "Founders Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Startup Pitching Session: K-Startup Spotlight: Innovating the Future",
+  "track": "4YFN",
+  "theme": "FOUNDERS ACADEMY",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "CORPORATE INNOVATION",
+   "ENTERPRISE SOLUTIONS",
+   "FOUNDERS",
+   "MEDIA / CONTENT / ENTERTAINMENT",
+   "BLOCKCHAIN / DECENTRALISATION",
+   "FOUNDERS ACADEMY"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6024-startup-pitching-session-k-startup-spotlight-innovating-the-future"
+ },
+ {
+  "day": 5,
+  "time": "10:00-10:45",
+  "stage": "Johnson Stage",
+  "hall": "Hall 6",
+  "title": "CX-Factor: Can AI Truly Win the Customer’s Heart?",
+  "track": "Conference",
+  "theme": "CONNECT AI",
+  "interests": [
+   "APP / MOBILE SERVICES",
+   "ARTIFICIAL INTELLIGENCE",
+   "BIG DATA / ANALYTICS",
+   "ENTERPRISE SOLUTIONS",
+   "NETWORK INFRASTRUCTURE",
+   "CONNECT AI"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5943-cx-factor-can-ai-truly-win-the-customers-heart"
+ },
+ {
+  "day": 5,
+  "time": "10:00-10:45",
+  "stage": "Turing Stage",
+  "hall": "Hall 6",
+  "title": "Enterprise Swipe-Right: The Partnership Paradox",
+  "track": "Conference",
+  "theme": "AI4ENTERPRISE",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "ENTERPRISE SOLUTIONS",
+   "INNOVATION ECOSYSTEMS",
+   "AI4ENTERPRISE"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5938-enterprise-swipe-right-the-partnership-paradox"
+ },
+ {
+  "day": 5,
+  "time": "10:00-10:45",
+  "stage": "Marconi Stage",
+  "hall": "Hall 6",
+  "title": "From Steel to Silicon: The Next Chapter for Towers",
+  "track": "Conference",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "5G / 6G",
+   "ARTIFICIAL INTELLIGENCE",
+   "CLIMATE / ENVIRONMENT / SUSTAINABILITY",
+   "CLOUD SERVICES / DATACENTERS",
+   "TOWER & FIBRE",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5930-from-steel-to-silicon-the-next-chapter-for-towers"
+ },
+ {
+  "day": 5,
+  "time": "10:00-11:00",
+  "stage": "4YFN Pitching Stage",
+  "hall": "Hall 8.1 - 4YFN",
+  "title": "Startup Pitching Session: From Lab to Scale: European Deep Tech powered by EIC",
+  "track": "4YFN",
+  "theme": "FOUNDERS ACADEMY",
+  "interests": [
+   "CORPORATE INNOVATION",
+   "ENTREPRENEURSHIP",
+   "INNOVATION ECOSYSTEMS",
+   "FOUNDERS ACADEMY"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6167-startup-pitching-session-from-lab-to-scale-european-deep-tech-powered-by-eic"
+ },
+ {
+  "day": 5,
+  "time": "10:00-11:00",
+  "stage": "Agora Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Game On: Who Wins the Next Generation of Play",
+  "track": "4YFN",
+  "theme": "GAMING",
+  "interests": [
+   "CORPORATE INNOVATION",
+   "GAMING"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5871-game-on-who-wins-the-next-generation-of-play"
+ },
+ {
+  "day": 5,
+  "time": "10:00-11:30",
+  "stage": "Partner Theatre 6",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "AI for Good Innovation Factory Catalonia. AI for Health",
+  "track": "Partner Programmes",
+  "theme": "GAME CHANGERS",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "GOVERNMENT / PUBLIC POLICY",
+   "HEALTH / FITNESS / WELLBEING",
+   "INNOVATION ECOSYSTEMS",
+   "GAME CHANGERS"
+  ],
+  "access": "Pre-registered & Approved have priority",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6001-ai-for-good-innovation-factory-catalonia-ai-for-health"
+ },
+ {
+  "day": 5,
+  "time": "10:00-13:00",
+  "stage": "MWC Main Stage",
+  "hall": "Hall 4",
+  "title": "Changing Education Together 2026: Technology with purpose - educating for the common good in the age of algorithms",
+  "track": "Conference",
+  "theme": "TECH4ALL",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "DIVERSITY",
+   "EDUCATION",
+   "GOVERNMENT / PUBLIC POLICY",
+   "IMPACT / SOCIAL INNOVATION",
+   "INNOVATION ECOSYSTEMS",
+   "TALENT",
+   "TECH4ALL"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6300-changing-education-together-2026-technology-with-purpose-educating-for-the-common-good-in-the-age-of-algorithms"
+ },
+ {
+  "day": 5,
+  "time": "10:00-15:30",
+  "stage": "PwC - Stand 4D10",
+  "hall": "Hall 4",
+  "title": "Outthink, outpace and outperform with PwC",
+  "track": "Partner Programmes",
+  "theme": "CONNECT AI",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "CONNECT AI"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [
+   {
+    "modifiedDate": 1770838465676,
+    "id": 1347,
+    "originId": "d50260bc-13cb-4acb-9b67-b849a599dade",
+    "name": "PwC",
+    "description": "The world never stops moving—and neither do you. We’re here to help you build, accelerate and sustain momentum. We’re a tech-forward, people-empowered network. With deep expertise and advanced capabilities, we’ll help you harness technology, make smart investments and be ready for any future. Across audit and assurance, tax and legal, deals and consulting we bring together the teams, resources and alliances you need to act boldly and achieve real results. We help you meet the demands of our ever-changing world with consistent quality and objective advice.",
+    "address": null,
+    "image": "https://ucarecdn.com/152e53bb-bc99-49e8-a214-b313224055e4/",
+    "exhibitorId": 33732
+   }
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6055-outthink-outpace-and-outperform-with-pwc"
+ },
+ {
+  "day": 5,
+  "time": "10:30-11:00",
+  "stage": "MWC Broadcast Stage",
+  "hall": "Hall 4",
+  "title": "AI Security: Adoption and Enablement for Telco Businesses",
+  "track": "MWC Broadcast Stage",
+  "theme": "AI4ENTERPRISE",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "CYBERSECURITY",
+   "AI4ENTERPRISE"
+  ],
+  "access": "",
+  "type": [
+   "Physical",
+   "Virtual"
+  ],
+  "sponsors": [
+   {
+    "modifiedDate": 1772094393565,
+    "id": 1353,
+    "originId": "eecba4ee-a98d-4820-bcc5-bca1ede927ab",
+    "name": "Check Point",
+    "description": "Check Point Software Technologies Ltd. is a leading protector of digital trust, utilizing AI-powered cyber security solutions to safeguard over 100,000 organizations globally. Through its Infinity Platform and an open garden ecosystem, Check Point’s prevention-first approach delivers industry-leading security efficacy while reducing risk. Employing a hybrid mesh network architecture with SASE at its core, the Infinity Platform unifies the management of on-premises, cloud, and workspace environments to offer flexibility, simplicity and scale for enterprises and service providers.",
+    "address": null,
+    "image": "https://ucarecdn.com/04350c69-57b6-4bf4-9d12-55d6f3614015/",
+    "exhibitorId": 35804
+   }
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6186-ai-security-adoption-and-enablement-for-telco-businesses"
+ },
+ {
+  "day": 5,
+  "time": "10:30-11:30",
+  "stage": "Banco Sabadell Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Imagination Meets Technology: The Science of Creativity",
+  "track": "4YFN",
+  "theme": "CREATIVITY",
+  "interests": [
+   "CORPORATE INNOVATION",
+   "CREATIVITY"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5838-imagination-meets-technology-the-science-of-creativity"
+ },
+ {
+  "day": 5,
+  "time": "10:30-12:00",
+  "stage": "Connected Industries",
+  "hall": "Hall 4",
+  "title": "Sports and Entertainment Summit: Connectivity Revolutionising Sports and Entertainment",
+  "track": "Connected Industries",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "5G / 6G",
+   "ENTERPRISE SOLUTIONS",
+   "MEDIA / CONTENT / ENTERTAINMENT",
+   "VIRTUAL REALITY / AUGMENTED REALITY",
+   "NETWORK INFRASTRUCTURE",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6023-sports-and-entertainment-summit-connectivity-revolutionising-sports-and-entertainment"
+ },
+ {
+  "day": 5,
+  "time": "10:45-11:45",
+  "stage": "Founders Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "4YFN26 Spin-off Pitch Battle",
+  "track": "4YFN",
+  "theme": "UNIVERSITIES & SPIN-OFFS",
+  "interests": [
+   "EDUCATION",
+   "UNIVERSITIES & SPIN-OFFS"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5906-4yfn26-spin-off-pitch-battle"
+ },
+ {
+  "day": 5,
+  "time": "11:00-11:30",
+  "stage": "Agora Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "One Size Fits None: Can AI Accelerate Inclusion?",
+  "track": "4YFN",
+  "theme": "CORPORATE INNOVATION",
+  "interests": [
+   "DIVERSITY",
+   "CORPORATE INNOVATION"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5868-one-size-fits-none-can-ai-accelerate-inclusion"
+ },
+ {
+  "day": 5,
+  "time": "11:15-11:45",
+  "stage": "4YFN Pitching Stage",
+  "hall": "Hall 8.1 - 4YFN",
+  "title": "Open Mic Session",
+  "track": "4YFN",
+  "theme": "FOUNDERS ACADEMY",
+  "interests": [
+   "CORPORATE INNOVATION",
+   "ENTREPRENEURSHIP",
+   "INNOVATION ECOSYSTEMS",
+   "FOUNDERS ACADEMY"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6318-open-mic-session"
+ },
+ {
+  "day": 5,
+  "time": "11:15-12:00",
+  "stage": "Johnson Stage",
+  "hall": "Hall 6",
+  "title": "#ChangeTheFace Summit: Youth Unmuted: Defining Digital Wellbeing",
+  "track": "#ChangeTheFace",
+  "theme": "TECH4ALL",
+  "interests": [
+   "DIVERSITY",
+   "IMPACT / SOCIAL INNOVATION",
+   "TALENT",
+   "TECH4ALL"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [
+   {
+    "modifiedDate": 1769181656272,
+    "id": 1333,
+    "originId": "4ce8a7a7-ac14-4c75-aaef-0188e96f2d90",
+    "name": "Cloudflare",
+    "description": "Cloudflare, Inc. (NYSE: NET) is the leading connectivity cloud company on a mission to help build a better Internet. It empowers organizations to make their employees, applications and networks faster and more secure everywhere, while reducing complexity and cost. Cloudflare’s connectivity cloud delivers the most full-featured, unified platform of cloud-native products and developer tools, so any organization can gain the control they need to work, develop, and accelerate their business.\n\nPowered by one of the world’s largest and most interconnected networks, Cloudflare blocks billions of threats online for its customers every day. It is trusted by millions of organizations – from the largest brands to entrepreneurs and small businesses to nonprofits, humanitarian groups, and governments across the globe.\n\nLearn more about Cloudflare’s connectivity cloud at cloudflare.com/connectivity-cloud. Learn more about the latest Internet trends and insights at https://radar.cloudflare.com.",
+    "address": null,
+    "image": "https://ucarecdn.com/a045c818-a25f-4762-9972-0927ad717211/",
+    "exhibitorId": 34599
+   }
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6196-changetheface-summit-youth-unmuted-defining-digital-wellbeing"
+ },
+ {
+  "day": 5,
+  "time": "11:15-12:00",
+  "stage": "Turing Stage",
+  "hall": "Hall 6",
+  "title": "The End of the Automobile as We Know It",
+  "track": "Conference",
+  "theme": "GAME CHANGERS",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "AUTOMOTIVE / TRANSPORT",
+   "BIG DATA / ANALYTICS",
+   "IOT",
+   "GAME CHANGERS"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5969-the-end-of-the-automobile-as-we-know-it"
+ },
+ {
+  "day": 5,
+  "time": "11:15-12:00",
+  "stage": "Marconi Stage",
+  "hall": "Hall 6",
+  "title": "How Green is Your Bottom Line?",
+  "track": "Conference",
+  "theme": "TECH4ALL",
+  "interests": [
+   "CLIMATE / ENVIRONMENT / SUSTAINABILITY",
+   "TECH4ALL"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5960-how-green-is-your-bottom-line"
+ },
+ {
+  "day": 5,
+  "time": "11:30-13:30",
+  "stage": "CC2.3 GSMA Insights Hub",
+  "hall": "Hall 2",
+  "title": "Open Verifiable Calling Roundtable",
+  "track": "GSMA Insights Hub",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "CORPORATE INNOVATION",
+   "CYBERSECURITY",
+   "DIGITAL IDENTITY / AUTHENTICATION",
+   "MOBILE DEVICE HARDWARE",
+   "MOBILE DEVICE SOFTWARE",
+   "NETWORK INFRASTRUCTURE",
+   "NETWORK SECURITY",
+   "SYSTEMS INTEGRATION",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Invitation Required",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6265-open-verifiable-calling-roundtable"
+ },
+ {
+  "day": 5,
+  "time": "11:50-13:00",
+  "stage": "Banco Sabadell Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "AI Won’t Steal Your Job, But…",
+  "track": "4YFN",
+  "theme": "INFINITE AI",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "INFINITE AI"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5849-ai-wont-steal-your-job-but..."
+ },
+ {
+  "day": 5,
+  "time": "12:00-12:45",
+  "stage": "Founders Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "Startup Pitching Session by ESADE",
+  "track": "4YFN",
+  "theme": "FOUNDERS ACADEMY",
+  "interests": [
+   "CORPORATE INNOVATION",
+   "ENTREPRENEURSHIP",
+   "INNOVATION ECOSYSTEMS",
+   "FOUNDERS ACADEMY"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6025-startup-pitching-session-by-esade"
+ },
+ {
+  "day": 5,
+  "time": "12:00-13:00",
+  "stage": "Agora Stage",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "10 Years Transforming Lives: Humanitarian Technology with Commitment",
+  "track": "4YFN",
+  "theme": "CLIMATE TECH",
+  "interests": [
+   "ENTREPRENEURSHIP",
+   "IMPACT / SOCIAL INNOVATION",
+   "INNOVATION ECOSYSTEMS",
+   "CLIMATE TECH"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5874-10-years-transforming-lives-humanitarian-technology-with-commitment"
+ },
+ {
+  "day": 5,
+  "time": "12:30-13:15",
+  "stage": "Johnson Stage",
+  "hall": "Hall 6",
+  "title": "MWC 26: What Did We Learn?",
+  "track": "Conference",
+  "theme": "GAME CHANGERS",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "GAME CHANGERS"
+  ],
+  "access": "Pre-registered & Approved have priority",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6255-mwc-26-what-did-we-learn"
+ },
+ {
+  "day": 5,
+  "time": "12:30-13:15",
+  "stage": "Marconi Stage",
+  "hall": "Hall 6",
+  "title": "Built-In, Not Bolt-On: Co-Designing for Inclusive Consumer Experiences",
+  "track": "Conference",
+  "theme": "GAME CHANGERS",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "INNOVATION ECOSYSTEMS",
+   "MOBILE DEVICE HARDWARE",
+   "GAME CHANGERS"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5974-built-in-not-bolt-on-co-designing-for-inclusive-consumer-experiences"
+ },
+ {
+  "day": 5,
+  "time": "12:30-13:15",
+  "stage": "Turing Stage",
+  "hall": "Hall 6",
+  "title": "Jobpocalypse: The White Collar Workers’ Nightmare",
+  "track": "Conference",
+  "theme": "AI NEXUS",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "DIVERSITY",
+   "EDUCATION",
+   "IMPACT / SOCIAL INNOVATION",
+   "INNOVATION ECOSYSTEMS",
+   "AI NEXUS"
+  ],
+  "access": "Pass Required to Access",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/5958-jobpocalypse-the-white-collar-workers-nightmare"
+ },
+ {
+  "day": 5,
+  "time": "12:30-13:30",
+  "stage": "Partner Theatre 6",
+  "hall": "Hall 8.0 – 4YFN & Partner District",
+  "title": "AI in Action: use cases across Cyber, Defence and Space",
+  "track": "Partner Programmes",
+  "theme": "CONNECT AI",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "CYBERSECURITY",
+   "SATELLITE / NON TERRESTRIAL NETWORKS",
+   "CONNECT AI"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6032-ai-in-action-use-cases-across-cyber-defence-and-space"
+ },
+ {
+  "day": 5,
+  "time": "12:30-14:00",
+  "stage": "Connected Industries",
+  "hall": "Hall 4",
+  "title": "Sports and Entertainment Summit: Beyond Connectivity – Fan Engagement in Sports and Entertainment",
+  "track": "Connected Industries",
+  "theme": "GAMING",
+  "interests": [
+   "APP / MOBILE SERVICES",
+   "GAMING",
+   "MEDIA / CONTENT / ENTERTAINMENT",
+   "GAMING"
+  ],
+  "access": "Open to All",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6027-sports-and-entertainment-summit-beyond-connectivity---fan-engagement-in-sports-and-entertainment"
+ },
+ {
+  "day": 5,
+  "time": "12:30-14:30",
+  "stage": "MWC Networking Hub",
+  "hall": "Hall 6",
+  "title": "From Discovery to Decision: How AI Is Reshaping the B2B Journey",
+  "track": "Networking",
+  "theme": "INTELLIGENT INFRASTRUCTURE",
+  "interests": [
+   "ARTIFICIAL INTELLIGENCE",
+   "CORPORATE INNOVATION",
+   "DIGITAL MARKETING / ADTECH",
+   "FINTECH / FINANCE / INSURANCE SERVICES",
+   "MOBILE DEVICE HARDWARE",
+   "MOBILE DEVICE SOFTWARE",
+   "INTELLIGENT INFRASTRUCTURE"
+  ],
+  "access": "Pre-registered & Approved have priority",
+  "type": [
+   "Physical"
+  ],
+  "sponsors": [
+   {
+    "modifiedDate": 1770155431850,
+    "id": 1309,
+    "originId": "0e0b4356-badf-4804-989b-d0ddd46cbecb",
+    "name": "The Trade Desk",
+    "description": "Relevant advertising powers the digital world. And we help power relevant advertising.",
+    "address": null,
+    "image": "https://ucarecdn.com/75c9758d-a3a2-412c-bab2-f055609f21df/",
+    "exhibitorId": 35400
+   }
+  ],
+  "url": "https://www.mwcbarcelona.com/agenda/sessions/6153-from-discovery-to-decision-how-ai-is-reshaping-the-b2b-journey"
+ }
+]
