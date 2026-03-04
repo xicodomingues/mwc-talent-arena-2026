@@ -167,6 +167,11 @@ export function toggleShowHighlightedOnly() {
   refresh();
 }
 
+// ── Timeline labels collapsed (persisted) ──
+export let tlLabelsCollapsed = localStorage.getItem("tlLabelsCollapsed") === "true";
+export function setTlLabelsCollapsed(v) { tlLabelsCollapsed = v; localStorage.setItem("tlLabelsCollapsed", v); }
+export function toggleTlLabels() { setTlLabelsCollapsed(!tlLabelsCollapsed); refresh(); }
+
 // ── Calendar stage visibility (persisted per section) ──
 export const calHiddenStages = new Set();
 

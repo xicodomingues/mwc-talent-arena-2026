@@ -3,7 +3,7 @@ import { esc, parseTime, nowInBarcelona, formatTime } from './utils.js';
 import {
   SESSIONS, filteredIndices, hiddenSessions, highlightedSessions,
   showHighlightedOnly, showHidden, calHiddenStages, isStageFullyHidden,
-  section, sectionStageOrder
+  section, sectionStageOrder, tlLabelsCollapsed
 } from './state.js';
 
 // ── Section-aware helpers ──
@@ -189,7 +189,7 @@ export function renderTimeline() {
   const colors = stageColors();
   const order = sectionStageOrder();
   const { ppm, rowH, padLeft } = TL_LAYOUT;
-  const labelW = section === "mwc" ? 140 : TL_LAYOUT.labelW;
+  const labelW = tlLabelsCollapsed ? 0 : (section === "mwc" ? 140 : TL_LAYOUT.labelW);
   const nowState = getNowState();
 
   const days = [...new Set(filteredIndices.map(i => SESSIONS[i].day))].sort();
@@ -222,8 +222,9 @@ export function renderTimeline() {
 }
 
 function timelineHeader(minT, maxT, ppm, labelW, padLeft) {
+  const cornerW = tlLabelsCollapsed ? 28 : labelW + padLeft;
   let html = `<div class="tl-header">`;
-  html += `<div class="tl-header-corner" style="width:${labelW + padLeft}px;min-width:${labelW + padLeft}px"></div>`;
+  html += `<div class="tl-header-corner${tlLabelsCollapsed ? " tl-collapsed" : ""}" style="width:${cornerW}px;min-width:${cornerW}px"><button class="tl-collapse-btn" onclick="toggleTlLabels()" title="${tlLabelsCollapsed ? "Show stage labels" : "Hide stage labels"}">${tlLabelsCollapsed ? "\u00bb" : "\u00ab"}</button></div>`;
   for (let t = minT; t < maxT; t += 30) {
     const w = 30 * ppm;
     html += `<div class="tl-time-hdr" style="width:${w}px">${formatTime(t)}</div>`;
@@ -254,7 +255,7 @@ function timelineStageRows(stagesPresent, dayIndices, stageIdx, minT, ppm, padLe
     const isStageHidden = calHiddenStages.has(st);
     const bg = i % 2 === 1 ? "rgba(255,255,255,0.02)" : "transparent";
     html += `<div class="tl-row${isStageHidden ? " tl-row-hidden" : ""}" style="height:${rowH}px;background:${bg}">`;
-    html += `<div class="tl-row-label" style="width:${labelW}px;min-width:${labelW}px;border-right:2px solid ${c}" onclick="toggleCalStage('${esc(st)}')" title="${isStageHidden ? "Click to show" : "Click to hide"} ${esc(st)}"><span class="tl-label-dot" style="background:${c}"></span><span class="tl-label-text">${esc(st)}</span></div>`;
+    html += `<div class="tl-row-label${tlLabelsCollapsed ? " tl-label-collapsed" : ""}" style="width:${labelW}px;min-width:${labelW}px;${tlLabelsCollapsed ? "" : `border-right:2px solid ${c}`}" ${tlLabelsCollapsed ? "" : `onclick="toggleCalStage('${esc(st)}')" title="${isStageHidden ? "Click to show" : "Click to hide"} ${esc(st)}"`}>${tlLabelsCollapsed ? "" : `<span class="tl-label-dot" style="background:${c}"></span><span class="tl-label-text">${esc(st)}</span>`}</div>`;
     html += `<div class="tl-row-events" style="position:relative;height:${rowH}px;flex:1">`;
     for (const idx of dayIndices) {
       const s = SESSIONS[idx];

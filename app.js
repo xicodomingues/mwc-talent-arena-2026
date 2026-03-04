@@ -10,7 +10,8 @@ import {
   setDayFilter, setShowHidden, saveHidden, saveHighlighted, saveCalHiddenStages,
   searchIndex, isStageFullyHidden, setSearchQuery,
   section, setSection, sectionStageOrder, sectionDays,
-  loadHidden, loadHighlighted, loadCalHiddenStages, migrateLocalStorage
+  loadHidden, loadHighlighted, loadCalHiddenStages, migrateLocalStorage,
+  toggleTlLabels, tlLabelsCollapsed, setTlLabelsCollapsed
 } from './js/state.js';
 import {
   applyFilters, buildStageChips, buildTagChips, buildLangChips,
@@ -207,7 +208,7 @@ Object.assign(window, {
   toggleHighlight, toggleHide, toggleStage, toggleTag, toggleLang,
   toggleTheme, toggleAccess, toggleInterest,
   toggleCalStage, showExportPrompt, exportDay, applyFilters: filterAndRender,
-  switchSection
+  switchSection, toggleTlLabels
 });
 
 // ── Test bridge: expose state for Playwright tests ──
@@ -232,6 +233,8 @@ Object.defineProperty(window, '__test', {
     buildStageChips, updateFilterDot, updateHiddenCount, updateHighlightedCount,
     switchSection,
     sectionStageOrder, sectionDays,
+    get tlLabelsCollapsed() { return tlLabelsCollapsed; },
+    setTlLabelsCollapsed, toggleTlLabels,
   })
 });
 
