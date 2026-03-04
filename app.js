@@ -3,13 +3,18 @@ import {
   setSessions, buildSearchIndex, setRefreshFn, updateHash,
   updateDayIndicator, updateHiddenCount, updateHighlightedCount,
   switchDay, toggleShowHidden, toggleShowHighlightedOnly, restoreAll,
-  toggleHide, toggleHighlight, calHiddenStages, activeStages, showHidden
+  toggleHide, toggleHighlight, calHiddenStages, activeStages, showHidden,
+  SESSIONS, filteredIndices, hiddenSessions, highlightedSessions,
+  dayFilter, searchQuery, showHighlightedOnly, activeLangs, activeTags,
+  setDayFilter, setShowHidden, saveHidden, saveHighlighted, saveCalHiddenStages,
+  searchIndex, isStageFullyHidden, setSearchQuery
 } from './js/state.js';
 import { applyFilters, buildStageChips, buildTagChips, buildLangChips, updateFilterDot, toggleFilterPanel, toggleStage, toggleTag, toggleLang, toggleCalStage, clearSearch } from './js/filters.js';
 import { renderList } from './js/list-view.js';
 import { renderCalendar, renderTimeline } from './js/grid-views.js';
 import { showModal, closeModal, initModalListeners } from './js/modal.js';
-import { initDragScroll, scrollToNowSlot } from './js/utils.js';
+import { initDragScroll, scrollToNowSlot, parseTime, esc, nowInBarcelona } from './js/utils.js';
+import { STAGE_ORDER, ALL_TAGS, ALL_LANGS } from './js/constants.js';
 
 // ── Render dispatch (replaces monkey-patched render) ──
 function render() {
@@ -92,6 +97,30 @@ Object.assign(window, {
   toggleFilterPanel, clearSearch, closeModal, showModal, restoreAll,
   toggleHighlight, toggleHide, toggleStage, toggleTag, toggleLang,
   toggleCalStage, applyFilters: filterAndRender
+});
+
+// ── Test bridge: expose state for Playwright tests ──
+Object.defineProperty(window, '__test', {
+  get: () => ({
+    SESSIONS, filteredIndices, hiddenSessions, highlightedSessions,
+    calHiddenStages, activeStages, activeTags, activeLangs,
+    get currentView() { return currentView; },
+    get dayFilter() { return dayFilter; },
+    get searchQuery() { return searchQuery; },
+    get showHidden() { return showHidden; },
+    get showHighlightedOnly() { return showHighlightedOnly; },
+    get scrollToNow() { return scrollToNow; },
+    searchIndex,
+    // Mutators
+    setDayFilter, setShowHidden, setCurrentView, setScrollToNow, setSearchQuery,
+    saveHidden, saveHighlighted, saveCalHiddenStages,
+    // Utils
+    parseTime, esc, nowInBarcelona, isStageFullyHidden,
+    // Constants
+    STAGE_ORDER, ALL_TAGS, ALL_LANGS,
+    // Chip builders
+    buildStageChips, updateFilterDot, updateHiddenCount, updateHighlightedCount,
+  })
 });
 
 // ── Start ──
