@@ -2,14 +2,12 @@ import { test, expect } from '@playwright/test';
 import { loadApp } from './helpers/setup';
 
 test.describe('Now line & past/ongoing', () => {
-  test('calendar now-line present when time is within session range', async ({ page }) => {
+  test('calendar now-line present when time is within grid range', async ({ page }) => {
     await loadApp(page, { hash: 'view=calendar' });
-    // Now-line only renders when current time is within the session time range
     const result = await page.evaluate(() => {
       const t = (window as any).__test;
       const now = t.nowInBarcelona();
       const nowM = now.hours * 60 + now.minutes;
-      // Find day 4 session time range
       let minT = 1440, maxT = 0;
       for (const idx of t.filteredIndices) {
         const [start, end] = t.SESSIONS[idx].time.split('-');
@@ -17,20 +15,21 @@ test.describe('Now line & past/ongoing', () => {
         if (s < minT) minT = s;
         if (e > maxT) maxT = e;
       }
+      const isEventMonth = now.month === 3 && now.year === 2026;
+      if (isEventMonth && now.day === parseInt(t.dayFilter) && nowM < minT) minT = nowM;
       minT = Math.floor(minT / 30) * 30;
       maxT = Math.ceil(maxT / 30) * 30;
-      return { nowM, minT, maxT, inRange: nowM >= minT && nowM <= maxT, isEventMonth: now.month === 3 && now.year === 2026, nowDay: now.day };
+      return { inRange: nowM >= minT && nowM <= maxT, isEventMonth, nowDay: now.day };
     });
 
     if (result.isEventMonth && result.nowDay === 4 && result.inRange) {
       await expect(page.locator('.cal-now-line')).toBeVisible();
     } else {
-      // Now-line correctly absent when time is outside session range
       expect(await page.locator('.cal-now-line').count()).toBe(0);
     }
   });
 
-  test('timeline now-line present when time is within session range', async ({ page }) => {
+  test('timeline now-line present when time is within grid range', async ({ page }) => {
     await loadApp(page, { hash: 'view=timeline' });
     const result = await page.evaluate(() => {
       const t = (window as any).__test;
@@ -43,9 +42,11 @@ test.describe('Now line & past/ongoing', () => {
         if (s < minT) minT = s;
         if (e > maxT) maxT = e;
       }
+      const isEventMonth = now.month === 3 && now.year === 2026;
+      if (isEventMonth && now.day === parseInt(t.dayFilter) && nowM < minT) minT = nowM;
       minT = Math.floor(minT / 30) * 30;
       maxT = Math.ceil(maxT / 30) * 30;
-      return { inRange: nowM >= minT && nowM <= maxT, isEventMonth: now.month === 3 && now.year === 2026, nowDay: now.day };
+      return { inRange: nowM >= minT && nowM <= maxT, isEventMonth, nowDay: now.day };
     });
 
     if (result.isEventMonth && result.nowDay === 4 && result.inRange) {

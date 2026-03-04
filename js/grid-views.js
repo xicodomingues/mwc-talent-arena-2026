@@ -27,13 +27,16 @@ function getStagesForDay(day, indices) {
   return { stagesPresent, allDayIndices };
 }
 
-function getTimeRange(indices) {
+function getTimeRange(indices, nowState, day) {
   let minT = 1440, maxT = 0;
   for (const i of indices) {
     const [start, end] = SESSIONS[i].time.split("-");
     const s = parseTime(start), e = parseTime(end);
     if (s < minT) minT = s;
     if (e > maxT) maxT = e;
+  }
+  if (nowState && nowState.isEventMonth && nowState.nowDay == day && nowState.nowM < minT) {
+    minT = nowState.nowM;
   }
   return { minT: Math.floor(minT / 30) * 30, maxT: Math.ceil(maxT / 30) * 30 };
 }
@@ -96,8 +99,8 @@ export function renderCalendar() {
 function calendarDayHTML(day, indices) {
   const colors = stageColors();
   const { stagesPresent } = getStagesForDay(day, indices);
-  const { minT, maxT } = getTimeRange(indices);
   const nowState = getNowState();
+  const { minT, maxT } = getTimeRange(indices, nowState, day);
   const { timeCol, padTop, ppm } = CAL_LAYOUT;
   const colW = section === "mwc" ? 120 : CAL_LAYOUT.colW;
 
@@ -195,7 +198,7 @@ export function renderTimeline() {
     html += `<h2 class="day-heading">March ${day}</h2>`;
     const dayIndices = filteredIndices.filter(i => SESSIONS[i].day === day);
     const { stagesPresent, allDayIndices } = getStagesForDay(day, dayIndices);
-    const { minT, maxT } = getTimeRange(dayIndices);
+    const { minT, maxT } = getTimeRange(dayIndices, nowState, day);
 
     const stagesAllTl = [];
     for (const st of order) {

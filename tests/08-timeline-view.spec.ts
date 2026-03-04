@@ -103,6 +103,9 @@ test.describe('Timeline view', () => {
         const s = t.parseTime(start);
         if (s < minT) minT = s;
       }
+      const now = t.nowInBarcelona();
+      const nowM = now.hours * 60 + now.minutes;
+      if (now.month === 3 && now.year === 2026 && now.day === parseInt(t.dayFilter) && nowM < minT) minT = nowM;
       minT = Math.floor(minT / 30) * 30;
       for (const idx of t.filteredIndices) {
         const [start] = t.SESSIONS[idx].time.split('-');
